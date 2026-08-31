@@ -42,4 +42,13 @@ npm run pipeline
 
 模拟盘使用独立的 `portfolio.json` 保存纯模型账户、人工增强账户、持仓、订单、成交、净值和下一交易日计划。15:35产生的研究信号只允许进入下一交易日计划，不使用当日收盘价倒推成交。
 
+### 每日收盘模拟与复盘流程
+
+1. 收盘后先运行 `npm run pipeline:carry-symbols`，导出待执行计划、现有持仓和未完成 1/3 日结算信号所需的报价代码。
+2. Longbridge 全市场扫描和热点深度报价完成后，额外获取这份清单的精确报价；保留提供方时间戳，并写入 `provider-data/longbridge-latest.json` 的 `carryQuotes`。
+3. 仅当 CN 市场为 `Closed` 且主报价、`carryQuotes` 都完整带时间戳时运行 `npm run pipeline:real`。
+4. 管道将前一交易日计划按本交易日开盘价（加滑点和手续费）模拟成交，再按本交易日收盘价估值；缺报价会记录 `SKIPPED`，不会静默丢弃。
+5. 收盘信号写入 `review.json` 的 `dailySignalReview`，在后续收盘以“下一交易日开盘入场”的口径结算 1 日和 3 日表现。
+6. 所有数据与归档校验通过后，提交本次流程代码、provider input、`public/data/latest`、`manifest.json`、`index.json` 和新快照目录，并推送当前分支；校验失败时不得提交或推送。
+
 页面中的证券、价格、分数和事件均为演示数据，不构成投资建议。

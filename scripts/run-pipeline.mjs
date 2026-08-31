@@ -18,6 +18,12 @@ if (providerArg) {
   if (!providerInput.capturedAt || !Array.isArray(providerInput.quotes) || providerInput.quotes.length < 4) {
     throw new Error('Longbridge input is incomplete');
   }
+  if (providerInput.market?.status !== 'Closed' || !providerInput.quoteTimestamp || providerInput.quotes.some((quote) => !quote.timestamp)) {
+    throw new Error('Longbridge input is not a timestamped CN market-close batch');
+  }
+  if (providerInput.carryQuotes != null && (!Array.isArray(providerInput.carryQuotes) || providerInput.carryQuotes.some((quote) => !quote.symbol || !quote.timestamp))) {
+    throw new Error('Longbridge carry quotes are malformed');
+  }
 }
 
 let trainedModel = null;
@@ -60,6 +66,11 @@ const meta = {
 
 let existingHistory = [];
 try { existingHistory = JSON.parse(await readFile(join(dataRoot, 'index.json'), 'utf8')).snapshots ?? []; } catch {}
+
+const executionQuotes = providerInput ? [...providerInput.quotes, ...(providerInput.carryQuotes ?? [])] : [];
+function providerQuoteForCode(code) {
+  return executionQuotes.find((quote) => String(quote.symbol ?? '').split('.')[0] === String(code));
+}
 
 const demoThemes = [
   { rank: 1, name: '商业航天', score: 86 + drift, change: 12, stage: '加速', catalyst: '产业政策与卫星组网招标预期共振', breadth: '31/42', turnover: 74 },
@@ -152,7 +163,7 @@ const candidates = {
   meta,
   accessPolicy: providerInput ? { id: 'cn-mainboard-no-extra-permission', label: '普通A股账户可交易', includedPrefixes: ['600', '601', '603', '605', '000', '001', '002', '003'], excluded: ['创业板', '科创板', '北交所', 'B股', 'ST/*ST', '退市整理', '停牌', '无效价格'] } : null,
   coverage: providerInput ? { totalReported: providerInput.universeScan?.totalReported ?? providerInput.quotes.length, recordsFetched: providerInput.universeScan?.recordsFetched ?? providerInput.quotes.length, eligibleCount: providerInput.universeScan?.eligibleCount ?? providerInput.quotes.length, deepQuoteCount: providerInput.universeScan?.deepQuoteCount ?? providerInput.quotes.length, accessEligibleDeepCount: realStocks.length, pagesFetched: providerInput.universeScan?.pagesFetched ?? 1, method: providerInput.universeScan?.method ?? '异动样本池', screenedAt: providerInput.universeScan?.screenedAt ?? providerInput.capturedAt } : null,
-  stocks: providerInput ? realStocks.slice(0, providerInput.universeScan ? 20 : 6).map((stock, index) => ({ code: stock.symbol.split('.')[0], symbol: stock.symbol, name: stock.name, theme: stock.theme, score: Math.round(Math.min(95, 64 + Math.max(0, stock.move) * 3 + (stock.signalStrength ?? 0) * 4 - index)), catalyst: Math.round(Math.min(95, 60 + (stock.signalStrength ?? 0) * 8)), confirmation: Math.round(Math.min(95, 55 + Math.log10(Math.max(1, Number(stock.turnover))) * 4)), universeRank: stock.universeRank ?? null, universeScore: stock.universeScore ?? null, screening: stock.screening ?? null, access: '普通A股账户可交易', price: Number(stock.last), prevClose: Number(stock.prevClose), open: Number(stock.open), high: Number(stock.high), low: Number(stock.low), volume: Number(stock.volume), turnover: Number(stock.turnover), move: stock.move, intradayStructure: intradayStructure(stock), quoteTime: stock.timestamp, capturedAt: providerInput.capturedAt, tradeStatus: stock.tradeStatus, quoteKind: stock.timestamp.slice(0, 10) === tradeDate ? 'intraday' : 'latest-close', reason: `${stock.anomalyReason || '量价异动'}；当日涨跌幅 ${stock.move.toFixed(2)}%，成交额 ${(Number(stock.turnover) / 100_000_000).toFixed(2)}亿元。${providerInput.universeScan ? ` 来自${providerInput.universeScan.eligibleCount}只有效A股的全市场初筛，全市场排名 #${stock.universeRank ?? '--'}；已通过普通A股账户权限过滤。` : ''}`, risk: stock.move >= 7 ? '短线涨幅较大，次日可能分化' : '信号仅反映当前量价与异动，不代表持续上涨', horizon: '1-3日', source: 'Longbridge OpenAPI', sourceUrl: 'https://open.longbridge.com/zh-CN/docs/quote/overview' })) : [
+  stocks: providerInput ? realStocks.slice(0, providerInput.universeScan ? 20 : 6).map((stock, index) => ({ code: stock.symbol.split('.')[0], symbol: stock.symbol, name: stock.name, theme: stock.theme, score: Math.round(Math.min(95, 64 + Math.max(0, stock.move) * 3 + (stock.signalStrength ?? 0) * 4 - index)), catalyst: Math.round(Math.min(95, 60 + (stock.signalStrength ?? 0) * 8)), confirmation: Math.round(Math.min(95, 55 + Math.log10(Math.max(1, Number(stock.turnover))) * 4)), universeRank: stock.universeRank ?? null, universeScore: stock.universeScore ?? null, screening: stock.screening ?? null, access: '普通A股账户可交易', price: Number(stock.last), prevClose: Number(stock.prevClose), open: Number(stock.open), high: Number(stock.high), low: Number(stock.low), volume: Number(stock.volume), turnover: Number(stock.turnover), move: stock.move, intradayStructure: intradayStructure(stock), quoteTime: stock.timestamp, capturedAt: providerInput.capturedAt, tradeStatus: stock.tradeStatus, quoteKind: 'latest-close', reason: `${stock.anomalyReason || '量价异动'}；当日涨跌幅 ${stock.move.toFixed(2)}%，成交额 ${(Number(stock.turnover) / 100_000_000).toFixed(2)}亿元。${providerInput.universeScan ? ` 来自${providerInput.universeScan.eligibleCount}只有效A股的全市场初筛，全市场排名 #${stock.universeRank ?? '--'}；已通过普通A股账户权限过滤。` : ''}`, risk: stock.move >= 7 ? '短线涨幅较大，次日可能分化' : '信号仅反映当前量价与异动，不代表持续上涨', horizon: '1-3日', source: 'Longbridge OpenAPI', sourceUrl: 'https://open.longbridge.com/zh-CN/docs/quote/overview' })) : [
     { code: '600118', name: '中国卫星', theme: '商业航天', score: 84 + drift, catalyst: 91, confirmation: 78, price: 32.46, move: 5.62, reason: '卫星制造核心标的，题材收入关联明确；量价同步放大。', risk: '前期累计涨幅偏高', horizon: '1-3日' },
     { code: '002025', name: '航天电器', theme: '商业航天', score: 80 + drift, catalyst: 86, confirmation: 73, price: 48.21, move: 3.18, reason: '高可靠连接器直接受益，机构关注度与成交额同步回升。', risk: '板块分化时弹性有限', horizon: '1-3日' },
     { code: '300750', name: '宁德时代', theme: '固态电池', score: 76 - drift, catalyst: 88, confirmation: 61, price: 286.4, move: 1.74, reason: '技术路线与产业化进度具备验证信息，基本面承载能力强。', risk: '大市值导致短线弹性较弱', horizon: '5-10日' },
@@ -175,7 +186,7 @@ if (providerInput) {
       volume: Number(stock.volume), turnover: Number(stock.turnover), move: Number(stock.ret1), ret20: Number(stock.ret20),
       volRatio: Number(stock.volRatio), trendEfficiency: Number(stock.trendEfficiency), candlestick, intradayStructure: intradayStructure(stock),
       quoteTime: stock.timestamp, capturedAt: providerInput.capturedAt, tradeStatus: stock.tradeStatus,
-      quoteKind: stock.timestamp.slice(0, 10) === tradeDate ? 'intraday' : 'latest-close',
+      quoteKind: 'latest-close',
       reason: `近20日上涨 ${Number(stock.ret20).toFixed(2)}%，当日涨跌 ${Number(stock.ret1).toFixed(2)}%，量比 ${Number(stock.volRatio).toFixed(2)}；通过2%—30%趋势区间、单日不超过7%及行业分散过滤。K线：${candlestick.reason}。`,
       risk: Number(stock.ret20) > 24 ? '20日累计涨幅接近趋势池上限，需等待回踩确认' : '趋势信号可能在市场风格切换时失效',
       horizon: '1-3日', source: stock.source || 'Longbridge OpenAPI', sourceUrl: 'https://open.longbridge.com/zh-CN/docs/quote/overview',
@@ -220,6 +231,29 @@ async function loadPreviousPortfolio() {
   try { return JSON.parse(await readFile(join(dataRoot, previous.path, previous.files.portfolio), 'utf8')); } catch { return null; }
 }
 
+async function loadPreviousReview() {
+  const previous = existingHistory
+    .filter((item) => item.asOf < meta.asOf && item.mode === meta.mode && item.files?.review)
+    .sort((a, b) => b.asOf.localeCompare(a.asOf))[0];
+  if (!previous) return null;
+  try { return JSON.parse(await readFile(join(dataRoot, previous.path, previous.files.review), 'utf8')); } catch { return null; }
+}
+
+async function loadRecoveredDuePlan(previousPortfolio) {
+  if (previousPortfolio?.accounts?.some((account) => account.tradeHistory?.some((trade) => trade.tradeDate === tradeDate))) return null;
+  const history = existingHistory
+    .filter((item) => item.asOf < meta.asOf && item.mode === meta.mode && item.files?.portfolio)
+    .sort((a, b) => a.asOf.localeCompare(b.asOf));
+  for (const item of history) {
+    try {
+      const portfolio = JSON.parse(await readFile(join(dataRoot, item.path, item.files.portfolio), 'utf8'));
+      const plan = portfolio.accounts?.find((account) => account.accountId === 'model')?.nextPlan;
+      if (plan?.executeOn === tradeDate) return plan;
+    } catch {}
+  }
+  return null;
+}
+
 function bootstrapAccount() {
   if (meta.mode === 'real') return {
     accountId: 'model', name: '纯模型账户', type: 'MODEL', enabled: true,
@@ -242,7 +276,7 @@ function bootstrapAccount() {
 
 function commission(amount) { return Math.max(tradingRules.minimumCommission, amount * tradingRules.commissionRate); }
 
-function simulateModelAccount(previousPortfolio) {
+function simulateModelAccount(previousPortfolio, recoveredDuePlan) {
   const previous = previousPortfolio?.accounts?.find((account) => account.accountId === 'model') ?? bootstrapAccount();
   let cash = previous.cash;
   let positions = previous.positions.map((position) => ({ ...position }));
@@ -250,14 +284,22 @@ function simulateModelAccount(previousPortfolio) {
   const todayOrders = [];
   const marketClosed = [0, 6].includes(new Date(`${tradeDate}T12:00:00+08:00`).getUTCDay());
 
-  if (!marketClosed && previous.nextPlan?.executeOn === tradeDate) {
-    for (const plan of previous.nextPlan.orders) {
-      const quote = candidates.stocks.find((stock) => stock.code === plan.code);
-      if (!quote) continue;
+  const planForToday = previous.nextPlan?.executeOn === tradeDate ? previous.nextPlan : recoveredDuePlan;
+  if (!marketClosed && planForToday?.executeOn === tradeDate) {
+    for (const plan of planForToday.orders) {
+      const quote = providerQuoteForCode(plan.code);
+      if (!quote) {
+        todayOrders.push({ id: `O-${tradeDate}-${plan.code}`, createdAt: meta.asOf, code: plan.code, name: plan.name, side: plan.side, status: 'SKIPPED', targetWeight: plan.targetWeight, reason: plan.reason, rejectReason: '收盘批次未提供该计划标的的精确报价' });
+        continue;
+      }
       const order = { id: `O-${tradeDate}-${plan.code}`, createdAt: meta.asOf, code: plan.code, name: plan.name, side: plan.side, status: 'PENDING', targetWeight: plan.targetWeight, reason: plan.reason };
+      const executionPrice = Number(quote.open);
+      if (!Number.isFinite(executionPrice) || executionPrice <= 0) {
+        order.status = 'SKIPPED'; order.rejectReason = '缺少下一交易日开盘价，不能以收盘价替代成交价'; todayOrders.push(order); continue;
+      }
       if (plan.side === 'BUY') {
         const referenceAsset = cash + positions.reduce((sum, item) => sum + item.shares * item.lastPrice, 0);
-        const price = Number((quote.price * (1 + tradingRules.slippageRate)).toFixed(2));
+        const price = Number((executionPrice * (1 + tradingRules.slippageRate)).toFixed(2));
         const existing = positions.find((item) => item.code === plan.code);
         const existingValue = existing ? existing.shares * price : 0;
         const gapValue = Math.max(0, referenceAsset * plan.targetWeight - existingValue);
@@ -266,14 +308,14 @@ function simulateModelAccount(previousPortfolio) {
         if (shares > 0 && amount + fee <= cash) {
           cash -= amount + fee;
           if (existing) { const totalShares = existing.shares + shares; existing.costPrice = Number(((existing.costPrice * existing.shares + amount + fee) / totalShares).toFixed(2)); existing.shares = totalShares; }
-          else positions.push({ code: plan.code, name: plan.name, theme: plan.theme, shares, availableShares: 0, costPrice: Number(((amount + fee) / shares).toFixed(2)), lastPrice: quote.price, openedAt: tradeDate, reason: plan.reason, stopLoss: Number((price * 0.93).toFixed(2)), targetPrice: Number((price * 1.12).toFixed(2)) });
+          else positions.push({ code: plan.code, name: plan.name, theme: plan.theme, shares, availableShares: 0, costPrice: Number(((amount + fee) / shares).toFixed(2)), lastPrice: Number(quote.last), openedAt: tradeDate, reason: plan.reason, stopLoss: Number((price * 0.93).toFixed(2)), targetPrice: Number((price * 1.12).toFixed(2)) });
           order.status = 'FILLED'; order.fillPrice = price; order.shares = shares; order.fees = Number(fee.toFixed(2));
           todayTrades.push({ id: `T-${tradeDate}-${plan.code}`, tradeDate, code: plan.code, name: plan.name, side: 'BUY', shares, price, fees: Number(fee.toFixed(2)), reason: plan.reason });
         } else { order.status = gapValue < price * tradingRules.lotSize ? 'SKIPPED' : 'REJECTED'; order.rejectReason = gapValue < price * tradingRules.lotSize ? '已达到目标仓位' : '可用资金或整手数量不足'; }
       } else if (plan.side === 'SELL') {
         const existing = positions.find((item) => item.code === plan.code);
         if (existing && existing.availableShares > 0) {
-          const price = Number((quote.price * (1 - tradingRules.slippageRate)).toFixed(2));
+          const price = Number((executionPrice * (1 - tradingRules.slippageRate)).toFixed(2));
           const shares = existing.availableShares; const amount = shares * price;
           const fee = commission(amount) + amount * tradingRules.stampDutyRateOnSell;
           cash += amount - fee; existing.shares -= shares; existing.availableShares = 0;
@@ -287,8 +329,8 @@ function simulateModelAccount(previousPortfolio) {
   }
 
   positions = positions.map((position) => {
-    const quote = candidates.stocks.find((stock) => stock.code === position.code);
-    const lastPrice = quote?.price ?? position.lastPrice;
+    const quote = providerQuoteForCode(position.code);
+    const lastPrice = Number(quote?.last) || position.lastPrice;
     return { ...position, lastPrice, availableShares: position.openedAt < tradeDate ? position.shares : position.availableShares, holdingDays: dayDistance(position.openedAt, tradeDate), marketValue: Number((position.shares * lastPrice).toFixed(2)), unrealizedPnl: Number((position.shares * (lastPrice - position.costPrice)).toFixed(2)), returnPct: Number(((lastPrice / position.costPrice - 1) * 100).toFixed(2)) };
   });
   const marketValue = positions.reduce((sum, position) => sum + position.marketValue, 0);
@@ -311,9 +353,65 @@ function simulateModelAccount(previousPortfolio) {
 }
 
 const previousPortfolio = await loadPreviousPortfolio();
-const modelAccount = simulateModelAccount(previousPortfolio);
+const previousReview = await loadPreviousReview();
+const recoveredDuePlan = await loadRecoveredDuePlan(previousPortfolio);
+const modelAccount = simulateModelAccount(previousPortfolio, recoveredDuePlan);
 const assistedAccount = previousPortfolio?.accounts?.find((account) => account.accountId === 'assisted') ?? { accountId: 'assisted', name: '人工增强账户', type: 'ASSISTED', enabled: false, status: 'READY_FOR_MANUAL_INPUT', initialCapital: tradingRules.initialCapital, summary: { totalAsset: tradingRules.initialCapital, cash: tradingRules.initialCapital, marketValue: 0, cumulativePnl: 0, cumulativeReturn: 0, positionRate: 0, maxDrawdown: 0, winRate: 0 }, positions: [], todayOrders: [], todayTrades: [], tradeHistory: [], nav: [{ date: tradeDate, totalAsset: tradingRules.initialCapital, benchmark: 1 }], nextPlan: null };
 const portfolio = { meta, rules: tradingRules, accounts: [modelAccount, assistedAccount], comparison: { modelReturn: modelAccount.summary.cumulativeReturn, assistedReturn: assistedAccount.summary.cumulativeReturn, benchmarkReturn: Number(((modelAccount.nav.at(-1)?.benchmark ?? 1) - 1) * 100) } };
+
+function tradingDaysElapsed(startDate, endDate) {
+  const cursor = new Date(`${startDate}T12:00:00+08:00`);
+  const end = new Date(`${endDate}T12:00:00+08:00`);
+  let days = 0;
+  while (cursor < end) {
+    cursor.setUTCDate(cursor.getUTCDate() + 1);
+    if (![0, 6].includes(cursor.getUTCDay())) days += 1;
+  }
+  return days;
+}
+
+function buildDailySignalReview() {
+  const previous = Array.isArray(previousReview?.dailySignalReview?.signals) ? previousReview.dailySignalReview.signals : [];
+  const signals = previous.map((signal) => ({ ...signal }));
+  for (const signal of signals) {
+    const elapsed = tradingDaysElapsed(signal.signalDate, tradeDate);
+    const quote = providerQuoteForCode(signal.code);
+    signal.tradingDaysElapsed = elapsed;
+    if (elapsed < 1) continue;
+    if (!quote || !Number.isFinite(Number(quote.open)) || !Number.isFinite(Number(quote.last))) {
+      signal.status = 'PENDING_MISSING_QUOTE';
+      signal.missingReason = '本日收盘批次未提供该信号标的的精确报价';
+      continue;
+    }
+    if (!signal.entryPrice) {
+      signal.entryPrice = Number(quote.open);
+      signal.entryTimestamp = quote.timestamp;
+      signal.entryRule = 'next-trading-session-open';
+    }
+    const close = Number(quote.last);
+    if (elapsed >= 1 && signal.oneDayReturn == null) {
+      signal.oneDayReturn = Number(((close / signal.entryPrice - 1) * 100).toFixed(2));
+      signal.oneDayCloseTimestamp = quote.timestamp;
+    }
+    if (elapsed >= 3 && signal.threeDayReturn == null) {
+      signal.threeDayReturn = Number(((close / signal.entryPrice - 1) * 100).toFixed(2));
+      signal.threeDayCloseTimestamp = quote.timestamp;
+    }
+    signal.status = elapsed >= 3 && signal.threeDayReturn != null ? 'SETTLED_3D' : 'SETTLED_1D';
+  }
+  const current = candidates.lists?.hotspot?.stocks ?? candidates.stocks;
+  for (const stock of current.slice(0, 20)) {
+    const id = `${tradeDate}-${stock.code}`;
+    if (signals.some((signal) => signal.id === id)) continue;
+    signals.push({ id, signalDate: tradeDate, code: stock.code, symbol: stock.symbol ?? `${stock.code}.CN`, name: stock.name, theme: stock.theme, score: stock.score, signalPrice: stock.price, signalTimestamp: stock.quoteTime, status: 'PENDING_NEXT_OPEN', tradingDaysElapsed: 0, entryPrice: null, oneDayReturn: null, threeDayReturn: null });
+  }
+  const retained = signals.sort((a, b) => `${a.signalDate}-${a.code}`.localeCompare(`${b.signalDate}-${b.code}`)).slice(-400);
+  const oneDay = retained.filter((signal) => signal.oneDayReturn != null);
+  const threeDay = retained.filter((signal) => signal.threeDayReturn != null);
+  return { signals: retained, recentPredictions: retained.slice(-30).reverse(), summary: { totalSignals: retained.length, pending: retained.filter((signal) => signal.status.startsWith('PENDING')).length, settled1d: oneDay.length, settled3d: threeDay.length, avgReturn1d: oneDay.length ? Number((oneDay.reduce((sum, signal) => sum + signal.oneDayReturn, 0) / oneDay.length).toFixed(2)) : null, avgReturn3d: threeDay.length ? Number((threeDay.reduce((sum, signal) => sum + signal.threeDayReturn, 0) / threeDay.length).toFixed(2)) : null, returnConvention: 'signal after close; entry at next trading-session open; evaluate at subsequent close' } };
+}
+
+const dailySignalReview = providerInput ? buildDailySignalReview() : null;
 
 const evidence = providerInput ? {
   meta,
@@ -336,7 +434,7 @@ const evidence = providerInput ? {
 const review = providerInput ? {
   meta,
   metrics: trainedModel ? { precisionAt10: trainedModel.metrics.threeDay.top10HitRate, ndcgAt10: null, avgExcess1d: trainedModel.metrics.oneDay.top10MeanExcess * 100, avgExcess3d: trainedModel.metrics.threeDay.top10MeanExcess * 100, maxDrawdown: null, samples: trainedModel.metrics.testSamples } : { precisionAt10: null, ndcgAt10: null, avgExcess1d: null, avgExcess3d: null, maxDrawdown: null, samples: 0 },
-  periods: trainedModel ? [{ label: '一年样本外', signals: trainedModel.metrics.testSamples, hitRate: trainedModel.metrics.threeDay.top10HitRate * 100, excess: trainedModel.metrics.threeDay.top10MeanExcess * 100 }] : [], recentPredictions: [],
+  periods: trainedModel ? [{ label: '一年样本外', signals: trainedModel.metrics.testSamples, hitRate: trainedModel.metrics.threeDay.top10HitRate * 100, excess: trainedModel.metrics.threeDay.top10MeanExcess * 100 }] : [], recentPredictions: dailySignalReview.recentPredictions, dailySignalReview,
   trainingModel: trainedModel ? { modelId: trainedModel.modelId, status: trainedModel.status, provider: trainedModel.provider, universe: trainedModel.universe, window: trainedModel.window, limitations: trainedModel.limitations } : null,
   optimizationExperiment: optimizationExperiment ? { modelId: optimizationExperiment.modelId, status: optimizationExperiment.status, objective: optimizationExperiment.objective, window: optimizationExperiment.window, preprocessing: optimizationExperiment.preprocessing, metrics: optimizationExperiment.metrics, promotionGate: optimizationExperiment.promotionGate, limitations: optimizationExperiment.limitations } : null,
   notes: trainedModel ? [`${trainedModel.modelId}使用${trainedModel.metrics.trainSamples}条训练样本和${trainedModel.metrics.testSamples}条样本外测试`, `3日Top10平均超额${(trainedModel.metrics.threeDay.top10MeanExcess * 100).toFixed(2)}%，命中率${(trainedModel.metrics.threeDay.top10HitRate * 100).toFixed(1)}%`, trainedModel.status === 'SHADOW_READY' ? '已达到影子观察门槛，仍不直接驱动模拟买卖' : '未通过预设上线门槛，保持研究模型，不替换模拟盘决策', ...(optimizationExperiment && optimizationAudit ? [`优化实验${optimizationExperiment.modelId}审计命中率${((optimizationAudit.top10HitRate ?? optimizationAudit.hit) * 100).toFixed(1)}%，未覆盖现有模型`] : []), ...trainedModel.limitations] : ['尚无已训练的真实历史模型', '行情与新闻来自Longbridge，重要公告仍需官方来源交叉确认'],

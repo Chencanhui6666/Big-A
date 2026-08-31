@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "snapshotId": "2026-08-31T160445+0800",
+    "asOf": "2026-08-31T16:04:45+08:00",
+    "tradeDate": "2026-08-31",
+    "modelVersion": "dual-list-v0.5.0",
+    "status": "complete",
+    "mode": "real",
+    "provider": "longbridge",
+    "capturedAt": "2026-08-31T08:03:17.607Z"
+  },
+  "metrics": {
+    "precisionAt10": 0.5277777777777778,
+    "ndcgAt10": null,
+    "avgExcess1d": 0.8988647877169661,
+    "avgExcess3d": 1.6594394151579843,
+    "maxDrawdown": null,
+    "samples": 42440
+  },
+  "periods": [
+    {
+      "label": "一年样本外",
+      "signals": 42440,
+      "hitRate": 52.77777777777778,
+      "excess": 1.6594394151579843
+    }
+  ],
+  "recentPredictions": [],
+  "trainingModel": {
+    "modelId": "one-year-ridge-v0.1.0",
+    "status": "RESEARCH_ONLY",
+    "provider": "Longbridge OpenAPI",
+    "universe": {
+      "providerTotal": 5292,
+      "ordinaryMainBoard": 3048,
+      "selectedLiquiditySample": 800,
+      "validHistories": 786,
+      "failures": 14,
+      "selection": "current market-cap × turnover-rate top 800; point-in-time survivorship limitation disclosed"
+    },
+    "window": {
+      "barsRequested": 320,
+      "dates": 267,
+      "firstDate": "2025-07-21T16:00:00Z",
+      "lastDate": "2026-08-24T16:00:00Z",
+      "trainBefore": "2026-06-09T16:00:00Z"
+    },
+    "limitations": [
+      "仅一年数据，市场状态覆盖有限",
+      "使用当前存续且高流动性股票，存在幸存者与样本选择偏差",
+      "历史主动买卖/逐笔订单流不可由当前接口完整回溯",
+      "模型尚未概率校准，不输出真实上涨概率",
+      "未通过独立多年度样本前不得替换模拟盘决策"
+    ]
+  },
+  "optimizationExperiment": {
+    "modelId": "one-year-stable-rule-v0.3.0",
+    "status": "RESEARCH_ONLY",
+    "objective": "stable 3-day excess-return ranking with anti-chasing and transaction-cost penalty",
+    "window": {
+      "dates": 271,
+      "firstDate": "2025-07-15T16:00:00Z",
+      "lastDate": "2026-08-24T16:00:00Z",
+      "developmentFolds": 4,
+      "auditFold": {
+        "firstDate": "2026-06-08T16:00:00Z",
+        "lastDate": "2026-08-24T16:00:00Z",
+        "days": 55
+      }
+    },
+    "metrics": {
+      "development": {
+        "ic": null,
+        "gross": 0.010563700527307124,
+        "net": 0.009141478305084903,
+        "hit": 0.48661265432098766,
+        "turnover": 0.711111111111111,
+        "positiveNetFolds": 3,
+        "folds": [
+          {
+            "ic": null,
+            "gross": 0.0007007197022983891,
+            "net": -0.0004437247421460545,
+            "hit": 0.42608024691358015,
+            "turnover": 0.5722222222222223,
+            "days": 54
+          },
+          {
+            "ic": 0.0212575408375501,
+            "gross": 0.006640456157485104,
+            "net": 0.005118233935262884,
+            "hit": 0.4537037037037037,
+            "turnover": 0.761111111111111,
+            "days": 54
+          },
+          {
+            "ic": 0.047469452004983675,
+            "gross": 0.020356476381260993,
+            "net": 0.01883795786274248,
+            "hit": 0.5648148148148148,
+            "turnover": 0.7592592592592591,
+            "days": 54
+          },
+          {
+            "ic": 0.06407327009137109,
+            "gross": 0.01455714986818401,
+            "net": 0.0130534461644803,
+            "hit": 0.5018518518518519,
+            "turnover": 0.7518518518518514,
+            "days": 54
+          }
+        ]
+      },
+      "audit": {
+        "ic": -0.010464077285393896,
+        "gross": -0.004128374810838527,
+        "net": -0.005630192992656707,
+        "hit": 0.45999999999999996,
+        "turnover": 0.7509090909090906,
+        "days": 55
+      },
+      "baselineRet20Audit": {
+        "ic": 0.004057210458657142,
+        "gross": 0.017995236398208863,
+        "net": 0.01760614548911795,
+        "hit": 0.5454545454545454,
+        "turnover": 0.19454545454545444,
+        "days": 55
+      }
+    },
+    "promotionGate": {
+      "requirements": {
+        "auditIc": ">0",
+        "auditNet": ">0",
+        "auditHitRate": ">=0.53",
+        "positiveDevelopmentFolds": ">=3/4",
+        "developmentHitRate": ">=0.52"
+      },
+      "passed": false,
+      "decision": "研究留存；不驱动候选排序或模拟盘"
+    },
+    "limitations": [
+      "一年样本且当前存续高换手股票，仍有幸存者与选择偏差",
+      "本轮是上次实验后的继续迭代，最终审计区间并非从未被人观察过，不能视作完全独立证明",
+      "20bp成本为近似，未完整模拟涨跌停、停牌和冲击成本",
+      "未纳入历史逐笔主动买卖、新闻时点和行业中性化"
+    ]
+  },
+  "notes": [
+    "one-year-ridge-v0.1.0使用158506条训练样本和42440条样本外测试",
+    "3日Top10平均超额1.66%，命中率52.8%",
+    "未通过预设上线门槛，保持研究模型，不替换模拟盘决策",
+    "优化实验one-year-stable-rule-v0.3.0审计命中率46.0%，未覆盖现有模型",
+    "仅一年数据，市场状态覆盖有限",
+    "使用当前存续且高流动性股票，存在幸存者与样本选择偏差",
+    "历史主动买卖/逐笔订单流不可由当前接口完整回溯",
+    "模型尚未概率校准，不输出真实上涨概率",
+    "未通过独立多年度样本前不得替换模拟盘决策"
+  ]
+}

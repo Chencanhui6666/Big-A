@@ -11,6 +11,7 @@
     "start": "vinext start",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "pipeline": "node scripts/run-pipeline.mjs",
+    "pipeline:carry-symbols": "node scripts/prepare-carry-symbols.mjs",
     "pipeline:real": "node scripts/run-pipeline.mjs --provider-input=provider-data/longbridge-latest.json"
   },
   "dependencies": {

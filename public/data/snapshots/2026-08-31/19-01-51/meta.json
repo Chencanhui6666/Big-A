@@ -1,0 +1,17 @@
+{
+  "snapshotId": "2026-08-31T190151+0800",
+  "asOf": "2026-08-31T19:01:51+08:00",
+  "tradeDate": "2026-08-31",
+  "modelVersion": "dual-list-v0.5.0",
+  "status": "complete",
+  "mode": "real",
+  "provider": "longbridge",
+  "capturedAt": "2026-08-31T08:03:17.607Z",
+  "files": {
+    "radar": "radar.json",
+    "candidates": "candidates.json",
+    "evidence": "evidence.json",
+    "review": "review.json",
+    "portfolio": "portfolio.json"
+  }
+}
