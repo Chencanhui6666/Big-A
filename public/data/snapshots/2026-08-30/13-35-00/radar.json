@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "snapshotId": "2026-08-30T133500+0800",
+    "asOf": "2026-08-30T13:35:00+08:00",
+    "tradeDate": "2026-08-30",
+    "modelVersion": "dual-list-v0.5.0",
+    "status": "complete",
+    "mode": "real",
+    "provider": "longbridge",
+    "capturedAt": "2026-08-30T10:10:35.566Z"
+  },
+  "marketState": {
+    "label": "中性且稳定",
+    "riskAppetite": 68
+  },
+  "summary": {
+    "highConfidenceThemes": 6,
+    "events30m": 4,
+    "confirmationRate": 0.78,
+    "credibleEvents": 3
+  },
+  "themes": [
+    {
+      "rank": 1,
+      "name": "制药",
+      "score": 95,
+      "change": 10,
+      "stage": "加速",
+      "catalyst": "4只样本出现量价或异动信号",
+      "breadth": "4/60",
+      "turnover": 55.5
+    },
+    {
+      "rank": 2,
+      "name": "特种化学品",
+      "score": 95,
+      "change": 10,
+      "stage": "加速",
+      "catalyst": "4只样本出现量价或异动信号",
+      "breadth": "4/60",
+      "turnover": 50.5
+    },
+    {
+      "rank": 3,
+      "name": "工业化学品",
+      "score": 95,
+      "change": 10,
+      "stage": "加速",
+      "catalyst": "5只样本出现量价或异动信号",
+      "breadth": "5/60",
+      "turnover": 43.9
+    },
+    {
+      "rank": 4,
+      "name": "通信设备",
+      "score": 94,
+      "change": 10,
+      "stage": "加速",
+      "catalyst": "1只样本出现量价或异动信号",
+      "breadth": "1/60",
+      "turnover": 41.4
+    },
+    {
+      "rank": 5,
+      "name": "包装食品和肉类",
+      "score": 95,
+      "change": 9.8,
+      "stage": "加速",
+      "catalyst": "3只样本出现量价或异动信号",
+      "breadth": "3/60",
+      "turnover": 40.2
+    },
+    {
+      "rank": 6,
+      "name": "工业机械",
+      "score": 95,
+      "change": 10,
+      "stage": "加速",
+      "catalyst": "4只样本出现量价或异动信号",
+      "breadth": "4/60",
+      "turnover": 32
+    }
+  ],
+  "leadingTheme": {
+    "name": "制药",
+    "score": 95,
+    "novelty": 70,
+    "velocity": 100,
+    "confirmation": 7
+  },
+  "sourceHealth": {
+    "healthy": 3,
+    "total": 3,
+    "delayedSources": [],
+    "quoteTimestamp": "2026-08-28T15:00:01+08:00"
+  }
+}

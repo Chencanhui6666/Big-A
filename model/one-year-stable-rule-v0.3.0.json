@@ -1,0 +1,136 @@
+{
+  "modelId": "one-year-stable-rule-v0.3.0",
+  "status": "RESEARCH_ONLY",
+  "trainedAt": "2026-08-30T13:13:36.517Z",
+  "provider": "Longbridge OpenAPI",
+  "objective": "stable 3-day excess-return ranking with anti-chasing and transaction-cost penalty",
+  "universe": {
+    "selected": 500,
+    "validHistories": 490,
+    "selection": "current top-turnover ordinary-account Shanghai/Shenzhen main-board sample; survivorship/selection bias disclosed"
+  },
+  "window": {
+    "dates": 271,
+    "firstDate": "2025-07-15T16:00:00Z",
+    "lastDate": "2026-08-24T16:00:00Z",
+    "developmentFolds": 4,
+    "auditFold": {
+      "firstDate": "2026-06-08T16:00:00Z",
+      "lastDate": "2026-08-24T16:00:00Z",
+      "days": 55
+    }
+  },
+  "features": [
+    "ret1_rank",
+    "ret10_rank",
+    "ret20_rank",
+    "px_ma20_rank",
+    "vol_ratio5_rank",
+    "volatility20_rank",
+    "efficiency20_rank",
+    "limit_proximity_rank"
+  ],
+  "model": {
+    "type": "interpretable stable ranking rule",
+    "weights": {
+      "ret20": 1,
+      "ret10": 0,
+      "vol5": 0,
+      "ret1": -0.4,
+      "extension": -0.3,
+      "risk": -0.2,
+      "efficiency20": 0.1,
+      "limitProximity": -0.2
+    },
+    "selection": "maximize four-fold stability objective; final contiguous audit excluded from selection"
+  },
+  "costModel": {
+    "replacementCost": 0.002,
+    "description": "每次Top10新进入标的扣除20bp单边成本近似"
+  },
+  "metrics": {
+    "development": {
+      "ic": null,
+      "gross": 0.010563700527307124,
+      "net": 0.009141478305084903,
+      "hit": 0.48661265432098766,
+      "turnover": 0.711111111111111,
+      "positiveNetFolds": 3,
+      "folds": [
+        {
+          "ic": null,
+          "gross": 0.0007007197022983891,
+          "net": -0.0004437247421460545,
+          "hit": 0.42608024691358015,
+          "turnover": 0.5722222222222223,
+          "days": 54
+        },
+        {
+          "ic": 0.0212575408375501,
+          "gross": 0.006640456157485104,
+          "net": 0.005118233935262884,
+          "hit": 0.4537037037037037,
+          "turnover": 0.761111111111111,
+          "days": 54
+        },
+        {
+          "ic": 0.047469452004983675,
+          "gross": 0.020356476381260993,
+          "net": 0.01883795786274248,
+          "hit": 0.5648148148148148,
+          "turnover": 0.7592592592592591,
+          "days": 54
+        },
+        {
+          "ic": 0.06407327009137109,
+          "gross": 0.01455714986818401,
+          "net": 0.0130534461644803,
+          "hit": 0.5018518518518519,
+          "turnover": 0.7518518518518514,
+          "days": 54
+        }
+      ]
+    },
+    "audit": {
+      "ic": -0.010464077285393896,
+      "gross": -0.004128374810838527,
+      "net": -0.005630192992656707,
+      "hit": 0.45999999999999996,
+      "turnover": 0.7509090909090906,
+      "days": 55
+    },
+    "baselineRet20Audit": {
+      "ic": 0.004057210458657142,
+      "gross": 0.017995236398208863,
+      "net": 0.01760614548911795,
+      "hit": 0.5454545454545454,
+      "turnover": 0.19454545454545444,
+      "days": 55
+    }
+  },
+  "promotionGate": {
+    "requirements": {
+      "auditIc": ">0",
+      "auditNet": ">0",
+      "auditHitRate": ">=0.53",
+      "positiveDevelopmentFolds": ">=3/4",
+      "developmentHitRate": ">=0.52"
+    },
+    "passed": false,
+    "decision": "研究留存；不驱动候选排序或模拟盘"
+  },
+  "limitations": [
+    "一年样本且当前存续高换手股票，仍有幸存者与选择偏差",
+    "本轮是上次实验后的继续迭代，最终审计区间并非从未被人观察过，不能视作完全独立证明",
+    "20bp成本为近似，未完整模拟涨跌停、停牌和冲击成本",
+    "未纳入历史逐笔主动买卖、新闻时点和行业中性化"
+  ],
+  "recommendation": {
+    "nextCandidate": "ret20-only cross-sectional rank",
+    "reason": "audit gross/net/hit and turnover all outperform the multi-factor anti-chasing rule",
+    "numericGateOnObservedAudit": true,
+    "independenceGate": false,
+    "decision": "保留为下一次前向影子观察基线，不追溯替换历史推荐"
+  }
+}
+

@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "snapshotId": "2026-08-30T153500+0800",
+    "asOf": "2026-08-30T15:35:00+08:00",
+    "tradeDate": "2026-08-30",
+    "modelVersion": "hotspot-v0.2.0",
+    "status": "complete",
+    "mode": "demo"
+  },
+  "rules": {
+    "initialCapital": 1000000,
+    "maxTotalPosition": 0.7,
+    "maxSinglePosition": 0.1,
+    "maxThemePosition": 0.25,
+    "lotSize": 100,
+    "commissionRate": 0.0003,
+    "minimumCommission": 5,
+    "stampDutyRateOnSell": 0.0005,
+    "slippageRate": 0.0015,
+    "settlement": "T+1"
+  },
+  "accounts": [
+    {
+      "accountId": "model",
+      "name": "纯模型账户",
+      "type": "MODEL",
+      "enabled": true,
+      "initialCapital": 1000000,
+      "cash": 857140,
+      "positions": [
+        {
+          "code": "600118",
+          "name": "中国卫星",
+          "theme": "商业航天",
+          "shares": 2500,
+          "availableShares": 2500,
+          "costPrice": 30.82,
+          "lastPrice": 32.46,
+          "openedAt": "2026-08-25",
+          "reason": "政策催化与卫星组网预期共振",
+          "stopLoss": 28.66,
+          "targetPrice": 35.8,
+          "holdingDays": 5,
+          "marketValue": 81150,
+          "unrealizedPnl": 4100,
+          "returnPct": 5.32
+        },
+        {
+          "code": "002025",
+          "name": "航天电器",
+          "theme": "商业航天",
+          "shares": 1400,
+          "availableShares": 1400,
+          "costPrice": 46.35,
+          "lastPrice": 48.21,
+          "openedAt": "2026-08-26",
+          "reason": "核心连接器业务纯度较高",
+          "stopLoss": 43.11,
+          "targetPrice": 52.4,
+          "holdingDays": 4,
+          "marketValue": 67494,
+          "unrealizedPnl": 2604,
+          "returnPct": 4.01
+        }
+      ],
+      "tradeHistory": [
+        {
+          "id": "T-0825-600118",
+          "tradeDate": "2026-08-25",
+          "code": "600118",
+          "name": "中国卫星",
+          "side": "BUY",
+          "shares": 2500,
+          "price": 30.82,
+          "fees": 23.12,
+          "reason": "热点分与盘面确认同时超过阈值"
+        },
+        {
+          "id": "T-0826-002025",
+          "tradeDate": "2026-08-26",
+          "code": "002025",
+          "name": "航天电器",
+          "side": "BUY",
+          "shares": 1400,
+          "price": 46.35,
+          "fees": 19.47,
+          "reason": "商业航天题材扩散至核心零部件"
+        }
+      ],
+      "nav": [
+        {
+          "date": "2026-08-26",
+          "totalAsset": 999957.41,
+          "benchmark": 1
+        },
+        {
+          "date": "2026-08-27",
+          "totalAsset": 1006480,
+          "benchmark": 1.003
+        },
+        {
+          "date": "2026-08-28",
+          "totalAsset": 1005784,
+          "benchmark": 1.003
+        },
+        {
+          "date": "2026-08-29",
+          "totalAsset": 1005784,
+          "benchmark": 1.004
+        },
+        {
+          "date": "2026-08-30",
+          "totalAsset": 1005784,
+          "benchmark": 1.005
+        }
+      ],
+      "nextPlan": {
+        "generatedAt": "2026-08-30T15:35:00+08:00",
+        "executeOn": "2026-08-31",
+        "status": "READY",
+        "orders": [
+          {
+            "code": "600118",
+            "name": "中国卫星",
+            "theme": "商业航天",
+            "side": "BUY",
+            "targetWeight": 0.1,
+            "priority": 1,
+            "maxOpenMove": 4,
+            "reason": "卫星制造核心标的，题材收入关联明确；量价同步放大。",
+            "cancelIf": "题材热度低于73或出现重大负面公告"
+          },
+          {
+            "code": "002025",
+            "name": "航天电器",
+            "theme": "商业航天",
+            "side": "BUY",
+            "targetWeight": 0.08,
+            "priority": 2,
+            "maxOpenMove": 4,
+            "reason": "高可靠连接器直接受益，机构关注度与成交额同步回升。",
+            "cancelIf": "题材热度低于69或出现重大负面公告"
+          },
+          {
+            "code": "300750",
+            "name": "宁德时代",
+            "theme": "固态电池",
+            "side": "BUY",
+            "targetWeight": 0.06,
+            "priority": 3,
+            "maxOpenMove": 4,
+            "reason": "技术路线与产业化进度具备验证信息，基本面承载能力强。",
+            "cancelIf": "题材热度低于67或出现重大负面公告"
+          }
+        ]
+      },
+      "todayOrders": [],
+      "todayTrades": [],
+      "summary": {
+        "totalAsset": 1005784,
+        "cash": 857140,
+        "marketValue": 148644,
+        "dailyPnl": 0,
+        "cumulativePnl": 5784,
+        "cumulativeReturn": 0.58,
+        "positionRate": 14.8,
+        "maxDrawdown": -0.07,
+        "winRate": 0
+      },
+      "marketClosed": true
+    },
+    {
+      "accountId": "assisted",
+      "name": "人工增强账户",
+      "type": "ASSISTED",
+      "enabled": false,
+      "status": "READY_FOR_MANUAL_INPUT",
+      "initialCapital": 1000000,
+      "summary": {
+        "totalAsset": 1000000,
+        "cash": 1000000,
+        "marketValue": 0,
+        "cumulativePnl": 0,
+        "cumulativeReturn": 0,
+        "positionRate": 0,
+        "maxDrawdown": 0,
+        "winRate": 0
+      },
+      "positions": [],
+      "todayOrders": [],
+      "todayTrades": [],
+      "tradeHistory": [],
+      "nav": [
+        {
+          "date": "2026-08-28",
+          "totalAsset": 1000000,
+          "benchmark": 1
+        }
+      ],
+      "nextPlan": null
+    }
+  ],
+  "comparison": {
+    "modelReturn": 0.58,
+    "assistedReturn": 0,
+    "benchmarkReturn": 0.49999999999998934
+  }
+}

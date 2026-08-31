@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "snapshotId": "2026-08-30T133500+0800",
+    "asOf": "2026-08-30T13:35:00+08:00",
+    "tradeDate": "2026-08-30",
+    "modelVersion": "dual-list-v0.5.0",
+    "status": "complete",
+    "mode": "real",
+    "provider": "longbridge",
+    "capturedAt": "2026-08-30T10:10:35.566Z"
+  },
+  "summary": {
+    "total": 7,
+    "official": 0,
+    "confirmed": 3,
+    "duplicateRate": 0
+  },
+  "events": [
+    {
+      "id": "lb-news-297409463",
+      "time": "22:51",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "白酒行业销售与消费场景变化引发关注",
+      "summary": "行业处于调整阶段，低度酒与新消费场景需求受到讨论。",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "食品饮料"
+      ],
+      "relatedStocks": [
+        "600519"
+      ],
+      "url": "https://longbridge.com/news/297409463"
+    },
+    {
+      "id": "lb-news-297342105",
+      "time": "22:34",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "白酒上市公司半年报显示行业分化加剧",
+      "summary": "多家白酒公司收入与利润承压，头部公司表现相对稳健。",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "食品饮料"
+      ],
+      "relatedStocks": [
+        "600519"
+      ],
+      "url": "https://longbridge.com/news/297342105"
+    },
+    {
+      "id": "lb-news-297149039",
+      "time": "16:21",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "A股大额回购计划执行进度受到市场关注",
+      "summary": "市场开始从回购计划规模转向观察实际执行比例。",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "回购"
+      ],
+      "relatedStocks": [
+        "600519"
+      ],
+      "url": "https://longbridge.com/news/297149039"
+    },
+    {
+      "id": "lb-anomaly-0",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "三友化工：大笔买入882手",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "基础化工"
+      ],
+      "relatedStocks": [
+        "600409"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-1",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "中国铁建：大笔买入1107手",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "基建"
+      ],
+      "relatedStocks": [
+        "601186"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-2",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "山煤国际：大笔买入448手",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "煤炭"
+      ],
+      "relatedStocks": [
+        "600546"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-3",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "青岛啤酒：大笔买入101手",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "食品饮料"
+      ],
+      "relatedStocks": [
+        "600600"
+      ],
+      "url": ""
+    }
+  ]
+}

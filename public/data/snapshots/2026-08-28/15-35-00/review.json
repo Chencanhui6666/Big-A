@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "snapshotId": "2026-08-28T153500+0800",
+    "asOf": "2026-08-28T15:35:00+08:00",
+    "tradeDate": "2026-08-28",
+    "modelVersion": "hotspot-v0.2.0",
+    "status": "complete",
+    "mode": "demo"
+  },
+  "metrics": {
+    "precisionAt10": 0.62,
+    "ndcgAt10": 0.71,
+    "avgExcess1d": 0.86,
+    "avgExcess3d": 1.74,
+    "maxDrawdown": -6.8,
+    "samples": 184
+  },
+  "periods": [
+    {
+      "label": "近5日",
+      "signals": 48,
+      "hitRate": 64.6,
+      "excess": 2.18
+    },
+    {
+      "label": "近20日",
+      "signals": 184,
+      "hitRate": 62,
+      "excess": 1.74
+    },
+    {
+      "label": "近60日",
+      "signals": 527,
+      "hitRate": 57.9,
+      "excess": 1.21
+    }
+  ],
+  "recentPredictions": [
+    {
+      "date": "2026-08-28",
+      "theme": "商业航天",
+      "score": 88,
+      "outcome": "观察中",
+      "excess": null
+    },
+    {
+      "date": "2026-08-29",
+      "theme": "固态电池",
+      "score": 79,
+      "outcome": "命中",
+      "excess": 2.34
+    },
+    {
+      "date": "2026-08-28",
+      "theme": "机器人",
+      "score": 76,
+      "outcome": "命中",
+      "excess": 1.68
+    },
+    {
+      "date": "2026-08-27",
+      "theme": "创新药",
+      "score": 71,
+      "outcome": "未命中",
+      "excess": -1.12
+    }
+  ],
+  "notes": [
+    "政策类事件在1—3日窗口表现较好",
+    "高拥挤题材次日分化概率上升",
+    "当前为演示统计，接入真实数据后重新计算"
+  ]
+}

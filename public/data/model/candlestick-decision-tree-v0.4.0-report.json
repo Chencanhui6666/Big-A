@@ -1,0 +1,179 @@
+{
+  "modelId": "candlestick-decision-tree-v0.4.0",
+  "status": "RESEARCH_ONLY",
+  "trainedAt": "2026-08-30T15:55:13.563Z",
+  "provider": "Longbridge OpenAPI",
+  "objective": "next-session and 3-session excess returns from context-confirmed candlestick leaves",
+  "window": {
+    "dates": 297,
+    "firstDate": "2025-06-02T16:00:00Z",
+    "lastDate": "2026-08-24T16:00:00Z",
+    "testFrom": "2026-06-01T16:00:00Z"
+  },
+  "universe": {
+    "validHistories": 255,
+    "selection": "current high-turnover ordinary-account main-board sample; survivorship bias disclosed"
+  },
+  "tree": {
+    "root": [
+      "ordinary-account tradable",
+      "ret1 below +7%",
+      "signal created after close"
+    ],
+    "leaves": [
+      {
+        "name": "bullish_engulfing",
+        "accepted": false,
+        "train": {
+          "samples": 1970,
+          "oneDayHit": 0.45380710659898477,
+          "oneDayMean": -0.0005260646059732426,
+          "threeDayHit": 0.45532994923857867,
+          "threeDayMean": 0.001450327962940343
+        },
+        "test": {
+          "samples": 563,
+          "oneDayHit": 0.4866785079928952,
+          "oneDayMean": 0.0012077080082876534,
+          "threeDayHit": 0.5737122557726465,
+          "threeDayMean": 0.01350712030751989
+        }
+      },
+      {
+        "name": "piercing",
+        "accepted": false,
+        "train": {
+          "samples": 598,
+          "oneDayHit": 0.4665551839464883,
+          "oneDayMean": 0.0010636281934885694,
+          "threeDayHit": 0.46488294314381273,
+          "threeDayMean": 0.0033794781912289034
+        },
+        "test": {
+          "samples": 178,
+          "oneDayHit": 0.48314606741573035,
+          "oneDayMean": -0.0009871001976134311,
+          "threeDayHit": 0.5449438202247191,
+          "threeDayMean": 0.00985135035355474
+        }
+      },
+      {
+        "name": "hammer",
+        "accepted": false,
+        "train": {
+          "samples": 1346,
+          "oneDayHit": 0.42199108469539376,
+          "oneDayMean": -0.0010405472026537117,
+          "threeDayHit": 0.45839524517087665,
+          "threeDayMean": -0.00009049459905282764
+        },
+        "test": {
+          "samples": 440,
+          "oneDayHit": 0.45454545454545453,
+          "oneDayMean": 0.0003385079772453937,
+          "threeDayHit": 0.4590909090909091,
+          "threeDayMean": -0.0012311181712926994
+        }
+      },
+      {
+        "name": "morning_star",
+        "accepted": false,
+        "train": {
+          "samples": 1770,
+          "oneDayHit": 0.4711864406779661,
+          "oneDayMean": 0.0013089890619578715,
+          "threeDayHit": 0.4887005649717514,
+          "threeDayMean": 0.004822514279459876
+        },
+        "test": {
+          "samples": 422,
+          "oneDayHit": 0.5284360189573459,
+          "oneDayMean": 0.005479563540019328,
+          "threeDayHit": 0.4928909952606635,
+          "threeDayMean": 0.012145939810513314
+        }
+      },
+      {
+        "name": "volume_breakout",
+        "accepted": false,
+        "train": {
+          "samples": 924,
+          "oneDayHit": 0.41883116883116883,
+          "oneDayMean": -0.0001487058054902168,
+          "threeDayHit": 0.45995670995670995,
+          "threeDayMean": 0.0010144709652172583
+        },
+        "test": {
+          "samples": 151,
+          "oneDayHit": 0.4900662251655629,
+          "oneDayMean": 0.007152940636676203,
+          "threeDayHit": 0.5165562913907285,
+          "threeDayMean": 0.01560647570767465
+        }
+      },
+      {
+        "name": "pullback_recovery",
+        "accepted": false,
+        "train": {
+          "samples": 1147,
+          "oneDayHit": 0.4524847428073234,
+          "oneDayMean": 0.0004946517058794917,
+          "threeDayHit": 0.46120313862249346,
+          "threeDayMean": 0.00278695687511524
+        },
+        "test": {
+          "samples": 130,
+          "oneDayHit": 0.5307692307692308,
+          "oneDayMean": 0.012489851212242057,
+          "threeDayHit": 0.6,
+          "threeDayMean": 0.028536296479067094
+        }
+      }
+    ],
+    "acceptedLeaves": [],
+    "scoring": {
+      "acceptedPatternBonus": 10,
+      "volumeConfirmationBonus": 5,
+      "closeLocationBonus": 5,
+      "noPatternBonus": 0
+    },
+    "executionGuard": "next-open gap >3% cancels simulated entry"
+  },
+  "metrics": {
+    "train": {
+      "samples": 0,
+      "oneDayHit": null,
+      "oneDayMean": null,
+      "threeDayHit": null,
+      "threeDayMean": null
+    },
+    "test": {
+      "samples": 0,
+      "oneDayHit": null,
+      "oneDayMean": null,
+      "threeDayHit": null,
+      "threeDayMean": null
+    }
+  },
+  "promotionGate": {
+    "requirements": {
+      "leafTrainSamples": ">=200",
+      "leafTrainOneDayHit": ">=52.5%",
+      "leafTrainThreeDayHit": ">=53%",
+      "leafTrainThreeDayMean": ">0.2%",
+      "overallTestSamples": ">=100",
+      "overallTestOneDayHit": ">=52%",
+      "overallTestThreeDayHit": ">=53%",
+      "overallTestThreeDayMean": ">0.2%"
+    },
+    "passed": false,
+    "decision": "研究留存，不接管候选排序或模拟盘"
+  },
+  "limitations": [
+    "仅一年数据与当前存续高换手样本",
+    "同一股票的重叠3日标签存在相关性",
+    "未完整模拟涨跌停无法成交与冲击成本",
+    "行业广度和历史新闻时点尚未加入回测"
+  ]
+}
+

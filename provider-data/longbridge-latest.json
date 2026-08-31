@@ -1,0 +1,33 @@
+{
+  "provider": "longbridge",
+  "capturedAt": "2026-08-30T13:35:00+08:00",
+  "quoteTimestamp": "2026-08-28T15:00:01+08:00",
+  "market": {
+    "temperature": 68,
+    "description": "中性且稳定",
+    "valuation": 82,
+    "sentiment": 54
+  },
+  "quotes": [
+    { "symbol": "600409.SH", "name": "三友化工", "theme": "基础化工", "last": 7.44, "prevClose": 7.10, "open": 7.12, "high": 7.50, "low": 7.09, "volume": 578390, "turnover": 424222979, "timestamp": "2026-08-28T07:00:00Z", "tradeStatus": "Normal", "signalStrength": 3, "anomalyReason": "大笔买入" },
+    { "symbol": "601186.SH", "name": "中国铁建", "theme": "基建", "last": 6.10, "prevClose": 6.07, "open": 6.07, "high": 6.12, "low": 6.05, "volume": 251787, "turnover": 153325618, "timestamp": "2026-08-28T07:00:01Z", "tradeStatus": "Normal", "signalStrength": 3, "anomalyReason": "大笔买入" },
+    { "symbol": "600546.SH", "name": "山煤国际", "theme": "煤炭", "last": 13.99, "prevClose": 13.97, "open": 13.95, "high": 14.10, "low": 13.75, "volume": 168440, "turnover": 234796179, "timestamp": "2026-08-28T07:00:00Z", "tradeStatus": "Normal", "signalStrength": 3, "anomalyReason": "大笔买入" },
+    { "symbol": "600600.SH", "name": "青岛啤酒", "theme": "食品饮料", "last": 51.14, "prevClose": 50.99, "open": 50.93, "high": 51.37, "low": 50.79, "volume": 38331, "turnover": 195982919, "timestamp": "2026-08-28T07:00:01Z", "tradeStatus": "Normal", "signalStrength": 3, "anomalyReason": "大笔买入" },
+    { "symbol": "002495.SZ", "name": "佳隆股份", "theme": "食品饮料", "last": 2.45, "prevClose": 2.40, "open": 2.40, "high": 2.46, "low": 2.38, "volume": 213735, "turnover": 51880149, "timestamp": "2026-08-28T07:00:00Z", "tradeStatus": "Normal", "signalStrength": 2, "anomalyReason": "波动超20日均值" },
+    { "symbol": "001368.SZ", "name": "通达创智", "theme": "消费制造", "last": 23.25, "prevClose": 22.73, "open": 22.88, "high": 23.30, "low": 22.80, "volume": 11386, "turnover": 26274386, "timestamp": "2026-08-28T07:00:00Z", "tradeStatus": "Normal", "signalStrength": 2, "anomalyReason": "波动超20日均值" },
+    { "symbol": "002404.SZ", "name": "嘉欣丝绸", "theme": "纺织服装", "last": 5.84, "prevClose": 5.74, "open": 5.74, "high": 5.85, "low": 5.72, "volume": 68009, "turnover": 39377912.15, "timestamp": "2026-08-28T07:00:00Z", "tradeStatus": "Normal", "signalStrength": 2, "anomalyReason": "波动超20日均值" },
+    { "symbol": "600519.SH", "name": "贵州茅台", "theme": "食品饮料", "last": 1297.40, "prevClose": 1292.30, "open": 1289.00, "high": 1297.89, "low": 1288.00, "volume": 16126, "turnover": 2086008422, "timestamp": "2026-08-28T07:00:00Z", "tradeStatus": "Normal", "signalStrength": 1, "anomalyReason": "个股新闻活跃" },
+    { "symbol": "000001.SZ", "name": "平安银行", "theme": "银行", "last": 11.65, "prevClose": 11.59, "open": 11.54, "high": 11.68, "low": 11.48, "volume": 838126, "turnover": 973220511.51, "timestamp": "2026-08-28T07:00:00Z", "tradeStatus": "Normal", "signalStrength": 1, "anomalyReason": "成交活跃" }
+  ],
+  "anomalies": [
+    { "symbol": "600409.SH", "name": "三友化工", "theme": "基础化工", "reason": "大笔买入882手", "time": "2026-08-28T06:56:59Z" },
+    { "symbol": "601186.SH", "name": "中国铁建", "theme": "基建", "reason": "大笔买入1107手", "time": "2026-08-28T06:56:59Z" },
+    { "symbol": "600546.SH", "name": "山煤国际", "theme": "煤炭", "reason": "大笔买入448手", "time": "2026-08-28T06:56:59Z" },
+    { "symbol": "600600.SH", "name": "青岛啤酒", "theme": "食品饮料", "reason": "大笔买入101手", "time": "2026-08-28T06:56:58Z" }
+  ],
+  "news": [
+    { "id": "297409463", "title": "白酒行业销售与消费场景变化引发关注", "summary": "行业处于调整阶段，低度酒与新消费场景需求受到讨论。", "source": "Longbridge资讯", "publishedAt": "2026-08-29T14:51:28Z", "url": "https://longbridge.com/news/297409463", "relatedSymbols": ["600519.SH"], "themes": ["食品饮料"] },
+    { "id": "297342105", "title": "白酒上市公司半年报显示行业分化加剧", "summary": "多家白酒公司收入与利润承压，头部公司表现相对稳健。", "source": "Longbridge资讯", "publishedAt": "2026-08-28T14:34:08Z", "url": "https://longbridge.com/news/297342105", "relatedSymbols": ["600519.SH"], "themes": ["食品饮料"] },
+    { "id": "297149039", "title": "A股大额回购计划执行进度受到市场关注", "summary": "市场开始从回购计划规模转向观察实际执行比例。", "source": "Longbridge资讯", "publishedAt": "2026-08-27T08:21:11Z", "url": "https://longbridge.com/news/297149039", "relatedSymbols": ["600519.SH"], "themes": ["回购"] }
+  ]
+}

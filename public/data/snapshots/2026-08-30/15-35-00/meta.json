@@ -1,0 +1,15 @@
+{
+  "snapshotId": "2026-08-30T153500+0800",
+  "asOf": "2026-08-30T15:35:00+08:00",
+  "tradeDate": "2026-08-30",
+  "modelVersion": "hotspot-v0.2.0",
+  "status": "complete",
+  "mode": "demo",
+  "files": {
+    "radar": "radar.json",
+    "candidates": "candidates.json",
+    "evidence": "evidence.json",
+    "review": "review.json",
+    "portfolio": "portfolio.json"
+  }
+}

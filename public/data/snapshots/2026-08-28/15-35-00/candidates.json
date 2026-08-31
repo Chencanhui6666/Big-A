@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "snapshotId": "2026-08-28T153500+0800",
+    "asOf": "2026-08-28T15:35:00+08:00",
+    "tradeDate": "2026-08-28",
+    "modelVersion": "hotspot-v0.2.0",
+    "status": "complete",
+    "mode": "demo"
+  },
+  "stocks": [
+    {
+      "code": "600118",
+      "name": "中国卫星",
+      "theme": "商业航天",
+      "score": 86,
+      "catalyst": 91,
+      "confirmation": 78,
+      "price": 32.46,
+      "move": 5.62,
+      "reason": "卫星制造核心标的，题材收入关联明确；量价同步放大。",
+      "risk": "前期累计涨幅偏高",
+      "horizon": "1-3日"
+    },
+    {
+      "code": "002025",
+      "name": "航天电器",
+      "theme": "商业航天",
+      "score": 82,
+      "catalyst": 86,
+      "confirmation": 73,
+      "price": 48.21,
+      "move": 3.18,
+      "reason": "高可靠连接器直接受益，机构关注度与成交额同步回升。",
+      "risk": "板块分化时弹性有限",
+      "horizon": "1-3日"
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "theme": "固态电池",
+      "score": 74,
+      "catalyst": 88,
+      "confirmation": 61,
+      "price": 286.4,
+      "move": 1.74,
+      "reason": "技术路线与产业化进度具备验证信息，基本面承载能力强。",
+      "risk": "大市值导致短线弹性较弱",
+      "horizon": "5-10日"
+    },
+    {
+      "code": "688017",
+      "name": "绿的谐波",
+      "theme": "人形机器人",
+      "score": 74,
+      "catalyst": 79,
+      "confirmation": 64,
+      "price": 146.88,
+      "move": 2.91,
+      "reason": "核心零部件业务纯度较高，历史上多次充当板块中军。",
+      "risk": "估值处于历史高分位",
+      "horizon": "1-3日"
+    }
+  ]
+}

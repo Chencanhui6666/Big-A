@@ -1,0 +1,135 @@
+{
+  "modelId": "one-year-rank-ridge-v0.2.0",
+  "status": "RESEARCH_ONLY",
+  "trainedAt": "2026-08-30T13:01:30.350Z",
+  "provider": "Longbridge OpenAPI",
+  "objective": "next-open to third-close excess return cross-sectional ranking",
+  "universe": {
+    "screenedRows": 1200,
+    "selected": 500,
+    "validHistories": 490,
+    "selection": "current top-turnover ordinary-account Shanghai/Shenzhen main-board sample; survivorship/selection bias disclosed"
+  },
+  "window": {
+    "barsRequested": 320,
+    "dates": 257,
+    "firstDate": "2025-08-04T16:00:00Z",
+    "lastDate": "2026-08-24T16:00:00Z",
+    "trainBefore": "2026-03-26T16:00:00Z",
+    "validationBefore": "2026-06-11T16:00:00Z"
+  },
+  "features": [
+    "ret1",
+    "ret3",
+    "ret5",
+    "ret10",
+    "ret20",
+    "ret60",
+    "px_ma5",
+    "px_ma10",
+    "px_ma20",
+    "px_ma60",
+    "ma20_slope5",
+    "vol_ratio5",
+    "vol_ratio20",
+    "vol_z20",
+    "atr14",
+    "volatility20",
+    "clv",
+    "gap",
+    "intraday",
+    "drawdown20",
+    "dist_high20",
+    "dist_high60",
+    "efficiency20",
+    "range_ratio5_20",
+    "turnover_ratio5_20",
+    "abs_ret1",
+    "limit_proximity"
+  ],
+  "preprocessing": "per-date cross-sectional rank to [-1,1]; no future-date normalization",
+  "model": {
+    "type": "ridge rank ensemble",
+    "lambdaScale": 0.3,
+    "momentumBlend": 0.6,
+    "weights": [
+      2.111178931908387e-17,
+      -0.0008314488111543129,
+      0.007254933955482112,
+      -0.004788333101859404,
+      -0.009464974444384006,
+      0.005805130562844877,
+      -0.003933180968563524,
+      0.008727404821611459,
+      -0.001284618418090276,
+      -0.0035278075945772195,
+      -0.0026274727556106995,
+      0.003788982785332489,
+      0.0005016317230000926,
+      -0.002688493409005364,
+      -0.002426446129522868,
+      -0.006133132646139518,
+      -0.005284037419297454,
+      -0.003678286221213701,
+      0.005282357033372943,
+      -0.006850492062662912,
+      0.007665027209591231,
+      0.007665027209591233,
+      0.008766357826376617,
+      0.014619279465363252,
+      -0.0002770887856309169,
+      -0.005231241530077506,
+      -0.004100457552856408,
+      0.001187618439434395
+    ],
+    "blendFormula": "0.55*ret20_rank + 0.25*vol_ratio5_rank - 0.20*ret1_rank - 0.20*limit_proximity_rank"
+  },
+  "metrics": {
+    "trainSamples": 74072,
+    "validationSamples": 24898,
+    "testSamples": 25465,
+    "validation": {
+      "ic": 0.0933765786417317,
+      "top10MeanExcess": 0.016104123728957115,
+      "top10HitRate": 0.5490196078431373,
+      "testDays": 51
+    },
+    "test": {
+      "ic": 0.0059910352062457015,
+      "top10MeanExcess": 0.009551149343240502,
+      "top10HitRate": 0.49807692307692303,
+      "testDays": 52
+    },
+    "baselines": {
+      "ret20": {
+        "ic": 0.004824996901767552,
+        "top10MeanExcess": 0.01834121532493988,
+        "top10HitRate": 0.5480769230769229,
+        "testDays": 52
+      },
+      "oneDayReversal": {
+        "ic": -0.04240521686870061,
+        "top10MeanExcess": -0.002836199513489427,
+        "top10HitRate": 0.4596153846153846,
+        "testDays": 52
+      }
+    }
+  },
+  "promotionGate": {
+    "requirements": {
+      "ic": "> 0",
+      "top10MeanExcess": "> 0",
+      "top10HitRate": ">= 0.53"
+    },
+    "passed": false,
+    "decision": "研究留存；不驱动候选排序或模拟盘"
+  },
+  "limitations": [
+    "仅一年行情，市场状态覆盖有限",
+    "使用当前高换手存续股票，存在幸存者与样本选择偏差",
+    "历史逐笔主动买卖/资金流未纳入",
+    "最终测试仅约20%交易日，需更长样本确认稳定性",
+    "交易成本、涨跌停无法成交与冲击成本尚未完整仿真"
+  ]
+}
+

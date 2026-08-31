@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "snapshotId": "2026-08-29T153500+0800",
+    "asOf": "2026-08-29T15:35:00+08:00",
+    "tradeDate": "2026-08-29",
+    "modelVersion": "hotspot-v0.2.0",
+    "status": "complete",
+    "mode": "demo"
+  },
+  "summary": {
+    "total": 135,
+    "official": 12,
+    "confirmed": 18,
+    "duplicateRate": 0.41
+  },
+  "events": [
+    {
+      "id": "evt-policy-space",
+      "time": "09:42",
+      "level": "S",
+      "source": "部委官网",
+      "title": "商业航天产业配套政策进入公开征求意见阶段",
+      "tags": [
+        "政策",
+        "首次"
+      ],
+      "relatedThemes": [
+        "商业航天"
+      ],
+      "relatedStocks": [
+        "600118",
+        "002025"
+      ],
+      "url": "#"
+    },
+    {
+      "id": "evt-order-space",
+      "time": "09:36",
+      "level": "A",
+      "source": "公司公告",
+      "title": "产业链公司披露新增卫星载荷相关订单",
+      "tags": [
+        "订单",
+        "确认"
+      ],
+      "relatedThemes": [
+        "商业航天"
+      ],
+      "relatedStocks": [
+        "600118"
+      ],
+      "url": "#"
+    },
+    {
+      "id": "evt-market-space",
+      "time": "09:18",
+      "level": "B",
+      "source": "财经媒体",
+      "title": "卫星互联网产业链开盘活跃，板块成交快速放大",
+      "tags": [
+        "盘面",
+        "扩散"
+      ],
+      "relatedThemes": [
+        "商业航天"
+      ],
+      "relatedStocks": [
+        "600118",
+        "002025"
+      ],
+      "url": "#"
+    },
+    {
+      "id": "evt-battery",
+      "time": "08:57",
+      "level": "A",
+      "source": "行业协会",
+      "title": "固态电池行业规范公开征求意见",
+      "tags": [
+        "产业",
+        "政策"
+      ],
+      "relatedThemes": [
+        "固态电池"
+      ],
+      "relatedStocks": [
+        "300750"
+      ],
+      "url": "#"
+    }
+  ]
+}
