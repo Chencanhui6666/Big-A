@@ -458,6 +458,34 @@ const review = providerInput ? {
 const files = { radar: 'radar.json', candidates: 'candidates.json', evidence: 'evidence.json', review: 'review.json', portfolio: 'portfolio.json' };
 const payloads = { radar, candidates, evidence, review, portfolio };
 
+const refreshTimestamps = {
+  radar: providerInput?.quoteTimestamp ?? meta.asOf,
+  candidates: providerInput?.quoteTimestamp ?? meta.asOf,
+  evidence: providerInput?.news?.map((item) => item.publishedAt).filter(Boolean).sort().at(-1) ?? meta.asOf,
+  review: meta.asOf,
+  portfolio: meta.asOf,
+};
+for (const [tab, payload] of Object.entries(payloads)) {
+  payload.refresh = { tab, snapshotId: meta.snapshotId, updatedAt: meta.asOf, sourceTimestamp: refreshTimestamps[tab], mode: meta.mode, status: 'refreshed' };
+}
+
+function assertAllTabsRefreshed() {
+  for (const [tab, payload] of Object.entries(payloads)) {
+    if (payload.meta?.snapshotId !== meta.snapshotId || payload.refresh?.snapshotId !== meta.snapshotId || payload.refresh?.status !== 'refreshed') {
+      throw new Error(`${tab} tab was not refreshed for the current snapshot`);
+    }
+  }
+  if (!providerInput) return;
+  if (!radar.themes.length || !radar.sourceHealth.quoteTimestamp) throw new Error('radar tab has no current quote-backed content');
+  if (!Array.isArray(candidates.lists?.hotspot?.stocks) || !Array.isArray(candidates.lists?.trend?.stocks) || candidates.coverage?.deepQuoteCount < 100) throw new Error('candidates tab is incomplete');
+  if (!Array.isArray(evidence.events) || !Array.isArray(providerInput.anomalies) || !Array.isArray(providerInput.news)) throw new Error('evidence tab is incomplete');
+  if (!review.dailySignalReview?.summary || !Array.isArray(review.dailySignalReview.signals)) throw new Error('review tab daily ledger is incomplete');
+  const model = portfolio.accounts?.find((account) => account.accountId === 'model');
+  if (!model?.nav?.some((point) => point.date === tradeDate) || !model.nextPlan?.generatedAt) throw new Error('portfolio tab has not been refreshed for the trade date');
+}
+
+assertAllTabsRefreshed();
+
 async function atomicJson(path, value) {
   await mkdir(dirname(path), { recursive: true });
   const temp = `${path}.tmp-${process.pid}`;

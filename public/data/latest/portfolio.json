@@ -1,7 +1,7 @@
 {
   "meta": {
-    "snapshotId": "2026-08-31T190853+0800",
-    "asOf": "2026-08-31T19:08:53+08:00",
+    "snapshotId": "2026-08-31T221323+0800",
+    "asOf": "2026-08-31T22:13:23+08:00",
     "tradeDate": "2026-08-31",
     "modelVersion": "dual-list-v0.5.0",
     "status": "complete",
@@ -126,11 +126,11 @@
         {
           "date": "2026-08-31",
           "totalAsset": 1002043.06,
-          "benchmark": 1.001
+          "benchmark": 1.004
         }
       ],
       "nextPlan": {
-        "generatedAt": "2026-08-31T19:08:53+08:00",
+        "generatedAt": "2026-08-31T22:13:23+08:00",
         "executeOn": "2026-09-01",
         "status": "READY",
         "orders": [
@@ -199,87 +199,13 @@
           }
         ]
       },
-      "todayOrders": [
-        {
-          "id": "O-2026-08-31-600227",
-          "createdAt": "2026-08-31T19:08:53+08:00",
-          "code": "600227",
-          "name": "赤天化",
-          "side": "BUY",
-          "status": "FILLED",
-          "targetWeight": 0.1,
-          "reason": "全市场初筛第7名；当日涨跌幅 10.10%，成交额 16.01亿元。 来自5012只有效A股的全市场初筛，全市场排名 #7；已通过普通A股账户权限过滤。",
-          "fillPrice": 4.7,
-          "shares": 21200,
-          "fees": 29.89
-        },
-        {
-          "id": "O-2026-08-31-002742",
-          "createdAt": "2026-08-31T19:08:53+08:00",
-          "code": "002742",
-          "name": "冀衡医药",
-          "side": "BUY",
-          "status": "FILLED",
-          "targetWeight": 0.08,
-          "reason": "全市场初筛第5名；当日涨跌幅 10.05%，成交额 13.45亿元。 来自5012只有效A股的全市场初筛，全市场排名 #5；已通过普通A股账户权限过滤。",
-          "fillPrice": 5.63,
-          "shares": 14300,
-          "fees": 24.15
-        },
-        {
-          "id": "O-2026-08-31-600354",
-          "createdAt": "2026-08-31T19:08:53+08:00",
-          "code": "600354",
-          "name": "敦煌种业",
-          "side": "BUY",
-          "status": "FILLED",
-          "targetWeight": 0.06,
-          "reason": "全市场初筛第13名；当日涨跌幅 10.05%，成交额 8.70亿元。 来自5012只有效A股的全市场初筛，全市场排名 #13；已通过普通A股账户权限过滤。",
-          "fillPrice": 9.04,
-          "shares": 6600,
-          "fees": 17.9
-        }
-      ],
-      "todayTrades": [
-        {
-          "id": "T-2026-08-31-600227",
-          "tradeDate": "2026-08-31",
-          "code": "600227",
-          "name": "赤天化",
-          "side": "BUY",
-          "shares": 21200,
-          "price": 4.7,
-          "fees": 29.89,
-          "reason": "全市场初筛第7名；当日涨跌幅 10.10%，成交额 16.01亿元。 来自5012只有效A股的全市场初筛，全市场排名 #7；已通过普通A股账户权限过滤。"
-        },
-        {
-          "id": "T-2026-08-31-002742",
-          "tradeDate": "2026-08-31",
-          "code": "002742",
-          "name": "冀衡医药",
-          "side": "BUY",
-          "shares": 14300,
-          "price": 5.63,
-          "fees": 24.15,
-          "reason": "全市场初筛第5名；当日涨跌幅 10.05%，成交额 13.45亿元。 来自5012只有效A股的全市场初筛，全市场排名 #5；已通过普通A股账户权限过滤。"
-        },
-        {
-          "id": "T-2026-08-31-600354",
-          "tradeDate": "2026-08-31",
-          "code": "600354",
-          "name": "敦煌种业",
-          "side": "BUY",
-          "shares": 6600,
-          "price": 9.04,
-          "fees": 17.9,
-          "reason": "全市场初筛第13名；当日涨跌幅 10.05%，成交额 8.70亿元。 来自5012只有效A股的全市场初筛，全市场排名 #13；已通过普通A股账户权限过滤。"
-        }
-      ],
+      "todayOrders": [],
+      "todayTrades": [],
       "summary": {
         "totalAsset": 1002043.06,
         "cash": 760115.06,
         "marketValue": 241928,
-        "dailyPnl": 2043.06,
+        "dailyPnl": 0,
         "cumulativePnl": 2043.06,
         "cumulativeReturn": 0.2,
         "positionRate": 24.1,
@@ -322,6 +248,14 @@
   "comparison": {
     "modelReturn": 0.2,
     "assistedReturn": 0,
-    "benchmarkReturn": 0.09999999999998899
+    "benchmarkReturn": 0.40000000000000036
+  },
+  "refresh": {
+    "tab": "portfolio",
+    "snapshotId": "2026-08-31T221323+0800",
+    "updatedAt": "2026-08-31T22:13:23+08:00",
+    "sourceTimestamp": "2026-08-31T22:13:23+08:00",
+    "mode": "real",
+    "status": "refreshed"
   }
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "snapshotId": "2026-08-31T190853+0800",
-    "asOf": "2026-08-31T19:08:53+08:00",
+    "snapshotId": "2026-08-31T221323+0800",
+    "asOf": "2026-08-31T22:13:23+08:00",
     "tradeDate": "2026-08-31",
     "modelVersion": "dual-list-v0.5.0",
     "status": "complete",
@@ -93,5 +93,13 @@
     "total": 3,
     "delayedSources": [],
     "quoteTimestamp": "2026-08-31T07:00:00Z"
+  },
+  "refresh": {
+    "tab": "radar",
+    "snapshotId": "2026-08-31T221323+0800",
+    "updatedAt": "2026-08-31T22:13:23+08:00",
+    "sourceTimestamp": "2026-08-31T07:00:00Z",
+    "mode": "real",
+    "status": "refreshed"
   }
 }

@@ -1,0 +1,708 @@
+{
+  "meta": {
+    "snapshotId": "2026-08-31T221323+0800",
+    "asOf": "2026-08-31T22:13:23+08:00",
+    "tradeDate": "2026-08-31",
+    "modelVersion": "dual-list-v0.5.0",
+    "status": "complete",
+    "mode": "real",
+    "provider": "longbridge",
+    "capturedAt": "2026-08-31T08:03:17.607Z"
+  },
+  "summary": {
+    "total": 130,
+    "official": 0,
+    "confirmed": 30,
+    "duplicateRate": 0
+  },
+  "events": [
+    {
+      "id": "lb-news-297377856",
+      "time": "09:22",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "GLORIA PHARMA has given up the exclusive promotion rights for a classic original research drug. WuXi AppTec China: has signed a contract with a new partner",
+      "summary": "Longbridge资讯：GLORIA PHARMA has given up the exclusive promotion rights for a classic original research drug. WuXi AppTec China: has s",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/297377856"
+    },
+    {
+      "id": "lb-news-297317290",
+      "time": "19:30",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "Capital focuses on pharmaceutical manufacturing! Chemical pharmaceuticals reversed in the late trading session, with policies safeguarding the industry chain to seize opportunities",
+      "summary": "Longbridge资讯：Capital focuses on pharmaceutical manufacturing! Chemical pharmaceuticals reversed in the late trading session, with pol",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/297317290"
+    },
+    {
+      "id": "lb-news-297275947",
+      "time": "14:42",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "The chemical pharmaceutical sector rebounded from a low at the end of the trading session, with GLORIA PHARMA hitting the limit up",
+      "summary": "Longbridge资讯：The chemical pharmaceutical sector rebounded from a low at the end of the trading session, with GLORIA PHARMA hitting th",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/297275947"
+    },
+    {
+      "id": "lb-news-297058737",
+      "time": "22:02",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "GLORIA PHARMA released its semi-annual performance report, with a net profit attributable to the parent company of 159 million yuan, a year-on-year increase of 18.27%",
+      "summary": "Longbridge资讯：GLORIA PHARMA released its semi-annual performance report, with a net profit attributable to the parent company of 159 m",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/297058737"
+    },
+    {
+      "id": "lb-news-296849095",
+      "time": "10:17",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "The innovative drug sector continues to rise, Hansen Pharmaceutical has achieved 5 consecutive limit-ups",
+      "summary": "Longbridge资讯：The innovative drug sector continues to rise, Hansen Pharmaceutical has achieved 5 consecutive limit-ups",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/296849095"
+    },
+    {
+      "id": "lb-news-296846740",
+      "time": "09:48",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "The pharmaceutical sector experiences localized fluctuations, with JiHeng Pharmaceutical hitting the daily limit",
+      "summary": "Longbridge资讯：The pharmaceutical sector experiences localized fluctuations, with JiHeng Pharmaceutical hitting the daily limit",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/296846740"
+    },
+    {
+      "id": "lb-news-296504261",
+      "time": "19:53",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "431 million funds rush to acquire GLORIA PHARMA, institutions frantically buy Shennong Seed Industry | Dragon and Tiger List",
+      "summary": "Longbridge资讯：431 million funds rush to acquire GLORIA PHARMA, institutions frantically buy Shennong Seed Industry | Dragon and Tiger ",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/296504261"
+    },
+    {
+      "id": "lb-news-296453616",
+      "time": "15:46",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "August 20th Continuous Board Stock Analysis: The promotion rate of continuous board stocks is only 14%, and pharmaceutical stocks have all exploded",
+      "summary": "Longbridge资讯：August 20th Continuous Board Stock Analysis: The promotion rate of continuous board stocks is only 14%, and pharmaceutic",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/296453616"
+    },
+    {
+      "id": "lb-news-296449851",
+      "time": "15:13",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "Analysis of the Limit-Up on August 20",
+      "summary": "Longbridge资讯：Analysis of the Limit-Up on August 20",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/296449851"
+    },
+    {
+      "id": "lb-news-296349882",
+      "time": "19:33",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "1.41 billion funds rush to acquire LUXIN, institutions buy GLORIA PHARMA wildly | Dragon and Tiger List",
+      "summary": "Longbridge资讯：1.41 billion funds rush to acquire LUXIN, institutions buy GLORIA PHARMA wildly | Dragon and Tiger List",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/296349882"
+    },
+    {
+      "id": "lb-news-296045136",
+      "time": "10:03",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "The concept of innovative drugs has rebounded, GLORIA PHARMA. has achieved 5 consecutive limit-ups in 7 days",
+      "summary": "Longbridge资讯：The concept of innovative drugs has rebounded, GLORIA PHARMA. has achieved 5 consecutive limit-ups in 7 days",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/296045136"
+    },
+    {
+      "id": "lb-news-295943954",
+      "time": "21:46",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "Top ten bull stocks have changed! The pharmaceutical sector occupies half of the market, with BOJI CRO, AHWB, and 5 other stocks on the list. The only tech stock, LANDUN PHOTOELECT",
+      "summary": "Longbridge资讯：Top ten bull stocks have changed! The pharmaceutical sector occupies half of the market, with BOJI CRO, AHWB, and 5 othe",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/295943954"
+    },
+    {
+      "id": "lb-news-295920874",
+      "time": "18:20",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "List of stocks bought and sold by institutions on the Dragon and Tiger List on August 14, 2026",
+      "summary": "Longbridge资讯：List of stocks bought and sold by institutions on the Dragon and Tiger List on August 14, 2026",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/295920874"
+    },
+    {
+      "id": "lb-news-295867904",
+      "time": "09:36",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "Today's top ten hot stocks in A-shares: Datang Power and TJ lead the way, BHC has 7 boards in 8 days, and GLORIA PHARMA has 4 boards in 5 days, continuing to be popular",
+      "summary": "Longbridge资讯：Today's top ten hot stocks in A-shares: Datang Power and TJ lead the way, BHC has 7 boards in 8 days, and GLORIA PHARMA ",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/295867904"
+    },
+    {
+      "id": "lb-news-295764075",
+      "time": "16:09",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "August 13th Continuous Board Stock Analysis: The promotion rate of continuous board stocks exceeds 50%, inm has achieved 9 boards in 13 days",
+      "summary": "Longbridge资讯：August 13th Continuous Board Stock Analysis: The promotion rate of continuous board stocks exceeds 50%, inm has achieved",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/295764075"
+    },
+    {
+      "id": "lb-news-295751169",
+      "time": "14:02",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "Limit-up sealed order of 552,000 hands! Where did the company's stock price rise of 4 boards in 5 days come from?",
+      "summary": "Longbridge资讯：Limit-up sealed order of 552,000 hands! Where did the company's stock price rise of 4 boards in 5 days come from?",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/295751169"
+    },
+    {
+      "id": "lb-news-295741314",
+      "time": "11:44",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "Midday limit-up and limit-down stock analysis: 56 limit-up stocks, 0 limit-down stocks, CRO concept strengthens, AHWB has 2 boards in 3 days, BOJI CRO and Novoprotein limit-up",
+      "summary": "Longbridge资讯：Midday limit-up and limit-down stock analysis: 56 limit-up stocks, 0 limit-down stocks, CRO concept strengthens, AHWB ha",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/295741314"
+    },
+    {
+      "id": "lb-news-295736923",
+      "time": "11:06",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "A-share innovative drug concept stocks surged, BOJI CRO hit a 20% limit up, Staidson BioPharm rose over 10%",
+      "summary": "Longbridge资讯：A-share innovative drug concept stocks surged, BOJI CRO hit a 20% limit up, Staidson BioPharm rose over 10%",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/295736923"
+    },
+    {
+      "id": "lb-news-295731884",
+      "time": "09:56",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "The concept of innovative drugs fluctuates and rises, GLORIA PHARMA. has 4 limit-ups in 5 days",
+      "summary": "Longbridge资讯：The concept of innovative drugs fluctuates and rises, GLORIA PHARMA. has 4 limit-ups in 5 days",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/295731884"
+    },
+    {
+      "id": "lb-news-295730678",
+      "time": "09:43",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "",
+      "summary": "Longbridge资讯：",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002437"
+      ],
+      "url": "https://longbridge.com/news/295730678"
+    },
+    {
+      "id": "lb-anomaly-0",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "三美股份：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "603379"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-1",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "汇顶科技：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "603160"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-2",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "瑞松科技：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "688090"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-3",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "财达证券：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "600906"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-4",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "科德数控：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "688305"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-5",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "美湖股份：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "603319"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-6",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "中国人寿：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "601628"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-7",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "中孚实业：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "600595"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-8",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "联影医疗：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "688271"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-9",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "金龙鱼：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300999"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-10",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "雄塑科技：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300599"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-11",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "光环新网：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300383"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-12",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "文投控股：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "600715"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-13",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "南兴股份：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002757"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-14",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "兆威机电：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "003021"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-15",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "百川股份：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002455"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-16",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "立新能源：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "001258"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-17",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "北京文化：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "000802"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-18",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "粤电力A：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "000539"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-19",
+      "time": "07:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "杭钢股份：市场异常：未知涨跌%，成交量 未知",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "600126"
+      ],
+      "url": ""
+    }
+  ],
+  "refresh": {
+    "tab": "evidence",
+    "snapshotId": "2026-08-31T221323+0800",
+    "updatedAt": "2026-08-31T22:13:23+08:00",
+    "sourceTimestamp": "2026-08-29T01:22:47Z",
+    "mode": "real",
+    "status": "refreshed"
+  }
+}
