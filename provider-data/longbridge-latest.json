@@ -1,35 +1,288 @@
 {
   "provider": "longbridge",
-  "capturedAt": "2026-08-31T08:03:17.607Z",
-  "quoteTimestamp": "2026-08-31T07:00:00Z",
+  "capturedAt": "2026-09-01T07:45:20.924Z",
+  "quoteTimestamp": "2026-09-01T07:00:00Z",
   "market": {
-    "temperature": 71,
-    "description": "Warm & staying stable",
-    "valuation": 82,
-    "sentiment": 60,
+    "temperature": 73,
+    "description": "Warm & gradually rising",
+    "valuation": 83,
+    "sentiment": 63,
     "status": "Closed",
-    "statusTimestamp": "2026-08-31T07:43:59Z"
+    "statusTimestamp": "2026-09-01T07:41:40Z"
   },
   "quotes": [
     {
-      "symbol": "002437.SZ",
-      "name": "誉衡药业",
-      "theme": "制药",
-      "last": 4.37,
-      "prevClose": 4.86,
-      "open": 4.63,
-      "high": 4.66,
-      "low": 4.37,
-      "volume": 6664977,
-      "turnover": 2943232925.55,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "601123.SH",
+      "name": "N马矿",
+      "theme": "钢铁",
+      "last": 26,
+      "prevClose": 6.65,
+      "open": 23,
+      "high": 30.01,
+      "low": 22.66,
+      "volume": 779923,
+      "turnover": 1978792312,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 72,
-      "universeScore": 119.836,
+      "universeRank": 1,
+      "universeScore": 1233.91,
       "screening": {
-        "turnoverRate": 30.13164305754697,
-        "screeningTurnover": 2943232925.55,
-        "priceChange": -10.082304526748976
+        "turnoverRate": 81.38757985144632,
+        "screeningTurnover": 1978792312,
+        "priceChange": 290.97744360902254
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600103.SH",
+      "name": "青山纸业",
+      "theme": "纸制品",
+      "last": 4.19,
+      "prevClose": 3.81,
+      "open": 3.67,
+      "high": 4.19,
+      "low": 3.67,
+      "volume": 7515033,
+      "turnover": 3039426944,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 64,
+      "universeScore": 109.786,
+      "screening": {
+        "turnoverRate": 33.968875516915816,
+        "screeningTurnover": 3039426944,
+        "priceChange": 9.973753280839913
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "000560.SZ",
+      "name": "我爱我家",
+      "theme": "房地产服务",
+      "last": 3.19,
+      "prevClose": 2.9,
+      "open": 3.05,
+      "high": 3.19,
+      "low": 2.98,
+      "volume": 8686117,
+      "turnover": 2721501093.91,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 39,
+      "universeScore": 109.503,
+      "screening": {
+        "turnoverRate": 36.875881391901906,
+        "screeningTurnover": 2721501093.91,
+        "priceChange": 10.000000000000009
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600272.SH",
+      "name": "开开实业",
+      "theme": "制药",
+      "last": 20.09,
+      "prevClose": 18.26,
+      "open": 18.26,
+      "high": 20.09,
+      "low": 17.96,
+      "volume": 496045,
+      "turnover": 950231454,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 20,
+      "universeScore": 108.977,
+      "screening": {
+        "turnoverRate": 31.0028125,
+        "screeningTurnover": 950231454,
+        "priceChange": 10.021905805038323
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600479.SH",
+      "name": "千金药业",
+      "theme": "制药",
+      "last": 13.37,
+      "prevClose": 12.15,
+      "open": 12.04,
+      "high": 13.37,
+      "low": 11.58,
+      "volume": 1089107,
+      "turnover": 1345867661,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 14,
+      "universeScore": 105.461,
+      "screening": {
+        "turnoverRate": 26.023619569652386,
+        "screeningTurnover": 1345867661,
+        "priceChange": 10.041152263374475
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600354.SH",
+      "name": "敦煌种业",
+      "theme": "农产品",
+      "last": 9.12,
+      "prevClose": 8.29,
+      "open": 8.29,
+      "high": 9.12,
+      "low": 8.29,
+      "volume": 1278393,
+      "turnover": 1120564320,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 26,
+      "universeScore": 102.999,
+      "screening": {
+        "turnoverRate": 24.221067866954975,
+        "screeningTurnover": 1120564320,
+        "priceChange": 10.012062726176119
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600127.SH",
+      "name": "金健米业",
+      "theme": "包装食品和肉类",
+      "last": 13.24,
+      "prevClose": 12.04,
+      "open": 12.05,
+      "high": 13.24,
+      "low": 12.05,
+      "volume": 1388371,
+      "turnover": 1769709616,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 70,
+      "universeScore": 101.217,
+      "screening": {
+        "turnoverRate": 21.633021261082586,
+        "screeningTurnover": 1769709616,
+        "priceChange": 9.966777408637872
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "003040.SZ",
+      "name": "楚天龙",
+      "theme": "半导体厂商",
+      "last": 19.58,
+      "prevClose": 17.8,
+      "open": 17.86,
+      "high": 19.58,
+      "low": 17.51,
+      "volume": 939378,
+      "turnover": 1751302545.29,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 41,
+      "universeScore": 100.385,
+      "screening": {
+        "turnoverRate": 20.562054711589983,
+        "screeningTurnover": 1751302545.29,
+        "priceChange": 9.999999999999988
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600121.SH",
+      "name": "郑州煤电",
+      "theme": "煤炭和消耗性燃料",
+      "last": 5.4,
+      "prevClose": 4.91,
+      "open": 4.8,
+      "high": 5.4,
+      "low": 4.78,
+      "volume": 2434167,
+      "turnover": 1273877320,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 61,
+      "universeScore": 99.169,
+      "screening": {
+        "turnoverRate": 19.978192303448004,
+        "screeningTurnover": 1273877320,
+        "priceChange": 9.97963340122201
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "001330.SZ",
+      "name": "博纳影业",
+      "theme": "电影和娱乐",
+      "last": 6.17,
+      "prevClose": 5.61,
+      "open": 5.71,
+      "high": 6.17,
+      "low": 5.58,
+      "volume": 2423153,
+      "turnover": 1425893105,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 58,
+      "universeScore": 97.272,
+      "screening": {
+        "turnoverRate": 17.62909809327159,
+        "screeningTurnover": 1425893105,
+        "priceChange": 9.982174688057045
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600785.SH",
+      "name": "新华百货",
+      "theme": "零售商",
+      "last": 12.66,
+      "prevClose": 11.51,
+      "open": 11.37,
+      "high": 12.66,
+      "low": 11.37,
+      "volume": 580687,
+      "turnover": 716662902,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 51,
+      "universeScore": 96.756,
+      "screening": {
+        "turnoverRate": 18.382931150832835,
+        "screeningTurnover": 716662902,
+        "priceChange": 9.991311902693312
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002172.SZ",
+      "name": "澳洋健康",
+      "theme": "工业化学品",
+      "last": 4.74,
+      "prevClose": 4.31,
+      "open": 4.3,
+      "high": 4.74,
+      "low": 4.29,
+      "volume": 1402000,
+      "turnover": 653856538.68,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 62,
+      "universeScore": 96.456,
+      "screening": {
+        "turnoverRate": 18.309269311799753,
+        "screeningTurnover": 653856538.68,
+        "priceChange": 9.976798143851529
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
@@ -38,66 +291,1676 @@
       "symbol": "600722.SH",
       "name": "金牛化工",
       "theme": "工业化学品",
-      "last": 16.8,
-      "prevClose": 15.27,
-      "open": 16,
-      "high": 16.8,
-      "low": 15.64,
-      "volume": 1611018,
-      "turnover": 2635581403,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "last": 18.06,
+      "prevClose": 16.8,
+      "open": 17,
+      "high": 18.47,
+      "low": 17,
+      "volume": 1775688,
+      "turnover": 3115145880,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 90,
-      "universeScore": 116.069,
+      "universeRank": 80,
+      "universeScore": 96.101,
       "screening": {
-        "turnoverRate": 23.680308784719024,
-        "screeningTurnover": 2635581403,
-        "priceChange": 10.019646365422409
+        "turnoverRate": 26.100788535770647,
+        "screeningTurnover": 3115145880,
+        "priceChange": 7.499999999999996
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
     },
     {
-      "symbol": "002396.SZ",
-      "name": "星网锐捷",
-      "theme": "通信设备",
-      "last": 40.36,
-      "prevClose": 36.69,
-      "open": 35.9,
-      "high": 40.36,
-      "low": 35.5,
-      "volume": 1406618,
-      "turnover": 5255444093.44,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "603376.SH",
+      "name": "大明电子",
+      "theme": "汽车零部件及设备",
+      "last": 28.48,
+      "prevClose": 25.89,
+      "open": 26.38,
+      "high": 28.48,
+      "low": 26.23,
+      "volume": 49995,
+      "turnover": 139685538,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 26,
-      "universeScore": 116.494,
+      "universeRank": 35,
+      "universeScore": 95.638,
       "screening": {
-        "turnoverRate": 18.571295830479514,
-        "screeningTurnover": 5255444093.44,
-        "priceChange": 10.002725538293822
+        "turnoverRate": 15.623046923826905,
+        "screeningTurnover": 139685538,
+        "priceChange": 10.003862495171889
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
     },
     {
-      "symbol": "603893.SH",
-      "name": "瑞芯微",
-      "theme": "半导体厂商",
-      "last": 194.59,
-      "prevClose": 176.9,
-      "open": 190,
-      "high": 194.59,
-      "low": 188,
-      "volume": 178273,
-      "turnover": 3436081939,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "600551.SH",
+      "name": "时代出版",
+      "theme": "媒体",
+      "last": 9.08,
+      "prevClose": 8.25,
+      "open": 8.73,
+      "high": 9.08,
+      "low": 8.66,
+      "volume": 1085089,
+      "turnover": 976363286,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 8,
+      "universeScore": 95.403,
+      "screening": {
+        "turnoverRate": 16.00295872059474,
+        "screeningTurnover": 976363286,
+        "priceChange": 10.060606060606059
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "603395.SH",
+      "name": "红四方",
+      "theme": "化肥及农药",
+      "last": 30.9,
+      "prevClose": 29.1,
+      "open": 29.06,
+      "high": 31.5,
+      "low": 29.06,
+      "volume": 239613,
+      "turnover": 730695788,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 94,
+      "universeScore": 94.362,
+      "screening": {
+        "turnoverRate": 36.86353846153846,
+        "screeningTurnover": 730695788,
+        "priceChange": 6.185567010309279
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "603293.SH",
+      "name": "埃泰克",
+      "theme": "汽车零部件及设备",
+      "last": 39.45,
+      "prevClose": 35.86,
+      "open": 36,
+      "high": 39.45,
+      "low": 35.92,
+      "volume": 51360,
+      "turnover": 197721176,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 29,
+      "universeScore": 94.075,
+      "screening": {
+        "turnoverRate": 14.633933270460986,
+        "screeningTurnover": 197721176,
+        "priceChange": 10.011154489682106
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600371.SH",
+      "name": "万向德农",
+      "theme": "农产品",
+      "last": 13.96,
+      "prevClose": 12.69,
+      "open": 13.61,
+      "high": 13.96,
+      "low": 13.2,
+      "volume": 456181,
+      "turnover": 628098313,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 32,
+      "universeScore": 94.068,
+      "screening": {
+        "turnoverRate": 15.591773817580268,
+        "screeningTurnover": 628098313,
+        "priceChange": 10.00788022064618
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002165.SZ",
+      "name": "红宝丽",
+      "theme": "工业化学品",
+      "last": 9.11,
+      "prevClose": 8.59,
+      "open": 8.71,
+      "high": 9.4,
+      "low": 8.5,
+      "volume": 2315170,
+      "turnover": 2036237056.49,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 100,
+      "universeScore": 93.518,
+      "screening": {
+        "turnoverRate": 31.48735176525404,
+        "screeningTurnover": 2036237056.49,
+        "priceChange": 6.053550640279393
+      },
+      "signalStrength": 2,
+      "anomalyReason": "市场异常：大笔买入"
+    },
+    {
+      "symbol": "002703.SZ",
+      "name": "浙江世宝",
+      "theme": "汽车零部件及设备",
+      "last": 18.24,
+      "prevClose": 16.58,
+      "open": 16.64,
+      "high": 18.24,
+      "low": 16.44,
+      "volume": 773074,
+      "turnover": 1352657712.12,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 25,
+      "universeScore": 92.808,
+      "screening": {
+        "turnoverRate": 12.760210251233833,
+        "screeningTurnover": 1352657712.12,
+        "priceChange": 10.012062726176119
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002909.SZ",
+      "name": "集泰股份",
+      "theme": "特种化学品",
+      "last": 6.62,
+      "prevClose": 6.02,
+      "open": 6.28,
+      "high": 6.62,
+      "low": 5.76,
+      "volume": 594463,
+      "turnover": 363752117.47,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 69,
+      "universeScore": 92.757,
+      "screening": {
+        "turnoverRate": 15.242641025641028,
+        "screeningTurnover": 363752117.47,
+        "priceChange": 9.966777408637872
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002084.SZ",
+      "name": "海鸥住工",
+      "theme": "建筑产品",
+      "last": 7.02,
+      "prevClose": 6.38,
+      "open": 7.02,
+      "high": 7.02,
+      "low": 7.02,
+      "volume": 890110,
+      "turnover": 624856995.36,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 18,
+      "universeScore": 92.529,
+      "screening": {
+        "turnoverRate": 13.777597395076747,
+        "screeningTurnover": 624856995.36,
+        "priceChange": 10.031347962382432
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600410.SH",
+      "name": "华胜天成",
+      "theme": "IT咨询",
+      "last": 15.22,
+      "prevClose": 13.84,
+      "open": 14.26,
+      "high": 15.22,
+      "low": 14,
+      "volume": 1363076,
+      "turnover": 2011136812,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 66,
+      "universeScore": 92.316,
+      "screening": {
+        "turnoverRate": 12.431213950537687,
+        "screeningTurnover": 2011136812,
+        "priceChange": 9.97109826589595
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002291.SZ",
+      "name": "遥望科技",
+      "theme": "媒体",
+      "last": 6.01,
+      "prevClose": 5.46,
+      "open": 5.36,
+      "high": 6.01,
+      "low": 5.34,
+      "volume": 1126245,
+      "turnover": 650672188.77,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 4,
+      "universeScore": 91.518,
+      "screening": {
+        "turnoverRate": 12.22570932178831,
+        "screeningTurnover": 650672188.77,
+        "priceChange": 10.07326007326006
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "603533.SH",
+      "name": "掌阅科技",
+      "theme": "应用软件",
+      "last": 24.85,
+      "prevClose": 22.59,
+      "open": 24.7,
+      "high": 24.85,
+      "low": 24.1,
+      "volume": 504683,
+      "turnover": 1249874133,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 33,
+      "universeScore": 91.517,
+      "screening": {
+        "turnoverRate": 11.498898140835307,
+        "screeningTurnover": 1249874133,
+        "priceChange": 10.004426737494464
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "000713.SZ",
+      "name": "国投丰乐",
+      "theme": "化肥及农药",
+      "last": 7.14,
+      "prevClose": 6.49,
+      "open": 6.49,
+      "high": 7.14,
+      "low": 6.47,
+      "volume": 730371,
+      "turnover": 507614180.5,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 23,
+      "universeScore": 90.98,
+      "screening": {
+        "turnoverRate": 11.89500295253383,
+        "screeningTurnover": 507614180.5,
+        "priceChange": 10.015408320493059
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002412.SZ",
+      "name": "汉森制药",
+      "theme": "制药",
+      "last": 11.16,
+      "prevClose": 11.82,
+      "open": 10.68,
+      "high": 11.9,
+      "low": 10.68,
+      "volume": 1484299,
+      "turnover": 1642300468.62,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 3012,
+      "universeScore": 90.83,
+      "screening": {
+        "turnoverRate": 29.49719793322734,
+        "screeningTurnover": 1642300468.62,
+        "priceChange": -5.583756345177671
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002418.SZ",
+      "name": "康盛股份",
+      "theme": "钢铁",
+      "last": 5.68,
+      "prevClose": 5.39,
+      "open": 5.51,
+      "high": 5.86,
+      "low": 5.3,
+      "volume": 4683836,
+      "turnover": 2603868878.9,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 117,
+      "universeScore": 90.761,
+      "screening": {
+        "turnoverRate": 41.21643787398803,
+        "screeningTurnover": 2603868878.9,
+        "priceChange": 5.380333951762517
+      },
+      "signalStrength": 2,
+      "anomalyReason": "市场异常：大笔卖出"
+    },
+    {
+      "symbol": "002349.SZ",
+      "name": "精华制药",
+      "theme": "制药",
+      "last": 8.36,
+      "prevClose": 7.6,
+      "open": 7.48,
+      "high": 8.36,
+      "low": 7.45,
+      "volume": 900205,
+      "turnover": 715408000.16,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 43,
+      "universeScore": 90.424,
+      "screening": {
+        "turnoverRate": 11.056572208396712,
+        "screeningTurnover": 715408000.16,
+        "priceChange": 9.999999999999988
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600540.SH",
+      "name": "新赛股份",
+      "theme": "农产品",
+      "last": 6.12,
+      "prevClose": 5.56,
+      "open": 6.11,
+      "high": 6.12,
+      "low": 6,
+      "volume": 658290,
+      "turnover": 402522876,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 5,
+      "universeScore": 89.816,
+      "screening": {
+        "turnoverRate": 11.322946131198593,
+        "screeningTurnover": 402522876,
+        "priceChange": 10.07194244604317
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "603207.SH",
+      "name": "小方制药",
+      "theme": "制药",
+      "last": 25.4,
+      "prevClose": 23.09,
+      "open": 23.09,
+      "high": 25.4,
+      "low": 23.01,
+      "volume": 59609,
+      "turnover": 148207910,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 34,
+      "universeScore": 89.389,
+      "screening": {
+        "turnoverRate": 10.916810239506125,
+        "screeningTurnover": 148207910,
+        "priceChange": 10.004330879168455
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "000721.SZ",
+      "name": "西安饮食",
+      "theme": "餐厅",
+      "last": 7.59,
+      "prevClose": 6.9,
+      "open": 6.95,
+      "high": 7.59,
+      "low": 6.91,
+      "volume": 552967,
+      "turnover": 412805352.25,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 44,
+      "universeScore": 89.349,
+      "screening": {
+        "turnoverRate": 10.79254172046442,
+        "screeningTurnover": 412805352.25,
+        "priceChange": 9.999999999999988
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600721.SH",
+      "name": "百花医药",
+      "theme": "制药",
+      "last": 13.19,
+      "prevClose": 13.9,
+      "open": 12.92,
+      "high": 14,
+      "low": 12.64,
+      "volume": 1425662,
+      "turnover": 1898733785,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 2999,
+      "universeScore": 89.252,
+      "screening": {
+        "turnoverRate": 37.0737425026681,
+        "screeningTurnover": 1898733785,
+        "priceChange": -5.107913669064756
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002425.SZ",
+      "name": "凯撒文化",
+      "theme": "电子游戏与多媒体",
+      "last": 3.6,
+      "prevClose": 3.27,
+      "open": 3.42,
+      "high": 3.6,
+      "low": 3.41,
+      "volume": 1024130,
+      "turnover": 362100764.94,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 2,
+      "universeScore": 89.22,
+      "screening": {
+        "turnoverRate": 10.705209549273958,
+        "screeningTurnover": 362100764.94,
+        "priceChange": 10.091743119266061
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002081.SZ",
+      "name": "金螳螂",
+      "theme": "工程承包商",
+      "last": 5.69,
+      "prevClose": 6.16,
+      "open": 6.1,
+      "high": 6.1,
+      "low": 5.64,
+      "volume": 4913302,
+      "turnover": 2836765927.87,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 3046,
+      "universeScore": 89.023,
+      "screening": {
+        "turnoverRate": 18.503589676670867,
+        "screeningTurnover": 2836765927.87,
+        "priceChange": -7.629870129870131
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "605179.SH",
+      "name": "一鸣食品",
+      "theme": "包装食品和肉类",
+      "last": 34.67,
+      "prevClose": 31.52,
+      "open": 31.52,
+      "high": 34.67,
+      "low": 31.52,
+      "volume": 359596,
+      "turnover": 1208595321,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 50,
+      "universeScore": 88.942,
+      "screening": {
+        "turnoverRate": 8.967481296758105,
+        "screeningTurnover": 1208595321,
+        "priceChange": 9.99365482233503
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "003032.SZ",
+      "name": "传智教育",
+      "theme": "教育服务",
+      "last": 11.78,
+      "prevClose": 10.95,
+      "open": 10.88,
+      "high": 11.8,
+      "low": 10.74,
+      "volume": 798178,
+      "turnover": 908045584.96,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 79,
+      "universeScore": 88.856,
+      "screening": {
+        "turnoverRate": 19.833096242367017,
+        "screeningTurnover": 908045584.96,
+        "priceChange": 7.579908675799096
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002589.SZ",
+      "name": "瑞康医药",
+      "theme": "医疗产品分销商",
+      "last": 3.5,
+      "prevClose": 3.18,
+      "open": 3.18,
+      "high": 3.5,
+      "low": 3.16,
+      "volume": 1456938,
+      "turnover": 491491528.12,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 6,
+      "universeScore": 88.82,
+      "screening": {
+        "turnoverRate": 9.682513866150932,
+        "screeningTurnover": 491491528.12,
+        "priceChange": 10.062893081761004
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002855.SZ",
+      "name": "捷荣技术",
+      "theme": "工业机械",
+      "last": 17.71,
+      "prevClose": 16.1,
+      "open": 17.4,
+      "high": 17.71,
+      "low": 17.3,
+      "volume": 246498,
+      "turnover": 434550201,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 42,
+      "universeScore": 88.563,
+      "screening": {
+        "turnoverRate": 10.00317823638779,
+        "screeningTurnover": 434550201,
+        "priceChange": 9.999999999999988
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002015.SZ",
+      "name": "协鑫能科",
+      "theme": "独立电力和可再生能源电力生产商",
+      "last": 17.42,
+      "prevClose": 15.84,
+      "open": 15.84,
+      "high": 17.42,
+      "low": 15.71,
+      "volume": 1403382,
+      "turnover": 2369670291.15,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 63,
+      "universeScore": 88.544,
+      "screening": {
+        "turnoverRate": 8.645110090100562,
+        "screeningTurnover": 2369670291.15,
+        "priceChange": 9.974747474747492
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600313.SH",
+      "name": "农发种业",
+      "theme": "化肥及农药",
+      "last": 7.9,
+      "prevClose": 7.18,
+      "open": 7.06,
+      "high": 7.9,
+      "low": 7.06,
+      "volume": 918649,
+      "turnover": 705583510,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 19,
+      "universeScore": 88.451,
+      "screening": {
+        "turnoverRate": 8.48872791483018,
+        "screeningTurnover": 705583510,
+        "priceChange": 10.027855153203348
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "001326.SZ",
+      "name": "联域股份",
+      "theme": "电气部件和设备",
+      "last": 66.73,
+      "prevClose": 73.8,
+      "open": 77.26,
+      "high": 77.26,
+      "low": 66.42,
+      "volume": 38493,
+      "turnover": 267981790,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 3051,
+      "universeScore": 88.346,
+      "screening": {
+        "turnoverRate": 11.27050800293028,
+        "screeningTurnover": 267981790,
+        "priceChange": -9.57994579945799
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002721.SZ",
+      "name": "金一文化",
+      "theme": "黄金",
+      "last": 3.18,
+      "prevClose": 2.89,
+      "open": 2.91,
+      "high": 3.18,
+      "low": 2.88,
+      "volume": 2238860,
+      "turnover": 695212087.09,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 16,
+      "universeScore": 88.266,
+      "screening": {
+        "turnoverRate": 8.418733561937739,
+        "screeningTurnover": 695212087.09,
+        "priceChange": 10.034602076124566
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002041.SZ",
+      "name": "登海种业",
+      "theme": "农产品",
+      "last": 11.88,
+      "prevClose": 10.8,
+      "open": 10.77,
+      "high": 11.88,
+      "low": 10.62,
+      "volume": 696934,
+      "turnover": 799120335.95,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 37,
+      "universeScore": 87.92,
+      "screening": {
+        "turnoverRate": 7.919704545454545,
+        "screeningTurnover": 799120335.95,
+        "priceChange": 10.000000000000009
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "603123.SH",
+      "name": "翠微股份",
+      "theme": "交易及支付服务",
+      "last": 10.44,
+      "prevClose": 9.49,
+      "open": 9.58,
+      "high": 10.44,
+      "low": 9.51,
+      "volume": 534224,
+      "turnover": 546734823,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 31,
+      "universeScore": 87.917,
+      "screening": {
+        "turnoverRate": 8.190153275143985,
+        "screeningTurnover": 546734823,
+        "priceChange": 10.01053740779767
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "603980.SH",
+      "name": "吉华集团",
+      "theme": "特种化学品",
+      "last": 7.92,
+      "prevClose": 7.2,
+      "open": 7.66,
+      "high": 7.92,
+      "low": 7.6,
+      "volume": 589464,
+      "turnover": 464595909,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 47,
+      "universeScore": 87.626,
+      "screening": {
+        "turnoverRate": 8.709145187524445,
+        "screeningTurnover": 464595909,
+        "priceChange": 9.999999999999988
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "000017.SZ",
+      "name": "深中华A",
+      "theme": "服装、配饰及奢侈品",
+      "last": 11.75,
+      "prevClose": 11.21,
+      "open": 10.91,
+      "high": 11.75,
+      "low": 10.89,
+      "volume": 1246081,
+      "turnover": 1431699283.81,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 137,
+      "universeScore": 87.169,
+      "screening": {
+        "turnoverRate": 28.267217573291852,
+        "screeningTurnover": 1431699283.81,
+        "priceChange": 4.817127564674384
+      },
+      "signalStrength": 2,
+      "anomalyReason": "市场异常：大笔买入"
+    },
+    {
+      "symbol": "000998.SZ",
+      "name": "隆平高科",
+      "theme": "农产品",
+      "last": 9.97,
+      "prevClose": 9.06,
+      "open": 9.05,
+      "high": 9.97,
+      "low": 8.99,
+      "volume": 904964,
+      "turnover": 877988070.86,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 13,
+      "universeScore": 87.048,
+      "screening": {
+        "turnoverRate": 6.871559680383924,
+        "screeningTurnover": 877988070.86,
+        "priceChange": 10.044150110375272
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002295.SZ",
+      "name": "精艺股份",
+      "theme": "铜",
+      "last": 10.62,
+      "prevClose": 9.65,
+      "open": 10.16,
+      "high": 10.62,
+      "low": 10.16,
+      "volume": 220982,
+      "turnover": 232531748.78,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 9,
+      "universeScore": 86.725,
+      "screening": {
+        "turnoverRate": 8.817553548057585,
+        "screeningTurnover": 232531748.78,
+        "priceChange": 10.05181347150257
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "000536.SZ",
+      "name": "华映科技",
+      "theme": "电子设备及服务",
+      "last": 3.96,
+      "prevClose": 3.6,
+      "open": 3.62,
+      "high": 3.96,
+      "low": 3.6,
+      "volume": 1802917,
+      "turnover": 686534872.51,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 45,
+      "universeScore": 86.525,
+      "screening": {
+        "turnoverRate": 6.525020478251979,
+        "screeningTurnover": 686534872.51,
+        "priceChange": 9.999999999999988
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002354.SZ",
+      "name": "天娱数科",
+      "theme": "电子游戏与多媒体",
+      "last": 8.36,
+      "prevClose": 8.03,
+      "open": 8.15,
+      "high": 8.8,
+      "low": 7.86,
+      "volume": 5669484,
+      "turnover": 4687609603.69,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 187,
+      "universeScore": 86.438,
+      "screening": {
+        "turnoverRate": 34.8279149279861,
+        "screeningTurnover": 4687609603.69,
+        "priceChange": 4.109589041095885
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "603330.SH",
+      "name": "天洋新材",
+      "theme": "工业化学品",
+      "last": 11.2,
+      "prevClose": 10.55,
+      "open": 10.76,
+      "high": 11.4,
+      "low": 10.76,
+      "volume": 993866,
+      "turnover": 1100105049,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 96,
+      "universeScore": 86.356,
+      "screening": {
+        "turnoverRate": 22.970338089620984,
+        "screeningTurnover": 1100105049,
+        "priceChange": 6.16113744075828
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002107.SZ",
+      "name": "沃华医药",
+      "theme": "制药",
+      "last": 7.37,
+      "prevClose": 6.7,
+      "open": 6.7,
+      "high": 7.37,
+      "low": 6.61,
+      "volume": 443606,
+      "turnover": 312204328.43,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 36,
+      "universeScore": 86.201,
+      "screening": {
+        "turnoverRate": 7.685353812549202,
+        "screeningTurnover": 312204328.43,
+        "priceChange": 10.000000000000009
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "000019.SZ",
+      "name": "深粮控股",
+      "theme": "包装食品和肉类",
+      "last": 7.92,
+      "prevClose": 7.2,
+      "open": 7.17,
+      "high": 7.92,
+      "low": 7.11,
+      "volume": 250309,
+      "turnover": 193817809.39,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 46,
+      "universeScore": 85.855,
+      "screening": {
+        "turnoverRate": 6.013914775829584,
+        "screeningTurnover": 193817809.39,
+        "priceChange": 9.999999999999988
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "000158.SZ",
+      "name": "常山北明",
+      "theme": "纺织品",
+      "last": 13.88,
+      "prevClose": 12.62,
+      "open": 12.63,
+      "high": 13.88,
+      "low": 12.61,
+      "volume": 941215,
+      "turnover": 1266982944.66,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 56,
+      "universeScore": 85.824,
+      "screening": {
+        "turnoverRate": 5.887683943473528,
+        "screeningTurnover": 1266982944.66,
+        "priceChange": 9.984152139461179
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002104.SZ",
+      "name": "恒宝股份",
+      "theme": "硬件、存储及外设",
+      "last": 12.28,
+      "prevClose": 11.16,
+      "open": 11.33,
+      "high": 12.28,
+      "low": 11.22,
+      "volume": 402261,
+      "turnover": 485144584.5,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 15,
+      "universeScore": 85.58,
+      "screening": {
+        "turnoverRate": 5.678843969023829,
+        "screeningTurnover": 485144584.5,
+        "priceChange": 10.035842293906795
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "000011.SZ",
+      "name": "深物业A",
+      "theme": "房地产开发",
+      "last": 9.16,
+      "prevClose": 10.07,
+      "open": 9.29,
+      "high": 9.66,
+      "low": 9.06,
+      "volume": 550533,
+      "turnover": 508356286.98,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 3050,
+      "universeScore": 85.552,
+      "screening": {
+        "turnoverRate": 10.456952983284165,
+        "screeningTurnover": 508356286.98,
+        "priceChange": -9.036742800397224
+      },
+      "signalStrength": 2,
+      "anomalyReason": "市场异常：大笔卖出"
+    },
+    {
+      "symbol": "605188.SH",
+      "name": "国光连锁",
+      "theme": "食品零售商",
+      "last": 14.98,
+      "prevClose": 13.62,
+      "open": 13.78,
+      "high": 14.98,
+      "low": 13.78,
+      "volume": 298559,
+      "turnover": 437708468,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 54,
+      "universeScore": 85.346,
+      "screening": {
+        "turnoverRate": 5.880079921771986,
+        "screeningTurnover": 437708468,
+        "priceChange": 9.98531571218797
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "000505.SZ",
+      "name": "京粮控股",
+      "theme": "包装食品和肉类",
+      "last": 7.74,
+      "prevClose": 7.04,
+      "open": 6.98,
+      "high": 7.74,
+      "low": 6.97,
+      "volume": 431732,
+      "turnover": 328559545.19,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 76,
+      "universeScore": 85.296,
+      "screening": {
+        "turnoverRate": 6.521875241526212,
+        "screeningTurnover": 328559545.19,
+        "priceChange": 9.943181818181811
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "000711.SZ",
+      "name": "京蓝科技",
+      "theme": "环境与设施服务",
+      "last": 6.48,
+      "prevClose": 5.89,
+      "open": 5.99,
+      "high": 6.48,
+      "low": 5.95,
+      "volume": 1182060,
+      "turnover": 748389630.04,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 22,
+      "universeScore": 85.027,
+      "screening": {
+        "turnoverRate": 4.958788322661697,
+        "screeningTurnover": 748389630.04,
+        "priceChange": 10.016977928692716
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600693.SH",
+      "name": "东百集团",
+      "theme": "零售商",
+      "last": 10.24,
+      "prevClose": 9.31,
+      "open": 9.5,
+      "high": 10.24,
+      "low": 9.46,
+      "volume": 448253,
+      "turnover": 452469552,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 52,
+      "universeScore": 84.915,
+      "screening": {
+        "turnoverRate": 5.158542665210087,
+        "screeningTurnover": 452469552,
+        "priceChange": 9.98925886143931
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600367.SH",
+      "name": "红星发展",
+      "theme": "特种化学品",
+      "last": 37.96,
+      "prevClose": 41.07,
+      "open": 40.59,
+      "high": 40.59,
+      "low": 37.39,
+      "volume": 465513,
+      "turnover": 1815109895,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 3045,
+      "universeScore": 84.748,
+      "screening": {
+        "turnoverRate": 14.45812962149127,
+        "screeningTurnover": 1815109895,
+        "priceChange": -7.572437302167034
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002131.SZ",
+      "name": "利欧股份",
+      "theme": "媒体",
+      "last": 5.1,
+      "prevClose": 4.75,
+      "open": 4.78,
+      "high": 5.21,
+      "low": 4.75,
+      "volume": 10234195,
+      "turnover": 5160545104.61,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 83,
+      "universeScore": 84.69,
+      "screening": {
+        "turnoverRate": 15.215872415493017,
+        "screeningTurnover": 5160545104.61,
+        "priceChange": 7.36842105263158
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002470.SZ",
+      "name": "金正大",
+      "theme": "化肥及农药",
+      "last": 2.32,
+      "prevClose": 2.11,
+      "open": 2.11,
+      "high": 2.32,
+      "low": 2.1,
+      "volume": 1744434,
+      "turnover": 392714913.59,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 73,
+      "universeScore": 84.648,
+      "screening": {
+        "turnoverRate": 5.308640513601604,
+        "screeningTurnover": 392714913.59,
+        "priceChange": 9.952606635071094
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "605577.SH",
+      "name": "龙版传媒",
+      "theme": "媒体",
+      "last": 11.68,
+      "prevClose": 10.62,
+      "open": 11.4,
+      "high": 11.68,
+      "low": 11.22,
+      "volume": 257511,
+      "turnover": 298788842,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 60,
+      "universeScore": 84.58,
+      "screening": {
+        "turnoverRate": 5.793997492757503,
+        "screeningTurnover": 298788842,
+        "priceChange": 9.981167608286269
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600318.SH",
+      "name": "新力金融",
+      "theme": "消费金融",
+      "last": 7.49,
+      "prevClose": 6.81,
+      "open": 6.78,
+      "high": 7.49,
+      "low": 6.76,
+      "volume": 322183,
+      "turnover": 233738082,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 55,
+      "universeScore": 84.562,
+      "screening": {
+        "turnoverRate": 6.28370658985666,
+        "screeningTurnover": 233738082,
+        "priceChange": 9.98531571218797
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002882.SZ",
+      "name": "金龙羽",
+      "theme": "电气部件和设备",
+      "last": 23.77,
+      "prevClose": 21.61,
+      "open": 21.96,
+      "high": 23.77,
+      "low": 21.63,
+      "volume": 195564,
+      "turnover": 458236567.54,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 49,
+      "universeScore": 84.499,
+      "screening": {
+        "turnoverRate": 4.517532917532917,
+        "screeningTurnover": 458236567.54,
+        "priceChange": 9.995372512725599
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600967.SH",
+      "name": "内蒙一机",
+      "theme": "工程机械和重型运输设备",
+      "last": 12.19,
+      "prevClose": 11.08,
+      "open": 11.05,
+      "high": 12.19,
+      "low": 11.01,
+      "volume": 685153,
+      "turnover": 815818083,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 21,
+      "universeScore": 84.098,
+      "screening": {
+        "turnoverRate": 4.026061506044196,
+        "screeningTurnover": 815818083,
+        "priceChange": 10.018050541516232
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600130.SH",
+      "name": "波导股份",
+      "theme": "硬件、存储及外设",
+      "last": 4.93,
+      "prevClose": 4.48,
+      "open": 4.47,
+      "high": 4.93,
+      "low": 4.46,
+      "volume": 422026,
+      "turnover": 198137063,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 12,
+      "universeScore": 84.077,
+      "screening": {
+        "turnoverRate": 5.627013333333333,
+        "screeningTurnover": 198137063,
+        "priceChange": 10.044642857142838
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "601086.SH",
+      "name": "国芳集团",
+      "theme": "零售商",
+      "last": 10.09,
+      "prevClose": 9.17,
+      "open": 10.08,
+      "high": 10.09,
+      "low": 9.85,
+      "volume": 302281,
+      "turnover": 303981653,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 17,
+      "universeScore": 83.979,
+      "screening": {
+        "turnoverRate": 4.538753753753754,
+        "screeningTurnover": 303981653,
+        "priceChange": 10.03271537622683
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "605068.SH",
+      "name": "明新旭腾",
+      "theme": "纺织品",
+      "last": 20.38,
+      "prevClose": 18.53,
+      "open": 18.7,
+      "high": 20.38,
+      "low": 18.7,
+      "volume": 92454,
+      "turnover": 183245747,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 57,
+      "universeScore": 83.712,
+      "screening": {
+        "turnoverRate": 5.70005288890011,
+        "screeningTurnover": 183245747,
+        "priceChange": 9.983810037776575
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600792.SH",
+      "name": "云煤能源",
+      "theme": "工业化学品",
+      "last": 4.42,
+      "prevClose": 4.02,
+      "open": 4.01,
+      "high": 4.42,
+      "low": 3.98,
+      "volume": 563341,
+      "turnover": 241344884,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 74,
+      "universeScore": 83.639,
+      "screening": {
+        "turnoverRate": 5.075493484416405,
+        "screeningTurnover": 241344884,
+        "priceChange": 9.950248756218905
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002181.SZ",
+      "name": "粤传媒",
+      "theme": "媒体",
+      "last": 9.58,
+      "prevClose": 8.71,
+      "open": 8.88,
+      "high": 9.58,
+      "low": 8.8,
+      "volume": 411775,
+      "turnover": 387024750.23,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
       "universeRank": 53,
-      "universeScore": 107.467,
+      "universeScore": 83.584,
       "screening": {
-        "turnoverRate": 4.213599697747203,
-        "screeningTurnover": 3436081939,
+        "turnoverRate": 3.6294537970439085,
+        "screeningTurnover": 387024750.23,
+        "priceChange": 9.988518943742818
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002955.SZ",
+      "name": "鸿合科技",
+      "theme": "电子设备及服务",
+      "last": 39.12,
+      "prevClose": 35.56,
+      "open": 35.56,
+      "high": 39.12,
+      "low": 35.45,
+      "volume": 79705,
+      "turnover": 302573869.1,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 28,
+      "universeScore": 83.279,
+      "screening": {
+        "turnoverRate": 3.368197669039025,
+        "screeningTurnover": 302573869.1,
+        "priceChange": 10.011248593925748
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "603221.SH",
+      "name": "爱丽家居",
+      "theme": "建筑产品",
+      "last": 30.55,
+      "prevClose": 27.77,
+      "open": 29.52,
+      "high": 30.55,
+      "low": 29.31,
+      "volume": 90187,
+      "turnover": 272920542,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 30,
+      "universeScore": 83.243,
+      "screening": {
+        "turnoverRate": 3.7225822429520785,
+        "screeningTurnover": 272920542,
+        "priceChange": 10.01080302484696
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002395.SZ",
+      "name": "双象股份",
+      "theme": "工业化学品",
+      "last": 13.68,
+      "prevClose": 12.44,
+      "open": 12.44,
+      "high": 13.68,
+      "low": 12.41,
+      "volume": 132201,
+      "turnover": 174364365.24,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 68,
+      "universeScore": 83.059,
+      "screening": {
+        "turnoverRate": 4.929029227207141,
+        "screeningTurnover": 174364365.24,
+        "priceChange": 9.967845659163999
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002696.SZ",
+      "name": "百洋股份",
+      "theme": "包装食品和肉类",
+      "last": 7.28,
+      "prevClose": 6.62,
+      "open": 6.52,
+      "high": 7.28,
+      "low": 6.52,
+      "volume": 182270,
+      "turnover": 129349636.68,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 67,
+      "universeScore": 82.9,
+      "screening": {
+        "turnoverRate": 5.416927928604563,
+        "screeningTurnover": 129349636.68,
+        "priceChange": 9.969788519637458
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "000564.SZ",
+      "name": "供销大集",
+      "theme": "零售商",
+      "last": 1.66,
+      "prevClose": 1.51,
+      "open": 1.51,
+      "high": 1.66,
+      "low": 1.5,
+      "volume": 4767964,
+      "turnover": 773429258.45,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 77,
+      "universeScore": 82.894,
+      "screening": {
+        "turnoverRate": 3.158644760667242,
+        "screeningTurnover": 773429258.45,
+        "priceChange": 9.93377483443707
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002769.SZ",
+      "name": "普路通",
+      "theme": "航空-货运和物流",
+      "last": 7.85,
+      "prevClose": 7.14,
+      "open": 7.17,
+      "high": 7.85,
+      "low": 7.12,
+      "volume": 178526,
+      "turnover": 135682597.59,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 75,
+      "universeScore": 82.426,
+      "screening": {
+        "turnoverRate": 4.7821421462783045,
+        "screeningTurnover": 135682597.59,
+        "priceChange": 9.943977591036424
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "002886.SZ",
+      "name": "沃特股份",
+      "theme": "工业化学品",
+      "last": 28.04,
+      "prevClose": 29.04,
+      "open": 28.83,
+      "high": 29.16,
+      "low": 26.48,
+      "volume": 766878,
+      "turnover": 2108687205.37,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 2889,
+      "universeScore": 82.383,
+      "screening": {
+        "turnoverRate": 29.136307481245556,
+        "screeningTurnover": 2108687205.37,
+        "priceChange": -3.443526170798894
+      },
+      "signalStrength": 2,
+      "anomalyReason": "市场异常：大笔卖出"
+    },
+    {
+      "symbol": "002945.SZ",
+      "name": "华林证券",
+      "theme": "投资银行和经纪",
+      "last": 16.04,
+      "prevClose": 14.58,
+      "open": 14.54,
+      "high": 16.04,
+      "low": 14.46,
+      "volume": 543885,
+      "turnover": 856969748.45,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 24,
+      "universeScore": 82.069,
+      "screening": {
+        "turnoverRate": 2.014388888888889,
+        "screeningTurnover": 856969748.45,
+        "priceChange": 10.013717421124824
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "000596.SZ",
+      "name": "古井贡酒",
+      "theme": "酿酒业",
+      "last": 100.88,
+      "prevClose": 91.71,
+      "open": 91.88,
+      "high": 100.88,
+      "low": 91.5,
+      "volume": 77306,
+      "turnover": 760872745.76,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 48,
+      "universeScore": 81.888,
+      "screening": {
+        "turnoverRate": 1.8919725893294177,
+        "screeningTurnover": 760872745.76,
+        "priceChange": 9.998909606367912
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "601566.SH",
+      "name": "九牧王",
+      "theme": "服装、配饰及奢侈品",
+      "last": 9.42,
+      "prevClose": 8.56,
+      "open": 8.5,
+      "high": 9.42,
+      "low": 8.5,
+      "volume": 156814,
+      "turnover": 142921420,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 11,
+      "universeScore": 81.85,
+      "screening": {
+        "turnoverRate": 2.7289220684739925,
+        "screeningTurnover": 142921420,
+        "priceChange": 10.046728971962615
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "600830.SH",
+      "name": "香溢融通",
+      "theme": "消费金融",
+      "last": 9.23,
+      "prevClose": 8.39,
+      "open": 8.39,
+      "high": 9.23,
+      "low": 8.38,
+      "volume": 148279,
+      "turnover": 133899067,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 27,
+      "universeScore": 81.802,
+      "screening": {
+        "turnoverRate": 3.263737089527679,
+        "screeningTurnover": 133899067,
+        "priceChange": 10.011918951132293
+      },
+      "signalStrength": 0,
+      "anomalyReason": "收盘流动性筛选"
+    },
+    {
+      "symbol": "603721.SH",
+      "name": "中广天择",
+      "theme": "电影和娱乐",
+      "last": 21.01,
+      "prevClose": 19.1,
+      "open": 21.01,
+      "high": 21.01,
+      "low": 21.01,
+      "volume": 48559,
+      "turnover": 102022900,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal",
+      "universeRank": 40,
+      "universeScore": 81.481,
+      "screening": {
+        "turnoverRate": 3.7353076923076927,
+        "screeningTurnover": 102022900,
         "priceChange": 10.000000000000009
       },
       "signalStrength": 0,
@@ -107,1884 +1970,159 @@
       "symbol": "000712.SZ",
       "name": "锦龙股份",
       "theme": "投资银行和经纪",
-      "last": 12.98,
-      "prevClose": 11.8,
-      "open": 12.86,
-      "high": 12.98,
-      "low": 11.84,
-      "volume": 2457474,
-      "turnover": 3119349435.39,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "last": 13.5,
+      "prevClose": 12.98,
+      "open": 12.08,
+      "high": 13.84,
+      "low": 11.68,
+      "volume": 2280004,
+      "turnover": 2852861633.6,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 66,
-      "universeScore": 118.654,
+      "universeRank": 199,
+      "universeScore": 81.471,
       "screening": {
-        "turnoverRate": 27.42716517857143,
-        "screeningTurnover": 3119349435.39,
-        "priceChange": 9.999999999999988
+        "turnoverRate": 25.446473214285714,
+        "screeningTurnover": 2852861633.6,
+        "priceChange": 4.006163328197232
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
     },
     {
-      "symbol": "002008.SZ",
-      "name": "大族激光",
+      "symbol": "603339.SH",
+      "name": "四方科技",
       "theme": "工业机械",
-      "last": 96.38,
-      "prevClose": 87.62,
-      "open": 86.47,
-      "high": 96.38,
-      "low": 85.73,
-      "volume": 579100,
-      "turnover": 5336748608.56,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 25,
-      "universeScore": 110.083,
-      "screening": {
-        "turnoverRate": 5.62449575730231,
-        "screeningTurnover": 5336748608.56,
-        "priceChange": 9.997717416115037
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "000977.SZ",
-      "name": "浪潮信息",
-      "theme": "硬件、存储及外设",
-      "last": 85.18,
-      "prevClose": 77.44,
-      "open": 76.38,
-      "high": 85.18,
-      "low": 76.37,
-      "volume": 1166685,
-      "turnover": 9601180899.74,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 6,
-      "universeScore": 113.791,
-      "screening": {
-        "turnoverRate": 7.944865831047208,
-        "screeningTurnover": 9601180899.74,
-        "priceChange": 9.994834710743804
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "601212.SH",
-      "name": "白银有色",
-      "theme": "多元化金属与采矿",
-      "last": 6.87,
-      "prevClose": 7.63,
-      "open": 6.9,
-      "high": 7.07,
-      "low": 6.87,
-      "volume": 3758439,
-      "turnover": 2587142467,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 95,
-      "universeScore": 106.627,
-      "screening": {
-        "turnoverRate": 5.075696760808494,
-        "screeningTurnover": 2587142467,
-        "priceChange": -9.96068152031454
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "001979.SZ",
-      "name": "招商蛇口",
-      "theme": "房地产开发",
-      "last": 6.53,
-      "prevClose": 7.16,
-      "open": 7.38,
-      "high": 7.38,
-      "low": 6.49,
-      "volume": 3899058,
-      "turnover": 2627579726.89,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 91,
-      "universeScore": 105.192,
-      "screening": {
-        "turnoverRate": 4.395709373011599,
-        "screeningTurnover": 2627579726.89,
-        "priceChange": -8.798882681564246
-      },
-      "signalStrength": 2,
-      "anomalyReason": "市场异常：未知涨跌%，成交量 未知"
-    },
-    {
-      "symbol": "000938.SZ",
-      "name": "紫光股份",
-      "theme": "硬件和设备分销商",
-      "last": 38.95,
-      "prevClose": 35.89,
-      "open": 34.86,
-      "high": 39.47,
-      "low": 34.86,
-      "volume": 2670435,
-      "turnover": 10049718393.7,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 4,
-      "universeScore": 113.216,
-      "screening": {
-        "turnoverRate": 9.336924553317562,
-        "screeningTurnover": 10049718393.7,
-        "priceChange": 8.526051825020907
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002716.SZ",
-      "name": "湖南白银",
-      "theme": "多元化金属与采矿",
-      "last": 10.84,
-      "prevClose": 11.65,
-      "open": 10.5,
-      "high": 10.86,
-      "low": 10.49,
-      "volume": 3269174,
-      "turnover": 3465938107.5,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 51,
-      "universeScore": 109.389,
-      "screening": {
-        "turnoverRate": 14.07622021701754,
-        "screeningTurnover": 3465938107.5,
-        "priceChange": -6.952789699570816
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600547.SH",
-      "name": "山东黄金",
-      "theme": "黄金",
-      "last": 37.85,
-      "prevClose": 35.49,
-      "open": 33.67,
-      "high": 38.09,
-      "low": 33.6,
-      "volume": 1949586,
-      "turnover": 7041882533,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 12,
-      "universeScore": 107.824,
-      "screening": {
-        "turnoverRate": 5.393876215041972,
-        "screeningTurnover": 7041882533,
-        "priceChange": 6.649760495914347
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "603256.SH",
-      "name": "宏和科技",
-      "theme": "工业化学品",
-      "last": 147.55,
-      "prevClose": 139.17,
-      "open": 133.74,
-      "high": 149.74,
-      "low": 133.34,
-      "volume": 192952,
-      "turnover": 2785159701,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 78,
-      "universeScore": 101.567,
-      "screening": {
-        "turnoverRate": 2.193315543733713,
-        "screeningTurnover": 2785159701,
-        "priceChange": 6.0214126607746055
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002155.SZ",
-      "name": "湖南黄金",
-      "theme": "多元化金属与采矿",
-      "last": 27.23,
-      "prevClose": 28.92,
-      "open": 27.45,
-      "high": 27.5,
-      "low": 26.2,
-      "volume": 1229878,
-      "turnover": 3297835725.42,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 57,
-      "universeScore": 104.961,
-      "screening": {
-        "turnoverRate": 7.870457007313587,
-        "screeningTurnover": 3297835725.42,
-        "priceChange": -5.843706777316737
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002837.SZ",
-      "name": "英维克",
-      "theme": "工业机械",
-      "last": 68.21,
-      "prevClose": 64.48,
-      "open": 62.98,
-      "high": 68.66,
-      "low": 62.89,
-      "volume": 916331,
-      "turnover": 6091485141.49,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 17,
-      "universeScore": 107.219,
-      "screening": {
-        "turnoverRate": 7.174914264534815,
-        "screeningTurnover": 6091485141.49,
-        "priceChange": 5.784739454094279
-      },
-      "signalStrength": 2,
-      "anomalyReason": "市场异常：未知涨跌%，成交量 未知"
-    },
-    {
-      "symbol": "600353.SH",
-      "name": "旭光电子",
-      "theme": "电子元件",
-      "last": 36.6,
-      "prevClose": 34.63,
-      "open": 34.41,
-      "high": 36.74,
-      "low": 33.4,
-      "volume": 744525,
-      "turnover": 2652542860,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 87,
-      "universeScore": 104.417,
-      "screening": {
-        "turnoverRate": 8.983047488143194,
-        "screeningTurnover": 2652542860,
-        "priceChange": 5.688709211666176
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "601658.SH",
-      "name": "邮储银行",
-      "theme": "多元化银行",
-      "last": 5.26,
-      "prevClose": 4.99,
-      "open": 5.05,
-      "high": 5.27,
-      "low": 5.04,
-      "volume": 5450431,
-      "turnover": 2824231627,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 76,
-      "universeScore": 100.296,
-      "screening": {
-        "turnoverRate": 0.7514954203125598,
-        "screeningTurnover": 2824231627,
-        "priceChange": 5.4108216432865675
-      },
-      "signalStrength": 2,
-      "anomalyReason": "市场异常：未知涨跌%，成交量 未知"
-    },
-    {
-      "symbol": "600183.SH",
-      "name": "生益科技",
-      "theme": "电子元件",
-      "last": 153.4,
-      "prevClose": 145.65,
-      "open": 141,
-      "high": 157.28,
-      "low": 141,
-      "volume": 1038874,
-      "turnover": 15742216789,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 1,
-      "universeScore": 109.445,
-      "screening": {
-        "turnoverRate": 4.307554648506256,
-        "screeningTurnover": 15742216789,
-        "priceChange": 5.320974939924472
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "601988.SH",
-      "name": "中国银行",
-      "theme": "多元化银行",
-      "last": 6.51,
-      "prevClose": 6.19,
-      "open": 6.24,
-      "high": 6.52,
-      "low": 6.23,
-      "volume": 4977169,
-      "turnover": 3198569046,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 61,
-      "universeScore": 100.337,
-      "screening": {
-        "turnoverRate": 0.2361472180891009,
-        "screeningTurnover": 3198569046,
-        "priceChange": 5.1696284329563635
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "601169.SH",
-      "name": "北京银行",
-      "theme": "多元化银行",
-      "last": 5.35,
-      "prevClose": 5.09,
-      "open": 5.2,
-      "high": 5.38,
-      "low": 5.19,
-      "volume": 5916132,
-      "turnover": 3143131155,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 65,
-      "universeScore": 101.481,
-      "screening": {
-        "turnoverRate": 2.7981537156203773,
-        "screeningTurnover": 3143131155,
-        "priceChange": 5.108055009823187
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "603118.SH",
-      "name": "共进股份",
-      "theme": "通信设备",
-      "last": 18.6,
-      "prevClose": 17.73,
-      "open": 17.44,
-      "high": 18.7,
-      "low": 17.26,
-      "volume": 1420827,
-      "turnover": 2566774776,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 97,
-      "universeScore": 108.025,
-      "screening": {
-        "turnoverRate": 18.04737178926711,
-        "screeningTurnover": 2566774776,
-        "priceChange": 4.906937394247035
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600031.SH",
-      "name": "三一重工",
-      "theme": "工程机械和重型运输设备",
-      "last": 20.01,
-      "prevClose": 19.1,
-      "open": 19.66,
-      "high": 20.12,
-      "low": 19.51,
-      "volume": 1456633,
-      "turnover": 2902491231,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 73,
-      "universeScore": 100.252,
-      "screening": {
-        "turnoverRate": 1.7188647131418315,
-        "screeningTurnover": 2902491231,
-        "priceChange": 4.764397905759155
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600988.SH",
-      "name": "赤峰黄金",
-      "theme": "黄金",
-      "last": 46.81,
-      "prevClose": 49.09,
-      "open": 46,
-      "high": 46.97,
-      "low": 44.4,
-      "volume": 863877,
-      "turnover": 3946515878,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 41,
-      "universeScore": 103.203,
-      "screening": {
-        "turnoverRate": 5.191845019044037,
-        "screeningTurnover": 3946515878,
-        "priceChange": -4.64453045426767
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002938.SZ",
-      "name": "鹏鼎控股",
-      "theme": "电子元件",
-      "last": 93.3,
-      "prevClose": 89.18,
-      "open": 86.51,
-      "high": 94.52,
-      "low": 86.45,
-      "volume": 283107,
-      "turnover": 2586935153.99,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 96,
-      "universeScore": 99.36,
-      "screening": {
-        "turnoverRate": 1.2250195185655768,
-        "screeningTurnover": 2586935153.99,
-        "priceChange": 4.61986992599237
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002594.SZ",
-      "name": "比亚迪",
-      "theme": "汽车制造商",
-      "last": 88.2,
-      "prevClose": 92.32,
-      "open": 91.56,
-      "high": 92.54,
-      "low": 88.1,
-      "volume": 640400,
-      "turnover": 5692862193.51,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 21,
-      "universeScore": 102.605,
-      "screening": {
-        "turnoverRate": 1.1785496098068202,
-        "screeningTurnover": 5692862193.51,
-        "priceChange": -4.462738301559777
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002484.SZ",
-      "name": "江海股份",
-      "theme": "电子元件",
-      "last": 63.4,
-      "prevClose": 60.8,
-      "open": 58.82,
-      "high": 63.67,
-      "low": 58.02,
-      "volume": 439223,
-      "turnover": 2694049058.38,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 83,
-      "universeScore": 101.162,
-      "screening": {
-        "turnoverRate": 5.164146225955561,
-        "screeningTurnover": 2694049058.38,
-        "priceChange": 4.276315789473695
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600048.SH",
-      "name": "保利发展",
-      "theme": "房地产开发",
-      "last": 4.97,
-      "prevClose": 5.19,
-      "open": 5.35,
-      "high": 5.42,
-      "low": 4.94,
-      "volume": 5477091,
-      "turnover": 2820860872,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 77,
-      "universeScore": 101.03,
-      "screening": {
-        "turnoverRate": 4.575512208481833,
-        "screeningTurnover": 2820860872,
-        "priceChange": -4.238921001926799
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "000426.SZ",
-      "name": "兴业银锡",
-      "theme": "多元化金属与采矿",
-      "last": 39.85,
-      "prevClose": 41.58,
-      "open": 38.17,
-      "high": 39.85,
-      "low": 37.58,
-      "volume": 856103,
-      "turnover": 3311794527.39,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 56,
-      "universeScore": 101.772,
-      "screening": {
-        "turnoverRate": 4.821388650817193,
-        "screeningTurnover": 3311794527.39,
-        "priceChange": -4.160654160654153
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600489.SH",
-      "name": "中金黄金",
-      "theme": "黄金",
-      "last": 25.62,
-      "prevClose": 26.68,
-      "open": 25.11,
-      "high": 25.66,
-      "low": 24.48,
-      "volume": 1310913,
-      "turnover": 3286841973,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 58,
-      "universeScore": 100.493,
-      "screening": {
-        "turnoverRate": 2.7044119451588142,
-        "screeningTurnover": 3286841973,
-        "priceChange": -3.9730134932533634
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002851.SZ",
-      "name": "麦格米特",
-      "theme": "电气部件和设备",
-      "last": 130.6,
-      "prevClose": 125.95,
-      "open": 121.75,
-      "high": 131,
-      "low": 121.75,
-      "volume": 281876,
-      "turnover": 3616415340.58,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 44,
-      "universeScore": 101.701,
-      "screening": {
-        "turnoverRate": 4.853403942558546,
-        "screeningTurnover": 3616415340.58,
-        "priceChange": 3.691941246526387
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002281.SZ",
-      "name": "光迅科技",
-      "theme": "电子元件",
-      "last": 179.9,
-      "prevClose": 173.61,
-      "open": 168.03,
-      "high": 179.9,
-      "low": 167.9,
-      "volume": 280117,
-      "turnover": 4923789917.07,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 29,
-      "universeScore": 102.326,
-      "screening": {
-        "turnoverRate": 3.55989527970165,
-        "screeningTurnover": 4923789917.07,
-        "priceChange": 3.623063187604392
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002636.SZ",
-      "name": "金安国纪",
-      "theme": "电子元件",
-      "last": 75.75,
-      "prevClose": 73.18,
-      "open": 72.82,
-      "high": 76,
-      "low": 71.72,
-      "volume": 882269,
-      "turnover": 6533887919.83,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 15,
-      "universeScore": 107.723,
-      "screening": {
-        "turnoverRate": 12.11907967032967,
-        "screeningTurnover": 6533887919.83,
-        "priceChange": 3.511888494124071
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002131.SZ",
-      "name": "利欧股份",
-      "theme": "媒体",
-      "last": 4.75,
-      "prevClose": 4.6,
-      "open": 4.48,
-      "high": 4.77,
-      "low": 4.48,
-      "volume": 5820564,
-      "turnover": 2719261655.61,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 82,
-      "universeScore": 101.932,
-      "screening": {
-        "turnoverRate": 8.653827605416128,
-        "screeningTurnover": 2719261655.61,
-        "priceChange": 3.260869565217406
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002241.SZ",
-      "name": "歌尔股份",
-      "theme": "电子设备及服务",
-      "last": 24.25,
-      "prevClose": 23.51,
-      "open": 23.25,
-      "high": 24.3,
-      "low": 23.25,
-      "volume": 1023200,
-      "turnover": 2451275876.03,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 100,
-      "universeScore": 98.482,
-      "screening": {
-        "turnoverRate": 2.880410725219695,
-        "screeningTurnover": 2451275876.03,
-        "priceChange": 3.1475967673330496
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600498.SH",
-      "name": "烽火通信",
-      "theme": "通信设备",
-      "last": 42.46,
-      "prevClose": 41.18,
-      "open": 40.5,
-      "high": 43.75,
-      "low": 40.41,
-      "volume": 1017128,
-      "turnover": 4323455015,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 34,
-      "universeScore": 103.466,
-      "screening": {
-        "turnoverRate": 7.998669692154046,
-        "screeningTurnover": 4323455015,
-        "priceChange": 3.1083050024283576
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600186.SH",
-      "name": "莲花控股",
-      "theme": "包装食品和肉类",
-      "last": 11.57,
-      "prevClose": 11.94,
-      "open": 11.71,
-      "high": 12.08,
-      "low": 11.43,
-      "volume": 2165779,
-      "turnover": 2527414641,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 98,
-      "universeScore": 103.178,
-      "screening": {
-        "turnoverRate": 12.105151462548402,
-        "screeningTurnover": 2527414641,
-        "priceChange": -3.0988274706867602
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002536.SZ",
-      "name": "飞龙股份",
-      "theme": "汽车零部件及设备",
-      "last": 54.9,
-      "prevClose": 53.33,
-      "open": 51.29,
-      "high": 55.46,
-      "low": 50.98,
-      "volume": 596236,
-      "turnover": 3216120814.71,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 60,
-      "universeScore": 103.204,
-      "screening": {
-        "turnoverRate": 10.373184388270856,
-        "screeningTurnover": 3216120814.71,
-        "priceChange": 2.943933995874737
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "603019.SH",
-      "name": "中科曙光",
-      "theme": "硬件、存储及外设",
-      "last": 88.27,
-      "prevClose": 85.82,
-      "open": 84.51,
-      "high": 88.69,
-      "low": 84.28,
-      "volume": 423151,
-      "turnover": 3688837356,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 43,
-      "universeScore": 99.97,
-      "screening": {
-        "turnoverRate": 2.8922438987679873,
-        "screeningTurnover": 3688837356,
-        "priceChange": 2.8548123980424167
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "601899.SH",
-      "name": "紫金矿业",
-      "theme": "多元化金属与采矿",
-      "last": 33.67,
-      "prevClose": 34.65,
-      "open": 33,
-      "high": 33.75,
-      "low": 32.6,
-      "volume": 2966399,
-      "turnover": 9844983992,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 5,
-      "universeScore": 103.48,
-      "screening": {
-        "turnoverRate": 1.4398741798064671,
-        "screeningTurnover": 9844983992,
-        "priceChange": -2.8282828282828243
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "603228.SH",
-      "name": "景旺电子",
-      "theme": "电子元件",
-      "last": 96.49,
-      "prevClose": 93.9,
-      "open": 90,
-      "high": 97.18,
-      "low": 90,
-      "volume": 301448,
-      "turnover": 2860089817,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 75,
-      "universeScore": 98.857,
-      "screening": {
-        "turnoverRate": 3.0697019457678,
-        "screeningTurnover": 2860089817,
-        "priceChange": 2.7582534611288567
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "601398.SH",
-      "name": "工商银行",
-      "theme": "多元化银行",
-      "last": 8.07,
-      "prevClose": 7.86,
-      "open": 7.95,
-      "high": 8.08,
-      "low": 7.9,
-      "volume": 4030259,
-      "turnover": 3227091269,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 59,
-      "universeScore": 97.835,
-      "screening": {
-        "turnoverRate": 0.149483547575465,
-        "screeningTurnover": 3227091269,
-        "priceChange": 2.6717557251908497
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600276.SH",
-      "name": "恒瑞医药",
-      "theme": "制药",
-      "last": 46.07,
-      "prevClose": 47.32,
-      "open": 47.17,
-      "high": 47.17,
-      "low": 45.88,
-      "volume": 892759,
-      "turnover": 4126674263,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 38,
-      "universeScore": 99.497,
-      "screening": {
-        "turnoverRate": 1.39952764030007,
-        "screeningTurnover": 4126674263,
-        "priceChange": -2.6415891800507185
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002463.SZ",
-      "name": "沪电股份",
-      "theme": "电子元件",
-      "last": 124.91,
-      "prevClose": 121.7,
-      "open": 118.19,
-      "high": 125,
-      "low": 118,
-      "volume": 496358,
-      "turnover": 6103502065.31,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 16,
-      "universeScore": 101.783,
-      "screening": {
-        "turnoverRate": 2.579335923054335,
-        "screeningTurnover": 6103502065.31,
-        "priceChange": 2.637633525061611
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "000100.SZ",
-      "name": "TCL科技",
-      "theme": "电子设备及服务",
-      "last": 5.09,
-      "prevClose": 4.96,
-      "open": 4.94,
-      "high": 5.1,
-      "low": 4.92,
-      "volume": 5262032,
-      "turnover": 2644307964.4,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 89,
-      "universeScore": 98.109,
-      "screening": {
-        "turnoverRate": 2.5297181851990542,
-        "screeningTurnover": 2644307964.4,
-        "priceChange": 2.620967741935476
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "603618.SH",
-      "name": "杭电股份",
-      "theme": "电气部件和设备",
-      "last": 34.99,
-      "prevClose": 35.92,
-      "open": 34.63,
-      "high": 36.2,
-      "low": 34.08,
-      "volume": 1180197,
-      "turnover": 4118183553,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 39,
-      "universeScore": 107.271,
-      "screening": {
-        "turnoverRate": 17.070272261381,
-        "screeningTurnover": 4118183553,
-        "priceChange": -2.5890868596881944
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "603083.SH",
-      "name": "剑桥科技",
-      "theme": "通信设备",
-      "last": 187.6,
-      "prevClose": 192.31,
-      "open": 185.73,
-      "high": 192.9,
-      "low": 185,
-      "volume": 168466,
-      "turnover": 3168876936,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 62,
-      "universeScore": 100.515,
-      "screening": {
-        "turnoverRate": 6.112957457751674,
-        "screeningTurnover": 3168876936,
-        "priceChange": -2.449170609952689
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "603986.SH",
-      "name": "兆易创新",
-      "theme": "半导体厂商",
-      "last": 406,
-      "prevClose": 396.82,
-      "open": 387.06,
-      "high": 406.61,
-      "low": 387.06,
-      "volume": 317220,
-      "turnover": 12671318470,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 3,
-      "universeScore": 105.714,
-      "screening": {
-        "turnoverRate": 4.745307816982575,
-        "screeningTurnover": 12671318470,
-        "priceChange": 2.3133914621238816
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "603993.SH",
-      "name": "洛阳钼业",
-      "theme": "多元化金属与采矿",
-      "last": 19.06,
-      "prevClose": 19.51,
-      "open": 18.88,
-      "high": 19.1,
-      "low": 18.45,
-      "volume": 1993803,
-      "turnover": 3746587199,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 42,
-      "universeScore": 98.614,
-      "screening": {
-        "turnoverRate": 1.141871039153249,
-        "screeningTurnover": 3746587199,
-        "priceChange": -2.3065094823167764
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600869.SH",
-      "name": "远东股份",
-      "theme": "电气部件和设备",
-      "last": 19.08,
-      "prevClose": 18.65,
-      "open": 18.08,
-      "high": 19.95,
-      "low": 18.08,
-      "volume": 3015240,
-      "turnover": 5776430557,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 19,
-      "universeScore": 106.715,
-      "screening": {
-        "turnoverRate": 13.586123275961649,
-        "screeningTurnover": 5776430557,
-        "priceChange": 2.3056300268096575
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600127.SH",
-      "name": "金健米业",
-      "theme": "包装食品和肉类",
-      "last": 12.04,
-      "prevClose": 11.77,
-      "open": 11.79,
-      "high": 12.58,
-      "low": 11.65,
-      "volume": 2861741,
-      "turnover": 3469186748,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 50,
-      "universeScore": 119.991,
-      "screening": {
-        "turnoverRate": 44.590461696990026,
-        "screeningTurnover": 3469186748,
-        "priceChange": 2.2939677145284554
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002354.SZ",
-      "name": "天娱数科",
-      "theme": "电子游戏与多媒体",
-      "last": 8.03,
-      "prevClose": 7.85,
-      "open": 7.78,
-      "high": 8.25,
-      "low": 7.42,
-      "volume": 5664953,
-      "turnover": 4452884078.65,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 33,
-      "universeScore": 116.179,
-      "screening": {
-        "turnoverRate": 34.80008077543558,
-        "screeningTurnover": 4452884078.65,
-        "priceChange": 2.292993630573248
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600309.SH",
-      "name": "万华化学",
-      "theme": "特种化学品",
-      "last": 76.32,
-      "prevClose": 78.04,
-      "open": 78.25,
-      "high": 78.51,
-      "low": 75.31,
-      "volume": 445471,
-      "turnover": 3396220087,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 54,
-      "universeScore": 98.225,
-      "screening": {
-        "turnoverRate": 1.423015613047438,
-        "screeningTurnover": 3396220087,
-        "priceChange": -2.203997949769365
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002028.SZ",
-      "name": "思源电气",
-      "theme": "电气部件和设备",
-      "last": 140.12,
-      "prevClose": 143.18,
-      "open": 139,
-      "high": 140.52,
-      "low": 135.39,
-      "volume": 244395,
-      "turnover": 3367104844.02,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 55,
-      "universeScore": 98.971,
-      "screening": {
-        "turnoverRate": 3.1229663166548023,
-        "screeningTurnover": 3367104844.02,
-        "priceChange": -2.1371699958094736
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600150.SH",
-      "name": "中国船舶",
-      "theme": "工程机械和重型运输设备",
-      "last": 34.08,
-      "prevClose": 34.78,
-      "open": 34.8,
-      "high": 34.81,
-      "low": 33.62,
-      "volume": 888333,
-      "turnover": 3024789012,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 68,
-      "universeScore": 97.41,
-      "screening": {
-        "turnoverRate": 1.1804115115605056,
-        "screeningTurnover": 3024789012,
-        "priceChange": -2.012650948821171
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600036.SH",
-      "name": "招商银行",
-      "theme": "多元化银行",
-      "last": 40.12,
-      "prevClose": 39.35,
-      "open": 39.51,
-      "high": 40.28,
-      "low": 39.5,
-      "volume": 1136251,
-      "turnover": 4545240512,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 31,
-      "universeScore": 98.808,
-      "screening": {
-        "turnoverRate": 0.5508042371778692,
-        "screeningTurnover": 4545240512,
-        "priceChange": 1.9567979669631308
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600487.SH",
-      "name": "亨通光电",
-      "theme": "通信设备",
-      "last": 67.38,
-      "prevClose": 68.7,
-      "open": 66,
-      "high": 68.2,
-      "low": 65.66,
-      "volume": 1908892,
-      "turnover": 12738482840,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 2,
-      "universeScore": 106.862,
-      "screening": {
-        "turnoverRate": 7.779817463720078,
-        "screeningTurnover": 12738482840,
-        "priceChange": -1.9213973799126705
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "601288.SH",
-      "name": "农业银行",
-      "theme": "多元化银行",
-      "last": 6.92,
-      "prevClose": 6.79,
-      "open": 6.82,
-      "high": 6.95,
-      "low": 6.81,
-      "volume": 3953726,
-      "turnover": 2725430832,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 81,
-      "universeScore": 96.331,
-      "screening": {
-        "turnoverRate": 0.1238464431469918,
-        "screeningTurnover": 2725430832,
-        "priceChange": 1.9145802650957222
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002916.SZ",
-      "name": "深南电路",
-      "theme": "电子元件",
-      "last": 369.08,
-      "prevClose": 362.4,
-      "open": 353.2,
-      "high": 370.37,
-      "low": 348.69,
-      "volume": 82105,
-      "turnover": 2969327402.81,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 71,
-      "universeScore": 97.186,
-      "screening": {
-        "turnoverRate": 1.231438073322032,
-        "screeningTurnover": 2969327402.81,
-        "priceChange": 1.8432671081677787
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "603629.SH",
-      "name": "利通电子",
-      "theme": "电子元件",
-      "last": 122.16,
-      "prevClose": 119.95,
-      "open": 114.38,
-      "high": 123,
-      "low": 114.28,
-      "volume": 350133,
-      "turnover": 4131057992,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 37,
-      "universeScore": 102.856,
-      "screening": {
-        "turnoverRate": 9.706412170654856,
-        "screeningTurnover": 4131057992,
-        "priceChange": 1.842434347644839
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002475.SZ",
-      "name": "立讯精密",
-      "theme": "电子元件",
-      "last": 57.62,
-      "prevClose": 56.6,
-      "open": 55.9,
-      "high": 57.7,
-      "low": 55.43,
-      "volume": 946222,
-      "turnover": 5366099486.57,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 24,
-      "universeScore": 99.743,
-      "screening": {
-        "turnoverRate": 1.2888133988207573,
-        "screeningTurnover": 5366099486.57,
-        "priceChange": 1.8021201413427557
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600330.SH",
-      "name": "天通股份",
-      "theme": "电子元件",
-      "last": 28.42,
-      "prevClose": 28.94,
-      "open": 28.2,
-      "high": 29.22,
-      "low": 27.92,
-      "volume": 972142,
-      "turnover": 2769048428,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 79,
-      "universeScore": 100.161,
-      "screening": {
-        "turnoverRate": 7.881586466126303,
-        "screeningTurnover": 2769048428,
-        "priceChange": -1.7968210089841063
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "601208.SH",
-      "name": "东材科技",
-      "theme": "工业化学品",
-      "last": 52.19,
-      "prevClose": 51.28,
-      "open": 50.1,
-      "high": 52.89,
-      "low": 50.09,
-      "volume": 779508,
-      "turnover": 4025245001,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 40,
-      "universeScore": 101.681,
-      "screening": {
-        "turnoverRate": 7.716503286870485,
-        "screeningTurnover": 4025245001,
-        "priceChange": 1.7745709828393075
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "000988.SZ",
-      "name": "华工科技",
-      "theme": "电子设备及服务",
-      "last": 104.75,
-      "prevClose": 102.93,
-      "open": 101.04,
-      "high": 104.79,
-      "low": 100.88,
-      "volume": 350265,
-      "turnover": 3598366793.13,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 45,
-      "universeScore": 99.071,
-      "screening": {
-        "turnoverRate": 3.48348142239263,
-        "screeningTurnover": 3598366793.13,
-        "priceChange": 1.768191975128719
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "001309.SZ",
-      "name": "德明利",
-      "theme": "半导体厂商",
-      "last": 436.5,
-      "prevClose": 429.03,
-      "open": 422.31,
-      "high": 442.32,
-      "low": 420.5,
-      "volume": 133741,
-      "turnover": 5760448558.61,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 20,
-      "universeScore": 102.32,
-      "screening": {
-        "turnoverRate": 5.948063220314454,
-        "screeningTurnover": 5760448558.61,
-        "priceChange": 1.741136983427749
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "000338.SZ",
-      "name": "潍柴动力",
-      "theme": "工程机械和重型运输设备",
-      "last": 27.17,
-      "prevClose": 27.64,
-      "open": 27.11,
-      "high": 27.5,
-      "low": 26.81,
-      "volume": 981176,
-      "turnover": 2669640483.47,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 86,
-      "universeScore": 96.941,
-      "screening": {
-        "turnoverRate": 1.9524267942665006,
-        "screeningTurnover": 2669640483.47,
-        "priceChange": -1.700434153400865
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600176.SH",
-      "name": "中国巨石",
-      "theme": "建筑材料",
-      "last": 43.93,
-      "prevClose": 43.2,
-      "open": 41.96,
-      "high": 43.98,
-      "low": 41.93,
-      "volume": 1845745,
-      "turnover": 8004484311,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 9,
-      "universeScore": 103.047,
-      "screening": {
-        "turnoverRate": 4.647373926310447,
-        "screeningTurnover": 8004484311,
-        "priceChange": 1.689814814814805
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "603259.SH",
-      "name": "药明康德",
-      "theme": "生命科学工具与服务",
-      "last": 154.78,
-      "prevClose": 157.4,
-      "open": 154.26,
-      "high": 155.45,
-      "low": 150.22,
-      "volume": 476254,
-      "turnover": 7283350255,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 11,
-      "universeScore": 101.251,
-      "screening": {
-        "turnoverRate": 1.9255965868414573,
-        "screeningTurnover": 7283350255,
-        "priceChange": -1.6645489199491714
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "000063.SZ",
-      "name": "中兴通讯",
-      "theme": "通信设备",
-      "last": 34.18,
-      "prevClose": 33.63,
-      "open": 33.3,
-      "high": 34.26,
-      "low": 33.1,
-      "volume": 790850,
-      "turnover": 2676107586.03,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 85,
-      "universeScore": 96.892,
-      "screening": {
-        "turnoverRate": 1.963365560882326,
-        "screeningTurnover": 2676107586.03,
-        "priceChange": 1.635444543562281
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "000725.SZ",
-      "name": "京东方A",
-      "theme": "电子元件",
-      "last": 6.01,
-      "prevClose": 5.92,
-      "open": 5.79,
-      "high": 6.02,
-      "low": 5.75,
-      "volume": 13783033,
-      "turnover": 8121869375.03,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 8,
-      "universeScore": 102.565,
-      "screening": {
-        "turnoverRate": 3.8961059808802,
-        "screeningTurnover": 8121869375.03,
-        "priceChange": 1.520270270270263
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002714.SZ",
-      "name": "牧原股份",
-      "theme": "包装食品和肉类",
-      "last": 42.31,
-      "prevClose": 41.68,
-      "open": 41.94,
-      "high": 42.65,
-      "low": 41.91,
-      "volume": 633480,
-      "turnover": 2680925359.93,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "last": 16.08,
+      "prevClose": 14.98,
+      "open": 15.68,
+      "high": 16.27,
+      "low": 15.55,
+      "volume": 402974,
+      "turnover": 639803421,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
       "universeRank": 84,
-      "universeScore": 96.374,
+      "universeScore": 81.183,
       "screening": {
-        "turnoverRate": 1.1596308228396537,
-        "screeningTurnover": 2680925359.93,
-        "priceChange": 1.511516314779282
+        "turnoverRate": 13.022636693387685,
+        "screeningTurnover": 639803421,
+        "priceChange": 7.343124165554049
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
     },
     {
-      "symbol": "000657.SZ",
-      "name": "中钨高新",
-      "theme": "多元化金属与采矿",
-      "last": 65.8,
-      "prevClose": 66.76,
-      "open": 64.8,
-      "high": 65.98,
-      "low": 63.37,
-      "volume": 666156,
-      "turnover": 4310593547.92,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "000802.SZ",
+      "name": "北京文化",
+      "theme": "电影和娱乐",
+      "last": 4.27,
+      "prevClose": 4.06,
+      "open": 4.06,
+      "high": 4.27,
+      "low": 4.04,
+      "volume": 1612553,
+      "turnover": 677048857.6,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 35,
-      "universeScore": 100.072,
+      "universeRank": 125,
+      "universeScore": 81.156,
       "screening": {
-        "turnoverRate": 4.577039349123122,
-        "screeningTurnover": 4310593547.92,
-        "priceChange": -1.4379868184541733
+        "turnoverRate": 22.524827847700653,
+        "screeningTurnover": 677048857.6,
+        "priceChange": 5.1724137931034475
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
     },
     {
-      "symbol": "600664.SH",
-      "name": "哈药股份",
-      "theme": "制药",
-      "last": 9.12,
-      "prevClose": 9,
-      "open": 8.78,
-      "high": 9.13,
-      "low": 8.37,
-      "volume": 2959702,
-      "turnover": 2611164709,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "605365.SH",
+      "name": "立达信",
+      "theme": "电气部件和设备",
+      "last": 15.66,
+      "prevClose": 14.24,
+      "open": 14.23,
+      "high": 15.66,
+      "low": 14.15,
+      "volume": 81363,
+      "turnover": 125003856,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 92,
-      "universeScore": 101.378,
+      "universeRank": 65,
+      "universeScore": 81.09,
       "screening": {
-        "turnoverRate": 11.751798268509152,
-        "screeningTurnover": 2611164709,
-        "priceChange": 1.3333333333333197
+        "turnoverRate": 1.6207353215378484,
+        "screeningTurnover": 125003856,
+        "priceChange": 9.97191011235954
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
     },
     {
-      "symbol": "002407.SZ",
-      "name": "多氟多",
-      "theme": "工业化学品",
-      "last": 36.47,
-      "prevClose": 36.94,
-      "open": 36.23,
-      "high": 36.95,
-      "low": 35.6,
-      "volume": 1232369,
-      "turnover": 4468073341.15,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "600828.SH",
+      "name": "茂业商业",
+      "theme": "零售商",
+      "last": 4.37,
+      "prevClose": 3.97,
+      "open": 3.96,
+      "high": 4.37,
+      "low": 3.96,
+      "volume": 163596,
+      "turnover": 69808245,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 32,
-      "universeScore": 102.95,
+      "universeRank": 3,
+      "universeScore": 80.763,
       "screening": {
-        "turnoverRate": 10.352278928618594,
-        "screeningTurnover": 4468073341.15,
-        "priceChange": -1.2723335138061675
+        "turnoverRate": 0.9448987090918896,
+        "screeningTurnover": 69808245,
+        "priceChange": 10.075566750629728
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
     },
     {
-      "symbol": "002156.SZ",
-      "name": "通富微电",
-      "theme": "半导体厂商",
-      "last": 64.56,
-      "prevClose": 63.75,
-      "open": 61.42,
-      "high": 64.62,
-      "low": 61.4,
-      "volume": 789871,
-      "turnover": 4979182519.44,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "605300.SH",
+      "name": "佳禾食品",
+      "theme": "包装食品和肉类",
+      "last": 10.73,
+      "prevClose": 9.75,
+      "open": 9.88,
+      "high": 10.73,
+      "low": 9.69,
+      "volume": 81534,
+      "turnover": 85592985,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 28,
-      "universeScore": 100.845,
+      "universeRank": 10,
+      "universeScore": 80.752,
       "screening": {
-        "turnoverRate": 5.204748334385119,
-        "screeningTurnover": 4979182519.44,
-        "priceChange": 1.2705882352941122
+        "turnoverRate": 1.7943277232433885,
+        "screeningTurnover": 85592985,
+        "priceChange": 10.051282051282051
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
     },
     {
-      "symbol": "601138.SH",
-      "name": "工业富联",
-      "theme": "电子设备及服务",
-      "last": 64.84,
-      "prevClose": 64.04,
-      "open": 63.15,
-      "high": 65,
-      "low": 62.5,
-      "volume": 1089904,
-      "turnover": 6934708848,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "603269.SH",
+      "name": "海鸥股份",
+      "theme": "建筑产品",
+      "last": 25.34,
+      "prevClose": 24.4,
+      "open": 25.86,
+      "high": 26.84,
+      "low": 23.89,
+      "volume": 1091417,
+      "turnover": 2778938020,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 13,
-      "universeScore": 99.934,
+      "universeRank": 214,
+      "universeScore": 80.677,
       "screening": {
-        "turnoverRate": 0.5492334869248585,
-        "screeningTurnover": 6934708848,
-        "priceChange": 1.2492192379762512
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600362.SH",
-      "name": "江西铜业",
-      "theme": "铜",
-      "last": 48.4,
-      "prevClose": 49.01,
-      "open": 47.47,
-      "high": 48.46,
-      "low": 46.47,
-      "volume": 665248,
-      "turnover": 3153487719,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 63,
-      "universeScore": 97.835,
-      "screening": {
-        "turnoverRate": 3.2056322460502,
-        "screeningTurnover": 3153487719,
-        "priceChange": -1.2446439502142415
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002384.SZ",
-      "name": "东山精密",
-      "theme": "电子元件",
-      "last": 198,
-      "prevClose": 195.62,
-      "open": 190.08,
-      "high": 199.63,
-      "low": 189,
-      "volume": 439940,
-      "turnover": 8622792741.32,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 7,
-      "universeScore": 101.863,
-      "screening": {
-        "turnoverRate": 2.578911215855109,
-        "screeningTurnover": 8622792741.32,
-        "priceChange": 1.2166445148757754
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600105.SH",
-      "name": "永鼎股份",
-      "theme": "通信设备",
-      "last": 40.28,
-      "prevClose": 39.8,
-      "open": 38.7,
-      "high": 40.74,
-      "low": 38.61,
-      "volume": 889774,
-      "turnover": 3547356667,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 46,
-      "universeScore": 99.748,
-      "screening": {
-        "turnoverRate": 6.086027110238659,
-        "screeningTurnover": 3547356667,
-        "priceChange": 1.2060301507537785
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600584.SH",
-      "name": "长电科技",
-      "theme": "半导体厂商",
-      "last": 75.75,
-      "prevClose": 74.93,
-      "open": 72.18,
-      "high": 76,
-      "low": 72.18,
-      "volume": 738559,
-      "turnover": 5476000192,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 23,
-      "universeScore": 100.543,
-      "screening": {
-        "turnoverRate": 4.127377816086521,
-        "screeningTurnover": 5476000192,
-        "priceChange": 1.0943547310823254
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002428.SZ",
-      "name": "云南锗业",
-      "theme": "多元化金属与采矿",
-      "last": 100.7,
-      "prevClose": 99.66,
-      "open": 95.6,
-      "high": 101.75,
-      "low": 95.03,
-      "volume": 507887,
-      "turnover": 5034344217.63,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 27,
-      "universeScore": 101.951,
-      "screening": {
-        "turnoverRate": 7.776319818716315,
-        "screeningTurnover": 5034344217.63,
-        "priceChange": 1.0435480634156225
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600667.SH",
-      "name": "太极实业",
-      "theme": "半导体厂商",
-      "last": 19.34,
-      "prevClose": 19.53,
-      "open": 18.88,
-      "high": 19.39,
-      "low": 18.62,
-      "volume": 1569157,
-      "turnover": 2986159049,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 70,
-      "universeScore": 99.475,
-      "screening": {
-        "turnoverRate": 7.502392332821509,
-        "screeningTurnover": 2986159049,
-        "priceChange": -0.9728622631848483
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "601869.SH",
-      "name": "长飞光纤",
-      "theme": "通信设备",
-      "last": 418.57,
-      "prevClose": 422.36,
-      "open": 405,
-      "high": 420.88,
-      "low": 405,
-      "volume": 135222,
-      "turnover": 5570743812,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 22,
-      "universeScore": 100.02,
-      "screening": {
-        "turnoverRate": 3.3278181097143595,
-        "screeningTurnover": 5570743812,
-        "priceChange": -0.8973387631404539
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "000636.SZ",
-      "name": "风华高科",
-      "theme": "电子元件",
-      "last": 55.88,
-      "prevClose": 55.45,
-      "open": 53.5,
-      "high": 55.88,
-      "low": 52.22,
-      "volume": 1279165,
-      "turnover": 6900049993.68,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 14,
-      "universeScore": 104.738,
-      "screening": {
-        "turnoverRate": 11.147500482964817,
-        "screeningTurnover": 6900049993.68,
-        "priceChange": 0.7754733994589813
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002185.SZ",
-      "name": "华天科技",
-      "theme": "半导体厂商",
-      "last": 17.05,
-      "prevClose": 16.92,
-      "open": 16.55,
-      "high": 17.05,
-      "low": 16.53,
-      "volume": 1470618,
-      "turnover": 2472017220.43,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 99,
-      "universeScore": 96.909,
-      "screening": {
-        "turnoverRate": 4.420574146569369,
-        "screeningTurnover": 2472017220.43,
-        "priceChange": 0.768321513002368
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002436.SZ",
-      "name": "兴森科技",
-      "theme": "电子元件",
-      "last": 36.01,
-      "prevClose": 35.78,
-      "open": 35,
-      "high": 36.48,
-      "low": 34.77,
-      "volume": 977556,
-      "turnover": 3488643667.25,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 48,
-      "universeScore": 98.945,
-      "screening": {
-        "turnoverRate": 5.751433812234921,
-        "screeningTurnover": 3488643667.25,
-        "priceChange": 0.6428172163219559
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "603186.SH",
-      "name": "华正新材",
-      "theme": "电子元件",
-      "last": 182.5,
-      "prevClose": 183.6,
-      "open": 178,
-      "high": 188.47,
-      "low": 178,
-      "volume": 230380,
-      "turnover": 4214866768,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 36,
-      "universeScore": 104.194,
-      "screening": {
-        "turnoverRate": 14.69349058467936,
-        "screeningTurnover": 4214866768,
-        "priceChange": -0.5991285403050051
+        "turnoverRate": 25.26747067089414,
+        "screeningTurnover": 2778938020,
+        "priceChange": 3.852459016393439
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
@@ -1993,320 +2131,182 @@
       "symbol": "600378.SH",
       "name": "昊华科技",
       "theme": "特种化学品",
-      "last": 53.01,
-      "prevClose": 53.31,
-      "open": 51.35,
-      "high": 54.65,
-      "low": 51.23,
-      "volume": 1496689,
-      "turnover": 7909656623,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "last": 48.86,
+      "prevClose": 53.01,
+      "open": 52.39,
+      "high": 52.87,
+      "low": 48.6,
+      "volume": 1001107,
+      "turnover": 4960124192,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 10,
-      "universeScore": 106.521,
+      "universeRank": 3047,
+      "universeScore": 80.649,
       "screening": {
-        "turnoverRate": 13.95429175349941,
-        "screeningTurnover": 7909656623,
-        "priceChange": -0.562746201463149
+        "turnoverRate": 9.33376216065631,
+        "screeningTurnover": 4960124192,
+        "priceChange": -7.828711563855872
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
     },
     {
-      "symbol": "002353.SZ",
-      "name": "杰瑞股份",
-      "theme": "能源设备与服务",
-      "last": 130.26,
-      "prevClose": 130.92,
-      "open": 130.96,
-      "high": 134.8,
-      "low": 126.72,
-      "volume": 204319,
-      "turnover": 2650243905.26,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "000892.SZ",
+      "name": "欢瑞世纪",
+      "theme": "电影和娱乐",
+      "last": 4.73,
+      "prevClose": 4.3,
+      "open": 4.73,
+      "high": 4.73,
+      "low": 4.73,
+      "volume": 130161,
+      "turnover": 61566148.27,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 88,
-      "universeScore": 95.735,
+      "universeRank": 38,
+      "universeScore": 80.488,
       "screening": {
-        "turnoverRate": 1.9962934281302995,
-        "screeningTurnover": 2650243905.26,
-        "priceChange": -0.5041246562786372
+        "turnoverRate": 1.821976943991175,
+        "screeningTurnover": 61566148.27,
+        "priceChange": 10.000000000000009
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
     },
     {
-      "symbol": "600030.SH",
-      "name": "中信证券",
-      "theme": "投资银行和经纪",
-      "last": 27.8,
-      "prevClose": 27.93,
-      "open": 27.83,
-      "high": 27.92,
-      "low": 27.47,
-      "volume": 1137738,
-      "turnover": 3147754952,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "002679.SZ",
+      "name": "福建金森",
+      "theme": "林产品",
+      "last": 12.91,
+      "prevClose": 11.74,
+      "open": 12.91,
+      "high": 12.91,
+      "low": 12.91,
+      "volume": 61149,
+      "turnover": 78943746.3,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 64,
-      "universeScore": 95.913,
+      "universeRank": 71,
+      "universeScore": 80.391,
       "screening": {
-        "turnoverRate": 0.9343680344535631,
-        "screeningTurnover": 3147754952,
-        "priceChange": -0.4654493376297864
+        "turnoverRate": 2.593740986443611,
+        "screeningTurnover": 78943746.3,
+        "priceChange": 9.965928449744466
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
     },
     {
-      "symbol": "600522.SH",
-      "name": "中天科技",
-      "theme": "电气部件和设备",
-      "last": 35.18,
-      "prevClose": 35.04,
-      "open": 34.29,
-      "high": 35.41,
-      "low": 34.29,
-      "volume": 1729427,
-      "turnover": 6050420204,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "003005.SZ",
+      "name": "竞业达",
+      "theme": "IT咨询",
+      "last": 18.18,
+      "prevClose": 16.53,
+      "open": 18.18,
+      "high": 18.18,
+      "low": 18.18,
+      "volume": 40514,
+      "turnover": 73654633.8,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 18,
-      "universeScore": 100.751,
+      "universeRank": 59,
+      "universeScore": 80.174,
       "screening": {
-        "turnoverRate": 5.067250256641055,
-        "screeningTurnover": 6050420204,
-        "priceChange": 0.3995433789954372
+        "turnoverRate": 1.7509066594788767,
+        "screeningTurnover": 73654633.8,
+        "priceChange": 9.981851179673319
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
     },
     {
-      "symbol": "002466.SZ",
-      "name": "天齐锂业",
-      "theme": "特种化学品",
-      "last": 49.9,
-      "prevClose": 50.1,
-      "open": 50.2,
-      "high": 50.73,
-      "low": 48.81,
-      "volume": 581683,
-      "turnover": 2889782666.85,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "600227.SH",
+      "name": "赤天化",
+      "theme": "化肥及农药",
+      "last": 5.17,
+      "prevClose": 5.04,
+      "open": 5.04,
+      "high": 5.45,
+      "low": 4.93,
+      "volume": 4776994,
+      "turnover": 2488287454,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 74,
-      "universeScore": 96.977,
+      "universeRank": 421,
+      "universeScore": 80.082,
       "screening": {
-        "turnoverRate": 3.939008591227459,
-        "screeningTurnover": 2889782666.85,
-        "priceChange": -0.3992015968063978
+        "turnoverRate": 37.39037833899854,
+        "screeningTurnover": 2488287454,
+        "priceChange": 2.57936507936507
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
     },
     {
-      "symbol": "002371.SZ",
-      "name": "北方华创",
-      "theme": "半导体材料与设备",
-      "last": 699.79,
-      "prevClose": 697.51,
-      "open": 683.56,
-      "high": 699.79,
-      "low": 672.18,
-      "volume": 67290,
-      "turnover": 4613699591.42,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "600353.SH",
+      "name": "旭光电子",
+      "theme": "电子元件",
+      "last": 33.68,
+      "prevClose": 36.6,
+      "open": 36.5,
+      "high": 36.78,
+      "low": 33.5,
+      "volume": 655122,
+      "turnover": 2243603124,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 30,
-      "universeScore": 97.431,
+      "universeRank": 3048,
+      "universeScore": 79.817,
       "screening": {
-        "turnoverRate": 0.9272564618572248,
-        "screeningTurnover": 4613699591.42,
-        "priceChange": 0.3268770340210114
+        "turnoverRate": 7.904357861089079,
+        "screeningTurnover": 2243603124,
+        "priceChange": -7.978142076502737
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
     },
     {
-      "symbol": "002409.SZ",
-      "name": "雅克科技",
-      "theme": "工业化学品",
-      "last": 142.37,
-      "prevClose": 142.06,
-      "open": 139.18,
-      "high": 143.54,
-      "low": 136.16,
-      "volume": 185612,
-      "turnover": 2596410607.7,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "600108.SH",
+      "name": "亚盛集团",
+      "theme": "农产品",
+      "last": 3.92,
+      "prevClose": 3.7,
+      "open": 3.68,
+      "high": 4.06,
+      "low": 3.66,
+      "volume": 3113096,
+      "turnover": 1212576866,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 93,
-      "universeScore": 96.312,
+      "universeRank": 103,
+      "universeScore": 79.304,
       "screening": {
-        "turnoverRate": 3.900004319563864,
-        "screeningTurnover": 2596410607.7,
-        "priceChange": 0.2182176545121761
+        "turnoverRate": 15.989890706694037,
+        "screeningTurnover": 1212576866,
+        "priceChange": 5.94594594594593
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
     },
     {
-      "symbol": "600519.SH",
-      "name": "贵州茅台",
-      "theme": "酿酒业",
-      "last": 1299.52,
-      "prevClose": 1297.4,
-      "open": 1297.99,
-      "high": 1305,
-      "low": 1286,
-      "volume": 23248,
-      "turnover": 3003033720,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "600892.SH",
+      "name": "大晟文化",
+      "theme": "电子游戏与多媒体",
+      "last": 4.86,
+      "prevClose": 4.42,
+      "open": 4.86,
+      "high": 4.86,
+      "low": 4.86,
+      "volume": 80485,
+      "turnover": 39115710,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 69,
-      "universeScore": 95.032,
+      "universeRank": 72,
+      "universeScore": 78.996,
       "screening": {
-        "turnoverRate": 0.1859718596082273,
-        "screeningTurnover": 3003033720,
-        "priceChange": 0.163403730537981
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "000703.SZ",
-      "name": "恒逸石化",
-      "theme": "工业化学品",
-      "last": 19.52,
-      "prevClose": 19.49,
-      "open": 19.8,
-      "high": 19.9,
-      "low": 18.95,
-      "volume": 1327830,
-      "turnover": 2589127047.5,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 94,
-      "universeScore": 96.023,
-      "screening": {
-        "turnoverRate": 3.474573875613595,
-        "screeningTurnover": 2589127047.5,
-        "priceChange": 0.1539250897896416
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600900.SH",
-      "name": "长江电力",
-      "theme": "独立电力和可再生能源电力生产商",
-      "last": 28.09,
-      "prevClose": 28.05,
-      "open": 28.01,
-      "high": 28.14,
-      "low": 27.8,
-      "volume": 982067,
-      "turnover": 2746323620,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 80,
-      "universeScore": 94.731,
-      "screening": {
-        "turnoverRate": 0.4013643377702239,
-        "screeningTurnover": 2746323620,
-        "priceChange": 0.1426024955436755
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600206.SH",
-      "name": "有研新材",
-      "theme": "半导体厂商",
-      "last": 51.72,
-      "prevClose": 51.65,
-      "open": 49.65,
-      "high": 52.44,
-      "low": 49.65,
-      "volume": 675663,
-      "turnover": 3459587929,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 52,
-      "universeScore": 99.516,
-      "screening": {
-        "turnoverRate": 7.981340034463416,
-        "screeningTurnover": 3459587929,
-        "priceChange": 0.1355275895450259
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "601318.SH",
-      "name": "中国平安",
-      "theme": "人寿和健康保险",
-      "last": 55.82,
-      "prevClose": 55.85,
-      "open": 55.92,
-      "high": 56.17,
-      "low": 55.68,
-      "volume": 545928,
-      "turnover": 3052052822,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 67,
-      "universeScore": 95.156,
-      "screening": {
-        "turnoverRate": 0.5121244530397958,
-        "screeningTurnover": 3052052822,
-        "priceChange": -0.0537153088630227
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "002491.SZ",
-      "name": "通鼎互联",
-      "theme": "通信设备",
-      "last": 22.22,
-      "prevClose": 22.23,
-      "open": 21.12,
-      "high": 22.44,
-      "low": 21.12,
-      "volume": 1589347,
-      "turnover": 3485370011.69,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 49,
-      "universeScore": 101.989,
-      "screening": {
-        "turnoverRate": 13.04385150326497,
-        "screeningTurnover": 3485370011.69,
-        "priceChange": -0.0449842555105828
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选"
-    },
-    {
-      "symbol": "600460.SH",
-      "name": "士兰微",
-      "theme": "半导体厂商",
-      "last": 34.16,
-      "prevClose": 34.17,
-      "open": 32.88,
-      "high": 34.33,
-      "low": 32.76,
-      "volume": 1052591,
-      "turnover": 3520763924,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 47,
-      "universeScore": 98.658,
-      "screening": {
-        "turnoverRate": 6.325393961581027,
-        "screeningTurnover": 3520763924,
-        "priceChange": -0.029265437518311
+        "turnoverRate": 1.4389806688246984,
+        "screeningTurnover": 39115710,
+        "priceChange": 9.954751131221728
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选"
@@ -2314,1035 +2314,614 @@
   ],
   "anomalies": [
     {
-      "symbol": "603379.SH",
-      "name": "三美股份",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "603088.SH",
+      "name": "宁波精达",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:59.000Z"
     },
     {
-      "symbol": "603160.SH",
-      "name": "汇顶科技",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "600403.SH",
+      "name": "大有能源",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:59.000Z"
     },
     {
-      "symbol": "688090.SH",
-      "name": "瑞松科技",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "601579.SH",
+      "name": "会稽山",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:58.000Z"
     },
     {
-      "symbol": "600906.SH",
-      "name": "财达证券",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "603989.SH",
+      "name": "艾华集团",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:58.000Z"
     },
     {
-      "symbol": "688305.SH",
-      "name": "科德数控",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "601696.SH",
+      "name": "中银证券",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:58.000Z"
     },
     {
-      "symbol": "603319.SH",
-      "name": "美湖股份",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "688300.SH",
+      "name": "联瑞新材",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:58.000Z"
     },
     {
-      "symbol": "601628.SH",
-      "name": "中国人寿",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "600595.SH",
-      "name": "中孚实业",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "688271.SH",
-      "name": "联影医疗",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "300999.SZ",
-      "name": "金龙鱼",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "300599.SZ",
-      "name": "雄塑科技",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "300383.SZ",
-      "name": "光环新网",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "600715.SH",
-      "name": "文投控股",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "002757.SZ",
-      "name": "南兴股份",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "003021.SZ",
-      "name": "兆威机电",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "002455.SZ",
-      "name": "百川股份",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "001258.SZ",
-      "name": "立新能源",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "000802.SZ",
-      "name": "北京文化",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "000539.SZ",
-      "name": "粤电力A",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "600126.SH",
-      "name": "杭钢股份",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "603221.SH",
-      "name": "爱丽家居",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "600903.SH",
-      "name": "贵州燃气",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "600078.SH",
-      "name": "澄星股份",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "000078.SZ",
-      "name": "ST海王",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "688690.SH",
-      "name": "纳微科技",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "600875.SH",
-      "name": "东方电气",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "603379.SH",
-      "name": "三美股份",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "688183.SH",
-      "name": "生益电子",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "603897.SH",
-      "name": "长城科技",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "603000.SH",
-      "name": "人民网",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "688031.SH",
-      "name": "星环科技-U",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "603919.SH",
-      "name": "金徽酒",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "600654.SH",
-      "name": "中安科",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "600284.SH",
-      "name": "浦东建设",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "301598.SZ",
-      "name": "博科测试",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "301191.SZ",
-      "name": "菲菱科思",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "300969.SZ",
-      "name": "恒帅股份",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "300884.SZ",
-      "name": "狄耐克",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "300666.SZ",
-      "name": "江丰电子",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "300816.SZ",
-      "name": "艾可蓝",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "300296.SZ",
-      "name": "利亚德",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "300224.SZ",
-      "name": "正海磁材",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "603730.SH",
-      "name": "岱美股份",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "300085.SZ",
-      "name": "银之杰",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "300113.SZ",
-      "name": "顺网科技",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "003040.SZ",
-      "name": "楚天龙",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "002967.SZ",
-      "name": "广电计量",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "002670.SZ",
-      "name": "国盛证券",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "002837.SZ",
-      "name": "英维克",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "002736.SZ",
-      "name": "国信证券",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "002539.SZ",
-      "name": "云图控股",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "002766.SZ",
-      "name": "索菱股份",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "002490.SZ",
-      "name": "山东墨龙",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "002445.SZ",
-      "name": "中南文化",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "002582.SZ",
-      "name": "好想你",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "002385.SZ",
-      "name": "大北农",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "002208.SZ",
-      "name": "合肥城建",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "002235.SZ",
-      "name": "安妮股份",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "002017.SZ",
-      "name": "东信和平",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "001979.SZ",
-      "name": "招商蛇口",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "000002.SZ",
-      "name": "万科A",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "600011.SH",
-      "name": "华能国际",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "603271.SH",
-      "name": "永杰新材",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "601658.SH",
-      "name": "邮储银行",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "600893.SH",
-      "name": "航发动力",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "605123.SH",
-      "name": "派克新材",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "600649.SH",
-      "name": "城投控股",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "688262.SH",
-      "name": "国芯科技",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "603580.SH",
-      "name": "艾艾精工",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "688183.SH",
-      "name": "生益电子",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "603660.SH",
-      "name": "苏州科达",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "600864.SH",
-      "name": "哈投股份",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "600737.SH",
-      "name": "中粮糖业",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "600941.SH",
-      "name": "中国移动",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "603931.SH",
-      "name": "格林达",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
-    },
-    {
-      "symbol": "301630.SZ",
-      "name": "同宇新材",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "301501.SZ",
+      "name": "恒鑫生活",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:57.000Z"
     },
     {
       "symbol": "301536.SZ",
       "name": "星宸科技",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:57.000Z"
     },
     {
-      "symbol": "301171.SZ",
-      "name": "易点天下",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "301290.SZ",
+      "name": "东星医疗",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:57.000Z"
     },
     {
-      "symbol": "300767.SZ",
-      "name": "震安科技",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "301058.SZ",
+      "name": "中粮科工",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:57.000Z"
     },
     {
-      "symbol": "300690.SZ",
-      "name": "双一科技",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "300945.SZ",
+      "name": "曼卡龙",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:57.000Z"
     },
     {
-      "symbol": "300613.SZ",
-      "name": "富瀚微",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "300839.SZ",
+      "name": "博汇股份",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:57.000Z"
     },
     {
-      "symbol": "300304.SZ",
-      "name": "云意电气",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "300468.SZ",
+      "name": "四方精创",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:57.000Z"
     },
     {
-      "symbol": "300207.SZ",
-      "name": "欣旺达",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "300927.SZ",
+      "name": "江天化学",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "300816.SZ",
+      "name": "艾可蓝",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "300528.SZ",
+      "name": "幸福蓝海",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "300483.SZ",
+      "name": "首华燃气",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "300545.SZ",
+      "name": "联得装备",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "300320.SZ",
+      "name": "海达股份",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "300456.SZ",
+      "name": "赛微电子",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "300428.SZ",
+      "name": "立中集团",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "300133.SZ",
+      "name": "华策影视",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "300417.SZ",
+      "name": "南华仪器",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "300016.SZ",
+      "name": "北陆药业",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "300276.SZ",
+      "name": "三丰智能",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "600078.SH",
+      "name": "澄星股份",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "002939.SZ",
+      "name": "长城证券",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "002827.SZ",
+      "name": "高争民爆",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "002886.SZ",
+      "name": "沃特股份",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "002650.SZ",
+      "name": "ST加加",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "002025.SZ",
+      "name": "航天电器",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "002335.SZ",
+      "name": "科华数据",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "002432.SZ",
+      "name": "九安医疗",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "000723.SZ",
+      "name": "美锦能源",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "000011.SZ",
+      "name": "深物业A",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "000078.SZ",
+      "name": "ST海王",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "600862.SH",
+      "name": "中航高科",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "603115.SH",
+      "name": "海星股份",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:57.000Z"
+    },
+    {
+      "symbol": "600166.SH",
+      "name": "福田汽车",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:56.000Z"
+    },
+    {
+      "symbol": "600546.SH",
+      "name": "山煤国际",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:56.000Z"
+    },
+    {
+      "symbol": "601088.SH",
+      "name": "中国神华",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:56.000Z"
+    },
+    {
+      "symbol": "601137.SH",
+      "name": "博威合金",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:56.000Z"
+    },
+    {
+      "symbol": "601111.SH",
+      "name": "中国国航",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:56.000Z"
+    },
+    {
+      "symbol": "603990.SH",
+      "name": "麦迪科技",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:56.000Z"
+    },
+    {
+      "symbol": "600109.SH",
+      "name": "国金证券",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:56.000Z"
+    },
+    {
+      "symbol": "600066.SH",
+      "name": "宇通客车",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:55.000Z"
+    },
+    {
+      "symbol": "601117.SH",
+      "name": "中国化学",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:55.000Z"
+    },
+    {
+      "symbol": "600188.SH",
+      "name": "兖矿能源",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:55.000Z"
+    },
+    {
+      "symbol": "688567.SH",
+      "name": "孚能科技",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:55.000Z"
+    },
+    {
+      "symbol": "603358.SH",
+      "name": "华达科技",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:55.000Z"
+    },
+    {
+      "symbol": "301110.SZ",
+      "name": "青木科技",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:54.000Z"
+    },
+    {
+      "symbol": "300803.SZ",
+      "name": "指南针",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:54.000Z"
+    },
+    {
+      "symbol": "300886.SZ",
+      "name": "华业香料",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:54.000Z"
+    },
+    {
+      "symbol": "300839.SZ",
+      "name": "博汇股份",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:54.000Z"
+    },
+    {
+      "symbol": "300073.SZ",
+      "name": "当升科技",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:54.000Z"
+    },
+    {
+      "symbol": "300067.SZ",
+      "name": "安诺其",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:54.000Z"
     },
     {
       "symbol": "603301.SH",
       "name": "振德医疗",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:54.000Z"
     },
     {
-      "symbol": "601618.SH",
-      "name": "中国中冶",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "688475.SH",
+      "name": "萤石网络",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:54.000Z"
     },
     {
-      "symbol": "600405.SH",
-      "name": "动力源",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "002987.SZ",
+      "name": "京北方",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:54.000Z"
     },
     {
-      "symbol": "601002.SH",
-      "name": "晋亿实业",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "002899.SZ",
+      "name": "英派斯",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:54.000Z"
     },
     {
-      "symbol": "300010.SZ",
-      "name": "ST豆神",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "002519.SZ",
+      "name": "银河电子",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:54.000Z"
     },
     {
-      "symbol": "300154.SZ",
-      "name": "瑞凌股份",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "002536.SZ",
+      "name": "飞龙股份",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:54.000Z"
     },
     {
-      "symbol": "003032.SZ",
-      "name": "传智教育",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "002639.SZ",
+      "name": "雪人集团",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:54.000Z"
     },
     {
-      "symbol": "002842.SZ",
-      "name": "翔鹭钨业",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "002617.SZ",
+      "name": "露笑科技",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:54.000Z"
     },
     {
-      "symbol": "002995.SZ",
-      "name": "天地在线",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "002165.SZ",
+      "name": "红宝丽",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:54.000Z"
     },
     {
-      "symbol": "002852.SZ",
-      "name": "道道全",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "000990.SZ",
+      "name": "诚志股份",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:54.000Z"
     },
     {
-      "symbol": "002458.SZ",
-      "name": "益生股份",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "000681.SZ",
+      "name": "视觉中国",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:54.000Z"
     },
     {
-      "symbol": "002293.SZ",
-      "name": "罗莱生活",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "000981.SZ",
+      "name": "山子高科",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:54.000Z"
     },
     {
-      "symbol": "002236.SZ",
-      "name": "大华股份",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "000017.SZ",
+      "name": "深中华A",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:54.000Z"
     },
     {
-      "symbol": "002215.SZ",
-      "name": "诺普信",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "603477.SH",
+      "name": "巨星农牧",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:54.000Z"
     },
     {
-      "symbol": "002132.SZ",
-      "name": "恒星科技",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "600162.SH",
+      "name": "香江控股",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:54.000Z"
     },
     {
-      "symbol": "000661.SZ",
-      "name": "长春高新",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "symbol": "688062.SH",
+      "name": "迈威生物-U",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:53.000Z"
+    },
+    {
+      "symbol": "600310.SH",
+      "name": "广西能源",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:53.000Z"
+    },
+    {
+      "symbol": "601988.SH",
+      "name": "中国银行",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:53.000Z"
+    },
+    {
+      "symbol": "600674.SH",
+      "name": "川投能源",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:53.000Z"
+    },
+    {
+      "symbol": "600602.SH",
+      "name": "云赛智联",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:53.000Z"
+    },
+    {
+      "symbol": "603557.SH",
+      "name": "*ST起步",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:52.000Z"
+    },
+    {
+      "symbol": "601225.SH",
+      "name": "陕西煤业",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:52.000Z"
+    },
+    {
+      "symbol": "603589.SH",
+      "name": "口子窖",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "603803.SH",
+      "name": "瑞斯康达",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "301489.SZ",
+      "name": "思泉新材",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "301529.SZ",
+      "name": "福赛科技",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "301239.SZ",
+      "name": "普瑞眼科",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "301526.SZ",
+      "name": "国际复材",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "301251.SZ",
+      "name": "威尔高",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "300622.SZ",
+      "name": "博士眼镜",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "300792.SZ",
+      "name": "壹网壹创",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "300353.SZ",
+      "name": "东土科技",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "300582.SZ",
+      "name": "英飞特",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "300225.SZ",
+      "name": "金力泰",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "300260.SZ",
+      "name": "新莱应材",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "002568.SZ",
+      "name": "百润股份",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "002988.SZ",
+      "name": "豪美新材",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "001238.SZ",
+      "name": "浙江正特",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:51.000Z"
     },
     {
       "symbol": "000983.SZ",
       "name": "山西焦煤",
-      "reason": "市场异常：未知涨跌%，成交量 未知",
-      "time": "2026-08-31T07:43:59Z"
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "002670.SZ",
+      "name": "国盛证券",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "002549.SZ",
+      "name": "凯美特气",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "002418.SZ",
+      "name": "康盛股份",
+      "reason": "市场异常：大笔卖出",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "002292.SZ",
+      "name": "奥飞娱乐",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:51.000Z"
+    },
+    {
+      "symbol": "002312.SZ",
+      "name": "川发龙蟒",
+      "reason": "市场异常：大笔买入",
+      "time": "2026-09-01T06:56:51.000Z"
     }
   ],
-  "news": [
-    {
-      "id": "297377856",
-      "title": "GLORIA PHARMA has given up the exclusive promotion rights for a classic original research drug. WuXi AppTec China: has signed a contract with a new partner",
-      "summary": "Longbridge资讯：GLORIA PHARMA has given up the exclusive promotion rights for a classic original research drug. WuXi AppTec China: has s",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-29T01:22:47Z",
-      "url": "https://longbridge.com/news/297377856",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "297317290",
-      "title": "Capital focuses on pharmaceutical manufacturing! Chemical pharmaceuticals reversed in the late trading session, with policies safeguarding the industry chain to seize opportunities",
-      "summary": "Longbridge资讯：Capital focuses on pharmaceutical manufacturing! Chemical pharmaceuticals reversed in the late trading session, with pol",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-28T11:30:11Z",
-      "url": "https://longbridge.com/news/297317290",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "297275947",
-      "title": "The chemical pharmaceutical sector rebounded from a low at the end of the trading session, with GLORIA PHARMA hitting the limit up",
-      "summary": "Longbridge资讯：The chemical pharmaceutical sector rebounded from a low at the end of the trading session, with GLORIA PHARMA hitting th",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-28T06:42:15Z",
-      "url": "https://longbridge.com/news/297275947",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "297058737",
-      "title": "GLORIA PHARMA released its semi-annual performance report, with a net profit attributable to the parent company of 159 million yuan, a year-on-year increase of 18.27%",
-      "summary": "Longbridge资讯：GLORIA PHARMA released its semi-annual performance report, with a net profit attributable to the parent company of 159 m",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-26T14:02:04Z",
-      "url": "https://longbridge.com/news/297058737",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "296849095",
-      "title": "The innovative drug sector continues to rise, Hansen Pharmaceutical has achieved 5 consecutive limit-ups",
-      "summary": "Longbridge资讯：The innovative drug sector continues to rise, Hansen Pharmaceutical has achieved 5 consecutive limit-ups",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-25T02:17:47Z",
-      "url": "https://longbridge.com/news/296849095",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "296846740",
-      "title": "The pharmaceutical sector experiences localized fluctuations, with JiHeng Pharmaceutical hitting the daily limit",
-      "summary": "Longbridge资讯：The pharmaceutical sector experiences localized fluctuations, with JiHeng Pharmaceutical hitting the daily limit",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-25T01:48:35Z",
-      "url": "https://longbridge.com/news/296846740",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "296504261",
-      "title": "431 million funds rush to acquire GLORIA PHARMA, institutions frantically buy Shennong Seed Industry | Dragon and Tiger List",
-      "summary": "Longbridge资讯：431 million funds rush to acquire GLORIA PHARMA, institutions frantically buy Shennong Seed Industry | Dragon and Tiger ",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-20T11:53:02Z",
-      "url": "https://longbridge.com/news/296504261",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "296453616",
-      "title": "August 20th Continuous Board Stock Analysis: The promotion rate of continuous board stocks is only 14%, and pharmaceutical stocks have all exploded",
-      "summary": "Longbridge资讯：August 20th Continuous Board Stock Analysis: The promotion rate of continuous board stocks is only 14%, and pharmaceutic",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-20T07:46:05Z",
-      "url": "https://longbridge.com/news/296453616",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "296449851",
-      "title": "Analysis of the Limit-Up on August 20",
-      "summary": "Longbridge资讯：Analysis of the Limit-Up on August 20",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-20T07:13:14Z",
-      "url": "https://longbridge.com/news/296449851",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "296349882",
-      "title": "1.41 billion funds rush to acquire LUXIN, institutions buy GLORIA PHARMA wildly | Dragon and Tiger List",
-      "summary": "Longbridge资讯：1.41 billion funds rush to acquire LUXIN, institutions buy GLORIA PHARMA wildly | Dragon and Tiger List",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-19T11:33:03Z",
-      "url": "https://longbridge.com/news/296349882",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "296045136",
-      "title": "The concept of innovative drugs has rebounded, GLORIA PHARMA. has achieved 5 consecutive limit-ups in 7 days",
-      "summary": "Longbridge资讯：The concept of innovative drugs has rebounded, GLORIA PHARMA. has achieved 5 consecutive limit-ups in 7 days",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-17T02:03:30Z",
-      "url": "https://longbridge.com/news/296045136",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "295943954",
-      "title": "Top ten bull stocks have changed! The pharmaceutical sector occupies half of the market, with BOJI CRO, AHWB, and 5 other stocks on the list. The only tech stock, LANDUN PHOTOELECT",
-      "summary": "Longbridge资讯：Top ten bull stocks have changed! The pharmaceutical sector occupies half of the market, with BOJI CRO, AHWB, and 5 othe",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-14T13:46:43Z",
-      "url": "https://longbridge.com/news/295943954",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "295920874",
-      "title": "List of stocks bought and sold by institutions on the Dragon and Tiger List on August 14, 2026",
-      "summary": "Longbridge资讯：List of stocks bought and sold by institutions on the Dragon and Tiger List on August 14, 2026",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-14T10:20:40Z",
-      "url": "https://longbridge.com/news/295920874",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "295867904",
-      "title": "Today's top ten hot stocks in A-shares: Datang Power and TJ lead the way, BHC has 7 boards in 8 days, and GLORIA PHARMA has 4 boards in 5 days, continuing to be popular",
-      "summary": "Longbridge资讯：Today's top ten hot stocks in A-shares: Datang Power and TJ lead the way, BHC has 7 boards in 8 days, and GLORIA PHARMA ",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-14T01:36:43Z",
-      "url": "https://longbridge.com/news/295867904",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "295764075",
-      "title": "August 13th Continuous Board Stock Analysis: The promotion rate of continuous board stocks exceeds 50%, inm has achieved 9 boards in 13 days",
-      "summary": "Longbridge资讯：August 13th Continuous Board Stock Analysis: The promotion rate of continuous board stocks exceeds 50%, inm has achieved",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-13T08:09:12Z",
-      "url": "https://longbridge.com/news/295764075",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "295751169",
-      "title": "Limit-up sealed order of 552,000 hands! Where did the company's stock price rise of 4 boards in 5 days come from?",
-      "summary": "Longbridge资讯：Limit-up sealed order of 552,000 hands! Where did the company's stock price rise of 4 boards in 5 days come from?",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-13T06:02:08Z",
-      "url": "https://longbridge.com/news/295751169",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "295741314",
-      "title": "Midday limit-up and limit-down stock analysis: 56 limit-up stocks, 0 limit-down stocks, CRO concept strengthens, AHWB has 2 boards in 3 days, BOJI CRO and Novoprotein limit-up",
-      "summary": "Longbridge资讯：Midday limit-up and limit-down stock analysis: 56 limit-up stocks, 0 limit-down stocks, CRO concept strengthens, AHWB ha",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-13T03:44:10Z",
-      "url": "https://longbridge.com/news/295741314",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "295736923",
-      "title": "A-share innovative drug concept stocks surged, BOJI CRO hit a 20% limit up, Staidson BioPharm rose over 10%",
-      "summary": "Longbridge资讯：A-share innovative drug concept stocks surged, BOJI CRO hit a 20% limit up, Staidson BioPharm rose over 10%",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-13T03:06:42Z",
-      "url": "https://longbridge.com/news/295736923",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "295731884",
-      "title": "The concept of innovative drugs fluctuates and rises, GLORIA PHARMA. has 4 limit-ups in 5 days",
-      "summary": "Longbridge资讯：The concept of innovative drugs fluctuates and rises, GLORIA PHARMA. has 4 limit-ups in 5 days",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-13T01:56:16Z",
-      "url": "https://longbridge.com/news/295731884",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "295730678",
-      "title": "",
-      "summary": "Longbridge资讯：",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-13T01:43:19Z",
-      "url": "https://longbridge.com/news/295730678",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "295598835",
-      "title": "",
-      "summary": "Longbridge资讯：",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-12T01:34:34Z",
-      "url": "https://longbridge.com/news/295598835",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "295174111",
-      "title": "The innovative drug concept is strengthening, BHC has a 4-day consecutive limit up, the rare earth permanent magnet sector is rising, and the PCB concept remains active",
-      "summary": "Longbridge资讯：The innovative drug concept is strengthening, BHC has a 4-day consecutive limit up, the rare earth permanent magnet sect",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-08-07T03:12:03Z",
-      "url": "https://longbridge.com/news/295174111",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "288576292",
-      "title": "GLORIA PHARMA: In line with national policies and industry development trends, prudently select investment and acquisition targets at the right time",
-      "summary": "Longbridge资讯：GLORIA PHARMA: In line with national policies and industry development trends, prudently select investment and acquisiti",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-06-03T12:28:58Z",
-      "url": "https://longbridge.com/news/288576292",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "283923512",
-      "title": "The chemical formulation sector has seen a short-term surge",
-      "summary": "Longbridge资讯：The chemical formulation sector has seen a short-term surge",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-04-24T02:35:08Z",
-      "url": "https://longbridge.com/news/283923512",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "283129441",
-      "title": "GLORIA PHARMA: Wholly-owned subsidiary Methotrexate Injection approved for market launch",
-      "summary": "Longbridge资讯：GLORIA PHARMA: Wholly-owned subsidiary Methotrexate Injection approved for market launch",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-04-17T10:40:41Z",
-      "url": "https://longbridge.com/news/283129441",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "282677587",
-      "title": "GLORIA PHARMA's net profit attributable to the parent company for the year 2025 is 377 million yuan, a year-on-year increase of 61.93%",
-      "summary": "Longbridge资讯：GLORIA PHARMA's net profit attributable to the parent company for the year 2025 is 377 million yuan, a year-on-year incr",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-04-14T11:02:25Z",
-      "url": "https://longbridge.com/news/282677587",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "282676768",
-      "title": "GLORIA PHARMA. issued a profit forecast, expecting a net profit attributable to the parent company of 90 million to 98 million yuan in the first quarter, a year-on-year increase of",
-      "summary": "Longbridge资讯：GLORIA PHARMA. issued a profit forecast, expecting a net profit attributable to the parent company of 90 million to 98 m",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-04-14T10:57:03Z",
-      "url": "https://longbridge.com/news/282676768",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "282526126",
-      "title": "GLORIA PHARMA: Signed a technology transfer contract to pay 14.15 million yuan",
-      "summary": "Longbridge资讯：GLORIA PHARMA: Signed a technology transfer contract to pay 14.15 million yuan",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-04-13T10:22:51Z",
-      "url": "https://longbridge.com/news/282526126",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "278797873",
-      "title": "Zhitong A-share restricted stock release overview | March 12",
-      "summary": "Longbridge资讯：Zhitong A-share restricted stock release overview | March 12",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-03-12T01:02:15Z",
-      "url": "https://longbridge.com/news/278797873",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    },
-    {
-      "id": "273082485",
-      "title": "GLORIA PHARMA. expects net profit to grow by more than 50% year-on-year in 2025, with significant or steady growth in sales of some core products",
-      "summary": "Longbridge资讯：GLORIA PHARMA. expects net profit to grow by more than 50% year-on-year in 2025, with significant or steady growth in sa",
-      "source": "Longbridge资讯",
-      "publishedAt": "2026-01-20T12:15:22Z",
-      "url": "https://longbridge.com/news/273082485",
-      "relatedSymbols": [
-        "002437.SZ"
-      ],
-      "themes": [
-        "制药"
-      ]
-    }
-  ],
+  "news": [],
   "universeScan": {
-    "totalReported": 5292,
-    "recordsFetched": 5292,
-    "eligibleCount": 3050,
+    "totalReported": 5294,
+    "recordsFetched": 5294,
+    "eligibleCount": 3051,
     "pagesFetched": 53,
     "deepQuoteCount": 100,
-    "screenedAt": "2026-08-31T08:03:17.607Z",
+    "screenedAt": "2026-09-01T07:45:20.924Z",
     "method": "Longbridge CN full-market screener: prevclose>0; ranked by turnover, turnover rate, absolute daily change; exact close quotes fetched for top 100",
     "filters": {
       "includedPrefixes": [
@@ -3377,7 +2956,7 @@
     "coverage": {
       "sampleSize": 100,
       "dailyBarsPerSymbol": 25,
-      "successfulResponses": 100
+      "successfulResponses": 99
     },
     "filters": {
       "ret20Min": 2,
@@ -3392,861 +2971,361 @@
       "trend efficiency",
       "volume ratio"
     ],
-    "qualifiedCount": 22
+    "qualifiedCount": 2
   },
   "trendCandidates": [
     {
-      "symbol": "600498.SH",
-      "name": "烽火通信",
-      "theme": "通信设备",
-      "last": 42.46,
-      "prevClose": 41.18,
-      "open": 40.5,
-      "high": 43.75,
-      "low": 40.41,
-      "volume": 1017128,
-      "turnover": 4323455015,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "600108.SH",
+      "name": "亚盛集团",
+      "theme": "农产品",
+      "last": 3.92,
+      "prevClose": 3.7,
+      "open": 3.68,
+      "high": 4.06,
+      "low": 3.66,
+      "volume": 3113096,
+      "turnover": 1212576866,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 34,
-      "universeScore": 103.466,
+      "universeRank": 103,
+      "universeScore": 79.304,
       "screening": {
-        "turnoverRate": 7.998669692154046,
-        "screeningTurnover": 4323455015,
-        "priceChange": 3.1083050024283576
+        "turnoverRate": 15.989890706694037,
+        "screeningTurnover": 1212576866,
+        "priceChange": 5.94594594594593
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选",
-      "ret20": 29.06,
-      "ret1": 3.11,
-      "volRatio": 1.05,
-      "trendEfficiency": 0.288,
-      "source": "Longbridge OpenAPI",
+      "ret20": 25.239616613418537,
+      "ret1": 5.94594594594593,
+      "volRatio": 2.373141471308438,
+      "trendEfficiency": 0.39898989898989917,
       "trendRank": 1,
-      "trendScore": 89.01
-    },
-    {
-      "symbol": "001309.SZ",
-      "name": "德明利",
-      "theme": "半导体厂商",
-      "last": 436.5,
-      "prevClose": 429.03,
-      "open": 422.31,
-      "high": 442.32,
-      "low": 420.5,
-      "volume": 133741,
-      "turnover": 5760448558.61,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 20,
-      "universeScore": 102.32,
-      "screening": {
-        "turnoverRate": 5.948063220314454,
-        "screeningTurnover": 5760448558.61,
-        "priceChange": 1.741136983427749
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 25.07,
-      "ret1": 1.74,
-      "volRatio": 0.74,
-      "trendEfficiency": 0.303,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 2,
-      "trendScore": 86.12
-    },
-    {
-      "symbol": "600176.SH",
-      "name": "中国巨石",
-      "theme": "建筑材料",
-      "last": 43.93,
-      "prevClose": 43.2,
-      "open": 41.96,
-      "high": 43.98,
-      "low": 41.93,
-      "volume": 1845745,
-      "turnover": 8004484311,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 9,
-      "universeScore": 103.047,
-      "screening": {
-        "turnoverRate": 4.647373926310447,
-        "screeningTurnover": 8004484311,
-        "priceChange": 1.689814814814805
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 28.98,
-      "ret1": 1.69,
-      "volRatio": 0.75,
-      "trendEfficiency": 0.253,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 3,
-      "trendScore": 88.24
-    },
-    {
-      "symbol": "600105.SH",
-      "name": "永鼎股份",
-      "theme": "通信设备",
-      "last": 40.28,
-      "prevClose": 39.8,
-      "open": 38.7,
-      "high": 40.74,
-      "low": 38.61,
-      "volume": 889774,
-      "turnover": 3547356667,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 46,
-      "universeScore": 99.748,
-      "screening": {
-        "turnoverRate": 6.086027110238659,
-        "screeningTurnover": 3547356667,
-        "priceChange": 1.2060301507537785
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 29.23,
-      "ret1": 1.21,
-      "volRatio": 0.57,
-      "trendEfficiency": 0.241,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 4,
-      "trendScore": 88.2
-    },
-    {
-      "symbol": "603228.SH",
-      "name": "景旺电子",
-      "theme": "电子元件",
-      "last": 96.49,
-      "prevClose": 93.9,
-      "open": 90,
-      "high": 97.18,
-      "low": 90,
-      "volume": 301448,
-      "turnover": 2860089817,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 75,
-      "universeScore": 98.857,
-      "screening": {
-        "turnoverRate": 3.0697019457678,
-        "screeningTurnover": 2860089817,
-        "priceChange": 2.7582534611288567
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 29.08,
-      "ret1": 2.76,
-      "volRatio": 0.62,
-      "trendEfficiency": 0.23,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 5,
-      "trendScore": 87.86
-    },
-    {
-      "symbol": "600460.SH",
-      "name": "士兰微",
-      "theme": "半导体厂商",
-      "last": 34.16,
-      "prevClose": 34.17,
-      "open": 32.88,
-      "high": 34.33,
-      "low": 32.76,
-      "volume": 1052591,
-      "turnover": 3520763924,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 47,
-      "universeScore": 98.658,
-      "screening": {
-        "turnoverRate": 6.325393961581027,
-        "screeningTurnover": 3520763924,
-        "priceChange": -0.029265437518311
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 24.44,
-      "ret1": -0.03,
-      "volRatio": 0.88,
-      "trendEfficiency": 0.269,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 6,
-      "trendScore": 84.93
-    },
-    {
-      "symbol": "000703.SZ",
-      "name": "恒逸石化",
-      "theme": "工业化学品",
-      "last": 19.52,
-      "prevClose": 19.49,
-      "open": 19.8,
-      "high": 19.9,
-      "low": 18.95,
-      "volume": 1327830,
-      "turnover": 2589127047.5,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 94,
-      "universeScore": 96.023,
-      "screening": {
-        "turnoverRate": 3.474573875613595,
-        "screeningTurnover": 2589127047.5,
-        "priceChange": 0.1539250897896416
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 20.49,
-      "ret1": 0.15,
-      "volRatio": 1.26,
-      "trendEfficiency": 0.319,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 7,
-      "trendScore": 82.77
-    },
-    {
-      "symbol": "603256.SH",
-      "name": "宏和科技",
-      "theme": "工业化学品",
-      "last": 147.55,
-      "prevClose": 139.17,
-      "open": 133.74,
-      "high": 149.74,
-      "low": 133.34,
-      "volume": 192952,
-      "turnover": 2785159701,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 78,
-      "universeScore": 101.567,
-      "screening": {
-        "turnoverRate": 2.193315543733713,
-        "screeningTurnover": 2785159701,
-        "priceChange": 6.0214126607746055
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 27.95,
-      "ret1": 6.02,
-      "volRatio": 0.93,
-      "trendEfficiency": 0.211,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 8,
-      "trendScore": 86.58
-    },
-    {
-      "symbol": "600522.SH",
-      "name": "中天科技",
-      "theme": "电气部件和设备",
-      "last": 35.18,
-      "prevClose": 35.04,
-      "open": 34.29,
-      "high": 35.41,
-      "low": 34.29,
-      "volume": 1729427,
-      "turnover": 6050420204,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 18,
-      "universeScore": 100.751,
-      "screening": {
-        "turnoverRate": 5.067250256641055,
-        "screeningTurnover": 6050420204,
-        "priceChange": 0.3995433789954372
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 23.92,
-      "ret1": 0.4,
-      "volRatio": 0.67,
-      "trendEfficiency": 0.24,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 9,
-      "trendScore": 83.94
-    },
-    {
-      "symbol": "002463.SZ",
-      "name": "沪电股份",
-      "theme": "电子元件",
-      "last": 124.91,
-      "prevClose": 121.7,
-      "open": 118.19,
-      "high": 125,
-      "low": 118,
-      "volume": 496358,
-      "turnover": 6103502065.31,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 16,
-      "universeScore": 101.783,
-      "screening": {
-        "turnoverRate": 2.579335923054335,
-        "screeningTurnover": 6103502065.31,
-        "priceChange": 2.637633525061611
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 22.93,
-      "ret1": 2.64,
-      "volRatio": 0.95,
-      "trendEfficiency": 0.201,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 10,
-      "trendScore": 82.36
-    },
-    {
-      "symbol": "600489.SH",
-      "name": "中金黄金",
-      "theme": "黄金",
-      "last": 25.62,
-      "prevClose": 26.68,
-      "open": 25.11,
-      "high": 25.66,
-      "low": 24.48,
-      "volume": 1310913,
-      "turnover": 3286841973,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 58,
-      "universeScore": 100.493,
-      "screening": {
-        "turnoverRate": 2.7044119451588142,
-        "screeningTurnover": 3286841973,
-        "priceChange": -3.9730134932533634
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 16.03,
-      "ret1": -3.97,
-      "volRatio": 1.23,
-      "trendEfficiency": 0.281,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 11,
-      "trendScore": 78.44
-    },
-    {
-      "symbol": "601988.SH",
-      "name": "中国银行",
-      "theme": "多元化银行",
-      "last": 6.51,
-      "prevClose": 6.19,
-      "open": 6.24,
-      "high": 6.52,
-      "low": 6.23,
-      "volume": 4977169,
-      "turnover": 3198569046,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 61,
-      "universeScore": 100.337,
-      "screening": {
-        "turnoverRate": 0.2361472180891009,
-        "screeningTurnover": 3198569046,
-        "priceChange": 5.1696284329563635
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 7.96,
-      "ret1": 5.17,
-      "volRatio": 1.81,
-      "trendEfficiency": 0.519,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 12,
-      "trendScore": 76.75
-    },
-    {
-      "symbol": "603259.SH",
-      "name": "药明康德",
-      "theme": "生命科学工具与服务",
-      "last": 154.78,
-      "prevClose": 157.4,
-      "open": 154.26,
-      "high": 155.45,
-      "low": 150.22,
-      "volume": 476254,
-      "turnover": 7283350255,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 11,
-      "universeScore": 101.251,
-      "screening": {
-        "turnoverRate": 1.9255965868414573,
-        "screeningTurnover": 7283350255,
-        "priceChange": -1.6645489199491714
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 20.45,
-      "ret1": -1.66,
-      "volRatio": 0.69,
-      "trendEfficiency": 0.172,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 13,
-      "trendScore": 79.8
-    },
-    {
-      "symbol": "002714.SZ",
-      "name": "牧原股份",
-      "theme": "包装食品和肉类",
-      "last": 42.31,
-      "prevClose": 41.68,
-      "open": 41.94,
-      "high": 42.65,
-      "low": 41.91,
-      "volume": 633480,
-      "turnover": 2680925359.93,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 84,
-      "universeScore": 96.374,
-      "screening": {
-        "turnoverRate": 1.1596308228396537,
-        "screeningTurnover": 2680925359.93,
-        "priceChange": 1.511516314779282
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 8.68,
-      "ret1": 1.51,
-      "volRatio": 1.27,
-      "trendEfficiency": 0.398,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 14,
-      "trendScore": 74.9
-    },
-    {
-      "symbol": "601138.SH",
-      "name": "工业富联",
-      "theme": "电子设备及服务",
-      "last": 64.84,
-      "prevClose": 64.04,
-      "open": 63.15,
-      "high": 65,
-      "low": 62.5,
-      "volume": 1089904,
-      "turnover": 6934708848,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 13,
-      "universeScore": 99.934,
-      "screening": {
-        "turnoverRate": 0.5492334869248585,
-        "screeningTurnover": 6934708848,
-        "priceChange": 1.2492192379762512
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 15.99,
-      "ret1": 1.25,
-      "volRatio": 0.78,
-      "trendEfficiency": 0.158,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 15,
-      "trendScore": 75.95
-    },
-    {
-      "symbol": "000100.SZ",
-      "name": "TCL科技",
-      "theme": "电子设备及服务",
-      "last": 5.09,
-      "prevClose": 4.96,
-      "open": 4.94,
-      "high": 5.1,
-      "low": 4.92,
-      "volume": 5262032,
-      "turnover": 2644307964.4,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 89,
-      "universeScore": 98.109,
-      "screening": {
-        "turnoverRate": 2.5297181851990542,
-        "screeningTurnover": 2644307964.4,
-        "priceChange": 2.620967741935476
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 8.3,
-      "ret1": 2.62,
-      "volRatio": 1.05,
-      "trendEfficiency": 0.276,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 16,
-      "trendScore": 72.16
-    },
-    {
-      "symbol": "600362.SH",
-      "name": "江西铜业",
-      "theme": "铜",
-      "last": 48.4,
-      "prevClose": 49.01,
-      "open": 47.47,
-      "high": 48.46,
-      "low": 46.47,
-      "volume": 665248,
-      "turnover": 3153487719,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 63,
-      "universeScore": 97.835,
-      "screening": {
-        "turnoverRate": 3.2056322460502,
-        "screeningTurnover": 3153487719,
-        "priceChange": -1.2446439502142415
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 12.58,
-      "ret1": -1.24,
-      "volRatio": 0.96,
-      "trendEfficiency": 0.153,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 17,
-      "trendScore": 73.12
-    },
-    {
-      "symbol": "002466.SZ",
-      "name": "天齐锂业",
-      "theme": "特种化学品",
-      "last": 49.9,
-      "prevClose": 50.1,
-      "open": 50.2,
-      "high": 50.73,
-      "low": 48.81,
-      "volume": 581683,
-      "turnover": 2889782666.85,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 74,
-      "universeScore": 96.977,
-      "screening": {
-        "turnoverRate": 3.939008591227459,
-        "screeningTurnover": 2889782666.85,
-        "priceChange": -0.3992015968063978
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 9.07,
-      "ret1": -0.4,
-      "volRatio": 1.17,
-      "trendEfficiency": 0.176,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 18,
-      "trendScore": 70.78
-    },
-    {
-      "symbol": "601899.SH",
-      "name": "紫金矿业",
-      "theme": "多元化金属与采矿",
-      "last": 33.67,
-      "prevClose": 34.65,
-      "open": 33,
-      "high": 33.75,
-      "low": 32.6,
-      "volume": 2966399,
-      "turnover": 9844983992,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 5,
-      "universeScore": 103.48,
-      "screening": {
-        "turnoverRate": 1.4398741798064671,
-        "screeningTurnover": 9844983992,
-        "priceChange": -2.8282828282828243
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 4.79,
-      "ret1": -2.83,
-      "volRatio": 1.04,
-      "trendEfficiency": 0.132,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 19,
-      "trendScore": 66.47
-    },
-    {
-      "symbol": "603019.SH",
-      "name": "中科曙光",
-      "theme": "硬件、存储及外设",
-      "last": 88.27,
-      "prevClose": 85.82,
-      "open": 84.51,
-      "high": 88.69,
-      "low": 84.28,
-      "volume": 423151,
-      "turnover": 3688837356,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 43,
-      "universeScore": 99.97,
-      "screening": {
-        "turnoverRate": 2.8922438987679873,
-        "screeningTurnover": 3688837356,
-        "priceChange": 2.8548123980424167
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 5.47,
-      "ret1": 2.85,
-      "volRatio": 1.04,
-      "trendEfficiency": 0.096,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 20,
-      "trendScore": 66.3
+      "trendScore": 87.63,
+      "source": "Longbridge OpenAPI"
     },
     {
       "symbol": "002354.SZ",
       "name": "天娱数科",
       "theme": "电子游戏与多媒体",
-      "last": 8.03,
-      "prevClose": 7.85,
-      "open": 7.78,
-      "high": 8.25,
-      "low": 7.42,
-      "volume": 5664953,
-      "turnover": 4452884078.65,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "last": 8.36,
+      "prevClose": 8.03,
+      "open": 8.15,
+      "high": 8.8,
+      "low": 7.86,
+      "volume": 5669484,
+      "turnover": 4687609603.69,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal",
-      "universeRank": 33,
-      "universeScore": 116.179,
+      "universeRank": 187,
+      "universeScore": 86.438,
       "screening": {
-        "turnoverRate": 34.80008077543558,
-        "screeningTurnover": 4452884078.65,
-        "priceChange": 2.292993630573248
+        "turnoverRate": 34.8279149279861,
+        "screeningTurnover": 4687609603.69,
+        "priceChange": 4.109589041095885
       },
       "signalStrength": 0,
       "anomalyReason": "收盘流动性筛选",
-      "ret20": 12.15,
-      "ret1": 2.29,
-      "volRatio": 1.83,
-      "trendEfficiency": 0.04,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 21,
-      "trendScore": 70.52
-    },
-    {
-      "symbol": "002371.SZ",
-      "name": "北方华创",
-      "theme": "半导体材料与设备",
-      "last": 699.79,
-      "prevClose": 697.51,
-      "open": 683.56,
-      "high": 699.79,
-      "low": 672.18,
-      "volume": 67290,
-      "turnover": 4613699591.42,
-      "timestamp": "2026-08-31T07:00:00Z",
-      "tradeStatus": "Normal",
-      "universeRank": 30,
-      "universeScore": 97.431,
-      "screening": {
-        "turnoverRate": 0.9272564618572248,
-        "screeningTurnover": 4613699591.42,
-        "priceChange": 0.3268770340210114
-      },
-      "signalStrength": 0,
-      "anomalyReason": "收盘流动性筛选",
-      "ret20": 9.12,
-      "ret1": 0.33,
-      "volRatio": 0.8,
-      "trendEfficiency": 0.045,
-      "source": "Longbridge OpenAPI",
-      "trendRank": 22,
-      "trendScore": 68.2
+      "ret20": 6.091370558375631,
+      "ret1": 4.109589041095885,
+      "volRatio": 1.8270636733567667,
+      "trendEfficiency": 0.11764705882352945,
+      "trendRank": 2,
+      "trendScore": 68.34,
+      "source": "Longbridge OpenAPI"
     }
   ],
   "candlestickSignals": {
-    "600498.SH": {
+    "600108.SH": {
       "patterns": [],
       "primary": "none",
       "scoreBonus": 0,
       "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "001309.SZ": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "600176.SH": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "600105.SH": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "603228.SH": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "600460.SH": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "000703.SZ": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "603256.SH": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "600522.SH": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "002463.SZ": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "600489.SH": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "601988.SH": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "603259.SH": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "002714.SZ": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "601138.SH": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "000100.SZ": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "600362.SH": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "002466.SZ": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "601899.SH": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "603019.SH": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
+      "reason": "检测到的K线形态未通过预设训练样本与1/3日超额收益门槛；不计入排名。"
     },
     "002354.SZ": {
       "patterns": [],
       "primary": "none",
       "scoreBonus": 0,
       "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
-    },
-    "002371.SZ": {
-      "patterns": [],
-      "primary": "none",
-      "scoreBonus": 0,
-      "status": "tracking_only",
-      "reason": "收盘日线形态仅作跟踪，未通过预设训练与时间序列测试门槛。"
+      "reason": "检测到的K线形态未通过预设训练样本与1/3日超额收益门槛；不计入排名。"
     }
   },
   "carryQuotes": [
     {
-      "symbol": "600227.SH",
-      "last": 5.04,
-      "prevClose": 4.58,
-      "open": 4.69,
-      "high": 5.04,
-      "low": 4.68,
-      "volume": 2113002,
-      "turnover": 1044807609,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "symbol": "000712.SZ",
+      "last": 13.5,
+      "prevClose": 12.98,
+      "open": 12.08,
+      "high": 13.84,
+      "low": 11.68,
+      "volume": 2280004,
+      "turnover": 2852861633.6,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "000938.SZ",
+      "last": 38.32,
+      "prevClose": 38.95,
+      "open": 38.71,
+      "high": 39.55,
+      "low": 38.3,
+      "volume": 1904614,
+      "turnover": 7386763605.37,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "000977.SZ",
+      "last": 85.6,
+      "prevClose": 85.18,
+      "open": 85.9,
+      "high": 87.14,
+      "low": 85.18,
+      "volume": 1097374,
+      "turnover": 9442632292.15,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "001979.SZ",
+      "last": 6.45,
+      "prevClose": 6.53,
+      "open": 6.46,
+      "high": 6.55,
+      "low": 6.4,
+      "volume": 1477430,
+      "turnover": 956211806.74,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "002008.SZ",
+      "last": 94.6,
+      "prevClose": 96.38,
+      "open": 97.37,
+      "high": 99.5,
+      "low": 94.02,
+      "volume": 712310,
+      "turnover": 6847184398.13,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "002396.SZ",
+      "last": 39.75,
+      "prevClose": 40.36,
+      "open": 40.16,
+      "high": 41.18,
+      "low": 39.02,
+      "volume": 1318987,
+      "turnover": 5269610409.46,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "002484.SZ",
+      "last": 59.46,
+      "prevClose": 63.4,
+      "open": 68.23,
+      "high": 69.74,
+      "low": 59.31,
+      "volume": 692046,
+      "turnover": 4273902626.26,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal"
     },
     {
       "symbol": "002742.SZ",
-      "last": 5.62,
-      "prevClose": 6.24,
-      "open": 5.62,
-      "high": 5.73,
-      "low": 5.62,
-      "volume": 246013,
-      "turnover": 138297586.84,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "last": 5.59,
+      "prevClose": 5.62,
+      "open": 5.06,
+      "high": 6.08,
+      "low": 5.06,
+      "volume": 1918768,
+      "turnover": 1008318836.09,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "002837.SZ",
+      "last": 65.9,
+      "prevClose": 68.21,
+      "open": 67.61,
+      "high": 67.77,
+      "low": 65.81,
+      "volume": 594593,
+      "turnover": 3944977419.86,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "002938.SZ",
+      "last": 88.22,
+      "prevClose": 93.3,
+      "open": 93.49,
+      "high": 93.5,
+      "low": 87.56,
+      "volume": 226138,
+      "turnover": 2017266314.8,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "600031.SH",
+      "last": 20.22,
+      "prevClose": 20.01,
+      "open": 20.02,
+      "high": 20.56,
+      "low": 19.87,
+      "volume": 992810,
+      "turnover": 2015685777,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "600183.SH",
+      "last": 144.42,
+      "prevClose": 153.4,
+      "open": 152,
+      "high": 152.41,
+      "low": 143.7,
+      "volume": 789206,
+      "turnover": 11508594583,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "600227.SH",
+      "last": 5.17,
+      "prevClose": 5.04,
+      "open": 5.04,
+      "high": 5.45,
+      "low": 4.93,
+      "volume": 4776994,
+      "turnover": 2488287454,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "600353.SH",
+      "last": 33.68,
+      "prevClose": 36.6,
+      "open": 36.5,
+      "high": 36.78,
+      "low": 33.5,
+      "volume": 655122,
+      "turnover": 2243603124,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal"
     },
     {
       "symbol": "600354.SH",
-      "last": 8.29,
-      "prevClose": 8.21,
-      "open": 9.03,
-      "high": 9.03,
-      "low": 8.22,
-      "volume": 1930711,
-      "turnover": 1681208339,
-      "timestamp": "2026-08-31T07:00:00Z",
+      "last": 9.12,
+      "prevClose": 8.29,
+      "open": 8.29,
+      "high": 9.12,
+      "low": 8.29,
+      "volume": 1278393,
+      "turnover": 1120564320,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "600547.SH",
+      "last": 36.89,
+      "prevClose": 37.85,
+      "open": 38,
+      "high": 38.45,
+      "low": 36.85,
+      "volume": 1059279,
+      "turnover": 3978086210,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "600722.SH",
+      "last": 18.06,
+      "prevClose": 16.8,
+      "open": 17,
+      "high": 18.47,
+      "low": 17,
+      "volume": 1775688,
+      "turnover": 3115145880,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "601169.SH",
+      "last": 5.49,
+      "prevClose": 5.35,
+      "open": 5.33,
+      "high": 5.5,
+      "low": 5.32,
+      "volume": 3742846,
+      "turnover": 2040683638,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "601658.SH",
+      "last": 5.48,
+      "prevClose": 5.26,
+      "open": 5.24,
+      "high": 5.5,
+      "low": 5.23,
+      "volume": 4335572,
+      "turnover": 2347734211,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "601988.SH",
+      "last": 6.67,
+      "prevClose": 6.51,
+      "open": 6.51,
+      "high": 6.69,
+      "low": 6.48,
+      "volume": 3228294,
+      "turnover": 2136508186,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "603118.SH",
+      "last": 17.91,
+      "prevClose": 18.6,
+      "open": 18.53,
+      "high": 18.68,
+      "low": 17.9,
+      "volume": 1108224,
+      "turnover": 2012017445,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "603256.SH",
+      "last": 138.6,
+      "prevClose": 147.55,
+      "open": 150.21,
+      "high": 151.99,
+      "low": 134.87,
+      "volume": 229139,
+      "turnover": 3190470075,
+      "timestamp": "2026-09-01T07:00:00Z",
+      "tradeStatus": "Normal"
+    },
+    {
+      "symbol": "603893.SH",
+      "last": 203.6,
+      "prevClose": 194.59,
+      "open": 205,
+      "high": 210.94,
+      "low": 201,
+      "volume": 339488,
+      "turnover": 6974047213,
+      "timestamp": "2026-09-01T07:00:00Z",
       "tradeStatus": "Normal"
     }
   ]

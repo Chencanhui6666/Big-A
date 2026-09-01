@@ -1,13 +1,13 @@
 {
   "meta": {
-    "snapshotId": "2026-08-31T221323+0800",
-    "asOf": "2026-08-31T22:13:23+08:00",
-    "tradeDate": "2026-08-31",
+    "snapshotId": "2026-09-01T154714+0800",
+    "asOf": "2026-09-01T15:47:14+08:00",
+    "tradeDate": "2026-09-01",
     "modelVersion": "dual-list-v0.5.0",
     "status": "complete",
     "mode": "real",
     "provider": "longbridge",
-    "capturedAt": "2026-08-31T08:03:17.607Z"
+    "capturedAt": "2026-09-01T07:45:20.924Z"
   },
   "rules": {
     "initialCapital": 1000000,
@@ -28,58 +28,109 @@
       "type": "MODEL",
       "enabled": true,
       "initialCapital": 1000000,
-      "cash": 760115.06,
+      "cash": 525279.63,
       "positions": [
         {
           "code": "600227",
           "name": "赤天化",
           "theme": "化肥及农药",
           "shares": 21200,
-          "availableShares": 0,
+          "availableShares": 21200,
           "costPrice": 4.7,
-          "lastPrice": 5.04,
+          "lastPrice": 5.17,
           "openedAt": "2026-08-31",
           "reason": "全市场初筛第7名；当日涨跌幅 10.10%，成交额 16.01亿元。 来自5012只有效A股的全市场初筛，全市场排名 #7；已通过普通A股账户权限过滤。",
           "stopLoss": 4.37,
           "targetPrice": 5.26,
-          "holdingDays": 0,
-          "marketValue": 106848,
-          "unrealizedPnl": 7208,
-          "returnPct": 7.23
+          "holdingDays": 1,
+          "marketValue": 109604,
+          "unrealizedPnl": 9964,
+          "returnPct": 10
         },
         {
           "code": "002742",
           "name": "冀衡医药",
           "theme": "特种化学品",
           "shares": 14300,
-          "availableShares": 0,
+          "availableShares": 14300,
           "costPrice": 5.63,
-          "lastPrice": 5.62,
+          "lastPrice": 5.59,
           "openedAt": "2026-08-31",
           "reason": "全市场初筛第5名；当日涨跌幅 10.05%，成交额 13.45亿元。 来自5012只有效A股的全市场初筛，全市场排名 #5；已通过普通A股账户权限过滤。",
           "stopLoss": 5.24,
           "targetPrice": 6.31,
-          "holdingDays": 0,
-          "marketValue": 80366,
-          "unrealizedPnl": -143,
-          "returnPct": -0.18
+          "holdingDays": 1,
+          "marketValue": 79937,
+          "unrealizedPnl": -572,
+          "returnPct": -0.71
         },
         {
           "code": "600354",
           "name": "敦煌种业",
           "theme": "农产品",
           "shares": 6600,
-          "availableShares": 0,
+          "availableShares": 6600,
           "costPrice": 9.04,
-          "lastPrice": 8.29,
+          "lastPrice": 9.12,
           "openedAt": "2026-08-31",
           "reason": "全市场初筛第13名；当日涨跌幅 10.05%，成交额 8.70亿元。 来自5012只有效A股的全市场初筛，全市场排名 #13；已通过普通A股账户权限过滤。",
           "stopLoss": 8.41,
           "targetPrice": 10.12,
+          "holdingDays": 1,
+          "marketValue": 60192,
+          "unrealizedPnl": 528,
+          "returnPct": 0.88
+        },
+        {
+          "code": "002837",
+          "name": "英维克",
+          "theme": "工业机械",
+          "shares": 1400,
+          "availableShares": 0,
+          "costPrice": 67.73,
+          "lastPrice": 65.9,
+          "openedAt": "2026-09-01",
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 5.78%，成交额 60.91亿元。 来自3050只有效A股的全市场初筛，全市场排名 #17；已通过普通A股账户权限过滤。",
+          "stopLoss": 62.97,
+          "targetPrice": 75.84,
           "holdingDays": 0,
-          "marketValue": 54714,
-          "unrealizedPnl": -4950,
-          "returnPct": -8.3
+          "marketValue": 92260,
+          "unrealizedPnl": -2562,
+          "returnPct": -2.7
+        },
+        {
+          "code": "601658",
+          "name": "邮储银行",
+          "theme": "多元化银行",
+          "shares": 15200,
+          "availableShares": 0,
+          "costPrice": 5.25,
+          "lastPrice": 5.48,
+          "openedAt": "2026-09-01",
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 5.41%，成交额 28.24亿元。 来自3050只有效A股的全市场初筛，全市场排名 #76；已通过普通A股账户权限过滤。",
+          "stopLoss": 4.88,
+          "targetPrice": 5.88,
+          "holdingDays": 0,
+          "marketValue": 83296,
+          "unrealizedPnl": 3496,
+          "returnPct": 4.38
+        },
+        {
+          "code": "001979",
+          "name": "招商蛇口",
+          "theme": "房地产开发",
+          "shares": 9300,
+          "availableShares": 0,
+          "costPrice": 6.47,
+          "lastPrice": 6.45,
+          "openedAt": "2026-09-01",
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 -8.80%，成交额 26.28亿元。 来自3050只有效A股的全市场初筛，全市场排名 #91；已通过普通A股账户权限过滤。",
+          "stopLoss": 6.02,
+          "targetPrice": 7.25,
+          "holdingDays": 0,
+          "marketValue": 59985,
+          "unrealizedPnl": -186,
+          "returnPct": -0.31
         }
       ],
       "tradeHistory": [
@@ -115,6 +166,39 @@
           "price": 9.04,
           "fees": 17.9,
           "reason": "全市场初筛第13名；当日涨跌幅 10.05%，成交额 8.70亿元。 来自5012只有效A股的全市场初筛，全市场排名 #13；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-09-01-002837",
+          "tradeDate": "2026-09-01",
+          "code": "002837",
+          "name": "英维克",
+          "side": "BUY",
+          "shares": 1400,
+          "price": 67.71,
+          "fees": 28.44,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 5.78%，成交额 60.91亿元。 来自3050只有效A股的全市场初筛，全市场排名 #17；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-09-01-601658",
+          "tradeDate": "2026-09-01",
+          "code": "601658",
+          "name": "邮储银行",
+          "side": "BUY",
+          "shares": 15200,
+          "price": 5.25,
+          "fees": 23.94,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 5.41%，成交额 28.24亿元。 来自3050只有效A股的全市场初筛，全市场排名 #76；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-09-01-001979",
+          "tradeDate": "2026-09-01",
+          "code": "001979",
+          "name": "招商蛇口",
+          "side": "BUY",
+          "shares": 9300,
+          "price": 6.47,
+          "fees": 18.05,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 -8.80%，成交额 26.28亿元。 来自3050只有效A股的全市场初筛，全市场排名 #91；已通过普通A股账户权限过滤。"
         }
       ],
       "nav": [
@@ -127,11 +211,16 @@
           "date": "2026-08-31",
           "totalAsset": 1002043.06,
           "benchmark": 1.004
+        },
+        {
+          "date": "2026-09-01",
+          "totalAsset": 1010553.63,
+          "benchmark": 1.004
         }
       ],
       "nextPlan": {
-        "generatedAt": "2026-08-31T22:13:23+08:00",
-        "executeOn": "2026-09-01",
+        "generatedAt": "2026-09-01T15:47:14+08:00",
+        "executeOn": "2026-09-02",
         "status": "READY",
         "orders": [
           {
@@ -161,54 +250,191 @@
             "side": "SELL",
             "targetWeight": 0,
             "priority": 3,
-            "reason": "触发模拟止损",
+            "reason": "热点评分跌破持仓阈值",
             "cancelIf": "无；仅受T+1、停牌和跌停限制"
           },
           {
             "code": "002837",
             "name": "英维克",
             "theme": "工业机械",
-            "side": "BUY",
-            "targetWeight": 0.1,
+            "side": "SELL",
+            "targetWeight": 0,
             "priority": 4,
-            "maxOpenMove": 4,
-            "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 5.78%，成交额 60.91亿元。 来自3050只有效A股的全市场初筛，全市场排名 #17；已通过普通A股账户权限过滤。",
-            "cancelIf": "题材热度低于79或出现重大负面公告"
+            "reason": "热点评分跌破持仓阈值",
+            "cancelIf": "无；仅受T+1、停牌和跌停限制"
           },
           {
             "code": "601658",
             "name": "邮储银行",
             "theme": "多元化银行",
-            "side": "BUY",
-            "targetWeight": 0.08,
+            "side": "SELL",
+            "targetWeight": 0,
             "priority": 5,
-            "maxOpenMove": 4,
-            "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 5.41%，成交额 28.24亿元。 来自3050只有效A股的全市场初筛，全市场排名 #76；已通过普通A股账户权限过滤。",
-            "cancelIf": "题材热度低于77或出现重大负面公告"
+            "reason": "热点评分跌破持仓阈值",
+            "cancelIf": "无；仅受T+1、停牌和跌停限制"
           },
           {
             "code": "001979",
             "name": "招商蛇口",
             "theme": "房地产开发",
+            "side": "SELL",
+            "targetWeight": 0,
+            "priority": 6,
+            "reason": "热点评分跌破持仓阈值",
+            "cancelIf": "无；仅受T+1、停牌和跌停限制"
+          },
+          {
+            "code": "002165",
+            "name": "红宝丽",
+            "theme": "工业化学品",
+            "side": "BUY",
+            "targetWeight": 0.1,
+            "priority": 7,
+            "maxOpenMove": 4,
+            "reason": "市场异常：大笔买入；当日涨跌幅 6.05%，成交额 20.36亿元。 来自3051只有效A股的全市场初筛，全市场排名 #100；已通过普通A股账户权限过滤。",
+            "cancelIf": "题材热度低于80或出现重大负面公告"
+          },
+          {
+            "code": "002418",
+            "name": "康盛股份",
+            "theme": "钢铁",
+            "side": "BUY",
+            "targetWeight": 0.08,
+            "priority": 8,
+            "maxOpenMove": 4,
+            "reason": "市场异常：大笔卖出；当日涨跌幅 5.38%，成交额 26.04亿元。 来自3051只有效A股的全市场初筛，全市场排名 #117；已通过普通A股账户权限过滤。",
+            "cancelIf": "题材热度低于77或出现重大负面公告"
+          },
+          {
+            "code": "000017",
+            "name": "深中华A",
+            "theme": "服装、配饰及奢侈品",
             "side": "BUY",
             "targetWeight": 0.06,
-            "priority": 6,
+            "priority": 9,
             "maxOpenMove": 4,
-            "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 -8.80%，成交额 26.28亿元。 来自3050只有效A股的全市场初筛，全市场排名 #91；已通过普通A股账户权限过滤。",
-            "cancelIf": "题材热度低于65或出现重大负面公告"
+            "reason": "市场异常：大笔买入；当日涨跌幅 4.82%，成交额 14.32亿元。 来自3051只有效A股的全市场初筛，全市场排名 #137；已通过普通A股账户权限过滤。",
+            "cancelIf": "题材热度低于74或出现重大负面公告"
           }
         ]
       },
-      "todayOrders": [],
-      "todayTrades": [],
+      "todayOrders": [
+        {
+          "id": "O-2026-09-01-600227",
+          "createdAt": "2026-09-01T15:47:14+08:00",
+          "code": "600227",
+          "name": "赤天化",
+          "side": "SELL",
+          "status": "REJECTED",
+          "targetWeight": 0,
+          "reason": "热点评分跌破持仓阈值",
+          "rejectReason": "T+1可卖数量不足"
+        },
+        {
+          "id": "O-2026-09-01-002742",
+          "createdAt": "2026-09-01T15:47:14+08:00",
+          "code": "002742",
+          "name": "冀衡医药",
+          "side": "SELL",
+          "status": "REJECTED",
+          "targetWeight": 0,
+          "reason": "热点评分跌破持仓阈值",
+          "rejectReason": "T+1可卖数量不足"
+        },
+        {
+          "id": "O-2026-09-01-600354",
+          "createdAt": "2026-09-01T15:47:14+08:00",
+          "code": "600354",
+          "name": "敦煌种业",
+          "side": "SELL",
+          "status": "REJECTED",
+          "targetWeight": 0,
+          "reason": "触发模拟止损",
+          "rejectReason": "T+1可卖数量不足"
+        },
+        {
+          "id": "O-2026-09-01-002837",
+          "createdAt": "2026-09-01T15:47:14+08:00",
+          "code": "002837",
+          "name": "英维克",
+          "side": "BUY",
+          "status": "FILLED",
+          "targetWeight": 0.1,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 5.78%，成交额 60.91亿元。 来自3050只有效A股的全市场初筛，全市场排名 #17；已通过普通A股账户权限过滤。",
+          "fillPrice": 67.71,
+          "shares": 1400,
+          "fees": 28.44
+        },
+        {
+          "id": "O-2026-09-01-601658",
+          "createdAt": "2026-09-01T15:47:14+08:00",
+          "code": "601658",
+          "name": "邮储银行",
+          "side": "BUY",
+          "status": "FILLED",
+          "targetWeight": 0.08,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 5.41%，成交额 28.24亿元。 来自3050只有效A股的全市场初筛，全市场排名 #76；已通过普通A股账户权限过滤。",
+          "fillPrice": 5.25,
+          "shares": 15200,
+          "fees": 23.94
+        },
+        {
+          "id": "O-2026-09-01-001979",
+          "createdAt": "2026-09-01T15:47:14+08:00",
+          "code": "001979",
+          "name": "招商蛇口",
+          "side": "BUY",
+          "status": "FILLED",
+          "targetWeight": 0.06,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 -8.80%，成交额 26.28亿元。 来自3050只有效A股的全市场初筛，全市场排名 #91；已通过普通A股账户权限过滤。",
+          "fillPrice": 6.47,
+          "shares": 9300,
+          "fees": 18.05
+        }
+      ],
+      "todayTrades": [
+        {
+          "id": "T-2026-09-01-002837",
+          "tradeDate": "2026-09-01",
+          "code": "002837",
+          "name": "英维克",
+          "side": "BUY",
+          "shares": 1400,
+          "price": 67.71,
+          "fees": 28.44,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 5.78%，成交额 60.91亿元。 来自3050只有效A股的全市场初筛，全市场排名 #17；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-09-01-601658",
+          "tradeDate": "2026-09-01",
+          "code": "601658",
+          "name": "邮储银行",
+          "side": "BUY",
+          "shares": 15200,
+          "price": 5.25,
+          "fees": 23.94,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 5.41%，成交额 28.24亿元。 来自3050只有效A股的全市场初筛，全市场排名 #76；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-09-01-001979",
+          "tradeDate": "2026-09-01",
+          "code": "001979",
+          "name": "招商蛇口",
+          "side": "BUY",
+          "shares": 9300,
+          "price": 6.47,
+          "fees": 18.05,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 -8.80%，成交额 26.28亿元。 来自3050只有效A股的全市场初筛，全市场排名 #91；已通过普通A股账户权限过滤。"
+        }
+      ],
       "summary": {
-        "totalAsset": 1002043.06,
-        "cash": 760115.06,
-        "marketValue": 241928,
-        "dailyPnl": 0,
-        "cumulativePnl": 2043.06,
-        "cumulativeReturn": 0.2,
-        "positionRate": 24.1,
+        "totalAsset": 1010553.63,
+        "cash": 525279.63,
+        "marketValue": 485274,
+        "dailyPnl": 8510.57,
+        "cumulativePnl": 10553.63,
+        "cumulativeReturn": 1.06,
+        "positionRate": 48,
         "maxDrawdown": 0,
         "winRate": 0
       },
@@ -246,15 +472,15 @@
     }
   ],
   "comparison": {
-    "modelReturn": 0.2,
+    "modelReturn": 1.06,
     "assistedReturn": 0,
     "benchmarkReturn": 0.40000000000000036
   },
   "refresh": {
     "tab": "portfolio",
-    "snapshotId": "2026-08-31T221323+0800",
-    "updatedAt": "2026-08-31T22:13:23+08:00",
-    "sourceTimestamp": "2026-08-31T22:13:23+08:00",
+    "snapshotId": "2026-09-01T154714+0800",
+    "updatedAt": "2026-09-01T15:47:14+08:00",
+    "sourceTimestamp": "2026-09-01T15:47:14+08:00",
     "mode": "real",
     "status": "refreshed"
   }
