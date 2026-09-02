@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-01T15:47:14+08:00",
+  "updatedAt": "2026-09-02T22:04:50+08:00",
   "snapshots": [
+    {
+      "snapshotId": "2026-09-02T220450+0800",
+      "asOf": "2026-09-02T22:04:50+08:00",
+      "tradeDate": "2026-09-02",
+      "modelVersion": "dual-list-v0.6.0",
+      "status": "complete",
+      "mode": "real",
+      "provider": "longbridge",
+      "capturedAt": "2026-09-02T14:03:35.284Z",
+      "path": "snapshots/2026-09-02/22-04-50",
+      "files": {
+        "radar": "radar.json",
+        "candidates": "candidates.json",
+        "evidence": "evidence.json",
+        "review": "review.json",
+        "portfolio": "portfolio.json"
+      }
+    },
     {
       "snapshotId": "2026-09-01T154714+0800",
       "asOf": "2026-09-01T15:47:14+08:00",

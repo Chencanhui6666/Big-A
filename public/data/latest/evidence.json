@@ -1,13 +1,13 @@
 {
   "meta": {
-    "snapshotId": "2026-09-01T154714+0800",
-    "asOf": "2026-09-01T15:47:14+08:00",
-    "tradeDate": "2026-09-01",
-    "modelVersion": "dual-list-v0.5.0",
+    "snapshotId": "2026-09-02T220450+0800",
+    "asOf": "2026-09-02T22:04:50+08:00",
+    "tradeDate": "2026-09-02",
+    "modelVersion": "dual-list-v0.6.0",
     "status": "complete",
     "mode": "real",
     "provider": "longbridge",
-    "capturedAt": "2026-09-01T07:45:20.924Z"
+    "capturedAt": "2026-09-02T14:03:35.284Z"
   },
   "summary": {
     "total": 100,
@@ -18,234 +18,138 @@
   "events": [
     {
       "id": "lb-anomaly-0",
-      "time": "06:56",
+      "time": "07:00",
       "level": "B",
       "source": "Longbridge行情异动",
-      "title": "宁波精达：市场异常：大笔买入",
+      "title": "新中港：null",
       "tags": [
         "盘面",
         "异动"
       ],
       "relatedThemes": [],
       "relatedStocks": [
-        "603088"
+        "605162"
       ],
       "url": ""
     },
     {
       "id": "lb-anomaly-1",
-      "time": "06:56",
+      "time": "07:00",
       "level": "B",
       "source": "Longbridge行情异动",
-      "title": "大有能源：市场异常：大笔买入",
+      "title": "正川股份：null",
       "tags": [
         "盘面",
         "异动"
       ],
       "relatedThemes": [],
       "relatedStocks": [
-        "600403"
+        "603976"
       ],
       "url": ""
     },
     {
       "id": "lb-anomaly-2",
-      "time": "06:56",
+      "time": "07:00",
       "level": "B",
       "source": "Longbridge行情异动",
-      "title": "会稽山：市场异常：大笔卖出",
+      "title": "广电网络：null",
       "tags": [
         "盘面",
         "异动"
       ],
       "relatedThemes": [],
       "relatedStocks": [
-        "601579"
+        "600831"
       ],
       "url": ""
     },
     {
       "id": "lb-anomaly-3",
-      "time": "06:56",
+      "time": "07:00",
       "level": "B",
       "source": "Longbridge行情异动",
-      "title": "艾华集团：市场异常：大笔买入",
+      "title": "出版传媒：null",
       "tags": [
         "盘面",
         "异动"
       ],
       "relatedThemes": [],
       "relatedStocks": [
-        "603989"
+        "601999"
       ],
       "url": ""
     },
     {
       "id": "lb-anomaly-4",
-      "time": "06:56",
+      "time": "07:00",
       "level": "B",
       "source": "Longbridge行情异动",
-      "title": "中银证券：市场异常：大笔卖出",
+      "title": "海航控股：null",
       "tags": [
         "盘面",
         "异动"
       ],
       "relatedThemes": [],
       "relatedStocks": [
-        "601696"
+        "600221"
       ],
       "url": ""
     },
     {
       "id": "lb-anomaly-5",
-      "time": "06:56",
+      "time": "07:00",
       "level": "B",
       "source": "Longbridge行情异动",
-      "title": "联瑞新材：市场异常：大笔买入",
+      "title": "桂冠电力：null",
       "tags": [
         "盘面",
         "异动"
       ],
       "relatedThemes": [],
       "relatedStocks": [
-        "688300"
+        "600236"
       ],
       "url": ""
     },
     {
       "id": "lb-anomaly-6",
-      "time": "06:56",
+      "time": "07:00",
       "level": "B",
       "source": "Longbridge行情异动",
-      "title": "恒鑫生活：市场异常：大笔买入",
+      "title": "海科新源：null",
       "tags": [
         "盘面",
         "异动"
       ],
       "relatedThemes": [],
       "relatedStocks": [
-        "301501"
+        "301292"
       ],
       "url": ""
     },
     {
       "id": "lb-anomaly-7",
-      "time": "06:56",
+      "time": "07:00",
       "level": "B",
       "source": "Longbridge行情异动",
-      "title": "星宸科技：市场异常：大笔买入",
+      "title": "川宁生物：null",
       "tags": [
         "盘面",
         "异动"
       ],
       "relatedThemes": [],
       "relatedStocks": [
-        "301536"
+        "301301"
       ],
       "url": ""
     },
     {
       "id": "lb-anomaly-8",
-      "time": "06:56",
+      "time": "07:00",
       "level": "B",
       "source": "Longbridge行情异动",
-      "title": "东星医疗：市场异常：大笔买入",
-      "tags": [
-        "盘面",
-        "异动"
-      ],
-      "relatedThemes": [],
-      "relatedStocks": [
-        "301290"
-      ],
-      "url": ""
-    },
-    {
-      "id": "lb-anomaly-9",
-      "time": "06:56",
-      "level": "B",
-      "source": "Longbridge行情异动",
-      "title": "中粮科工：市场异常：大笔买入",
-      "tags": [
-        "盘面",
-        "异动"
-      ],
-      "relatedThemes": [],
-      "relatedStocks": [
-        "301058"
-      ],
-      "url": ""
-    },
-    {
-      "id": "lb-anomaly-10",
-      "time": "06:56",
-      "level": "B",
-      "source": "Longbridge行情异动",
-      "title": "曼卡龙：市场异常：大笔买入",
-      "tags": [
-        "盘面",
-        "异动"
-      ],
-      "relatedThemes": [],
-      "relatedStocks": [
-        "300945"
-      ],
-      "url": ""
-    },
-    {
-      "id": "lb-anomaly-11",
-      "time": "06:56",
-      "level": "B",
-      "source": "Longbridge行情异动",
-      "title": "博汇股份：市场异常：大笔买入",
-      "tags": [
-        "盘面",
-        "异动"
-      ],
-      "relatedThemes": [],
-      "relatedStocks": [
-        "300839"
-      ],
-      "url": ""
-    },
-    {
-      "id": "lb-anomaly-12",
-      "time": "06:56",
-      "level": "B",
-      "source": "Longbridge行情异动",
-      "title": "四方精创：市场异常：大笔买入",
-      "tags": [
-        "盘面",
-        "异动"
-      ],
-      "relatedThemes": [],
-      "relatedStocks": [
-        "300468"
-      ],
-      "url": ""
-    },
-    {
-      "id": "lb-anomaly-13",
-      "time": "06:56",
-      "level": "B",
-      "source": "Longbridge行情异动",
-      "title": "江天化学：市场异常：大笔卖出",
-      "tags": [
-        "盘面",
-        "异动"
-      ],
-      "relatedThemes": [],
-      "relatedStocks": [
-        "300927"
-      ],
-      "url": ""
-    },
-    {
-      "id": "lb-anomaly-14",
-      "time": "06:56",
-      "level": "B",
-      "source": "Longbridge行情异动",
-      "title": "艾可蓝：市场异常：大笔卖出",
+      "title": "艾可蓝：null",
       "tags": [
         "盘面",
         "异动"
@@ -257,91 +161,187 @@
       "url": ""
     },
     {
-      "id": "lb-anomaly-15",
-      "time": "06:56",
+      "id": "lb-anomaly-9",
+      "time": "07:00",
       "level": "B",
       "source": "Longbridge行情异动",
-      "title": "幸福蓝海：市场异常：大笔卖出",
+      "title": "珈伟新能：null",
       "tags": [
         "盘面",
         "异动"
       ],
       "relatedThemes": [],
       "relatedStocks": [
-        "300528"
+        "300317"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-10",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "金信诺：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300252"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-11",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "联创股份：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300343"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-12",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "五洋自控：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300420"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-13",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "节能铁汉：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300197"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-14",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "南方泵业：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300145"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-15",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "金龙羽：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002882"
       ],
       "url": ""
     },
     {
       "id": "lb-anomaly-16",
-      "time": "06:56",
+      "time": "07:00",
       "level": "B",
       "source": "Longbridge行情异动",
-      "title": "首华燃气：市场异常：大笔卖出",
+      "title": "ST龙大：null",
       "tags": [
         "盘面",
         "异动"
       ],
       "relatedThemes": [],
       "relatedStocks": [
-        "300483"
+        "002726"
       ],
       "url": ""
     },
     {
       "id": "lb-anomaly-17",
-      "time": "06:56",
+      "time": "07:00",
       "level": "B",
       "source": "Longbridge行情异动",
-      "title": "联得装备：市场异常：大笔买入",
+      "title": "C马矿：null",
       "tags": [
         "盘面",
         "异动"
       ],
       "relatedThemes": [],
       "relatedStocks": [
-        "300545"
+        "601123"
       ],
       "url": ""
     },
     {
       "id": "lb-anomaly-18",
-      "time": "06:56",
+      "time": "07:00",
       "level": "B",
       "source": "Longbridge行情异动",
-      "title": "海达股份：市场异常：大笔卖出",
+      "title": "海峡股份：null",
       "tags": [
         "盘面",
         "异动"
       ],
       "relatedThemes": [],
       "relatedStocks": [
-        "300320"
+        "002320"
       ],
       "url": ""
     },
     {
       "id": "lb-anomaly-19",
-      "time": "06:56",
+      "time": "07:00",
       "level": "B",
       "source": "Longbridge行情异动",
-      "title": "赛微电子：市场异常：大笔买入",
+      "title": "盛龙股份：null",
       "tags": [
         "盘面",
         "异动"
       ],
       "relatedThemes": [],
       "relatedStocks": [
-        "300456"
+        "001257"
       ],
       "url": ""
     }
   ],
   "refresh": {
     "tab": "evidence",
-    "snapshotId": "2026-09-01T154714+0800",
-    "updatedAt": "2026-09-01T15:47:14+08:00",
-    "sourceTimestamp": "2026-09-01T15:47:14+08:00",
+    "snapshotId": "2026-09-02T220450+0800",
+    "updatedAt": "2026-09-02T22:04:50+08:00",
+    "sourceTimestamp": "2026-09-02T22:04:50+08:00",
     "mode": "real",
     "status": "refreshed"
   }
