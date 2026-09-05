@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "snapshotId": "2026-09-03T155405+0800",
+    "asOf": "2026-09-03T15:54:05+08:00",
+    "tradeDate": "2026-09-03",
+    "modelVersion": "dual-list-v0.6.0",
+    "status": "complete",
+    "mode": "real",
+    "provider": "longbridge",
+    "capturedAt": "2026-09-03T07:51:56.590Z"
+  },
+  "marketState": {
+    "label": "Neutral & gradually rising",
+    "riskAppetite": 55
+  },
+  "summary": {
+    "highConfidenceThemes": 6,
+    "events30m": 100,
+    "confirmationRate": 0.18,
+    "credibleEvents": 30
+  },
+  "themes": [
+    {
+      "rank": 1,
+      "name": "电气部件和设备",
+      "score": 95,
+      "change": 7.3,
+      "stage": "加速",
+      "catalyst": "4只样本出现量价或异动信号",
+      "breadth": "4/60",
+      "turnover": 148.7
+    },
+    {
+      "rank": 2,
+      "name": "工业机械",
+      "score": 95,
+      "change": 9,
+      "stage": "加速",
+      "catalyst": "6只样本出现量价或异动信号",
+      "breadth": "6/60",
+      "turnover": 124.1
+    },
+    {
+      "rank": 3,
+      "name": "汽车零部件及设备",
+      "score": 95,
+      "change": 8.3,
+      "stage": "加速",
+      "catalyst": "5只样本出现量价或异动信号",
+      "breadth": "5/60",
+      "turnover": 99.5
+    },
+    {
+      "rank": 4,
+      "name": "多元化金属与采矿",
+      "score": 95,
+      "change": 8.9,
+      "stage": "加速",
+      "catalyst": "2只样本出现量价或异动信号",
+      "breadth": "2/60",
+      "turnover": 81.4
+    },
+    {
+      "rank": 5,
+      "name": "制药",
+      "score": 85,
+      "change": 0.4,
+      "stage": "发酵",
+      "catalyst": "6只样本出现量价或异动信号",
+      "breadth": "6/60",
+      "turnover": 72.4
+    },
+    {
+      "rank": 6,
+      "name": "包装食品和肉类",
+      "score": 77,
+      "change": 4.4,
+      "stage": "加速",
+      "catalyst": "1只样本出现量价或异动信号",
+      "breadth": "1/60",
+      "turnover": 40.4
+    }
+  ],
+  "leadingTheme": {
+    "name": "电气部件和设备",
+    "score": 95,
+    "novelty": 70,
+    "velocity": 100,
+    "confirmation": 167
+  },
+  "sourceHealth": {
+    "healthy": 3,
+    "total": 3,
+    "delayedSources": [],
+    "quoteTimestamp": "2026-09-03T07:00:00Z"
+  },
+  "refresh": {
+    "tab": "radar",
+    "snapshotId": "2026-09-03T155405+0800",
+    "updatedAt": "2026-09-03T15:54:05+08:00",
+    "sourceTimestamp": "2026-09-03T07:00:00Z",
+    "mode": "real",
+    "status": "refreshed"
+  }
+}

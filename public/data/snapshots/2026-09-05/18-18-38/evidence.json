@@ -1,0 +1,568 @@
+{
+  "meta": {
+    "snapshotId": "2026-09-05T181838+0800",
+    "asOf": "2026-09-05T18:18:38+08:00",
+    "tradeDate": "2026-09-05",
+    "modelVersion": "risk-aware-trend-v0.7.0",
+    "status": "complete",
+    "mode": "real",
+    "provider": "longbridge",
+    "capturedAt": "2026-09-05T10:16:42.283Z"
+  },
+  "summary": {
+    "total": 90,
+    "official": 0,
+    "confirmed": 10,
+    "duplicateRate": 0
+  },
+  "events": [
+    {
+      "id": "lb-news-298024217",
+      "time": "18:20",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "According to the Hong Kong Stock Exchange, on September 1st, BlackRock's long position in COSCO SHIPPING Energy H shares decreased from 6.38% to 5.68%",
+      "summary": "According to the Hong Kong Stock Exchange, on September 1st, BlackRock's long position in COSCO SHIPPING Energy H shares decreased from 6.38% to 5.68%",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "油气储运"
+      ],
+      "relatedStocks": [
+        "600026"
+      ],
+      "url": "https://longbridge.com/news/298024217"
+    },
+    {
+      "id": "lb-news-297980476",
+      "time": "10:24",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "Huachuang Securities: Oil and shipping industry performance is growing significantly, and we are optimistic about shipping investment opportunities",
+      "summary": "Huachuang Securities is optimistic about investment opportunities in shipping. In terms of oil transportation, tight supply and demand along with geopolitical factors have driven freight rates to historical highs, with CMES and COSCO SHIPPI",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "油气储运"
+      ],
+      "relatedStocks": [
+        "600026"
+      ],
+      "url": "https://longbridge.com/news/297980476"
+    },
+    {
+      "id": "lb-news-298094876",
+      "time": "13:48",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "High-interest deposits are maturing intensively, and banks have benefited from this wave of \"repricing dividends.\"",
+      "summary": "The mid-term report for 2026 shows that the concentration of high-interest fixed-term deposits maturing has driven down the cost of bank liabilities. The interest rates on personal fixed-term deposits for 42 A-share listed banks have genera",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "多元化银行"
+      ],
+      "relatedStocks": [
+        "601658"
+      ],
+      "url": "https://longbridge.com/news/298094876"
+    },
+    {
+      "id": "lb-news-298066871",
+      "time": "02:31",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "Product system optimization + service transformation, wealth management revenue breaks through against the trend",
+      "summary": "As of September 3rd, 42 listed banks in the A-share market have basically completed their performance disclosures for the first half of 2026. Affected by the narrowing net interest margin and \"deposit migration,\" the wealth management middl",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "多元化银行"
+      ],
+      "relatedStocks": [
+        "601658"
+      ],
+      "url": "https://longbridge.com/news/298066871"
+    },
+    {
+      "id": "lb-news-298101635",
+      "time": "15:51",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "Ping An Digital Bank launches \"Procurement Trade Financing\" to assist cross-border e-commerce expansion",
+      "summary": "Ping An Digital Bank has launched Hong Kong's first export cross-border e-commerce dedicated factoring financing service, \"Procurement Trade Financing.\" This product targets the accounting transaction model, requiring no traditional collate",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "人寿和健康保险"
+      ],
+      "relatedStocks": [
+        "601318"
+      ],
+      "url": "https://longbridge.com/news/298101635"
+    },
+    {
+      "id": "lb-news-298081292",
+      "time": "07:29",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "AI accelerates the integration into the core business of listed insurance companies",
+      "summary": "The 2026 semi-annual report shows that the five major A-share listed insurance companies are seeing AI applications penetrate from auxiliary roles into core businesses such as marketing and underwriting, and have disclosed relevant operatio",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "人寿和健康保险"
+      ],
+      "relatedStocks": [
+        "601318"
+      ],
+      "url": "https://longbridge.com/news/298081292"
+    },
+    {
+      "id": "lb-news-297748673",
+      "time": "15:37",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "China Aviation Power held a seminar on the civil gas turbine industry",
+      "summary": "According to the China Aviation Engine Group, on August 31, China Aviation Engine held a seminar on the civil gas turbine industry, systematically analyzing the development situation of the civil gas turbine industry and discussing the high",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "航空航天与国防"
+      ],
+      "relatedStocks": [
+        "600893"
+      ],
+      "url": "https://longbridge.com/news/297748673"
+    },
+    {
+      "id": "lb-news-297728511",
+      "time": "11:33",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "The performance of core listed companies in the military industry is improving, coupled with policy catalysts, leading to an upward trend in the military industry ETF E Fund (51256",
+      "summary": "The 80 core listed companies covered by the CSI Military Industry Index saw both revenue and net profit increase in the first half of the year, indicating positive performance. On the policy front, the Ministry of Industry and Information T",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "航空航天与国防"
+      ],
+      "relatedStocks": [
+        "600893"
+      ],
+      "url": "https://longbridge.com/news/297728511"
+    },
+    {
+      "id": "lb-news-298082843",
+      "time": "08:26",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "Goldman Sachs Keeps Their Buy Rating on China Pacific Insurance (Group) Co (CHPXF)",
+      "summary": "In a report released on September 3, from Goldman Sachs maintained a Buy rating on China Pacific Insurance (Group) Co, with a price target of HK$37.00. The company’s shares closed last Wednesday at HK$31.12. Currently, the analyst consensus",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "多险种保险"
+      ],
+      "relatedStocks": [
+        "601601"
+      ],
+      "url": "https://longbridge.com/news/298082843"
+    },
+    {
+      "id": "lb-news-298081292",
+      "time": "07:29",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "AI accelerates the integration into the core business of listed insurance companies",
+      "summary": "The 2026 semi-annual report shows that the five major A-share listed insurance companies are seeing AI applications penetrate from auxiliary roles into core businesses such as marketing and underwriting, and have disclosed relevant operatio",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "多险种保险"
+      ],
+      "relatedStocks": [
+        "601601"
+      ],
+      "url": "https://longbridge.com/news/298081292"
+    },
+    {
+      "id": "lb-anomaly-0",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "长城军工：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "航空航天与国防"
+      ],
+      "relatedStocks": [
+        "601606"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-1",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "金帝股份：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "工业机械"
+      ],
+      "relatedStocks": [
+        "603270"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-2",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "恒丰纸业：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "纸制品"
+      ],
+      "relatedStocks": [
+        "600356"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-3",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "中毅达：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "工业化学品"
+      ],
+      "relatedStocks": [
+        "600610"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-4",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "返利科技：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "互联网内容与信息"
+      ],
+      "relatedStocks": [
+        "600228"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-5",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "杰克科技：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "工业机械"
+      ],
+      "relatedStocks": [
+        "603337"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-6",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "北汽蓝谷：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "汽车制造商"
+      ],
+      "relatedStocks": [
+        "600733"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-7",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "联环药业：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "600513"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-8",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "沃特股份：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "工业化学品"
+      ],
+      "relatedStocks": [
+        "002886"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-9",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "楚天龙：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "半导体厂商"
+      ],
+      "relatedStocks": [
+        "003040"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-10",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "众兴菌业：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "包装食品和肉类"
+      ],
+      "relatedStocks": [
+        "002772"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-11",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "仁东控股：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "交易及支付服务"
+      ],
+      "relatedStocks": [
+        "002647"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-12",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "葵花药业：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "002737"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-13",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "游族网络：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "电子游戏与多媒体"
+      ],
+      "relatedStocks": [
+        "002174"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-14",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "亚玛顿：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "半导体厂商"
+      ],
+      "relatedStocks": [
+        "002623"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-15",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "汇绿生态：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "环境与设施服务"
+      ],
+      "relatedStocks": [
+        "001267"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-16",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "孚日股份：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "纺织品"
+      ],
+      "relatedStocks": [
+        "002083"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-17",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "上峰材料：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "建筑材料"
+      ],
+      "relatedStocks": [
+        "000672"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-18",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "湖北宜化：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "化肥及农药"
+      ],
+      "relatedStocks": [
+        "000422"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-19",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "勘设股份：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "研究与咨询服务"
+      ],
+      "relatedStocks": [
+        "603458"
+      ],
+      "url": ""
+    }
+  ],
+  "refresh": {
+    "tab": "evidence",
+    "snapshotId": "2026-09-05T181838+0800",
+    "updatedAt": "2026-09-05T18:18:38+08:00",
+    "sourceTimestamp": "2026-09-05T07:51:56Z",
+    "mode": "real",
+    "status": "refreshed"
+  }
+}

@@ -1,104 +1,104 @@
 {
   "meta": {
-    "snapshotId": "2026-09-02T220450+0800",
-    "asOf": "2026-09-02T22:04:50+08:00",
-    "tradeDate": "2026-09-02",
-    "modelVersion": "dual-list-v0.6.0",
+    "snapshotId": "2026-09-05T181838+0800",
+    "asOf": "2026-09-05T18:18:38+08:00",
+    "tradeDate": "2026-09-05",
+    "modelVersion": "risk-aware-trend-v0.7.0",
     "status": "complete",
     "mode": "real",
     "provider": "longbridge",
-    "capturedAt": "2026-09-02T14:03:35.284Z"
+    "capturedAt": "2026-09-05T10:16:42.283Z"
   },
   "marketState": {
-    "label": "Neutral & gradually dropping",
-    "riskAppetite": 47
+    "label": "Warm & gradually rising",
+    "riskAppetite": 71
   },
   "summary": {
-    "highConfidenceThemes": 5,
-    "events30m": 100,
-    "confirmationRate": 1,
-    "credibleEvents": 0
+    "highConfidenceThemes": 6,
+    "events30m": 80,
+    "confirmationRate": 0.05,
+    "credibleEvents": 10
   },
   "themes": [
     {
       "rank": 1,
-      "name": "电气部件和设备",
-      "score": 95,
-      "change": 10,
-      "stage": "加速",
-      "catalyst": "5只样本出现量价或异动信号",
-      "breadth": "5/60",
-      "turnover": 91.8
+      "name": "电子元件",
+      "score": 78,
+      "change": 2,
+      "stage": "发酵",
+      "catalyst": "3只样本出现量价或异动信号",
+      "breadth": "3/60",
+      "turnover": 157.3
     },
     {
       "rank": 2,
-      "name": "工业化学品",
-      "score": 77,
-      "change": 0.2,
+      "name": "多元化银行",
+      "score": 94,
+      "change": 0.8,
       "stage": "发酵",
-      "catalyst": "4只样本出现量价或异动信号",
-      "breadth": "4/60",
-      "turnover": 56.2
+      "catalyst": "8只样本出现量价或异动信号",
+      "breadth": "8/60",
+      "turnover": 140.9
     },
     {
       "rank": 3,
-      "name": "农产品",
-      "score": 78,
-      "change": -3.4,
+      "name": "多元化金属与采矿",
+      "score": 71,
+      "change": -0.3,
       "stage": "分化",
-      "catalyst": "7只样本出现量价或异动信号",
-      "breadth": "7/60",
-      "turnover": 56
+      "catalyst": "3只样本出现量价或异动信号",
+      "breadth": "3/60",
+      "turnover": 123.1
     },
     {
       "rank": 4,
-      "name": "化肥及农药",
-      "score": 67,
-      "change": -5.8,
-      "stage": "分化",
-      "catalyst": "6只样本出现量价或异动信号",
-      "breadth": "6/60",
-      "turnover": 50.8
+      "name": "电气部件和设备",
+      "score": 77,
+      "change": 1.7,
+      "stage": "发酵",
+      "catalyst": "3只样本出现量价或异动信号",
+      "breadth": "3/60",
+      "turnover": 118.5
     },
     {
       "rank": 5,
-      "name": "汽车零部件及设备",
-      "score": 95,
-      "change": 10,
-      "stage": "加速",
+      "name": "电子设备及服务",
+      "score": 70,
+      "change": 0.7,
+      "stage": "发酵",
       "catalyst": "2只样本出现量价或异动信号",
       "breadth": "2/60",
-      "turnover": 36.4
+      "turnover": 103.2
     },
     {
       "rank": 6,
-      "name": "航空航天与国防",
-      "score": 95,
-      "change": 10,
-      "stage": "加速",
+      "name": "酿酒业",
+      "score": 74,
+      "change": 2.1,
+      "stage": "发酵",
       "catalyst": "2只样本出现量价或异动信号",
       "breadth": "2/60",
-      "turnover": 34.6
+      "turnover": 92.6
     }
   ],
   "leadingTheme": {
-    "name": "电气部件和设备",
-    "score": 95,
+    "name": "电子元件",
+    "score": 78,
     "novelty": 70,
-    "velocity": 100,
-    "confirmation": 167
+    "velocity": 66,
+    "confirmation": 133
   },
   "sourceHealth": {
     "healthy": 3,
     "total": 3,
     "delayedSources": [],
-    "quoteTimestamp": "2026-09-02T07:00:00Z"
+    "quoteTimestamp": "2026-09-04T07:00:00Z"
   },
   "refresh": {
     "tab": "radar",
-    "snapshotId": "2026-09-02T220450+0800",
-    "updatedAt": "2026-09-02T22:04:50+08:00",
-    "sourceTimestamp": "2026-09-02T07:00:00Z",
+    "snapshotId": "2026-09-05T181838+0800",
+    "updatedAt": "2026-09-05T18:18:38+08:00",
+    "sourceTimestamp": "2026-09-04T07:00:00Z",
     "mode": "real",
     "status": "refreshed"
   }

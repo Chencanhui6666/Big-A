@@ -1,6 +1,15 @@
 import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import {
+  openExecutionGate,
+  portfolioRiskState,
+  rankRiskAwareCandidates,
+  riskAwareRules,
+  stopDistancePct,
+  targetWeight,
+  themeExposure,
+} from './risk-aware-strategy.mjs';
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), '..');
 const dataRoot = join(projectRoot, 'public', 'data');
@@ -57,7 +66,7 @@ const meta = {
   snapshotId,
   asOf: `${tradeDate}T${shanghaiParts.hour}:${shanghaiParts.minute}:${shanghaiParts.second}+08:00`,
   tradeDate,
-  modelVersion: providerInput ? 'dual-list-v0.5.0' : 'hotspot-v0.2.0',
+  modelVersion: providerInput ? riskAwareRules.strategyId : 'hotspot-v0.2.0',
   status: 'complete',
   mode: providerInput ? 'real' : 'demo',
   provider: providerInput ? 'longbridge' : 'demo',
@@ -192,19 +201,80 @@ if (providerInput) {
       horizon: '1-3日', source: stock.source || 'Longbridge OpenAPI', sourceUrl: 'https://open.longbridge.com/zh-CN/docs/quote/overview',
     }); });
   candidates.stocks = candidates.stocks.map((stock) => ({ ...stock, candidateType: 'hotspot' }));
+  const pullbackPolicy = {
+    status: 'SHADOW_READY',
+    executionEligible: false,
+    ret10Min: 5,
+    ret1Min: -4,
+    ret1Max: -0.5,
+    trendEfficiencyMin: 0.2,
+    volumeRatioMax: 1.5,
+    rationale: '10日上升趋势中的单日回调属于待验证假设；仅进入复盘，不自动生成买单。',
+  };
+  const pullbackStocks = (providerInput.pullbackCandidates ?? providerInput.trendCandidates ?? [])
+    .filter((stock) => stock.tradeStatus === 'Normal' && isNoThresholdMainBoard(stock))
+    .filter((stock) => Number.isFinite(Number(stock.ret10)) && Number(stock.ret10) >= pullbackPolicy.ret10Min)
+    .filter((stock) => Number(stock.ret1) >= pullbackPolicy.ret1Min && Number(stock.ret1) <= pullbackPolicy.ret1Max)
+    .filter((stock) => Number(stock.trendEfficiency) >= pullbackPolicy.trendEfficiencyMin && Number(stock.volRatio) <= pullbackPolicy.volumeRatioMax)
+    .sort((a, b) => Number(b.ret10) * Number(b.trendEfficiency) - Number(a.ret10) * Number(a.trendEfficiency))
+    .slice(0, 20)
+    .map((stock, index) => ({
+      code: stock.symbol.split('.')[0], symbol: stock.symbol, name: stock.name, theme: stock.theme,
+      score: Math.round(Math.min(95, 60 + Number(stock.ret10) + Number(stock.trendEfficiency) * 20 - Math.abs(Number(stock.ret1)) * 2 - index)),
+      pullbackRank: index + 1, candidateType: 'pullback', executionEligible: false,
+      access: '普通A股账户可交易', price: Number(stock.last), prevClose: Number(stock.prevClose),
+      open: Number(stock.open), high: Number(stock.high), low: Number(stock.low), volume: Number(stock.volume),
+      turnover: Number(stock.turnover), move: Number(stock.ret1), ret10: Number(stock.ret10), ret20: Number(stock.ret20),
+      volRatio: Number(stock.volRatio), trendEfficiency: Number(stock.trendEfficiency),
+      quoteTime: stock.timestamp, capturedAt: providerInput.capturedAt, tradeStatus: stock.tradeStatus,
+      quoteKind: 'latest-close', source: stock.source || 'Longbridge OpenAPI',
+      sourceUrl: 'https://open.longbridge.com/zh-CN/docs/quote/overview',
+      reason: `10日累计上涨 ${Number(stock.ret10).toFixed(2)}%，当日回调 ${Number(stock.ret1).toFixed(2)}%，趋势效率 ${Number(stock.trendEfficiency).toFixed(2)}，量比 ${Number(stock.volRatio).toFixed(2)}；作为回调假设进入影子复盘。`,
+      risk: '回调可能演变为趋势反转；未通过样本外门槛前不自动下单。',
+      horizon: '1-3日（影子观察）',
+    }));
+  const riskAwareResult = rankRiskAwareCandidates(providerInput.trendCandidates ?? [], providerInput.marketRegime);
+  const riskAwareStocks = riskAwareResult.eligible.slice(0, 20).map((stock, index) => ({
+    ...stock,
+    code: stock.symbol.split('.')[0],
+    theme: stock.theme ?? stock.industry ?? '未分类',
+    score: stock.riskAwareScore,
+    riskAwareRank: index + 1,
+    candidateType: 'risk-aware-trend',
+    executionEligible: true,
+    price: Number(stock.last),
+    move: Number(stock.ret1),
+    reason: `20日收益 ${Number(stock.ret20).toFixed(2)}%，单日涨跌 ${Number(stock.ret1).toFixed(2)}%，ATR20 ${Number(stock.atr20Pct).toFixed(2)}%，量比 ${Number(stock.volRatio).toFixed(2)}；通过趋势、波动、流动性与市场状态门槛。`,
+    risk: '次日仅在开盘跳空-2%—2%且组合风险状态允许时成交。',
+  }));
   candidates.lists = {
     hotspot: { id: 'hotspot', label: '热点爆发', description: '关注当日异动、涨幅和资金热度，波动与追高风险较高。', stocks: candidates.stocks },
     trend: { id: 'trend', label: '趋势潜伏', description: '关注20日趋势、量能确认和行业分散，并过滤极端追高。', stocks: trendStocks },
+    pullback: { id: 'pullback', label: '趋势回调（影子）', description: '10日上涨而当日回调的观察池；尚不自动生成买单。', stocks: pullbackStocks },
+    riskAware: { id: 'risk-aware', label: '风险感知趋势', description: '唯一可生成模型买单的策略池；要求趋势、波动、流动性、市场状态和次日开盘门槛全部通过。', stocks: riskAwareStocks },
   };
+  candidates.activeStrategy = {
+    id: riskAwareRules.strategyId,
+    status: 'ACTIVE',
+    regime: riskAwareResult.regime,
+    eligibleCount: riskAwareStocks.length,
+    rejectedCount: riskAwareResult.rejected.length,
+    rules: riskAwareRules,
+  };
+  candidates.pullbackPolicy = pullbackPolicy;
   candidates.trendScan = providerInput.trendScan ?? null;
   candidates.candlestickDecisionTree = candlestickDecisionTree ? { modelId: candlestickDecisionTree.modelId, status: candlestickDecisionTree.status, acceptedLeaves: candlestickDecisionTree.tree.acceptedLeaves, promotionGate: candlestickDecisionTree.promotionGate } : null;
 }
 
 const tradingRules = {
   initialCapital: 1_000_000,
-  maxTotalPosition: 0.7,
-  maxSinglePosition: 0.1,
-  maxThemePosition: 0.25,
+  strategyId: riskAwareRules.strategyId,
+  maxTotalPosition: riskAwareRules.maxTotalPosition,
+  riskOffTotalPosition: riskAwareRules.riskOffTotalPosition,
+  maxSinglePosition: riskAwareRules.maxSinglePosition,
+  maxThemePosition: riskAwareRules.maxThemePosition,
+  riskPerTrade: riskAwareRules.riskPerTrade,
+  minHoldingDays: 1,
   lotSize: 100,
   commissionRate: 0.0003,
   minimumCommission: 5,
@@ -280,8 +350,9 @@ function simulateModelAccount(previousPortfolio, recoveredDuePlan) {
   const previous = previousPortfolio?.accounts?.find((account) => account.accountId === 'model') ?? bootstrapAccount();
   let cash = previous.cash;
   let positions = previous.positions.map((position) => ({ ...position }));
-  const todayTrades = [];
-  const todayOrders = [];
+  const sameTradeDateRebuild = previous.nav.at(-1)?.date === tradeDate;
+  const todayTrades = sameTradeDateRebuild ? [...(previous.todayTrades ?? [])] : [];
+  const todayOrders = sameTradeDateRebuild ? [...(previous.todayOrders ?? [])] : [];
   const marketClosed = [0, 6].includes(new Date(`${tradeDate}T12:00:00+08:00`).getUTCDay());
 
   const planForToday = previous.nextPlan?.executeOn === tradeDate ? previous.nextPlan : recoveredDuePlan;
@@ -298,9 +369,20 @@ function simulateModelAccount(previousPortfolio, recoveredDuePlan) {
         order.status = 'SKIPPED'; order.rejectReason = '缺少下一交易日开盘价，不能以收盘价替代成交价'; todayOrders.push(order); continue;
       }
       if (plan.side === 'BUY') {
+        if (plan.strategyId !== riskAwareRules.strategyId) {
+          order.status = 'SKIPPED'; order.rejectReason = '旧热点策略买单已由风险感知趋势策略替换'; todayOrders.push(order); continue;
+        }
+        const executionGate = openExecutionGate(plan, quote);
+        if (!executionGate.allowed) {
+          order.status = 'SKIPPED'; order.rejectReason = executionGate.reason; order.openGapPct = executionGate.gapPct ?? null; todayOrders.push(order); continue;
+        }
         const referenceAsset = cash + positions.reduce((sum, item) => sum + item.shares * item.lastPrice, 0);
         const price = Number((executionPrice * (1 + tradingRules.slippageRate)).toFixed(2));
         const existing = positions.find((item) => item.code === plan.code);
+        const currentThemeExposure = themeExposure(positions, plan.theme);
+        if (currentThemeExposure + referenceAsset * plan.targetWeight > referenceAsset * tradingRules.maxThemePosition) {
+          order.status = 'SKIPPED'; order.rejectReason = '执行后将超过12%行业仓位上限'; todayOrders.push(order); continue;
+        }
         const existingValue = existing ? existing.shares * price : 0;
         const gapValue = Math.max(0, referenceAsset * plan.targetWeight - existingValue);
         const shares = Math.floor(gapValue / price / tradingRules.lotSize) * tradingRules.lotSize;
@@ -308,7 +390,7 @@ function simulateModelAccount(previousPortfolio, recoveredDuePlan) {
         if (shares > 0 && amount + fee <= cash) {
           cash -= amount + fee;
           if (existing) { const totalShares = existing.shares + shares; existing.costPrice = Number(((existing.costPrice * existing.shares + amount + fee) / totalShares).toFixed(2)); existing.shares = totalShares; }
-          else positions.push({ code: plan.code, name: plan.name, theme: plan.theme, shares, availableShares: 0, costPrice: Number(((amount + fee) / shares).toFixed(2)), lastPrice: Number(quote.last), openedAt: tradeDate, reason: plan.reason, stopLoss: Number((price * 0.93).toFixed(2)), targetPrice: Number((price * 1.12).toFixed(2)) });
+          else positions.push({ code: plan.code, name: plan.name, theme: plan.theme, shares, availableShares: 0, costPrice: Number(((amount + fee) / shares).toFixed(2)), lastPrice: Number(quote.last), maxPrice: Number(quote.last), openedAt: tradeDate, reason: plan.reason, strategyId: plan.strategyId, atr20Pct: plan.atr20Pct, stopLoss: Number((price * (1 - plan.stopDistancePct / 100)).toFixed(2)), targetPrice: null });
           order.status = 'FILLED'; order.fillPrice = price; order.shares = shares; order.fees = Number(fee.toFixed(2));
           todayTrades.push({ id: `T-${tradeDate}-${plan.code}`, tradeDate, code: plan.code, name: plan.name, side: 'BUY', shares, price, fees: Number(fee.toFixed(2)), reason: plan.reason });
         } else { order.status = gapValue < price * tradingRules.lotSize ? 'SKIPPED' : 'REJECTED'; order.rejectReason = gapValue < price * tradingRules.lotSize ? '已达到目标仓位' : '可用资金或整手数量不足'; }
@@ -328,28 +410,76 @@ function simulateModelAccount(previousPortfolio, recoveredDuePlan) {
     }
   }
 
+  const riskAwareByCode = new Map((candidates.lists?.riskAware?.stocks ?? []).map((stock) => [stock.code, stock]));
+  const trendByCode = new Map((providerInput?.trendCandidates ?? []).map((stock) => [stock.symbol.split('.')[0], stock]));
   positions = positions.map((position) => {
     const quote = providerQuoteForCode(position.code);
     const lastPrice = Number(quote?.last) || position.lastPrice;
-    return { ...position, lastPrice, availableShares: position.openedAt < tradeDate ? position.shares : position.availableShares, holdingDays: dayDistance(position.openedAt, tradeDate), marketValue: Number((position.shares * lastPrice).toFixed(2)), unrealizedPnl: Number((position.shares * (lastPrice - position.costPrice)).toFixed(2)), returnPct: Number(((lastPrice / position.costPrice - 1) * 100).toFixed(2)) };
+    const riskCandidate = riskAwareByCode.get(position.code);
+    const maxPrice = Math.max(Number(position.maxPrice ?? position.lastPrice ?? lastPrice), lastPrice);
+    const gainFromCostPct = (maxPrice / Number(position.costPrice) - 1) * 100;
+    const trailingStop = gainFromCostPct >= riskAwareRules.trailingActivationPct && Number.isFinite(Number(riskCandidate?.atr20Pct ?? position.atr20Pct))
+      ? maxPrice * (1 - Math.min(riskAwareRules.maxStopDistancePct, Number(riskCandidate?.atr20Pct ?? position.atr20Pct) * 2) / 100)
+      : 0;
+    const stopLoss = Number(Math.max(Number(position.stopLoss ?? 0), trailingStop).toFixed(2));
+    const dailyBasePrice = position.openedAt === tradeDate
+      ? position.costPrice
+      : Number(quote?.prevClose) || position.lastPrice;
+    const dailyPnl = Number((position.shares * (lastPrice - dailyBasePrice)).toFixed(2));
+    return { ...position, lastPrice, maxPrice, stopLoss, dailyBasePrice, dailyPnl, dailyReturnPct: Number(((lastPrice / dailyBasePrice - 1) * 100).toFixed(2)), availableShares: position.openedAt < tradeDate ? position.shares : position.availableShares, holdingDays: dayDistance(position.openedAt, tradeDate), marketValue: Number((position.shares * lastPrice).toFixed(2)), unrealizedPnl: Number((position.shares * (lastPrice - position.costPrice)).toFixed(2)), returnPct: Number(((lastPrice / position.costPrice - 1) * 100).toFixed(2)) };
   });
   const marketValue = positions.reduce((sum, position) => sum + position.marketValue, 0);
   const totalAsset = Number((cash + marketValue).toFixed(2));
-  const previousAsset = previous.nav.at(-1)?.totalAsset ?? previous.initialCapital;
+  const previousAsset = previous.nav.filter((item) => item.date !== tradeDate).at(-1)?.totalAsset ?? previous.initialCapital;
+  const positionDailyPnl = Number(positions.reduce((sum, position) => sum + position.dailyPnl, 0).toFixed(2));
   const nav = [...previous.nav.filter((item) => item.date !== tradeDate), { date: tradeDate, totalAsset, benchmark: Number((1 + (seed % 9 - 3) / 1000).toFixed(4)) }].slice(-120);
   const peak = Math.max(...nav.map((item) => item.totalAsset));
+  const drawdownPct = Number(((totalAsset / peak - 1) * 100).toFixed(2));
+  const dailyReturnPct = Number(((totalAsset / previousAsset - 1) * 100).toFixed(2));
+  const riskState = portfolioRiskState({ drawdownPct, dailyReturnPct });
   const winningTrades = previous.tradeHistory.filter((trade) => trade.realizedPnl > 0).length;
   const closedTrades = previous.tradeHistory.filter((trade) => trade.realizedPnl != null).length;
-  const exitOrders = positions.filter((position) => {
-    const quote = candidates.stocks.find((stock) => stock.code === position.code);
-    return position.holdingDays >= 10 || position.lastPrice <= position.stopLoss || !quote || quote.score < 68;
-  }).map((position, index) => ({ code: position.code, name: position.name, theme: position.theme, side: 'SELL', targetWeight: 0, priority: index + 1, reason: position.lastPrice <= position.stopLoss ? '触发模拟止损' : position.holdingDays >= 10 ? '达到最大持有周期' : '热点评分跌破持仓阈值', cancelIf: '无；仅受T+1、停牌和跌停限制' }));
-  const buyOrders = candidates.stocks.slice(0, 3).map((stock, index) => ({ code: stock.code, name: stock.name, theme: stock.theme, side: 'BUY', targetWeight: [0.1, 0.08, 0.06][index], priority: exitOrders.length + index + 1, maxOpenMove: 4, reason: stock.reason, cancelIf: `题材热度低于${Math.max(65, stock.score - 10)}或出现重大负面公告` }));
+  const exitDecisions = positions.map((position) => {
+    if (position.lastPrice <= position.stopLoss) return { position, reason: '触发风险感知止损' };
+    if (riskState.state === 'HALT') return { position, reason: '组合回撤达到5%，熔断只允许减仓' };
+    if (position.holdingDays >= riskAwareRules.maxHoldingDays) return { position, reason: '达到10日最大持有周期' };
+    if (position.holdingDays >= riskAwareRules.timeStopDays && position.returnPct < riskAwareRules.timeStopMinReturnPct) return { position, reason: '持有5日仍未达到2%，触发时间止损' };
+    const trend = trendByCode.get(position.code);
+    if (trend && position.holdingDays >= tradingRules.minHoldingDays && !(Number(trend.last) > Number(trend.ma20) && Number(trend.ma20) > Number(trend.ma60))) return { position, reason: '价格或均线结构跌破趋势退出门槛' };
+    return null;
+  }).filter(Boolean);
+  if (riskState.state === 'RISK_OFF') {
+    const retainedTarget = totalAsset * riskState.maxTotalPosition;
+    const alreadyExiting = new Set(exitDecisions.map((item) => item.position.code));
+    let retained = positions.filter((position) => !alreadyExiting.has(position.code)).reduce((sum, position) => sum + position.marketValue, 0);
+    for (const position of positions.filter((item) => !alreadyExiting.has(item.code)).sort((a, b) => (riskAwareByCode.get(a.code)?.score ?? -1) - (riskAwareByCode.get(b.code)?.score ?? -1))) {
+      if (retained <= retainedTarget) break;
+      exitDecisions.push({ position, reason: '组合进入RISK_OFF，仓位降至20%以内' });
+      retained -= position.marketValue;
+    }
+  }
+  const exitOrders = exitDecisions.map(({ position, reason }, index) => ({ code: position.code, name: position.name, theme: position.theme, side: 'SELL', targetWeight: 0, priority: index + 1, reason, cancelIf: '无；仅受T+1、停牌和跌停限制' }));
+  const exitingCodes = new Set(exitOrders.map((order) => order.code));
+  const retainedValue = positions.filter((position) => !exitingCodes.has(position.code)).reduce((sum, position) => sum + position.shares * position.lastPrice, 0);
+  const referenceAsset = cash + positions.reduce((sum, position) => sum + position.shares * position.lastPrice, 0);
+  let remainingCapacity = Math.max(0, referenceAsset * riskState.maxTotalPosition - retainedValue);
+  const buyOrders = (riskState.allowBuys ? candidates.lists?.riskAware?.stocks ?? [] : [])
+    .filter((stock) => !positions.some((position) => position.code === stock.code))
+    .slice(0, riskAwareRules.maxNewPositionsPerDay)
+    .flatMap((stock, index) => {
+      const weight = targetWeight(stock);
+      const targetValue = referenceAsset * weight;
+      const themeValue = themeExposure(positions, stock.theme);
+      if (remainingCapacity < targetValue || themeValue + targetValue > referenceAsset * tradingRules.maxThemePosition) return [];
+      remainingCapacity -= targetValue;
+      const distance = stopDistancePct(stock.atr20Pct);
+      return [{ code: stock.code, name: stock.name, theme: stock.theme, side: 'BUY', strategyId: riskAwareRules.strategyId, targetWeight: weight, priority: exitOrders.length + index + 1, signalClose: stock.price, atr20Pct: stock.atr20Pct, stopDistancePct: distance, stopLoss: Number((stock.price * (1 - distance / 100)).toFixed(2)), minOpenGapPct: riskAwareRules.minOpenGapPct, maxOpenGapPct: riskAwareRules.maxOpenGapPct, maxOpenMove: riskAwareRules.maxOpenGapPct, reason: stock.reason, cancelIf: '开盘跳空超出-2%—2%、市场状态转弱、停牌或价格无效' }];
+    });
   const nextPlan = {
     generatedAt: meta.asOf, executeOn: nextTradingDate(tradeDate), status: 'READY',
     orders: [...exitOrders, ...buyOrders],
   };
-  return { ...previous, cash: Number(cash.toFixed(2)), positions, todayOrders, todayTrades, tradeHistory: [...previous.tradeHistory, ...todayTrades].slice(-200), nav, nextPlan, summary: { totalAsset, cash: Number(cash.toFixed(2)), marketValue: Number(marketValue.toFixed(2)), dailyPnl: Number((totalAsset - previousAsset).toFixed(2)), cumulativePnl: Number((totalAsset - previous.initialCapital).toFixed(2)), cumulativeReturn: Number(((totalAsset / previous.initialCapital - 1) * 100).toFixed(2)), positionRate: Number((marketValue / totalAsset * 100).toFixed(1)), maxDrawdown: Number(((totalAsset / peak - 1) * 100).toFixed(2)), winRate: closedTrades ? Number((winningTrades / closedTrades * 100).toFixed(1)) : 0 }, marketClosed };
+  return { ...previous, strategyId: riskAwareRules.strategyId, riskState, cash: Number(cash.toFixed(2)), positions, todayOrders, todayTrades, tradeHistory: [...previous.tradeHistory, ...todayTrades].slice(-200), nav, nextPlan, summary: { totalAsset, cash: Number(cash.toFixed(2)), marketValue: Number(marketValue.toFixed(2)), dailyPnl: Number((totalAsset - previousAsset).toFixed(2)), dailyReturnPct, positionDailyPnl, cumulativePnl: Number((totalAsset - previous.initialCapital).toFixed(2)), cumulativeReturn: Number(((totalAsset / previous.initialCapital - 1) * 100).toFixed(2)), positionRate: Number((marketValue / totalAsset * 100).toFixed(1)), maxDrawdown: drawdownPct, winRate: closedTrades ? Number((winningTrades / closedTrades * 100).toFixed(1)) : 0 }, marketClosed };
 }
 
 const previousPortfolio = await loadPreviousPortfolio();
@@ -399,11 +529,14 @@ function buildDailySignalReview() {
     }
     signal.status = elapsed >= 3 && signal.threeDayReturn != null ? 'SETTLED_3D' : 'SETTLED_1D';
   }
-  const current = candidates.lists?.hotspot?.stocks ?? candidates.stocks;
-  for (const stock of current.slice(0, 20)) {
-    const id = `${tradeDate}-${stock.code}`;
+  const current = [
+    ...(candidates.lists?.riskAware?.stocks ?? []).map((stock) => ({ ...stock, signalType: 'risk-aware-trend' })),
+    ...(candidates.lists?.pullback?.stocks ?? []).map((stock) => ({ ...stock, signalType: 'pullback' })),
+  ];
+  for (const stock of current.slice(0, 40)) {
+    const id = `${tradeDate}-${stock.signalType}-${stock.code}`;
     if (signals.some((signal) => signal.id === id)) continue;
-    signals.push({ id, signalDate: tradeDate, code: stock.code, symbol: stock.symbol ?? `${stock.code}.CN`, name: stock.name, theme: stock.theme, score: stock.score, signalPrice: stock.price, signalTimestamp: stock.quoteTime, status: 'PENDING_NEXT_OPEN', tradingDaysElapsed: 0, entryPrice: null, oneDayReturn: null, threeDayReturn: null });
+    signals.push({ id, signalType: stock.signalType, signalDate: tradeDate, code: stock.code, symbol: stock.symbol ?? `${stock.code}.CN`, name: stock.name, theme: stock.theme, score: stock.score, signalPrice: stock.price, signalTimestamp: stock.quoteTime, status: 'PENDING_NEXT_OPEN', tradingDaysElapsed: 0, entryPrice: null, oneDayReturn: null, threeDayReturn: null });
   }
   const retained = signals.sort((a, b) => `${a.signalDate}-${a.code}`.localeCompare(`${b.signalDate}-${b.code}`)).slice(-400);
   const oneDay = retained.filter((signal) => signal.oneDayReturn != null);
@@ -477,7 +610,7 @@ function assertAllTabsRefreshed() {
   }
   if (!providerInput) return;
   if (!radar.themes.length || !radar.sourceHealth.quoteTimestamp) throw new Error('radar tab has no current quote-backed content');
-  if (!Array.isArray(candidates.lists?.hotspot?.stocks) || !Array.isArray(candidates.lists?.trend?.stocks) || candidates.coverage?.deepQuoteCount < 100) throw new Error('candidates tab is incomplete');
+  if (!Array.isArray(candidates.lists?.hotspot?.stocks) || !Array.isArray(candidates.lists?.trend?.stocks) || !Array.isArray(candidates.lists?.pullback?.stocks) || !Array.isArray(candidates.lists?.riskAware?.stocks) || candidates.coverage?.deepQuoteCount < 100) throw new Error('candidates tab is incomplete');
   if (!Array.isArray(evidence.events) || !Array.isArray(providerInput.anomalies) || !Array.isArray(providerInput.news)) throw new Error('evidence tab is incomplete');
   if (!review.dailySignalReview?.summary || !Array.isArray(review.dailySignalReview.signals)) throw new Error('review tab daily ledger is incomplete');
   const model = portfolio.accounts?.find((account) => account.accountId === 'model');

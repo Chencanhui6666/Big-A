@@ -1,0 +1,628 @@
+{
+  "meta": {
+    "snapshotId": "2026-09-03T155405+0800",
+    "asOf": "2026-09-03T15:54:05+08:00",
+    "tradeDate": "2026-09-03",
+    "modelVersion": "dual-list-v0.6.0",
+    "status": "complete",
+    "mode": "real",
+    "provider": "longbridge",
+    "capturedAt": "2026-09-03T07:51:56.590Z"
+  },
+  "summary": {
+    "total": 130,
+    "official": 0,
+    "confirmed": 0,
+    "duplicateRate": 0
+  },
+  "events": [
+    {
+      "id": "lb-news-297869717",
+      "time": "14:31",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "The housing rental sector fluctuates and weakens, 5i5j hits the limit down",
+      "summary": "The housing rental sector is experiencing fluctuations and weakening, with 5i5j hitting the limit down, and SZPRD, DYRS, WORLDUNION, and others following suit",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297869717"
+    },
+    {
+      "id": "lb-news-297760900",
+      "time": "17:21",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "5i5j: Dongyin Yuheng will reduce its holdings by 1% from August 19 to September 1, 2026",
+      "summary": "5i5j announced that its shareholder Dongyin Yuheng, holding more than 5% of the shares, will reduce its holdings by a total of 23.555 million shares through centralized bidding transactions from August 19 to September 1, 2026, accounting for 1% of the company's total share capita",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297760900"
+    },
+    {
+      "id": "lb-news-297718483",
+      "time": "09:45",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "",
+      "summary": "The A-share real estate sector has seen a short-term decline, with 5i5j and SDGS dropping over 8%, while Huayuan Holding and WORLDUNION are among the top decliners",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297718483"
+    },
+    {
+      "id": "lb-news-297872316",
+      "time": "14:58",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "",
+      "summary": "The innovative drug concept in A-shares showed partial recovery, with QianJin Pharmaceutical hitting the daily limit at the close, DEZHAN HEALTHCARE having hit the limit earlier, and InnoCare Pharma, Dizal Pharmaceutical, and BIOKIN PHARMACEUTICAL leading the percentage gains",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297872316"
+    },
+    {
+      "id": "lb-news-297876191",
+      "time": "15:23",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "Today's analysis of limit-up and limit-down stocks: 46 limit-up stocks, 16 limit-down stocks, the liquid cooling server concept is gaining strength",
+      "summary": "On September 3rd, the A-shares saw 46 stocks hit the daily limit up and 16 stocks hit the daily limit down. The precious metals sector was active, with Baiyin Nonferrous hitting the daily limit up; the liquid cooling server concept strengthened, with JinFu and other stocks perfor",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297876191"
+    },
+    {
+      "id": "lb-news-297618656",
+      "time": "16:13",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "In the afternoon, good news arrived! Multiple stocks surged straight up!",
+      "summary": "Pharmaceutical stocks are moving! This afternoon (September 1), some pharmaceutical stocks surged significantly, with WHYY hitting the upper limit within 3 minutes, followed by QianJin Pharmaceutical, Realcan, and Tellgen also reaching the upper limit. On the news front, the \"Nat",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297618656"
+    },
+    {
+      "id": "lb-news-297586886",
+      "time": "10:42",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "",
+      "summary": "Chemical stocks fluctuated higher, with NANTONG JIANGTIAN CHEMICAL hitting the 20% limit up, Deer Chemical rising over 10%, and Jinmei Technology, HUARONG CHEMICAL, LUXI CHEMICAL, and JINNIU CHEMICAL following suit",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297586886"
+    },
+    {
+      "id": "lb-news-297485577",
+      "time": "16:36",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "8 yuan bottom-fishing has doubled! JINNIU CHEMICAL has two consecutive limit-ups, topping the A-share popularity rankings! Geopolitical conflicts ignite the methanol market",
+      "summary": "Affected by the geopolitical conflict between the U.S. and Iran, which has raised concerns about methanol supply, JINNIU CHEMICAL hit the daily limit on August 31, achieving two consecutive trading limits, with its stock price rising over 120% from the low point. The company prim",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297485577"
+    },
+    {
+      "id": "lb-news-297446615",
+      "time": "09:16",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "Today's top ten hot stocks: 5i5j scores full marks at the top, JINNIU CHEMICAL leads, WANXIANG DONEED hits 4 boards in 4 days, multiple stocks in the food security concept make the",
+      "summary": "On August 31, the top ten hot stocks in the A-share market include 5i5j, JINNIU CHEMICAL, and others. 5i5j has attracted attention due to its doubling performance and conceptual attributes; JINNIU CHEMICAL benefits from the peak season of coal chemical and the logic of state-owne",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297446615"
+    },
+    {
+      "id": "lb-news-297875949",
+      "time": "15:32",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "SANAN and HHWW received a net capital inflow of over 1 billion yuan",
+      "summary": "According to Choice data, on September 3rd, the top ten stocks ranked by net capital inflow are SANAN, HHWW, CATL, Baiyin Nonferrous, Shannon Semi, Menovo, Megmeet, Ping An, Boyun New Materials, and GREATOO INTELLIGENT. Among them, SANAN and HHWW received net inflows of 1.128 bil",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297875949"
+    },
+    {
+      "id": "lb-news-297857844",
+      "time": "11:44",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "Midday limit-up and limit-down stock analysis: 43 limit-up stocks, 7 limit-down stocks, shipping concept active, COSCO SHIPPING Energy, Highton Development and others limit-up",
+      "summary": "On September 3rd, A-share data showed that 43 stocks hit the daily limit up, while 7 stocks hit the daily limit down. The shipping concept was active, with COSCO SHIPPING Energy and Highton Development hitting the limit up; the cultivated diamond concept strengthened, with Boyun ",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297857844"
+    },
+    {
+      "id": "lb-news-297746212",
+      "time": "15:06",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "A-share closing review: The Shanghai Composite Index closed down 0.97%, with the ground equipment concept strengthening",
+      "summary": "Today, the three major indices of A-shares opened lower and weakened, with fluctuations during the day. By the close, the SSE Index fell by 0.97%, the Shenzhen Index fell by 1.88%, and the ChiNext fell by 2.39%. Military stocks were strong throughout the day, with the ground equi",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297746212"
+    },
+    {
+      "id": "lb-news-297718454",
+      "time": "09:46",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "The fertilizer sector fluctuated and weakened, with HSF hitting the limit down",
+      "summary": "The fertilizer sector fluctuated and weakened, with HSF hitting the limit down, followed by LuHua Technology, LTH, Nongda Technology, Chitianhua, Guannong, and KINGENTA all declining",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297718454"
+    },
+    {
+      "id": "lb-news-297490503",
+      "time": "17:11",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "Chitianhua: Abnormal fluctuations in stock trading, no undisclosed significant matters that should be disclosed",
+      "summary": "Chitianhua announced that the cumulative deviation of the closing price increase of the company's stock over the past two trading days has reached 20%, constituting an abnormal trading fluctuation. After verification, the company has no undisclosed significant matters that should",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297490503"
+    },
+    {
+      "id": "lb-news-296739400",
+      "time": "13:24",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "Chemical sector shows localized fluctuations, ZYD has hit the limit up twice in four days",
+      "summary": "In the afternoon, the chemical sector experienced localized fluctuations, with ZYD hitting the limit up for 2 consecutive days in 4 days, NANTONG JIANGTIAN CHEMICAL and Caike Technology rising over 9%, and JINNIU CHEMICAL, Hongbaoli, Chitianhua, and Deere Chemical quickly surging",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/296739400"
+    },
+    {
+      "id": "lb-news-297873659",
+      "time": "15:05",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "A-share closing review: The Shanghai Composite Index closed up 0.02%, and the liquid cooling server concept fluctuated higher",
+      "summary": "Today, the three major indices of A-shares opened slightly higher and then weakened, but continued to rebound in the afternoon. By the close, the SSE Index rose by 0.02%, the Shenzhen Index rose by 0.10%, and the ChiNext rose by 0.01%. The retail, tourism and hotel, and tax refun",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297873659"
+    },
+    {
+      "id": "lb-news-297857649",
+      "time": "11:49",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "Xinpeng Co., Ltd. surged to the daily limit within one minute before the lunch break",
+      "summary": "On September 3rd, Xinpeng Co., Ltd. quickly surged near the midday break, reaching the daily limit in one minute. The company's business mainly involves two major areas: manufacturing and investment. The manufacturing business includes automotive parts and metal and communication",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297857649"
+    },
+    {
+      "id": "lb-news-297846585",
+      "time": "09:33",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "",
+      "summary": "Liquid cooling concept stocks remain active, with JOINTAS hitting four consecutive limit-ups, Suqun rising over 10%, and GEB, Xinpeng Co.,Ltd., PCCOOLER, and SNOWMAN GROUP leading the percentage gains",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297846585"
+    },
+    {
+      "id": "lb-news-297851122",
+      "time": "10:21",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "High-profile popular stocks continue to decline, with multiple stocks including CZ hitting the limit down",
+      "summary": "High-profile popular stocks continued to decline during the trading session, with CZ, CBC, Elegant, INM, and XINSAI CO.,LTD. hitting the limit down, while HARSON, FUJIAN JINSEN, SHKK, GLORIA PHARMA, and Chitwing saw significant declines",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297851122"
+    },
+    {
+      "id": "lb-news-297753186",
+      "time": "16:09",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "September 2nd consecutive board stock analysis: Short-term sentiment cools down, market consecutive board height drops to 4 boards",
+      "summary": "On September 2nd, the short-term sentiment in the A-shares cooled down, with the limit-up height dropping to 4 boards. On that day, 52 stocks hit the daily limit, with 13 consecutive limit-up stocks, and the promotion rate was 33.33%. Some strong stocks, such as Shenqi and SHKK, ",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297753186"
+    },
+    {
+      "id": "lb-anomaly-0",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "农发种业：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "600313"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-1",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "诺诚健华：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "688428"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-2",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "博敏电子：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "603936"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-3",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "远东股份：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "600869"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-4",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "华骐环保：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300929"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-5",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "光线传媒：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300251"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-6",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "凯盛科技：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "600552"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-7",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "大众交通：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "600611"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-8",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "捷昌驱动：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "603583"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-9",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "深南电路：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002916"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-10",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "华阳集团：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002906"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-11",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "劲仔食品：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "003000"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-12",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "新疆交建：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002941"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-13",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "雪人集团：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002639"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-14",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "高争民爆：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002827"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-15",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "爱施德：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002416"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-16",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "太阳电缆：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002300"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-17",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "东信和平：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002017"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-18",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "大连重工：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002204"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-19",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "大华股份：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002236"
+      ],
+      "url": ""
+    }
+  ],
+  "refresh": {
+    "tab": "evidence",
+    "snapshotId": "2026-09-03T155405+0800",
+    "updatedAt": "2026-09-03T15:54:05+08:00",
+    "sourceTimestamp": "2026-09-03T07:32:19Z",
+    "mode": "real",
+    "status": "refreshed"
+  }
+}

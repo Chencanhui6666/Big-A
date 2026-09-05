@@ -1,0 +1,348 @@
+{
+  "meta": {
+    "snapshotId": "2026-09-02T223836+0800",
+    "asOf": "2026-09-02T22:38:36+08:00",
+    "tradeDate": "2026-09-02",
+    "modelVersion": "dual-list-v0.6.0",
+    "status": "complete",
+    "mode": "real",
+    "provider": "longbridge",
+    "capturedAt": "2026-09-02T14:03:35.284Z"
+  },
+  "summary": {
+    "total": 100,
+    "official": 0,
+    "confirmed": 0,
+    "duplicateRate": 0
+  },
+  "events": [
+    {
+      "id": "lb-anomaly-0",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "新中港：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "605162"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-1",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "正川股份：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "603976"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-2",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "广电网络：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "600831"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-3",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "出版传媒：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "601999"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-4",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "海航控股：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "600221"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-5",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "桂冠电力：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "600236"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-6",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "海科新源：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "301292"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-7",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "川宁生物：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "301301"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-8",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "艾可蓝：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300816"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-9",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "珈伟新能：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300317"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-10",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "金信诺：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300252"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-11",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "联创股份：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300343"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-12",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "五洋自控：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300420"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-13",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "节能铁汉：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300197"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-14",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "南方泵业：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300145"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-15",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "金龙羽：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002882"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-16",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "ST龙大：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002726"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-17",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "C马矿：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "601123"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-18",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "海峡股份：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002320"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-19",
+      "time": "07:00",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "盛龙股份：null",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "001257"
+      ],
+      "url": ""
+    }
+  ],
+  "refresh": {
+    "tab": "evidence",
+    "snapshotId": "2026-09-02T223836+0800",
+    "updatedAt": "2026-09-02T22:38:36+08:00",
+    "sourceTimestamp": "2026-09-02T22:38:36+08:00",
+    "mode": "real",
+    "status": "refreshed"
+  }
+}
