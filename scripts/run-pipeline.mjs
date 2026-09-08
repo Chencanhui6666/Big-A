@@ -33,6 +33,12 @@ if (providerArg) {
   if (providerInput.carryQuotes != null && (!Array.isArray(providerInput.carryQuotes) || providerInput.carryQuotes.some((quote) => !quote.symbol || !quote.timestamp))) {
     throw new Error('Longbridge carry quotes are malformed');
   }
+  if (providerInput.historicalExecutionQuotes != null && (
+    !Array.isArray(providerInput.historicalExecutionQuotes)
+    || providerInput.historicalExecutionQuotes.some((quote) => !quote.symbol || !quote.tradeDate || !quote.timestamp || !Number.isFinite(Number(quote.open)) || !Number.isFinite(Number(quote.last)))
+  )) {
+    throw new Error('Longbridge historical execution quotes are malformed');
+  }
 }
 
 let trainedModel = null;
@@ -79,6 +85,12 @@ try { existingHistory = JSON.parse(await readFile(join(dataRoot, 'index.json'), 
 const executionQuotes = providerInput ? [...providerInput.quotes, ...(providerInput.carryQuotes ?? [])] : [];
 function providerQuoteForCode(code) {
   return executionQuotes.find((quote) => String(quote.symbol ?? '').split('.')[0] === String(code));
+}
+
+function historicalProviderQuoteForCode(code, executionDate) {
+  return (providerInput?.historicalExecutionQuotes ?? []).find((quote) => (
+    String(quote.symbol ?? '').split('.')[0] === String(code) && quote.tradeDate === executionDate
+  ));
 }
 
 const demoThemes = [
@@ -310,7 +322,11 @@ async function loadPreviousReview() {
 }
 
 async function loadRecoveredDuePlan(previousPortfolio) {
-  if (previousPortfolio?.accounts?.some((account) => account.tradeHistory?.some((trade) => trade.tradeDate === tradeDate))) return null;
+  const previousModel = previousPortfolio?.accounts?.find((account) => account.accountId === 'model');
+  const accountedOrderIds = new Set([
+    ...(previousModel?.todayOrders ?? []),
+    ...(previousModel?.recoveredOrders ?? []),
+  ].map((order) => order.id));
   const history = existingHistory
     .filter((item) => item.asOf < meta.asOf && item.mode === meta.mode && item.files?.portfolio)
     .sort((a, b) => a.asOf.localeCompare(b.asOf));
@@ -318,7 +334,7 @@ async function loadRecoveredDuePlan(previousPortfolio) {
     try {
       const portfolio = JSON.parse(await readFile(join(dataRoot, item.path, item.files.portfolio), 'utf8'));
       const plan = portfolio.accounts?.find((account) => account.accountId === 'model')?.nextPlan;
-      if (plan?.executeOn === tradeDate) return plan;
+      if (plan?.executeOn <= tradeDate && !plan.orders.every((order) => accountedOrderIds.has(`O-${plan.executeOn}-${order.code}`))) return plan;
     } catch {}
   }
   return null;
@@ -350,12 +366,77 @@ function simulateModelAccount(previousPortfolio, recoveredDuePlan) {
   const previous = previousPortfolio?.accounts?.find((account) => account.accountId === 'model') ?? bootstrapAccount();
   let cash = previous.cash;
   let positions = previous.positions.map((position) => ({ ...position }));
+  let accountingNav = [...previous.nav];
   const sameTradeDateRebuild = previous.nav.at(-1)?.date === tradeDate;
   const todayTrades = sameTradeDateRebuild ? [...(previous.todayTrades ?? [])] : [];
   const todayOrders = sameTradeDateRebuild ? [...(previous.todayOrders ?? [])] : [];
+  const recoveredOrders = [...(previous.recoveredOrders ?? [])];
+  const recoveredTrades = [...(previous.recoveredTrades ?? [])];
+  const newRecoveredTrades = [];
   const marketClosed = [0, 6].includes(new Date(`${tradeDate}T12:00:00+08:00`).getUTCDay());
 
-  const planForToday = previous.nextPlan?.executeOn === tradeDate ? previous.nextPlan : recoveredDuePlan;
+  const overduePlan = previous.nextPlan?.executeOn < tradeDate ? previous.nextPlan : recoveredDuePlan?.executeOn < tradeDate ? recoveredDuePlan : null;
+  if (overduePlan) {
+    const executionDate = overduePlan.executeOn;
+    const weekend = [0, 6].includes(new Date(`${executionDate}T12:00:00+08:00`).getUTCDay());
+    if (weekend) throw new Error(`Recovered plan date ${executionDate} is not a trading day`);
+    for (const plan of overduePlan.orders) {
+      const orderId = `O-${executionDate}-${plan.code}`;
+      if (recoveredOrders.some((order) => order.id === orderId)) continue;
+      const quote = historicalProviderQuoteForCode(plan.code, executionDate);
+      const order = { id: orderId, createdAt: quote?.timestamp ?? meta.asOf, planDate: executionDate, recoveredAt: meta.asOf, code: plan.code, name: plan.name, side: plan.side, status: 'PENDING', targetWeight: plan.targetWeight, reason: plan.reason };
+      if (!quote) {
+        order.status = 'SKIPPED';
+        order.rejectReason = `缺少 ${executionDate} 的Longbridge历史开盘价，不能事后替代`;
+        recoveredOrders.push(order);
+        continue;
+      }
+      const executionPrice = Number(quote.open);
+      if (!Number.isFinite(executionPrice) || executionPrice <= 0) {
+        order.status = 'SKIPPED';
+        order.rejectReason = `${executionDate} 的Longbridge历史开盘价无效`;
+        recoveredOrders.push(order);
+        continue;
+      }
+      if (plan.side === 'BUY') {
+        order.status = 'SKIPPED';
+        order.rejectReason = '买入执行窗口已错过；为避免事后选择偏差不进行历史补买';
+        recoveredOrders.push(order);
+        continue;
+      }
+      const existing = positions.find((item) => item.code === plan.code);
+      if (plan.side === 'SELL' && existing && existing.availableShares > 0) {
+        const price = Number((executionPrice * (1 - tradingRules.slippageRate)).toFixed(2));
+        const shares = existing.availableShares;
+        const amount = shares * price;
+        const fee = commission(amount) + amount * tradingRules.stampDutyRateOnSell;
+        cash += amount - fee;
+        existing.shares -= shares;
+        existing.availableShares = 0;
+        order.status = 'FILLED';
+        order.fillPrice = price;
+        order.shares = shares;
+        order.fees = Number(fee.toFixed(2));
+        order.quoteTimestamp = quote.timestamp;
+        const trade = { id: `T-${executionDate}-${plan.code}-S`, tradeDate: executionDate, code: plan.code, name: plan.name, side: 'SELL', shares, price, fees: Number(fee.toFixed(2)), realizedPnl: Number(((price - existing.costPrice) * shares - fee).toFixed(2)), reason: `${plan.reason}（逾期计划按Longbridge历史开盘补录）`, quoteTimestamp: quote.timestamp };
+        recoveredTrades.push(trade);
+        newRecoveredTrades.push(trade);
+        if (existing.shares === 0) positions = positions.filter((item) => item.code !== plan.code);
+      } else {
+        order.status = 'REJECTED';
+        order.rejectReason = '历史执行日无可卖持仓或T+1可卖数量不足';
+      }
+      recoveredOrders.push(order);
+    }
+    const missingHistoricalMarks = positions.filter((position) => !historicalProviderQuoteForCode(position.code, executionDate));
+    if (missingHistoricalMarks.length) throw new Error(`Missing historical close marks for ${executionDate}: ${missingHistoricalMarks.map((position) => position.code).join(', ')}`);
+    const historicalMarketValue = positions.reduce((sum, position) => sum + position.shares * Number(historicalProviderQuoteForCode(position.code, executionDate).last), 0);
+    const historicalTotalAsset = Number((cash + historicalMarketValue).toFixed(2));
+    accountingNav = [...accountingNav.filter((item) => item.date !== executionDate), { date: executionDate, totalAsset: historicalTotalAsset, benchmark: accountingNav.at(-1)?.benchmark ?? 1 }]
+      .sort((a, b) => a.date.localeCompare(b.date));
+  }
+
+  const planForToday = previous.nextPlan?.executeOn === tradeDate ? previous.nextPlan : recoveredDuePlan?.executeOn === tradeDate ? recoveredDuePlan : null;
   if (!marketClosed && planForToday?.executeOn === tradeDate) {
     for (const plan of planForToday.orders) {
       const quote = providerQuoteForCode(plan.code);
@@ -430,15 +511,17 @@ function simulateModelAccount(previousPortfolio, recoveredDuePlan) {
   });
   const marketValue = positions.reduce((sum, position) => sum + position.marketValue, 0);
   const totalAsset = Number((cash + marketValue).toFixed(2));
-  const previousAsset = previous.nav.filter((item) => item.date !== tradeDate).at(-1)?.totalAsset ?? previous.initialCapital;
+  const previousAsset = accountingNav.filter((item) => item.date < tradeDate).at(-1)?.totalAsset ?? previous.initialCapital;
   const positionDailyPnl = Number(positions.reduce((sum, position) => sum + position.dailyPnl, 0).toFixed(2));
-  const nav = [...previous.nav.filter((item) => item.date !== tradeDate), { date: tradeDate, totalAsset, benchmark: Number((1 + (seed % 9 - 3) / 1000).toFixed(4)) }].slice(-120);
+  const nav = [...accountingNav.filter((item) => item.date !== tradeDate), { date: tradeDate, totalAsset, benchmark: Number((1 + (seed % 9 - 3) / 1000).toFixed(4)) }].slice(-120);
   const peak = Math.max(...nav.map((item) => item.totalAsset));
   const drawdownPct = Number(((totalAsset / peak - 1) * 100).toFixed(2));
   const dailyReturnPct = Number(((totalAsset / previousAsset - 1) * 100).toFixed(2));
   const riskState = portfolioRiskState({ drawdownPct, dailyReturnPct });
-  const winningTrades = previous.tradeHistory.filter((trade) => trade.realizedPnl > 0).length;
-  const closedTrades = previous.tradeHistory.filter((trade) => trade.realizedPnl != null).length;
+  const realizedHistory = [...previous.tradeHistory, ...newRecoveredTrades, ...todayTrades]
+    .filter((trade, index, all) => all.findIndex((item) => item.id === trade.id) === index);
+  const winningTrades = realizedHistory.filter((trade) => trade.realizedPnl > 0).length;
+  const closedTrades = realizedHistory.filter((trade) => trade.realizedPnl != null).length;
   const exitDecisions = positions.map((position) => {
     if (position.lastPrice <= position.stopLoss) return { position, reason: '触发风险感知止损' };
     if (riskState.state === 'HALT') return { position, reason: '组合回撤达到5%，熔断只允许减仓' };
@@ -479,7 +562,10 @@ function simulateModelAccount(previousPortfolio, recoveredDuePlan) {
     generatedAt: meta.asOf, executeOn: nextTradingDate(tradeDate), status: 'READY',
     orders: [...exitOrders, ...buyOrders],
   };
-  return { ...previous, strategyId: riskAwareRules.strategyId, riskState, cash: Number(cash.toFixed(2)), positions, todayOrders, todayTrades, tradeHistory: [...previous.tradeHistory, ...todayTrades].slice(-200), nav, nextPlan, summary: { totalAsset, cash: Number(cash.toFixed(2)), marketValue: Number(marketValue.toFixed(2)), dailyPnl: Number((totalAsset - previousAsset).toFixed(2)), dailyReturnPct, positionDailyPnl, cumulativePnl: Number((totalAsset - previous.initialCapital).toFixed(2)), cumulativeReturn: Number(((totalAsset / previous.initialCapital - 1) * 100).toFixed(2)), positionRate: Number((marketValue / totalAsset * 100).toFixed(1)), maxDrawdown: drawdownPct, winRate: closedTrades ? Number((winningTrades / closedTrades * 100).toFixed(1)) : 0 }, marketClosed };
+  const tradeHistory = [...previous.tradeHistory, ...newRecoveredTrades, ...todayTrades]
+    .filter((trade, index, all) => all.findIndex((item) => item.id === trade.id) === index)
+    .slice(-200);
+  return { ...previous, strategyId: riskAwareRules.strategyId, riskState, cash: Number(cash.toFixed(2)), positions, recoveredOrders, recoveredTrades, todayOrders, todayTrades, tradeHistory, nav, nextPlan, summary: { totalAsset, cash: Number(cash.toFixed(2)), marketValue: Number(marketValue.toFixed(2)), dailyPnl: Number((totalAsset - previousAsset).toFixed(2)), dailyReturnPct, positionDailyPnl, cumulativePnl: Number((totalAsset - previous.initialCapital).toFixed(2)), cumulativeReturn: Number(((totalAsset / previous.initialCapital - 1) * 100).toFixed(2)), positionRate: Number((marketValue / totalAsset * 100).toFixed(1)), maxDrawdown: drawdownPct, winRate: closedTrades ? Number((winningTrades / closedTrades * 100).toFixed(1)) : 0 }, marketClosed };
 }
 
 const previousPortfolio = await loadPreviousPortfolio();

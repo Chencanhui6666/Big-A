@@ -1,104 +1,104 @@
 {
   "meta": {
-    "snapshotId": "2026-09-05T181838+0800",
-    "asOf": "2026-09-05T18:18:38+08:00",
-    "tradeDate": "2026-09-05",
+    "snapshotId": "2026-09-08T224816+0800",
+    "asOf": "2026-09-08T22:48:16+08:00",
+    "tradeDate": "2026-09-08",
     "modelVersion": "risk-aware-trend-v0.7.0",
     "status": "complete",
     "mode": "real",
     "provider": "longbridge",
-    "capturedAt": "2026-09-05T10:16:42.283Z"
+    "capturedAt": "2026-09-08T13:08:06.825Z"
   },
   "marketState": {
     "label": "Warm & gradually rising",
-    "riskAppetite": 71
+    "riskAppetite": 74
   },
   "summary": {
     "highConfidenceThemes": 6,
-    "events30m": 80,
-    "confirmationRate": 0.05,
-    "credibleEvents": 10
+    "events30m": 200,
+    "confirmationRate": 0.08,
+    "credibleEvents": 15
   },
   "themes": [
     {
       "rank": 1,
       "name": "电子元件",
-      "score": 78,
-      "change": 2,
-      "stage": "发酵",
-      "catalyst": "3只样本出现量价或异动信号",
-      "breadth": "3/60",
-      "turnover": 157.3
+      "score": 95,
+      "change": 3.9,
+      "stage": "加速",
+      "catalyst": "10只样本出现量价或异动信号",
+      "breadth": "10/60",
+      "turnover": 579.7
     },
     {
       "rank": 2,
-      "name": "多元化银行",
-      "score": 94,
-      "change": 0.8,
+      "name": "通信设备",
+      "score": 93,
+      "change": 2.9,
       "stage": "发酵",
-      "catalyst": "8只样本出现量价或异动信号",
-      "breadth": "8/60",
-      "turnover": 140.9
+      "catalyst": "6只样本出现量价或异动信号",
+      "breadth": "6/60",
+      "turnover": 322.5
     },
     {
       "rank": 3,
-      "name": "多元化金属与采矿",
-      "score": 71,
-      "change": -0.3,
-      "stage": "分化",
-      "catalyst": "3只样本出现量价或异动信号",
-      "breadth": "3/60",
-      "turnover": 123.1
+      "name": "半导体厂商",
+      "score": 81,
+      "change": 1.8,
+      "stage": "发酵",
+      "catalyst": "4只样本出现量价或异动信号",
+      "breadth": "4/60",
+      "turnover": 306.6
     },
     {
       "rank": 4,
-      "name": "电气部件和设备",
-      "score": 77,
-      "change": 1.7,
+      "name": "多元化金属与采矿",
+      "score": 88,
+      "change": 2.6,
       "stage": "发酵",
-      "catalyst": "3只样本出现量价或异动信号",
-      "breadth": "3/60",
-      "turnover": 118.5
+      "catalyst": "5只样本出现量价或异动信号",
+      "breadth": "5/60",
+      "turnover": 219.9
     },
     {
       "rank": 5,
-      "name": "电子设备及服务",
-      "score": 70,
-      "change": 0.7,
-      "stage": "发酵",
-      "catalyst": "2只样本出现量价或异动信号",
-      "breadth": "2/60",
-      "turnover": 103.2
+      "name": "工业化学品",
+      "score": 94,
+      "change": 4.6,
+      "stage": "加速",
+      "catalyst": "5只样本出现量价或异动信号",
+      "breadth": "5/60",
+      "turnover": 134.8
     },
     {
       "rank": 6,
-      "name": "酿酒业",
-      "score": 74,
-      "change": 2.1,
-      "stage": "发酵",
+      "name": "电气部件和设备",
+      "score": 94,
+      "change": 8.5,
+      "stage": "加速",
       "catalyst": "2只样本出现量价或异动信号",
       "breadth": "2/60",
-      "turnover": 92.6
+      "turnover": 131.7
     }
   ],
   "leadingTheme": {
     "name": "电子元件",
-    "score": 78,
+    "score": 95,
     "novelty": 70,
-    "velocity": 66,
-    "confirmation": 133
+    "velocity": 81.2,
+    "confirmation": 333
   },
   "sourceHealth": {
     "healthy": 3,
     "total": 3,
     "delayedSources": [],
-    "quoteTimestamp": "2026-09-04T07:00:00Z"
+    "quoteTimestamp": "2026-09-08T07:00:00Z"
   },
   "refresh": {
     "tab": "radar",
-    "snapshotId": "2026-09-05T181838+0800",
-    "updatedAt": "2026-09-05T18:18:38+08:00",
-    "sourceTimestamp": "2026-09-04T07:00:00Z",
+    "snapshotId": "2026-09-08T224816+0800",
+    "updatedAt": "2026-09-08T22:48:16+08:00",
+    "sourceTimestamp": "2026-09-08T07:00:00Z",
     "mode": "real",
     "status": "refreshed"
   }
