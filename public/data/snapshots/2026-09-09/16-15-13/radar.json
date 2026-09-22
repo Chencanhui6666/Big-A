@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "snapshotId": "2026-09-09T161513+0800",
+    "asOf": "2026-09-09T16:15:13+08:00",
+    "tradeDate": "2026-09-09",
+    "modelVersion": "risk-aware-trend-v0.8.0",
+    "status": "complete",
+    "mode": "real",
+    "provider": "longbridge",
+    "capturedAt": "2026-09-09T08:09:03.631Z"
+  },
+  "marketState": {
+    "label": "Neutral & gradually dropping",
+    "riskAppetite": 55
+  },
+  "summary": {
+    "highConfidenceThemes": 6,
+    "events30m": 100,
+    "confirmationRate": 0,
+    "credibleEvents": 0
+  },
+  "themes": [
+    {
+      "rank": 1,
+      "name": "电气部件和设备",
+      "score": 93,
+      "change": 5.5,
+      "stage": "加速",
+      "catalyst": "4只样本出现量价或异动信号",
+      "breadth": "4/60",
+      "turnover": 158.1
+    },
+    {
+      "rank": 2,
+      "name": "包装食品和肉类",
+      "score": 95,
+      "change": 5.7,
+      "stage": "加速",
+      "catalyst": "10只样本出现量价或异动信号",
+      "breadth": "10/60",
+      "turnover": 138.3
+    },
+    {
+      "rank": 3,
+      "name": "通信设备",
+      "score": 88,
+      "change": 5.4,
+      "stage": "加速",
+      "catalyst": "3只样本出现量价或异动信号",
+      "breadth": "3/60",
+      "turnover": 118.3
+    },
+    {
+      "rank": 4,
+      "name": "工业化学品",
+      "score": 95,
+      "change": 5.4,
+      "stage": "加速",
+      "catalyst": "7只样本出现量价或异动信号",
+      "breadth": "7/60",
+      "turnover": 113.7
+    },
+    {
+      "rank": 5,
+      "name": "农产品",
+      "score": 95,
+      "change": 8.3,
+      "stage": "加速",
+      "catalyst": "4只样本出现量价或异动信号",
+      "breadth": "4/60",
+      "turnover": 87.9
+    },
+    {
+      "rank": 6,
+      "name": "电子元件",
+      "score": 86,
+      "change": 4.8,
+      "stage": "加速",
+      "catalyst": "3只样本出现量价或异动信号",
+      "breadth": "3/60",
+      "turnover": 80
+    }
+  ],
+  "leadingTheme": {
+    "name": "电气部件和设备",
+    "score": 93,
+    "novelty": 70,
+    "velocity": 94,
+    "confirmation": 167
+  },
+  "sourceHealth": {
+    "healthy": 3,
+    "total": 3,
+    "delayedSources": [],
+    "quoteTimestamp": "2026-09-09T07:00:00Z"
+  },
+  "refresh": {
+    "tab": "radar",
+    "snapshotId": "2026-09-09T161513+0800",
+    "updatedAt": "2026-09-09T16:15:13+08:00",
+    "sourceTimestamp": "2026-09-09T07:00:00Z",
+    "mode": "real",
+    "status": "refreshed"
+  }
+}

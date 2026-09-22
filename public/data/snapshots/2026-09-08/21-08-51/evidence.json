@@ -1,0 +1,658 @@
+{
+  "meta": {
+    "snapshotId": "2026-09-08T210851+0800",
+    "asOf": "2026-09-08T21:08:51+08:00",
+    "tradeDate": "2026-09-08",
+    "modelVersion": "risk-aware-trend-v0.7.0",
+    "status": "complete",
+    "mode": "real",
+    "provider": "longbridge",
+    "capturedAt": "2026-09-08T13:08:06.825Z"
+  },
+  "summary": {
+    "total": 215,
+    "official": 0,
+    "confirmed": 15,
+    "duplicateRate": 0
+  },
+  "events": [
+    {
+      "id": "lb-news-298250752",
+      "time": "10:29",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "The advanced packaging sector saw a short-term surge, with Suntak hitting the daily limit",
+      "summary": "The advanced packaging sector saw a short-term surge, with Suntak hitting the daily limit, FASTPRINT and CEE previously locking their boards, and INNO LASER, ChengBang, Griam, TJ, QUICK CO., and others following suit",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "电子元件"
+      ],
+      "relatedStocks": [
+        "002436"
+      ],
+      "url": "https://longbridge.com/news/298250752"
+    },
+    {
+      "id": "lb-news-298247523",
+      "time": "09:40",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "The A-share CPO sector continued yesterday's upward trend, Cambridge Technology hit the daily limit, FASTPRINT and CEE reached the daily lim",
+      "summary": "The A-share CPO sector continued yesterday's upward trend, Cambridge Technology hit the daily limit, FASTPRINT and CEE reached the daily limit, JXPCB rose over 11%, Asiacom, CEM, and FINGU followed suit",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "电子元件"
+      ],
+      "relatedStocks": [
+        "002436"
+      ],
+      "url": "https://longbridge.com/news/298247523"
+    },
+    {
+      "id": "lb-news-298246008",
+      "time": "09:36",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "PCB concept stocks rose again, with CEE and FASTPRINT hitting their second consecutive limit-up, JXPCB surging over 10%, and WAZAM, GOWORLD,",
+      "summary": "PCB concept stocks rose again, with CEE and FASTPRINT hitting their second consecutive limit-up, JXPCB surging over 10%, and WAZAM, GOWORLD, and Suntak gaining more than 6%",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "电子元件"
+      ],
+      "relatedStocks": [
+        "002436"
+      ],
+      "url": "https://longbridge.com/news/298246008"
+    },
+    {
+      "id": "lb-news-298310032",
+      "time": "19:11",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "Goldman Sachs is bullish on optical modules, but why is CIG so popular?",
+      "summary": "Goldman Sachs released a report significantly raising the shipment forecast for optical modules of 1.6T and above, triggering a surge in the sector. CIG's stock price hit the limit up as it has achieved large-scale delivery of 800G and completed verification o",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "通信设备"
+      ],
+      "relatedStocks": [
+        "603083"
+      ],
+      "url": "https://longbridge.com/news/298310032"
+    },
+    {
+      "id": "lb-news-298257807",
+      "time": "11:46",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "The mainland A-shares fluctuated and stabilized in the morning session, with copper futures reaching new highs, benefiting Jiangxi Copper",
+      "summary": "Affected by the cautious outlook on the Middle East situation and the record high of LME copper futures, the mainland A-shares fluctuated steadily in the early market. The Shanghai Composite Index rose slightly by 0.36%, and the Shenzhen Component Index rose s",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "通信设备"
+      ],
+      "relatedStocks": [
+        "603083"
+      ],
+      "url": "https://longbridge.com/news/298257807"
+    },
+    {
+      "id": "lb-news-298248667",
+      "time": "10:37",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "Understanding the Market | CIG once rose over 9% with 800G product shipments and expected 1.6T mass production in the second half of this ye",
+      "summary": "Cambridge Technology's stock price once rose over 9%, driven by the bulk shipment of 800G products and the expected mass production of 1.6T in the second half of the year. The company disclosed that the unit price of 800G is approximately $350, with limited pr",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "通信设备"
+      ],
+      "relatedStocks": [
+        "603083"
+      ],
+      "url": "https://longbridge.com/news/298248667"
+    },
+    {
+      "id": "lb-news-298251866",
+      "time": "10:38",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "The A-share PET copper foil concept sector experienced a surge, with Hangzhou Cables hitting the daily limit, Defu Technology rising over 7%",
+      "summary": "The A-share PET copper foil concept sector experienced a surge, with Hangzhou Cables hitting the daily limit, Defu Technology rising over 7%, and Sanfu New Materials, JMT, Far East Co., Ltd, and Fangbang Co., Ltd also following suit",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "电气部件和设备"
+      ],
+      "relatedStocks": [
+        "600869"
+      ],
+      "url": "https://longbridge.com/news/298251866"
+    },
+    {
+      "id": "lb-news-298015875",
+      "time": "17:10",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "Far East Co., Ltd.: Abnormal fluctuations in stock trading, no undisclosed significant matters that should be disclosed",
+      "summary": "Far East Co., Ltd. announced that the closing price of the company's stock has deviated by more than 20% over three consecutive trading days, which constitutes an abnormal trading fluctuation. After self-examination and consultation with the controlling shareh",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "电气部件和设备"
+      ],
+      "relatedStocks": [
+        "600869"
+      ],
+      "url": "https://longbridge.com/news/298015875"
+    },
+    {
+      "id": "lb-news-298015655",
+      "time": "16:54",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "Far East Co., Ltd.: Energy storage computing AI8 orders in August reached 255 million, a year-on-year increase of 1629%",
+      "summary": "Far East Co., Ltd. disclosed its operating data for August, with its subsidiaries winning and signing contracts for orders exceeding 10 million yuan totaling 1.78 billion yuan, a year-on-year increase of 5.40%. Among them, the smart battery storage/computing A",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "电气部件和设备"
+      ],
+      "relatedStocks": [
+        "600869"
+      ],
+      "url": "https://longbridge.com/news/298015655"
+    },
+    {
+      "id": "lb-news-298288548",
+      "time": "16:37",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "603618 suddenly hit the daily limit! Another major positive news for A-shares is here! Is a bigger market trend still to come?",
+      "summary": "On September 7th, nearly a hundred stocks in the A-share market hit the daily limit, with the AI computing hardware sectors such as optical communication, PCB, and memory chips leading the gains. Market sentiment reversed due to the resonance of favorable poli",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "电气部件和设备"
+      ],
+      "relatedStocks": [
+        "603618"
+      ],
+      "url": "https://longbridge.com/news/298288548"
+    },
+    {
+      "id": "lb-news-298251866",
+      "time": "10:38",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "The A-share PET copper foil concept sector experienced a surge, with Hangzhou Cables hitting the daily limit, Defu Technology rising over 7%",
+      "summary": "The A-share PET copper foil concept sector experienced a surge, with Hangzhou Cables hitting the daily limit, Defu Technology rising over 7%, and Sanfu New Materials, JMT, Far East Co., Ltd, and Fangbang Co., Ltd also following suit",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "电气部件和设备"
+      ],
+      "relatedStocks": [
+        "603618"
+      ],
+      "url": "https://longbridge.com/news/298251866"
+    },
+    {
+      "id": "lb-news-298157003",
+      "time": "10:34",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "The A-share optical fiber concept sector rose, with Hengtong Optic, Zesum, and T&S increasing by over 10%. Nanjing Huamai Technology, Hangzh",
+      "summary": "The A-share optical fiber concept sector rose, with Hengtong Optic, Zesum, and T&S increasing by over 10%. Nanjing Huamai Technology, Hangzhou Cables, Everbright, Shijia Photons, and JPT also followed suit",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "电气部件和设备"
+      ],
+      "relatedStocks": [
+        "603618"
+      ],
+      "url": "https://longbridge.com/news/298157003"
+    },
+    {
+      "id": "lb-news-298307370",
+      "time": "18:54",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "Global copper prices reach a historical high",
+      "summary": "On September 8th, global copper prices hit a historic high, with both LME and COMEX copper prices setting records. As a result, the copper sector in A-shares collectively strengthened, with stocks like North Copper experiencing significant gains. The core driv",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "铜"
+      ],
+      "relatedStocks": [
+        "000737"
+      ],
+      "url": "https://longbridge.com/news/298307370"
+    },
+    {
+      "id": "lb-news-298268877",
+      "time": "14:06",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "A-share anomaly | LME copper price rises to USD 14,617, setting a new historical high, copper concept stocks surge, North Copper hits the li",
+      "summary": "Due to supply tightness and expectations of potential tariffs imposed by the United States, LME copper prices reached a historic high of USD 14,617 per ton. A-share copper concept stocks collectively surged, with North Copper and JINGYI INC. hitting the daily ",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "铜"
+      ],
+      "relatedStocks": [
+        "000737"
+      ],
+      "url": "https://longbridge.com/news/298268877"
+    },
+    {
+      "id": "lb-news-298254154",
+      "time": "11:01",
+      "level": "B",
+      "source": "Longbridge资讯",
+      "title": "\"A-Share Focus\" Copper prices hit new highs, Shanghai and Shenzhen copper stocks lead the rise, North Copper up 8.4%",
+      "summary": "Driven by expectations of supply shortages and a weakening dollar, LME copper futures reached a record high of $14,533. Affected by this positive news, the A-share non-ferrous metal sector strengthened, with copper stocks leading the rise: JINGYI INC. hit the ",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "铜"
+      ],
+      "relatedStocks": [
+        "000737"
+      ],
+      "url": "https://longbridge.com/news/298254154"
+    },
+    {
+      "id": "lb-anomaly-0",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "宁波海运：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "600798"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-1",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "金健米业：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "600127"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-2",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "中国联通：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "600050"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-3",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "和顺石油：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "603353"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-4",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "多伦科技：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "603528"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-5",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "通行宝：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "301339"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-6",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "富乐德：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "301297"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-7",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "开勒股份：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "301070"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-8",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "天秦装备：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "300922"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-9",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "万凯新材：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "301216"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-10",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "芒果超媒：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "300413"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-11",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "ST荃银：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "300087"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-12",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "海兰信：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "300065"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-13",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "康盛股份：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "002418"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-14",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "富森美：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "002818"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-15",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "毅昌科技：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "002420"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-16",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "浙江永强：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "002489"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-17",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "协鑫能科：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "002015"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-18",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "北化股份：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "002246"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-19",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "华联股份：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "市场异动"
+      ],
+      "relatedStocks": [
+        "000882"
+      ],
+      "url": ""
+    }
+  ],
+  "refresh": {
+    "tab": "evidence",
+    "snapshotId": "2026-09-08T210851+0800",
+    "updatedAt": "2026-09-08T21:08:51+08:00",
+    "sourceTimestamp": "2026-09-08T11:11:22Z",
+    "mode": "real",
+    "status": "refreshed"
+  }
+}

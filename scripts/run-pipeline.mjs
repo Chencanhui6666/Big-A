@@ -3,9 +3,11 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
   openExecutionGate,
+  obsoletePortfolioRiskExit,
   portfolioRiskState,
   rankRiskAwareCandidates,
   riskAwareRules,
+  dailyMoveBand,
   stopDistancePct,
   targetWeight,
   themeExposure,
@@ -195,6 +197,7 @@ const candidates = {
 if (providerInput) {
   const trendStocks = (providerInput.trendCandidates ?? [])
     .filter((stock) => stock.tradeStatus === 'Normal' && isNoThresholdMainBoard(stock))
+    .filter((stock) => stock.historyBars == null || Number(stock.historyBars) >= riskAwareRules.minTrendHistoryBars)
     .slice(0, 20)
     .map((stock) => {
       const candlestick = providerInput.candlestickSignals?.[stock.symbol] ?? { patterns: [], primary: 'none', scoreBonus: 0, status: 'none', reason: '无K线形态数据' };
@@ -217,16 +220,19 @@ if (providerInput) {
     status: 'SHADOW_READY',
     executionEligible: false,
     ret10Min: 5,
-    ret1Min: -4,
-    ret1Max: -0.5,
+    ret1Min: riskAwareRules.pullbackRet1Min,
+    ret1Max: riskAwareRules.minRet1,
     trendEfficiencyMin: 0.2,
     volumeRatioMax: 1.5,
     rationale: '10日上升趋势中的单日回调属于待验证假设；仅进入复盘，不自动生成买单。',
   };
   const pullbackStocks = (providerInput.pullbackCandidates ?? providerInput.trendCandidates ?? [])
     .filter((stock) => stock.tradeStatus === 'Normal' && isNoThresholdMainBoard(stock))
+    .filter((stock) => stock.historyBars == null || Number(stock.historyBars) >= riskAwareRules.minTrendHistoryBars)
     .filter((stock) => Number.isFinite(Number(stock.ret10)) && Number(stock.ret10) >= pullbackPolicy.ret10Min)
-    .filter((stock) => Number(stock.ret1) >= pullbackPolicy.ret1Min && Number(stock.ret1) <= pullbackPolicy.ret1Max)
+    .filter((stock) => dailyMoveBand(stock).kind === 'pullback-shadow')
+    .filter((stock) => Number(stock.last) > Number(stock.ma20))
+    .filter((stock) => !['sell', 'negative', 'bearish'].includes(String(stock.signalDirection ?? '').toLowerCase()))
     .filter((stock) => Number(stock.trendEfficiency) >= pullbackPolicy.trendEfficiencyMin && Number(stock.volRatio) <= pullbackPolicy.volumeRatioMax)
     .sort((a, b) => Number(b.ret10) * Number(b.trendEfficiency) - Number(a.ret10) * Number(a.trendEfficiency))
     .slice(0, 20)
@@ -241,7 +247,7 @@ if (providerInput) {
       quoteTime: stock.timestamp, capturedAt: providerInput.capturedAt, tradeStatus: stock.tradeStatus,
       quoteKind: 'latest-close', source: stock.source || 'Longbridge OpenAPI',
       sourceUrl: 'https://open.longbridge.com/zh-CN/docs/quote/overview',
-      reason: `10日累计上涨 ${Number(stock.ret10).toFixed(2)}%，当日回调 ${Number(stock.ret1).toFixed(2)}%，趋势效率 ${Number(stock.trendEfficiency).toFixed(2)}，量比 ${Number(stock.volRatio).toFixed(2)}；作为回调假设进入影子复盘。`,
+      reason: `10日累计上涨 ${Number(stock.ret10).toFixed(2)}%，当日回调 ${Number(stock.ret1).toFixed(2)}%，趋势效率 ${Number(stock.trendEfficiency).toFixed(2)}，量比 ${Number(stock.volRatio).toFixed(2)}；属于-5%—-3%深回调，仅进入影子复盘，不自动买入。`,
       risk: '回调可能演变为趋势反转；未通过样本外门槛前不自动下单。',
       horizon: '1-3日（影子观察）',
     }));
@@ -256,14 +262,14 @@ if (providerInput) {
     executionEligible: true,
     price: Number(stock.last),
     move: Number(stock.ret1),
-    reason: `20日收益 ${Number(stock.ret20).toFixed(2)}%，单日涨跌 ${Number(stock.ret1).toFixed(2)}%，ATR20 ${Number(stock.atr20Pct).toFixed(2)}%，量比 ${Number(stock.volRatio).toFixed(2)}；通过趋势、波动、流动性与市场状态门槛。`,
-    risk: '次日仅在开盘跳空-2%—2%且组合风险状态允许时成交。',
+    reason: `20日收益 ${Number(stock.ret20).toFixed(2)}%，单日涨跌 ${Number(stock.ret1).toFixed(2)}%，ATR20 ${Number(stock.atr20Pct).toFixed(2)}%，量比 ${Number(stock.volRatio).toFixed(2)}；通过个股趋势、波动与流动性门槛。${stock.regimeAdjusted ? '宽基趋势偏弱，已降低评分但保留买入资格。' : '宽基趋势同步向上。'}`,
+    risk: '次日仅在开盘跳空-2%—2%、仓位与行业上限允许时成交。',
   }));
   candidates.lists = {
     hotspot: { id: 'hotspot', label: '热点爆发', description: '关注当日异动、涨幅和资金热度，波动与追高风险较高。', stocks: candidates.stocks },
     trend: { id: 'trend', label: '趋势潜伏', description: '关注20日趋势、量能确认和行业分散，并过滤极端追高。', stocks: trendStocks },
     pullback: { id: 'pullback', label: '趋势回调（影子）', description: '10日上涨而当日回调的观察池；尚不自动生成买单。', stocks: pullbackStocks },
-    riskAware: { id: 'risk-aware', label: '风险感知趋势', description: '唯一可生成模型买单的策略池；要求趋势、波动、流动性、市场状态和次日开盘门槛全部通过。', stocks: riskAwareStocks },
+    riskAware: { id: 'risk-aware', label: '风险感知趋势', description: '唯一可生成模型买单的策略池；个股趋势、波动、流动性和次日开盘必须通过，大盘弱势时降分而非禁买。', stocks: riskAwareStocks },
   };
   candidates.activeStrategy = {
     id: riskAwareRules.strategyId,
@@ -383,6 +389,10 @@ function simulateModelAccount(previousPortfolio, recoveredDuePlan) {
     for (const plan of overduePlan.orders) {
       const orderId = `O-${executionDate}-${plan.code}`;
       if (recoveredOrders.some((order) => order.id === orderId)) continue;
+      if (obsoletePortfolioRiskExit(plan)) {
+        recoveredOrders.push({ id: orderId, createdAt: meta.asOf, planDate: executionDate, recoveredAt: meta.asOf, code: plan.code, name: plan.name, side: plan.side, status: 'SKIPPED', targetWeight: plan.targetWeight, reason: plan.reason, rejectReason: 'risk-aware-trend-v0.8.0 已取消回撤触发的强制清仓' });
+        continue;
+      }
       const quote = historicalProviderQuoteForCode(plan.code, executionDate);
       const order = { id: orderId, createdAt: quote?.timestamp ?? meta.asOf, planDate: executionDate, recoveredAt: meta.asOf, code: plan.code, name: plan.name, side: plan.side, status: 'PENDING', targetWeight: plan.targetWeight, reason: plan.reason };
       if (!quote) {
@@ -439,6 +449,10 @@ function simulateModelAccount(previousPortfolio, recoveredDuePlan) {
   const planForToday = previous.nextPlan?.executeOn === tradeDate ? previous.nextPlan : recoveredDuePlan?.executeOn === tradeDate ? recoveredDuePlan : null;
   if (!marketClosed && planForToday?.executeOn === tradeDate) {
     for (const plan of planForToday.orders) {
+      if (obsoletePortfolioRiskExit(plan)) {
+        todayOrders.push({ id: `O-${tradeDate}-${plan.code}`, createdAt: meta.asOf, code: plan.code, name: plan.name, side: plan.side, status: 'SKIPPED', targetWeight: plan.targetWeight, reason: plan.reason, rejectReason: 'risk-aware-trend-v0.8.0 已取消回撤触发的强制清仓' });
+        continue;
+      }
       const quote = providerQuoteForCode(plan.code);
       if (!quote) {
         todayOrders.push({ id: `O-${tradeDate}-${plan.code}`, createdAt: meta.asOf, code: plan.code, name: plan.name, side: plan.side, status: 'SKIPPED', targetWeight: plan.targetWeight, reason: plan.reason, rejectReason: '收盘批次未提供该计划标的的精确报价' });
@@ -524,23 +538,12 @@ function simulateModelAccount(previousPortfolio, recoveredDuePlan) {
   const closedTrades = realizedHistory.filter((trade) => trade.realizedPnl != null).length;
   const exitDecisions = positions.map((position) => {
     if (position.lastPrice <= position.stopLoss) return { position, reason: '触发风险感知止损' };
-    if (riskState.state === 'HALT') return { position, reason: '组合回撤达到5%，熔断只允许减仓' };
     if (position.holdingDays >= riskAwareRules.maxHoldingDays) return { position, reason: '达到10日最大持有周期' };
     if (position.holdingDays >= riskAwareRules.timeStopDays && position.returnPct < riskAwareRules.timeStopMinReturnPct) return { position, reason: '持有5日仍未达到2%，触发时间止损' };
     const trend = trendByCode.get(position.code);
     if (trend && position.holdingDays >= tradingRules.minHoldingDays && !(Number(trend.last) > Number(trend.ma20) && Number(trend.ma20) > Number(trend.ma60))) return { position, reason: '价格或均线结构跌破趋势退出门槛' };
     return null;
   }).filter(Boolean);
-  if (riskState.state === 'RISK_OFF') {
-    const retainedTarget = totalAsset * riskState.maxTotalPosition;
-    const alreadyExiting = new Set(exitDecisions.map((item) => item.position.code));
-    let retained = positions.filter((position) => !alreadyExiting.has(position.code)).reduce((sum, position) => sum + position.marketValue, 0);
-    for (const position of positions.filter((item) => !alreadyExiting.has(item.code)).sort((a, b) => (riskAwareByCode.get(a.code)?.score ?? -1) - (riskAwareByCode.get(b.code)?.score ?? -1))) {
-      if (retained <= retainedTarget) break;
-      exitDecisions.push({ position, reason: '组合进入RISK_OFF，仓位降至20%以内' });
-      retained -= position.marketValue;
-    }
-  }
   const exitOrders = exitDecisions.map(({ position, reason }, index) => ({ code: position.code, name: position.name, theme: position.theme, side: 'SELL', targetWeight: 0, priority: index + 1, reason, cancelIf: '无；仅受T+1、停牌和跌停限制' }));
   const exitingCodes = new Set(exitOrders.map((order) => order.code));
   const retainedValue = positions.filter((position) => !exitingCodes.has(position.code)).reduce((sum, position) => sum + position.shares * position.lastPrice, 0);

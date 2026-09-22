@@ -1,17 +1,17 @@
 {
   "meta": {
-    "snapshotId": "2026-09-08T224816+0800",
-    "asOf": "2026-09-08T22:48:16+08:00",
-    "tradeDate": "2026-09-08",
-    "modelVersion": "risk-aware-trend-v0.7.0",
+    "snapshotId": "2026-09-10T160415+0800",
+    "asOf": "2026-09-10T16:04:15+08:00",
+    "tradeDate": "2026-09-10",
+    "modelVersion": "risk-aware-trend-v0.8.0",
     "status": "complete",
     "mode": "real",
     "provider": "longbridge",
-    "capturedAt": "2026-09-08T13:08:06.825Z"
+    "capturedAt": "2026-09-10T07:46:14.736Z"
   },
   "rules": {
     "initialCapital": 1000000,
-    "strategyId": "risk-aware-trend-v0.7.0",
+    "strategyId": "risk-aware-trend-v0.8.0",
     "maxTotalPosition": 0.4,
     "riskOffTotalPosition": 0.2,
     "maxSinglePosition": 0.05,
@@ -41,18 +41,18 @@
           "shares": 9300,
           "availableShares": 9300,
           "costPrice": 6.47,
-          "lastPrice": 6.95,
+          "lastPrice": 6.88,
           "openedAt": "2026-09-01",
           "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 -8.80%，成交额 26.28亿元。 来自3050只有效A股的全市场初筛，全市场排名 #91；已通过普通A股账户权限过滤。",
           "stopLoss": 6.02,
           "targetPrice": 7.25,
-          "holdingDays": 7,
-          "marketValue": 64635,
-          "unrealizedPnl": 4464,
-          "returnPct": 7.42,
-          "dailyBasePrice": 6.89,
+          "holdingDays": 9,
+          "marketValue": 63984,
+          "unrealizedPnl": 3813,
+          "returnPct": 6.34,
+          "dailyBasePrice": 6.82,
           "dailyPnl": 558,
-          "dailyReturnPct": 0.87,
+          "dailyReturnPct": 0.88,
           "maxPrice": 6.97
         },
         {
@@ -62,18 +62,18 @@
           "shares": 17100,
           "availableShares": 17100,
           "costPrice": 4.71,
-          "lastPrice": 5.04,
+          "lastPrice": 4.75,
           "openedAt": "2026-09-03",
           "reason": "波动超 20 日均值；当日涨跌幅 10.07%，成交额 2.18亿元。 来自3051只有效A股的全市场初筛，全市场排名 #74；已通过普通A股账户权限过滤。",
           "stopLoss": 4.38,
           "targetPrice": 5.28,
-          "dailyBasePrice": 5.08,
-          "dailyPnl": -684,
-          "dailyReturnPct": -0.79,
-          "holdingDays": 5,
-          "marketValue": 86184,
-          "unrealizedPnl": 5643,
-          "returnPct": 7.01,
+          "dailyBasePrice": 4.98,
+          "dailyPnl": -3933,
+          "dailyReturnPct": -4.62,
+          "holdingDays": 7,
+          "marketValue": 81225,
+          "unrealizedPnl": 684,
+          "returnPct": 0.85,
           "maxPrice": 5.04
         }
       ],
@@ -345,12 +345,12 @@
         },
         {
           "date": "2026-08-31",
-          "totalAsset": 1002043.06,
-          "benchmark": 1.004
+          "totalAsset": 934145.39,
+          "benchmark": 1
         },
         {
           "date": "2026-09-01",
-          "totalAsset": 1010553.63,
+          "totalAsset": 940241.39,
           "benchmark": 1.004
         },
         {
@@ -382,31 +382,31 @@
           "date": "2026-09-08",
           "totalAsset": 956348.39,
           "benchmark": 1
+        },
+        {
+          "date": "2026-09-09",
+          "totalAsset": 954113.39,
+          "benchmark": 1.004
+        },
+        {
+          "date": "2026-09-10",
+          "totalAsset": 950738.39,
+          "benchmark": 1.005
         }
       ],
       "nextPlan": {
-        "generatedAt": "2026-09-08T22:48:16+08:00",
-        "executeOn": "2026-09-09",
+        "generatedAt": "2026-09-10T16:04:15+08:00",
+        "executeOn": "2026-09-11",
         "status": "READY",
         "orders": [
-          {
-            "code": "001979",
-            "name": "招商蛇口",
-            "theme": "房地产开发",
-            "side": "SELL",
-            "targetWeight": 0,
-            "priority": 1,
-            "reason": "组合回撤达到5%，熔断只允许减仓",
-            "cancelIf": "无；仅受T+1、停牌和跌停限制"
-          },
           {
             "code": "600828",
             "name": "茂业商业",
             "theme": "零售商",
             "side": "SELL",
             "targetWeight": 0,
-            "priority": 2,
-            "reason": "组合回撤达到5%，熔断只允许减仓",
+            "priority": 1,
+            "reason": "持有5日仍未达到2%，触发时间止损",
             "cancelIf": "无；仅受T+1、停牌和跌停限制"
           }
         ]
@@ -414,25 +414,25 @@
       "todayOrders": [],
       "todayTrades": [],
       "summary": {
-        "totalAsset": 956348.39,
+        "totalAsset": 950738.39,
         "cash": 805529.39,
-        "marketValue": 150819,
-        "dailyPnl": -126,
-        "dailyReturnPct": -0.01,
-        "positionDailyPnl": -126,
-        "cumulativePnl": -43651.61,
-        "cumulativeReturn": -4.37,
-        "positionRate": 15.8,
-        "maxDrawdown": -5.36,
+        "marketValue": 145209,
+        "dailyPnl": -3375,
+        "dailyReturnPct": -0.35,
+        "positionDailyPnl": -3375,
+        "cumulativePnl": -49261.61,
+        "cumulativeReturn": -4.93,
+        "positionRate": 15.3,
+        "maxDrawdown": -5.55,
         "winRate": 20
       },
       "marketClosed": false,
-      "strategyId": "risk-aware-trend-v0.7.0",
+      "strategyId": "risk-aware-trend-v0.8.0",
       "riskState": {
-        "state": "HALT",
-        "allowBuys": false,
-        "maxTotalPosition": 0,
-        "reason": "回撤达到5%，只允许减仓"
+        "state": "WATCH",
+        "allowBuys": true,
+        "maxTotalPosition": 0.4,
+        "reason": "回撤达到5%，仅作风险提示；继续依据大盘、热点和个股信号交易"
       },
       "recoveredOrders": [
         {
@@ -530,6 +530,84 @@
           "shares": 15200,
           "fees": 65.91,
           "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "O-2026-08-31-600227",
+          "createdAt": "2026-09-09T16:15:13+08:00",
+          "planDate": "2026-08-31",
+          "recoveredAt": "2026-09-09T16:15:13+08:00",
+          "code": "600227",
+          "name": "赤天化",
+          "side": "BUY",
+          "status": "SKIPPED",
+          "targetWeight": 0.1,
+          "reason": "全市场初筛第7名；当日涨跌幅 10.10%，成交额 16.01亿元。 来自5012只有效A股的全市场初筛，全市场排名 #7；已通过普通A股账户权限过滤。",
+          "rejectReason": "缺少 2026-08-31 的Longbridge历史开盘价，不能事后替代"
+        },
+        {
+          "id": "O-2026-08-31-002742",
+          "createdAt": "2026-09-09T16:15:13+08:00",
+          "planDate": "2026-08-31",
+          "recoveredAt": "2026-09-09T16:15:13+08:00",
+          "code": "002742",
+          "name": "冀衡医药",
+          "side": "BUY",
+          "status": "SKIPPED",
+          "targetWeight": 0.08,
+          "reason": "全市场初筛第5名；当日涨跌幅 10.05%，成交额 13.45亿元。 来自5012只有效A股的全市场初筛，全市场排名 #5；已通过普通A股账户权限过滤。",
+          "rejectReason": "缺少 2026-08-31 的Longbridge历史开盘价，不能事后替代"
+        },
+        {
+          "id": "O-2026-08-31-600354",
+          "createdAt": "2026-09-09T16:15:13+08:00",
+          "planDate": "2026-08-31",
+          "recoveredAt": "2026-09-09T16:15:13+08:00",
+          "code": "600354",
+          "name": "敦煌种业",
+          "side": "BUY",
+          "status": "SKIPPED",
+          "targetWeight": 0.06,
+          "reason": "全市场初筛第13名；当日涨跌幅 10.05%，成交额 8.70亿元。 来自5012只有效A股的全市场初筛，全市场排名 #13；已通过普通A股账户权限过滤。",
+          "rejectReason": "缺少 2026-08-31 的Longbridge历史开盘价，不能事后替代"
+        },
+        {
+          "id": "O-2026-09-01-002837",
+          "createdAt": "2026-09-10T16:04:15+08:00",
+          "planDate": "2026-09-01",
+          "recoveredAt": "2026-09-10T16:04:15+08:00",
+          "code": "002837",
+          "name": "英维克",
+          "side": "BUY",
+          "status": "SKIPPED",
+          "targetWeight": 0.1,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 5.78%，成交额 60.91亿元。 来自3050只有效A股的全市场初筛，全市场排名 #17；已通过普通A股账户权限过滤。",
+          "rejectReason": "缺少 2026-09-01 的Longbridge历史开盘价，不能事后替代"
+        },
+        {
+          "id": "O-2026-09-01-601658",
+          "createdAt": "2026-09-10T16:04:15+08:00",
+          "planDate": "2026-09-01",
+          "recoveredAt": "2026-09-10T16:04:15+08:00",
+          "code": "601658",
+          "name": "邮储银行",
+          "side": "BUY",
+          "status": "SKIPPED",
+          "targetWeight": 0.08,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 5.41%，成交额 28.24亿元。 来自3050只有效A股的全市场初筛，全市场排名 #76；已通过普通A股账户权限过滤。",
+          "rejectReason": "缺少 2026-09-01 的Longbridge历史开盘价，不能事后替代"
+        },
+        {
+          "id": "O-2026-09-01-001979",
+          "createdAt": "2026-08-31T16:00:00Z",
+          "planDate": "2026-09-01",
+          "recoveredAt": "2026-09-10T16:04:15+08:00",
+          "code": "001979",
+          "name": "招商蛇口",
+          "side": "BUY",
+          "status": "SKIPPED",
+          "targetWeight": 0.06,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 -8.80%，成交额 26.28亿元。 来自3050只有效A股的全市场初筛，全市场排名 #91；已通过普通A股账户权限过滤。",
+          "rejectReason": "买入执行窗口已错过；为避免事后选择偏差不进行历史补买"
         }
       ],
       "recoveredTrades": [
@@ -645,15 +723,15 @@
     }
   ],
   "comparison": {
-    "modelReturn": -4.37,
+    "modelReturn": -4.93,
     "assistedReturn": 0,
-    "benchmarkReturn": 0
+    "benchmarkReturn": 0.49999999999998934
   },
   "refresh": {
     "tab": "portfolio",
-    "snapshotId": "2026-09-08T224816+0800",
-    "updatedAt": "2026-09-08T22:48:16+08:00",
-    "sourceTimestamp": "2026-09-08T22:48:16+08:00",
+    "snapshotId": "2026-09-10T160415+0800",
+    "updatedAt": "2026-09-10T16:04:15+08:00",
+    "sourceTimestamp": "2026-09-10T16:04:15+08:00",
     "mode": "real",
     "status": "refreshed"
   }

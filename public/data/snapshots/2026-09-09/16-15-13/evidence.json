@@ -1,0 +1,388 @@
+{
+  "meta": {
+    "snapshotId": "2026-09-09T161513+0800",
+    "asOf": "2026-09-09T16:15:13+08:00",
+    "tradeDate": "2026-09-09",
+    "modelVersion": "risk-aware-trend-v0.8.0",
+    "status": "complete",
+    "mode": "real",
+    "provider": "longbridge",
+    "capturedAt": "2026-09-09T08:09:03.631Z"
+  },
+  "summary": {
+    "total": 100,
+    "official": 0,
+    "confirmed": 0,
+    "duplicateRate": 0
+  },
+  "events": [
+    {
+      "id": "lb-anomaly-0",
+      "time": "01:45",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "兆龙互连：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "电气部件和设备"
+      ],
+      "relatedStocks": [
+        "300913"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-1",
+      "time": "02:46",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "*ST天宜：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "工程机械和重型运输设备"
+      ],
+      "relatedStocks": [
+        "688033"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-2",
+      "time": "02:24",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "*ST清越：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "半导体厂商"
+      ],
+      "relatedStocks": [
+        "688496"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-3",
+      "time": "02:46",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "中科海讯：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "航空航天与国防"
+      ],
+      "relatedStocks": [
+        "300810"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-4",
+      "time": "01:31",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "密封科技：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "工业化学品"
+      ],
+      "relatedStocks": [
+        "301020"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-5",
+      "time": "03:18",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "海目星：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "工业机械"
+      ],
+      "relatedStocks": [
+        "688559"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-6",
+      "time": "02:03",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "强达电路：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "电子元件"
+      ],
+      "relatedStocks": [
+        "301628"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-7",
+      "time": "01:45",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "创益通：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "电子元件"
+      ],
+      "relatedStocks": [
+        "300991"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-8",
+      "time": "01:57",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "倍杰特：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "环境与设施服务"
+      ],
+      "relatedStocks": [
+        "300774"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-9",
+      "time": "05:03",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "绿通科技：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "汽车制造商"
+      ],
+      "relatedStocks": [
+        "301322"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-10",
+      "time": "06:07",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "满坤科技：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "电子元件"
+      ],
+      "relatedStocks": [
+        "301132"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-11",
+      "time": "03:14",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "国科军工：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "航空航天与国防"
+      ],
+      "relatedStocks": [
+        "688543"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-12",
+      "time": "01:30",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "本川智能：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "电子元件"
+      ],
+      "relatedStocks": [
+        "300964"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-13",
+      "time": "06:38",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "张小泉：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "厨房用具"
+      ],
+      "relatedStocks": [
+        "301055"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-14",
+      "time": "01:59",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "电工合金：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "电气部件和设备"
+      ],
+      "relatedStocks": [
+        "300697"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-15",
+      "time": "01:50",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "奥尼电子：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "消费电子"
+      ],
+      "relatedStocks": [
+        "301189"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-16",
+      "time": "05:25",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "威腾电气：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "电气部件和设备"
+      ],
+      "relatedStocks": [
+        "688226"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-17",
+      "time": "05:10",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "沃尔德：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "工业机械"
+      ],
+      "relatedStocks": [
+        "688028"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-18",
+      "time": "02:10",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "我武生物：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "制药"
+      ],
+      "relatedStocks": [
+        "300357"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-19",
+      "time": "01:43",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "英诺激光：波动超 20 日均值",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "工业机械"
+      ],
+      "relatedStocks": [
+        "301021"
+      ],
+      "url": ""
+    }
+  ],
+  "refresh": {
+    "tab": "evidence",
+    "snapshotId": "2026-09-09T161513+0800",
+    "updatedAt": "2026-09-09T16:15:13+08:00",
+    "sourceTimestamp": "2026-09-09T16:15:13+08:00",
+    "mode": "real",
+    "status": "refreshed"
+  }
+}

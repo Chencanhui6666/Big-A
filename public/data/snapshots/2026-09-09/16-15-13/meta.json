@@ -1,0 +1,17 @@
+{
+  "snapshotId": "2026-09-09T161513+0800",
+  "asOf": "2026-09-09T16:15:13+08:00",
+  "tradeDate": "2026-09-09",
+  "modelVersion": "risk-aware-trend-v0.8.0",
+  "status": "complete",
+  "mode": "real",
+  "provider": "longbridge",
+  "capturedAt": "2026-09-09T08:09:03.631Z",
+  "files": {
+    "radar": "radar.json",
+    "candidates": "candidates.json",
+    "evidence": "evidence.json",
+    "review": "review.json",
+    "portfolio": "portfolio.json"
+  }
+}
