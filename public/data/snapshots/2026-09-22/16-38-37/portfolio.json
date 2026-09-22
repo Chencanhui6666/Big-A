@@ -1,0 +1,769 @@
+{
+  "meta": {
+    "snapshotId": "2026-09-22T163837+0800",
+    "asOf": "2026-09-22T16:38:37+08:00",
+    "tradeDate": "2026-09-22",
+    "modelVersion": "risk-aware-trend-v0.8.0",
+    "status": "complete",
+    "mode": "real",
+    "provider": "longbridge",
+    "capturedAt": "2026-09-22T08:34:24Z"
+  },
+  "rules": {
+    "initialCapital": 1000000,
+    "strategyId": "risk-aware-trend-v0.8.0",
+    "maxTotalPosition": 0.4,
+    "riskOffTotalPosition": 0.2,
+    "maxSinglePosition": 0.05,
+    "maxThemePosition": 0.12,
+    "riskPerTrade": 0.0035,
+    "minHoldingDays": 1,
+    "lotSize": 100,
+    "commissionRate": 0.0003,
+    "minimumCommission": 5,
+    "stampDutyRateOnSell": 0.0005,
+    "slippageRate": 0.0015,
+    "settlement": "T+1"
+  },
+  "accounts": [
+    {
+      "accountId": "model",
+      "name": "纯模型账户",
+      "type": "MODEL",
+      "enabled": true,
+      "initialCapital": 1000000,
+      "cash": 886005.96,
+      "positions": [
+        {
+          "code": "001979",
+          "name": "招商蛇口",
+          "theme": "房地产开发",
+          "shares": 9300,
+          "availableShares": 9300,
+          "costPrice": 6.47,
+          "lastPrice": 7.27,
+          "openedAt": "2026-09-01",
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 -8.80%，成交额 26.28亿元。 来自3050只有效A股的全市场初筛，全市场排名 #91；已通过普通A股账户权限过滤。",
+          "stopLoss": 6.02,
+          "targetPrice": 7.25,
+          "holdingDays": 21,
+          "marketValue": 67611,
+          "unrealizedPnl": 7440,
+          "returnPct": 12.36,
+          "dailyBasePrice": 7.38,
+          "dailyPnl": -1023,
+          "dailyReturnPct": -1.49,
+          "maxPrice": 7.27
+        }
+      ],
+      "tradeHistory": [
+        {
+          "id": "T-2026-08-31-600227",
+          "tradeDate": "2026-08-31",
+          "code": "600227",
+          "name": "赤天化",
+          "side": "BUY",
+          "shares": 21200,
+          "price": 4.7,
+          "fees": 29.89,
+          "reason": "全市场初筛第7名；当日涨跌幅 10.10%，成交额 16.01亿元。 来自5012只有效A股的全市场初筛，全市场排名 #7；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-08-31-002742",
+          "tradeDate": "2026-08-31",
+          "code": "002742",
+          "name": "冀衡医药",
+          "side": "BUY",
+          "shares": 14300,
+          "price": 5.63,
+          "fees": 24.15,
+          "reason": "全市场初筛第5名；当日涨跌幅 10.05%，成交额 13.45亿元。 来自5012只有效A股的全市场初筛，全市场排名 #5；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-08-31-600354",
+          "tradeDate": "2026-08-31",
+          "code": "600354",
+          "name": "敦煌种业",
+          "side": "BUY",
+          "shares": 6600,
+          "price": 9.04,
+          "fees": 17.9,
+          "reason": "全市场初筛第13名；当日涨跌幅 10.05%，成交额 8.70亿元。 来自5012只有效A股的全市场初筛，全市场排名 #13；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-09-01-002837",
+          "tradeDate": "2026-09-01",
+          "code": "002837",
+          "name": "英维克",
+          "side": "BUY",
+          "shares": 1400,
+          "price": 67.71,
+          "fees": 28.44,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 5.78%，成交额 60.91亿元。 来自3050只有效A股的全市场初筛，全市场排名 #17；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-09-01-601658",
+          "tradeDate": "2026-09-01",
+          "code": "601658",
+          "name": "邮储银行",
+          "side": "BUY",
+          "shares": 15200,
+          "price": 5.25,
+          "fees": 23.94,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 5.41%，成交额 28.24亿元。 来自3050只有效A股的全市场初筛，全市场排名 #76；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-09-01-001979",
+          "tradeDate": "2026-09-01",
+          "code": "001979",
+          "name": "招商蛇口",
+          "side": "BUY",
+          "shares": 9300,
+          "price": 6.47,
+          "fees": 18.05,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 -8.80%，成交额 26.28亿元。 来自3050只有效A股的全市场初筛，全市场排名 #91；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-09-02-600227-S",
+          "tradeDate": "2026-09-02",
+          "code": "600227",
+          "name": "赤天化",
+          "side": "SELL",
+          "shares": 21200,
+          "price": 5.17,
+          "fees": 87.68,
+          "realizedPnl": 9876.32,
+          "reason": "热点评分跌破持仓阈值"
+        },
+        {
+          "id": "T-2026-09-02-002742-S",
+          "tradeDate": "2026-09-02",
+          "code": "002742",
+          "name": "冀衡医药",
+          "side": "SELL",
+          "shares": 14300,
+          "price": 5.14,
+          "fees": 58.8,
+          "realizedPnl": -7065.8,
+          "reason": "热点评分跌破持仓阈值"
+        },
+        {
+          "id": "T-2026-09-02-600354-S",
+          "tradeDate": "2026-09-02",
+          "code": "600354",
+          "name": "敦煌种业",
+          "side": "SELL",
+          "shares": 6600,
+          "price": 9.02,
+          "fees": 47.63,
+          "realizedPnl": -179.63,
+          "reason": "热点评分跌破持仓阈值"
+        },
+        {
+          "id": "T-2026-09-02-002165",
+          "tradeDate": "2026-09-02",
+          "code": "002165",
+          "name": "红宝丽",
+          "side": "BUY",
+          "shares": 11300,
+          "price": 8.82,
+          "fees": 29.9,
+          "reason": "市场异常：大笔买入；当日涨跌幅 6.05%，成交额 20.36亿元。 来自3051只有效A股的全市场初筛，全市场排名 #100；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-09-02-002418",
+          "tradeDate": "2026-09-02",
+          "code": "002418",
+          "name": "康盛股份",
+          "side": "BUY",
+          "shares": 14200,
+          "price": 5.6,
+          "fees": 23.86,
+          "reason": "市场异常：大笔卖出；当日涨跌幅 5.38%，成交额 26.04亿元。 来自3051只有效A股的全市场初筛，全市场排名 #117；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-09-02-000017",
+          "tradeDate": "2026-09-02",
+          "code": "000017",
+          "name": "深中华A",
+          "side": "BUY",
+          "shares": 5200,
+          "price": 11.34,
+          "fees": 17.69,
+          "reason": "市场异常：大笔买入；当日涨跌幅 4.82%，成交额 14.32亿元。 来自3051只有效A股的全市场初筛，全市场排名 #137；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-09-03-600892",
+          "tradeDate": "2026-09-03",
+          "code": "600892",
+          "name": "大晟文化",
+          "side": "BUY",
+          "shares": 18700,
+          "price": 5.36,
+          "fees": 30.07,
+          "reason": "波动超 20 日均值；当日涨跌幅 10.08%，成交额 0.60亿元。 来自3051只有效A股的全市场初筛，全市场排名 #78；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-09-03-600828",
+          "tradeDate": "2026-09-03",
+          "code": "600828",
+          "name": "茂业商业",
+          "side": "BUY",
+          "shares": 17100,
+          "price": 4.71,
+          "fees": 24.16,
+          "reason": "波动超 20 日均值；当日涨跌幅 10.07%，成交额 2.18亿元。 来自3051只有效A股的全市场初筛，全市场排名 #74；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-09-04-002165-S",
+          "tradeDate": "2026-09-04",
+          "code": "002165",
+          "name": "红宝丽",
+          "side": "SELL",
+          "shares": 11300,
+          "price": 8.06,
+          "fees": 72.86,
+          "realizedPnl": -8660.86,
+          "reason": "触发模拟止损"
+        },
+        {
+          "id": "T-2026-09-04-600611",
+          "tradeDate": "2026-09-04",
+          "code": "600611",
+          "name": "大众交通",
+          "side": "BUY",
+          "shares": 17700,
+          "price": 5.68,
+          "fees": 30.16,
+          "reason": "大笔卖出；当日涨跌幅 10.04%，成交额 9.61亿元。 来自3049只有效A股的全市场初筛，全市场排名 #36；已通过普通A股账户权限过滤。"
+        },
+        {
+          "id": "T-2026-09-07-002418-S",
+          "tradeDate": "2026-09-07",
+          "code": "002418",
+          "name": "康盛股份",
+          "side": "SELL",
+          "shares": 14200,
+          "price": 5.09,
+          "fees": 57.82,
+          "realizedPnl": -7299.82,
+          "reason": "触发风险感知止损（逾期计划按Longbridge历史开盘补录）",
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "T-2026-09-07-000017-S",
+          "tradeDate": "2026-09-07",
+          "code": "000017",
+          "name": "深中华A",
+          "side": "SELL",
+          "shares": 5200,
+          "price": 8.99,
+          "fees": 37.4,
+          "realizedPnl": -12257.4,
+          "reason": "触发风险感知止损（逾期计划按Longbridge历史开盘补录）",
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "T-2026-09-07-600892-S",
+          "tradeDate": "2026-09-07",
+          "code": "600892",
+          "name": "大晟文化",
+          "side": "SELL",
+          "shares": 18700,
+          "price": 4.72,
+          "fees": 70.61,
+          "realizedPnl": -12038.61,
+          "reason": "触发风险感知止损（逾期计划按Longbridge历史开盘补录）",
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "T-2026-09-07-600611-S",
+          "tradeDate": "2026-09-07",
+          "code": "600611",
+          "name": "大众交通",
+          "side": "SELL",
+          "shares": 17700,
+          "price": 5.03,
+          "fees": 71.22,
+          "realizedPnl": -11576.22,
+          "reason": "触发风险感知止损（逾期计划按Longbridge历史开盘补录）",
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "T-2026-09-07-002837-S",
+          "tradeDate": "2026-09-07",
+          "code": "002837",
+          "name": "英维克",
+          "side": "SELL",
+          "shares": 1400,
+          "price": 62.92,
+          "fees": 70.47,
+          "realizedPnl": -6804.47,
+          "reason": "组合进入RISK_OFF，仓位降至20%以内（逾期计划按Longbridge历史开盘补录）",
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "T-2026-09-07-601658-S",
+          "tradeDate": "2026-09-07",
+          "code": "601658",
+          "name": "邮储银行",
+          "side": "SELL",
+          "shares": 15200,
+          "price": 5.42,
+          "fees": 65.91,
+          "realizedPnl": 2518.09,
+          "reason": "组合进入RISK_OFF，仓位降至20%以内（逾期计划按Longbridge历史开盘补录）",
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "T-2026-09-11-600828-S",
+          "tradeDate": "2026-09-11",
+          "code": "600828",
+          "name": "茂业商业",
+          "side": "SELL",
+          "shares": 17100,
+          "price": 4.71,
+          "fees": 64.43,
+          "realizedPnl": -64.43,
+          "reason": "持有5日仍未达到2%，触发时间止损（逾期计划按Longbridge历史开盘补录）",
+          "quoteTimestamp": "2026-09-10T16:00:00Z"
+        }
+      ],
+      "nav": [
+        {
+          "date": "2026-08-30",
+          "totalAsset": 1000000,
+          "benchmark": 1.003
+        },
+        {
+          "date": "2026-08-31",
+          "totalAsset": 934145.39,
+          "benchmark": 1
+        },
+        {
+          "date": "2026-09-01",
+          "totalAsset": 940241.39,
+          "benchmark": 1.004
+        },
+        {
+          "date": "2026-09-02",
+          "totalAsset": 1005498.07,
+          "benchmark": 1.003
+        },
+        {
+          "date": "2026-09-03",
+          "totalAsset": 1006590.84,
+          "benchmark": 0.997
+        },
+        {
+          "date": "2026-09-04",
+          "totalAsset": 964755.82,
+          "benchmark": 1.005
+        },
+        {
+          "date": "2026-09-05",
+          "totalAsset": 964755.82,
+          "benchmark": 1.002
+        },
+        {
+          "date": "2026-09-07",
+          "totalAsset": 956474.39,
+          "benchmark": 1.002
+        },
+        {
+          "date": "2026-09-08",
+          "totalAsset": 956348.39,
+          "benchmark": 1
+        },
+        {
+          "date": "2026-09-09",
+          "totalAsset": 954113.39,
+          "benchmark": 1.004
+        },
+        {
+          "date": "2026-09-10",
+          "totalAsset": 950738.39,
+          "benchmark": 1.005
+        },
+        {
+          "date": "2026-09-11",
+          "totalAsset": 948873.96,
+          "benchmark": 1.005
+        },
+        {
+          "date": "2026-09-22",
+          "totalAsset": 953616.96,
+          "benchmark": 0.999
+        }
+      ],
+      "nextPlan": {
+        "generatedAt": "2026-09-22T16:38:37+08:00",
+        "executeOn": "2026-09-23",
+        "status": "READY",
+        "orders": [
+          {
+            "code": "001979",
+            "name": "招商蛇口",
+            "theme": "房地产开发",
+            "side": "SELL",
+            "targetWeight": 0,
+            "priority": 1,
+            "reason": "达到10日最大持有周期",
+            "cancelIf": "无；仅受T+1、停牌和跌停限制"
+          }
+        ]
+      },
+      "todayOrders": [],
+      "todayTrades": [],
+      "summary": {
+        "totalAsset": 953616.96,
+        "cash": 886005.96,
+        "marketValue": 67611,
+        "dailyPnl": 4743,
+        "dailyReturnPct": 0.5,
+        "positionDailyPnl": -1023,
+        "cumulativePnl": -46383.04,
+        "cumulativeReturn": -4.64,
+        "positionRate": 7.1,
+        "maxDrawdown": -5.26,
+        "winRate": 18.2
+      },
+      "marketClosed": false,
+      "strategyId": "risk-aware-trend-v0.8.0",
+      "riskState": {
+        "state": "WATCH",
+        "allowBuys": true,
+        "maxTotalPosition": 0.4,
+        "reason": "回撤达到5%，仅作风险提示；继续依据大盘、热点和个股信号交易"
+      },
+      "recoveredOrders": [
+        {
+          "id": "O-2026-09-07-002418",
+          "createdAt": "2026-09-06T16:00:00Z",
+          "planDate": "2026-09-07",
+          "recoveredAt": "2026-09-08T22:48:16+08:00",
+          "code": "002418",
+          "name": "康盛股份",
+          "side": "SELL",
+          "status": "FILLED",
+          "targetWeight": 0,
+          "reason": "触发风险感知止损",
+          "fillPrice": 5.09,
+          "shares": 14200,
+          "fees": 57.82,
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "O-2026-09-07-000017",
+          "createdAt": "2026-09-06T16:00:00Z",
+          "planDate": "2026-09-07",
+          "recoveredAt": "2026-09-08T22:48:16+08:00",
+          "code": "000017",
+          "name": "深中华A",
+          "side": "SELL",
+          "status": "FILLED",
+          "targetWeight": 0,
+          "reason": "触发风险感知止损",
+          "fillPrice": 8.99,
+          "shares": 5200,
+          "fees": 37.4,
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "O-2026-09-07-600892",
+          "createdAt": "2026-09-06T16:00:00Z",
+          "planDate": "2026-09-07",
+          "recoveredAt": "2026-09-08T22:48:16+08:00",
+          "code": "600892",
+          "name": "大晟文化",
+          "side": "SELL",
+          "status": "FILLED",
+          "targetWeight": 0,
+          "reason": "触发风险感知止损",
+          "fillPrice": 4.72,
+          "shares": 18700,
+          "fees": 70.61,
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "O-2026-09-07-600611",
+          "createdAt": "2026-09-06T16:00:00Z",
+          "planDate": "2026-09-07",
+          "recoveredAt": "2026-09-08T22:48:16+08:00",
+          "code": "600611",
+          "name": "大众交通",
+          "side": "SELL",
+          "status": "FILLED",
+          "targetWeight": 0,
+          "reason": "触发风险感知止损",
+          "fillPrice": 5.03,
+          "shares": 17700,
+          "fees": 71.22,
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "O-2026-09-07-002837",
+          "createdAt": "2026-09-06T16:00:00Z",
+          "planDate": "2026-09-07",
+          "recoveredAt": "2026-09-08T22:48:16+08:00",
+          "code": "002837",
+          "name": "英维克",
+          "side": "SELL",
+          "status": "FILLED",
+          "targetWeight": 0,
+          "reason": "组合进入RISK_OFF，仓位降至20%以内",
+          "fillPrice": 62.92,
+          "shares": 1400,
+          "fees": 70.47,
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "O-2026-09-07-601658",
+          "createdAt": "2026-09-06T16:00:00Z",
+          "planDate": "2026-09-07",
+          "recoveredAt": "2026-09-08T22:48:16+08:00",
+          "code": "601658",
+          "name": "邮储银行",
+          "side": "SELL",
+          "status": "FILLED",
+          "targetWeight": 0,
+          "reason": "组合进入RISK_OFF，仓位降至20%以内",
+          "fillPrice": 5.42,
+          "shares": 15200,
+          "fees": 65.91,
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "O-2026-08-31-600227",
+          "createdAt": "2026-09-09T16:15:13+08:00",
+          "planDate": "2026-08-31",
+          "recoveredAt": "2026-09-09T16:15:13+08:00",
+          "code": "600227",
+          "name": "赤天化",
+          "side": "BUY",
+          "status": "SKIPPED",
+          "targetWeight": 0.1,
+          "reason": "全市场初筛第7名；当日涨跌幅 10.10%，成交额 16.01亿元。 来自5012只有效A股的全市场初筛，全市场排名 #7；已通过普通A股账户权限过滤。",
+          "rejectReason": "缺少 2026-08-31 的Longbridge历史开盘价，不能事后替代"
+        },
+        {
+          "id": "O-2026-08-31-002742",
+          "createdAt": "2026-09-09T16:15:13+08:00",
+          "planDate": "2026-08-31",
+          "recoveredAt": "2026-09-09T16:15:13+08:00",
+          "code": "002742",
+          "name": "冀衡医药",
+          "side": "BUY",
+          "status": "SKIPPED",
+          "targetWeight": 0.08,
+          "reason": "全市场初筛第5名；当日涨跌幅 10.05%，成交额 13.45亿元。 来自5012只有效A股的全市场初筛，全市场排名 #5；已通过普通A股账户权限过滤。",
+          "rejectReason": "缺少 2026-08-31 的Longbridge历史开盘价，不能事后替代"
+        },
+        {
+          "id": "O-2026-08-31-600354",
+          "createdAt": "2026-09-09T16:15:13+08:00",
+          "planDate": "2026-08-31",
+          "recoveredAt": "2026-09-09T16:15:13+08:00",
+          "code": "600354",
+          "name": "敦煌种业",
+          "side": "BUY",
+          "status": "SKIPPED",
+          "targetWeight": 0.06,
+          "reason": "全市场初筛第13名；当日涨跌幅 10.05%，成交额 8.70亿元。 来自5012只有效A股的全市场初筛，全市场排名 #13；已通过普通A股账户权限过滤。",
+          "rejectReason": "缺少 2026-08-31 的Longbridge历史开盘价，不能事后替代"
+        },
+        {
+          "id": "O-2026-09-01-002837",
+          "createdAt": "2026-09-10T16:04:15+08:00",
+          "planDate": "2026-09-01",
+          "recoveredAt": "2026-09-10T16:04:15+08:00",
+          "code": "002837",
+          "name": "英维克",
+          "side": "BUY",
+          "status": "SKIPPED",
+          "targetWeight": 0.1,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 5.78%，成交额 60.91亿元。 来自3050只有效A股的全市场初筛，全市场排名 #17；已通过普通A股账户权限过滤。",
+          "rejectReason": "缺少 2026-09-01 的Longbridge历史开盘价，不能事后替代"
+        },
+        {
+          "id": "O-2026-09-01-601658",
+          "createdAt": "2026-09-10T16:04:15+08:00",
+          "planDate": "2026-09-01",
+          "recoveredAt": "2026-09-10T16:04:15+08:00",
+          "code": "601658",
+          "name": "邮储银行",
+          "side": "BUY",
+          "status": "SKIPPED",
+          "targetWeight": 0.08,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 5.41%，成交额 28.24亿元。 来自3050只有效A股的全市场初筛，全市场排名 #76；已通过普通A股账户权限过滤。",
+          "rejectReason": "缺少 2026-09-01 的Longbridge历史开盘价，不能事后替代"
+        },
+        {
+          "id": "O-2026-09-01-001979",
+          "createdAt": "2026-08-31T16:00:00Z",
+          "planDate": "2026-09-01",
+          "recoveredAt": "2026-09-10T16:04:15+08:00",
+          "code": "001979",
+          "name": "招商蛇口",
+          "side": "BUY",
+          "status": "SKIPPED",
+          "targetWeight": 0.06,
+          "reason": "市场异常：未知涨跌%，成交量 未知；当日涨跌幅 -8.80%，成交额 26.28亿元。 来自3050只有效A股的全市场初筛，全市场排名 #91；已通过普通A股账户权限过滤。",
+          "rejectReason": "买入执行窗口已错过；为避免事后选择偏差不进行历史补买"
+        },
+        {
+          "id": "O-2026-09-11-600828",
+          "createdAt": "2026-09-10T16:00:00Z",
+          "planDate": "2026-09-11",
+          "recoveredAt": "2026-09-22T16:38:37+08:00",
+          "code": "600828",
+          "name": "茂业商业",
+          "side": "SELL",
+          "status": "FILLED",
+          "targetWeight": 0,
+          "reason": "持有5日仍未达到2%，触发时间止损",
+          "fillPrice": 4.71,
+          "shares": 17100,
+          "fees": 64.43,
+          "quoteTimestamp": "2026-09-10T16:00:00Z"
+        }
+      ],
+      "recoveredTrades": [
+        {
+          "id": "T-2026-09-07-002418-S",
+          "tradeDate": "2026-09-07",
+          "code": "002418",
+          "name": "康盛股份",
+          "side": "SELL",
+          "shares": 14200,
+          "price": 5.09,
+          "fees": 57.82,
+          "realizedPnl": -7299.82,
+          "reason": "触发风险感知止损（逾期计划按Longbridge历史开盘补录）",
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "T-2026-09-07-000017-S",
+          "tradeDate": "2026-09-07",
+          "code": "000017",
+          "name": "深中华A",
+          "side": "SELL",
+          "shares": 5200,
+          "price": 8.99,
+          "fees": 37.4,
+          "realizedPnl": -12257.4,
+          "reason": "触发风险感知止损（逾期计划按Longbridge历史开盘补录）",
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "T-2026-09-07-600892-S",
+          "tradeDate": "2026-09-07",
+          "code": "600892",
+          "name": "大晟文化",
+          "side": "SELL",
+          "shares": 18700,
+          "price": 4.72,
+          "fees": 70.61,
+          "realizedPnl": -12038.61,
+          "reason": "触发风险感知止损（逾期计划按Longbridge历史开盘补录）",
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "T-2026-09-07-600611-S",
+          "tradeDate": "2026-09-07",
+          "code": "600611",
+          "name": "大众交通",
+          "side": "SELL",
+          "shares": 17700,
+          "price": 5.03,
+          "fees": 71.22,
+          "realizedPnl": -11576.22,
+          "reason": "触发风险感知止损（逾期计划按Longbridge历史开盘补录）",
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "T-2026-09-07-002837-S",
+          "tradeDate": "2026-09-07",
+          "code": "002837",
+          "name": "英维克",
+          "side": "SELL",
+          "shares": 1400,
+          "price": 62.92,
+          "fees": 70.47,
+          "realizedPnl": -6804.47,
+          "reason": "组合进入RISK_OFF，仓位降至20%以内（逾期计划按Longbridge历史开盘补录）",
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "T-2026-09-07-601658-S",
+          "tradeDate": "2026-09-07",
+          "code": "601658",
+          "name": "邮储银行",
+          "side": "SELL",
+          "shares": 15200,
+          "price": 5.42,
+          "fees": 65.91,
+          "realizedPnl": 2518.09,
+          "reason": "组合进入RISK_OFF，仓位降至20%以内（逾期计划按Longbridge历史开盘补录）",
+          "quoteTimestamp": "2026-09-06T16:00:00Z"
+        },
+        {
+          "id": "T-2026-09-11-600828-S",
+          "tradeDate": "2026-09-11",
+          "code": "600828",
+          "name": "茂业商业",
+          "side": "SELL",
+          "shares": 17100,
+          "price": 4.71,
+          "fees": 64.43,
+          "realizedPnl": -64.43,
+          "reason": "持有5日仍未达到2%，触发时间止损（逾期计划按Longbridge历史开盘补录）",
+          "quoteTimestamp": "2026-09-10T16:00:00Z"
+        }
+      ]
+    },
+    {
+      "accountId": "assisted",
+      "name": "人工增强账户",
+      "type": "ASSISTED",
+      "enabled": false,
+      "status": "READY_FOR_MANUAL_INPUT",
+      "initialCapital": 1000000,
+      "summary": {
+        "totalAsset": 1000000,
+        "cash": 1000000,
+        "marketValue": 0,
+        "cumulativePnl": 0,
+        "cumulativeReturn": 0,
+        "positionRate": 0,
+        "maxDrawdown": 0,
+        "winRate": 0
+      },
+      "positions": [],
+      "todayOrders": [],
+      "todayTrades": [],
+      "tradeHistory": [],
+      "nav": [
+        {
+          "date": "2026-08-30",
+          "totalAsset": 1000000,
+          "benchmark": 1
+        }
+      ],
+      "nextPlan": null
+    }
+  ],
+  "comparison": {
+    "modelReturn": -4.64,
+    "assistedReturn": 0,
+    "benchmarkReturn": -0.10000000000000009
+  },
+  "refresh": {
+    "tab": "portfolio",
+    "snapshotId": "2026-09-22T163837+0800",
+    "updatedAt": "2026-09-22T16:38:37+08:00",
+    "sourceTimestamp": "2026-09-22T16:38:37+08:00",
+    "mode": "real",
+    "status": "refreshed"
+  }
+}

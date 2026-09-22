@@ -1,0 +1,668 @@
+{
+  "meta": {
+    "snapshotId": "2026-09-22T163837+0800",
+    "asOf": "2026-09-22T16:38:37+08:00",
+    "tradeDate": "2026-09-22",
+    "modelVersion": "risk-aware-trend-v0.8.0",
+    "status": "complete",
+    "mode": "real",
+    "provider": "longbridge",
+    "capturedAt": "2026-09-22T08:34:24Z"
+  },
+  "summary": {
+    "total": 120,
+    "official": 0,
+    "confirmed": 0,
+    "duplicateRate": 0
+  },
+  "events": [
+    {
+      "id": "lb-news-299703381",
+      "time": "10:12",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "Longbridge 市场资讯",
+      "summary": "The A-share CRO concept sector saw a short-term surge, with Sino Biological rising over 16%, followed by Vazyme, BHC, CanSinoBIO, Dian Diagnostics, and Taloph",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/299703381"
+    },
+    {
+      "id": "lb-news-299701566",
+      "time": "09:56",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "The concept of innovative drugs fluctuates and rebounds, Beilu Pharma rises over 10%",
+      "summary": "In the morning session, the innovative drug concept fluctuated and rebounded, with Beilu Pharma rising over 10%. Previously, HPGC and Xinhua Pharm hit the daily",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/299701566"
+    },
+    {
+      "id": "lb-news-299616346",
+      "time": "16:57",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "BHC: The Company Is Not Involved in Innovative Drug R&D, with Business Primarily Derived from the Domestic Market",
+      "summary": "BHC issued an announcement on abnormal stock price movements, stating that the cumulative deviation of its daily closing price increases over three consecutive ",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/299616346"
+    },
+    {
+      "id": "lb-news-299605560",
+      "time": "15:14",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "Today's limit-up and limit-down stock analysis: 105 limit-up stocks, 2 limit-down stocks, the chemical pharmaceutical sector is strong, HPGC, Aosaikang and others hit the limit-up",
+      "summary": "On September 21, the A-shares closed with a total of 105 stocks hitting the daily limit up and 2 stocks hitting the daily limit down. The chemical pharmaceutica",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/299605560"
+    },
+    {
+      "id": "lb-news-299595163",
+      "time": "13:35",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "The surge in limit-up stocks is here! HPGC, with a million hands sealing the board",
+      "summary": "On the morning of September 21, the chemical pharmaceuticals and biopharmaceutical sectors experienced a surge in limit-ups. HPGC hit the limit-up straight away",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/299595163"
+    },
+    {
+      "id": "lb-news-299281422",
+      "time": "15:16",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "A-share closing review: The Shanghai Composite Index fell by 0.41%, the ChiNext Index fell by 0.4%, while the agriculture and pharmaceutical sectors strengthened against the trend, and precious metal concept stocks experienced fluctuations and adjustments",
+      "summary": "On September 17th, the three major A-share indices fell slightly, with the Shanghai Composite Index down 0.41% and a trading volume of 1.82 trillion yuan. The p",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/299281422"
+    },
+    {
+      "id": "lb-news-299271333",
+      "time": "13:18",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "Multiple favorable catalysts, innovative drugs and CROs surged strongly, \"Flower King\" hit the limit up",
+      "summary": "On September 17th, driven by the accelerated overseas expansion of innovative drugs, impressive results from the WCLC conference in China, and the collaboration",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/299271333"
+    },
+    {
+      "id": "lb-news-299264583",
+      "time": "11:39",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "Midday limit-up and limit-down stock analysis: 34 limit-up stocks, 1 limit-down stock, the agricultural planting concept is active, JINJIAN CEREALS INDUSTRY and DUNHUANG SEED hit the limit-up",
+      "summary": "On September 17th, the A-share half-day data showed that there were a total of 34 stocks hitting the upper limit and 1 stock hitting the lower limit. The agricu",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/299264583"
+    },
+    {
+      "id": "lb-news-299258152",
+      "time": "10:28",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "The surge in innovative drugs and CRO concepts expands, with multiple stocks like Novoprotein hitting the limit-up",
+      "summary": "The concept of innovative drugs and CRO has seen an expanded upward trend during the trading session, with Novoprotein hitting a 20% limit up. Previously, GOLDS",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/299258152"
+    },
+    {
+      "id": "lb-news-299037426",
+      "time": "18:35",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "Who is speculating on the 28 times demon king in a year?",
+      "summary": "In 2025, A-share \"monster\" Swancor Advanced Materials saw its stock price soar over 2800% in a year due to Zhiyuan Robotics' plan to gain control through agreem",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/299037426"
+    },
+    {
+      "id": "lb-news-298659843",
+      "time": "08:38",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "With the core management team without a medical background taking charge, can BHC stabilize its fundamentals based on its professional foundation?",
+      "summary": "BHC's board of directors will be re-elected in 2026, with 34-year-old Chen Yinkai appointed as chairman and 37-year-old Qian Shugang as general manager. Althoug",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/298659843"
+    },
+    {
+      "id": "lb-news-298569719",
+      "time": "17:29",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "BHC: Elected Chen Yinkai as Chairman and appointed Qian Shugang as General Manager",
+      "summary": "BHC announced that the first meeting of the tenth board of directors reviewed and approved multiple proposals: electing Chen Yinkai as the chairman of the tenth",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/298569719"
+    },
+    {
+      "id": "lb-news-298524523",
+      "time": "09:49",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "Longbridge 市场资讯",
+      "summary": "Innovative drug concept stocks experienced volatile adjustments, with ACROBIOSYSTEMS dropping over 10%, and AHWB, BHC, QianJin Pharmaceutical, BOJI CRO, and R&G",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/298524523"
+    },
+    {
+      "id": "lb-news-298029856",
+      "time": "19:00",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "M13A policy leads to a reduction in clinical business BHC: Promoting the extension of business structure into high value-added fields | Directly hitting the earnings conference",
+      "summary": "BHC's revenue and net profit both declined in the first half of the year, primarily due to the M13A policy leading to a reduction in clinical business and strat",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/298029856"
+    },
+    {
+      "id": "lb-news-298018617",
+      "time": "17:31",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "BHC: Control change matters supervised in the second quarter of 2026 with no violations",
+      "summary": "BHC announced that Guotai Junan Securities issued continuous supervision opinions for the second quarter of 2026. Jinhua Juxin acquired 79.5251 million shares a",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/298018617"
+    },
+    {
+      "id": "lb-news-297854269",
+      "time": "11:04",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "The influenza resistance sector fluctuates and weakens, HPGC hits the limit down",
+      "summary": "The anti-influenza sector fluctuated and weakened, with HPGC hitting the limit down, followed by declines in JiHeng Pharmaceutical, BHC, Hansen Pharmaceutical, ",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297854269"
+    },
+    {
+      "id": "lb-news-297448502",
+      "time": "09:35",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "CRO concept continues to adjust, BHC hits the daily limit down",
+      "summary": "In the early trading session, the CRO concept continued last week's adjustment, with BHC hitting the daily limit down, ClinPlus and AHWB dropping over 10%, and ",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297448502"
+    },
+    {
+      "id": "lb-news-297388138",
+      "time": "13:36",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "BHC stock corrects from highs after doubling in a month; company responds: innovative drug CRO accounts for a small proportion",
+      "summary": "After cumulative gains of nearly 120% in August, BHC's stock price corrected from its highs, hitting the daily limit down during trading on the 28th. The compan",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297388138"
+    },
+    {
+      "id": "lb-news-297271151",
+      "time": "13:53",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "CRO concept continues to decline, AHWB approaches 20% limit down",
+      "summary": "In the afternoon, the CRO concept continued to decline, with AHWB approaching a 20% drop limit, Novoprotein, BHC, PR, CHENGDA PHARMA, BOJI CRO, and Sino Biologi",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297271151"
+    },
+    {
+      "id": "lb-news-297260380",
+      "time": "11:34",
+      "level": "B",
+      "source": "Longbridge",
+      "title": "A-share midday review: The three major indices rose and then fell, while the agricultural planting sector continued to rise",
+      "summary": "The three major A-share indices opened lower in the morning but surged high, with the ChiNext Index briefly rising over 1%; it then fluctuated and retreated. As",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [],
+      "url": "https://longbridge.com/news/297260380"
+    },
+    {
+      "id": "lb-anomaly-0",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "包钢股份：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "600010"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-1",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "亨通光电：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "600487"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-2",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "华峰铝业：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "601702"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-3",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "大有能源：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "600403"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-4",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "福莱蒽特：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "605566"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-5",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "北方稀土：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "600111"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-6",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "肯特股份：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "301591"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-7",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "西点药业：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "301130"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-8",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "百诚医药：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "301096"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-9",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "蓝盾光电：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "300862"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-10",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "裕兴股份：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "300305"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-11",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "天邑股份：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "300504"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-12",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "润泽科技：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "300442"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-13",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "红相股份：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "300427"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-14",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "拓荆科技：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "688072"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-15",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "亚辉龙：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "688575"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-16",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "伊利股份：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "600887"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-17",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "华建集团：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "600629"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-18",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "科瑞技术：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "002957"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-19",
+      "time": "06:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "国恩股份：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [
+        "全市场异动"
+      ],
+      "relatedStocks": [
+        "002768"
+      ],
+      "url": ""
+    }
+  ],
+  "refresh": {
+    "tab": "evidence",
+    "snapshotId": "2026-09-22T163837+0800",
+    "updatedAt": "2026-09-22T16:38:37+08:00",
+    "sourceTimestamp": "2026-09-22T02:12:47Z",
+    "mode": "real",
+    "status": "refreshed"
+  }
+}
