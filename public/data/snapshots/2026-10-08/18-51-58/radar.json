@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "snapshotId": "2026-10-08T185158+0800",
+    "asOf": "2026-10-08T18:51:58+08:00",
+    "tradeDate": "2026-10-08",
+    "modelVersion": "risk-aware-trend-v0.8.0",
+    "status": "complete",
+    "mode": "real",
+    "provider": "longbridge",
+    "capturedAt": "2026-10-08T07:39:01Z"
+  },
+  "marketState": {},
+  "summary": {
+    "highConfidenceThemes": 6,
+    "events30m": 100,
+    "confirmationRate": 0,
+    "credibleEvents": 0
+  },
+  "themes": [
+    {
+      "rank": 1,
+      "name": "工业化学品",
+      "score": 95,
+      "change": 6.3,
+      "stage": "加速",
+      "catalyst": "10只样本出现量价或异动信号",
+      "breadth": "10/60",
+      "turnover": 168.4
+    },
+    {
+      "rank": 2,
+      "name": "制药",
+      "score": 95,
+      "change": 4.1,
+      "stage": "加速",
+      "catalyst": "8只样本出现量价或异动信号",
+      "breadth": "8/60",
+      "turnover": 69.4
+    },
+    {
+      "rank": 3,
+      "name": "电子元件",
+      "score": 90,
+      "change": 6.1,
+      "stage": "加速",
+      "catalyst": "3只样本出现量价或异动信号",
+      "breadth": "3/60",
+      "turnover": 66.7
+    },
+    {
+      "rank": 4,
+      "name": "包装食品和肉类",
+      "score": 93,
+      "change": 7,
+      "stage": "加速",
+      "catalyst": "3只样本出现量价或异动信号",
+      "breadth": "3/60",
+      "turnover": 50.6
+    },
+    {
+      "rank": 5,
+      "name": "重型电气设备",
+      "score": 79,
+      "change": 5,
+      "stage": "加速",
+      "catalyst": "1只样本出现量价或异动信号",
+      "breadth": "1/60",
+      "turnover": 43.4
+    },
+    {
+      "rank": 6,
+      "name": "生命科学工具与服务",
+      "score": 81,
+      "change": 5.6,
+      "stage": "加速",
+      "catalyst": "1只样本出现量价或异动信号",
+      "breadth": "1/60",
+      "turnover": 43.1
+    }
+  ],
+  "leadingTheme": {
+    "name": "工业化学品",
+    "score": 95,
+    "novelty": 70,
+    "velocity": 100,
+    "confirmation": 167
+  },
+  "sourceHealth": {
+    "healthy": 3,
+    "total": 3,
+    "delayedSources": [],
+    "quoteTimestamp": "2026-10-08T07:00:00Z"
+  },
+  "refresh": {
+    "tab": "radar",
+    "snapshotId": "2026-10-08T185158+0800",
+    "updatedAt": "2026-10-08T18:51:58+08:00",
+    "sourceTimestamp": "2026-10-08T07:00:00Z",
+    "mode": "real",
+    "status": "refreshed"
+  }
+}

@@ -1,12 +1,12 @@
 {
-  "snapshotId": "2026-09-22T163837+0800",
-  "asOf": "2026-09-22T16:38:37+08:00",
-  "tradeDate": "2026-09-22",
+  "snapshotId": "2026-10-08T185158+0800",
+  "asOf": "2026-10-08T18:51:58+08:00",
+  "tradeDate": "2026-10-08",
   "modelVersion": "risk-aware-trend-v0.8.0",
   "status": "complete",
   "mode": "real",
   "provider": "longbridge",
-  "capturedAt": "2026-09-22T08:34:24Z",
+  "capturedAt": "2026-10-08T07:39:01Z",
   "path": "latest",
   "files": {
     "radar": "radar.json",

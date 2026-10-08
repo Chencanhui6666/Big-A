@@ -21,6 +21,7 @@ const arg = process.argv.find((item) => item.startsWith('--as-of='));
 const asOf = arg ? new Date(arg.slice('--as-of='.length)) : new Date();
 if (Number.isNaN(asOf.getTime())) throw new Error('Invalid --as-of date');
 const providerArg = process.argv.find((item) => item.startsWith('--provider-input='));
+const resetModelAccount = process.argv.includes('--reset-model-account');
 let providerInput = null;
 if (providerArg) {
   const providerPath = join(projectRoot, providerArg.slice('--provider-input='.length));
@@ -369,7 +370,9 @@ function bootstrapAccount() {
 function commission(amount) { return Math.max(tradingRules.minimumCommission, amount * tradingRules.commissionRate); }
 
 function simulateModelAccount(previousPortfolio, recoveredDuePlan) {
-  const previous = previousPortfolio?.accounts?.find((account) => account.accountId === 'model') ?? bootstrapAccount();
+  const previous = resetModelAccount
+    ? bootstrapAccount()
+    : previousPortfolio?.accounts?.find((account) => account.accountId === 'model') ?? bootstrapAccount();
   let cash = previous.cash;
   let positions = previous.positions.map((position) => ({ ...position }));
   let accountingNav = [...previous.nav];
@@ -379,9 +382,10 @@ function simulateModelAccount(previousPortfolio, recoveredDuePlan) {
   const recoveredOrders = [...(previous.recoveredOrders ?? [])];
   const recoveredTrades = [...(previous.recoveredTrades ?? [])];
   const newRecoveredTrades = [];
+  let historicalMarkWarnings = [];
   const marketClosed = [0, 6].includes(new Date(`${tradeDate}T12:00:00+08:00`).getUTCDay());
 
-  const overduePlan = previous.nextPlan?.executeOn < tradeDate ? previous.nextPlan : recoveredDuePlan?.executeOn < tradeDate ? recoveredDuePlan : null;
+  const overduePlan = resetModelAccount ? null : (previous.nextPlan?.executeOn < tradeDate ? previous.nextPlan : recoveredDuePlan?.executeOn < tradeDate ? recoveredDuePlan : null);
   if (overduePlan) {
     const executionDate = overduePlan.executeOn;
     const weekend = [0, 6].includes(new Date(`${executionDate}T12:00:00+08:00`).getUTCDay());
@@ -439,8 +443,11 @@ function simulateModelAccount(previousPortfolio, recoveredDuePlan) {
       recoveredOrders.push(order);
     }
     const missingHistoricalMarks = positions.filter((position) => !historicalProviderQuoteForCode(position.code, executionDate));
-    if (missingHistoricalMarks.length) throw new Error(`Missing historical close marks for ${executionDate}: ${missingHistoricalMarks.map((position) => position.code).join(', ')}`);
-    const historicalMarketValue = positions.reduce((sum, position) => sum + position.shares * Number(historicalProviderQuoteForCode(position.code, executionDate).last), 0);
+    historicalMarkWarnings = missingHistoricalMarks.map((position) => ({ code: position.code, executionDate }));
+    const historicalMarketValue = positions.reduce((sum, position) => {
+      const historicalQuote = historicalProviderQuoteForCode(position.code, executionDate);
+      return sum + position.shares * Number(historicalQuote?.last ?? position.lastPrice);
+    }, 0);
     const historicalTotalAsset = Number((cash + historicalMarketValue).toFixed(2));
     accountingNav = [...accountingNav.filter((item) => item.date !== executionDate), { date: executionDate, totalAsset: historicalTotalAsset, benchmark: accountingNav.at(-1)?.benchmark ?? 1 }]
       .sort((a, b) => a.date.localeCompare(b.date));
@@ -568,12 +575,12 @@ function simulateModelAccount(previousPortfolio, recoveredDuePlan) {
   const tradeHistory = [...previous.tradeHistory, ...newRecoveredTrades, ...todayTrades]
     .filter((trade, index, all) => all.findIndex((item) => item.id === trade.id) === index)
     .slice(-200);
-  return { ...previous, strategyId: riskAwareRules.strategyId, riskState, cash: Number(cash.toFixed(2)), positions, recoveredOrders, recoveredTrades, todayOrders, todayTrades, tradeHistory, nav, nextPlan, summary: { totalAsset, cash: Number(cash.toFixed(2)), marketValue: Number(marketValue.toFixed(2)), dailyPnl: Number((totalAsset - previousAsset).toFixed(2)), dailyReturnPct, positionDailyPnl, cumulativePnl: Number((totalAsset - previous.initialCapital).toFixed(2)), cumulativeReturn: Number(((totalAsset / previous.initialCapital - 1) * 100).toFixed(2)), positionRate: Number((marketValue / totalAsset * 100).toFixed(1)), maxDrawdown: drawdownPct, winRate: closedTrades ? Number((winningTrades / closedTrades * 100).toFixed(1)) : 0 }, marketClosed };
+  return { ...previous, strategyId: riskAwareRules.strategyId, accountReset: resetModelAccount ? { resetAt: meta.asOf, reason: '用户请求初始化模型账户；此前模型仓位、订单、成交和净值不参与本轮账户核算' } : previous.accountReset ?? null, accountingWarnings: historicalMarkWarnings.length ? [{ type: 'MISSING_HISTORICAL_MARK', codes: historicalMarkWarnings.map((warning) => warning.code), handling: '相关历史净值以既有持仓标记暂估，信号结算保持待处理；不阻断当前已验证市场批次发布' }] : [], riskState, cash: Number(cash.toFixed(2)), positions, recoveredOrders, recoveredTrades, todayOrders, todayTrades, tradeHistory, nav, nextPlan, summary: { totalAsset, cash: Number(cash.toFixed(2)), marketValue: Number(marketValue.toFixed(2)), dailyPnl: Number((totalAsset - previousAsset).toFixed(2)), dailyReturnPct, positionDailyPnl, cumulativePnl: Number((totalAsset - previous.initialCapital).toFixed(2)), cumulativeReturn: Number(((totalAsset / previous.initialCapital - 1) * 100).toFixed(2)), positionRate: Number((marketValue / totalAsset * 100).toFixed(1)), maxDrawdown: drawdownPct, winRate: closedTrades ? Number((winningTrades / closedTrades * 100).toFixed(1)) : 0 }, marketClosed };
 }
 
 const previousPortfolio = await loadPreviousPortfolio();
 const previousReview = await loadPreviousReview();
-const recoveredDuePlan = await loadRecoveredDuePlan(previousPortfolio);
+const recoveredDuePlan = resetModelAccount ? null : await loadRecoveredDuePlan(previousPortfolio);
 const modelAccount = simulateModelAccount(previousPortfolio, recoveredDuePlan);
 const assistedAccount = previousPortfolio?.accounts?.find((account) => account.accountId === 'assisted') ?? { accountId: 'assisted', name: '人工增强账户', type: 'ASSISTED', enabled: false, status: 'READY_FOR_MANUAL_INPUT', initialCapital: tradingRules.initialCapital, summary: { totalAsset: tradingRules.initialCapital, cash: tradingRules.initialCapital, marketValue: 0, cumulativePnl: 0, cumulativeReturn: 0, positionRate: 0, maxDrawdown: 0, winRate: 0 }, positions: [], todayOrders: [], todayTrades: [], tradeHistory: [], nav: [{ date: tradeDate, totalAsset: tradingRules.initialCapital, benchmark: 1 }], nextPlan: null };
 const portfolio = { meta, rules: tradingRules, accounts: [modelAccount, assistedAccount], comparison: { modelReturn: modelAccount.summary.cumulativeReturn, assistedReturn: assistedAccount.summary.cumulativeReturn, benchmarkReturn: Number(((modelAccount.nav.at(-1)?.benchmark ?? 1) - 1) * 100) } };
