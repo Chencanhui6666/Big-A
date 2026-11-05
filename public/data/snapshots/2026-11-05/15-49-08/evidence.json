@@ -1,0 +1,510 @@
+{
+  "meta": {
+    "snapshotId": "2026-11-05T154908+0800",
+    "asOf": "2026-11-05T15:49:08+08:00",
+    "tradeDate": "2026-11-05",
+    "modelVersion": "risk-aware-trend-v0.8.0",
+    "status": "complete",
+    "mode": "real",
+    "provider": "longbridge",
+    "capturedAt": "2026-11-05T15:41:46+08:00"
+  },
+  "summary": {
+    "total": 109,
+    "official": 0,
+    "confirmed": 9,
+    "duplicateRate": 0
+  },
+  "events": [
+    {
+      "id": "lb-news-266479295",
+      "time": "13:04",
+      "level": "B",
+      "source": "华尔街见闻",
+      "title": "",
+      "summary": "A 股水产养殖板块再度拉升，獐子岛、大湖股份、好当家午后涨停，开创国际、东方海洋、中水渔业此前封板，百洋股份、天马科技等跟涨。",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "包装食品和肉类"
+      ],
+      "relatedStocks": [
+        "002696"
+      ],
+      "url": "https://longbridge.com/news/266479295"
+    },
+    {
+      "id": "lb-news-263108368",
+      "time": "21:45",
+      "level": "B",
+      "source": "智通财经",
+      "title": "百洋股份发布前三季度业绩，归母净利润 3612.8 万元，同比增长 218.12%",
+      "summary": "智通财经 APP 讯，百洋股份发布 2025 年三季度报告，前三季度，公司实现营业收入 29.52 亿元，同比增长 38.77%。归属于上市公司股东的净利润 3612.8 万元，同比增长 218.12%。归属于上市公司股东的扣除非经常性损益的净利润 2756.31 万元，同比增长 190.78%。",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "包装食品和肉类"
+      ],
+      "relatedStocks": [
+        "002696"
+      ],
+      "url": "https://longbridge.com/news/263108368"
+    },
+    {
+      "id": "lb-news-254755737",
+      "time": "16:06",
+      "level": "B",
+      "source": "智通财经",
+      "title": "百洋股份发布上半年业绩，扭亏为盈至 1178.93 万元",
+      "summary": "智通财经 APP 讯，百洋股份发布 2025 年半年度报告，报告期内，公司实现营业收入 16.94 亿元，同比增长 38.34%。实现归属于上市公司股东的净利润 1178.93 万元。实现归属于上市公司股东的扣除非经常性损益的净利润 661.45 万元。基本每股收益 0.03 元。",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "包装食品和肉类"
+      ],
+      "relatedStocks": [
+        "002696"
+      ],
+      "url": "https://longbridge.com/news/254755737"
+    },
+    {
+      "id": "lb-news-287613933",
+      "time": "17:49",
+      "level": "B",
+      "source": "同壁财经",
+      "title": "龙虎榜 | 合百集团（000417）跌停，买入前 5 共买入 1.31 亿元，卖出前 5 共卖出 1.3 亿元，上榜原因：日跌幅偏离值达到 7% 的前 5 只证券",
+      "summary": "合百集团（000417）于 5 月 26 日跌停，收盘价 9.32 元，流通市值 72.61 亿元。龙虎榜买入额 1.32 亿元，卖出额 1.4 亿元，净买额-746.84 万元。买入前 5 名合计 1.31 亿元，卖出前 5 名合计 1.3 亿元。2025 年营业收入 66.96 亿元，净利润 1.60 亿元，均出现下降。",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "零售商"
+      ],
+      "relatedStocks": [
+        "000417"
+      ],
+      "url": "https://longbridge.com/news/287613933"
+    },
+    {
+      "id": "lb-news-286890723",
+      "time": "18:01",
+      "level": "B",
+      "source": "同壁财经",
+      "title": "龙虎榜 | 合百集团（000417）涨停，上榜原因：连续三个交易日内，涨幅偏离值累计达到 20%",
+      "summary": "合百集团（000417）于 5 月 19 日涨停，原因是连续三个交易日内涨幅偏离值累计达到 20%。龙虎榜买入额为 1.03 亿元，卖出额为 4802.21 万元，净买额为 5487.6 万元。买入金额最大的前五名合计买入 8823.08 万元，卖出金额最大的前五名合计卖出 4800.23 万元。收盘价为 8.66 元，流通市值为 67.46 亿元。",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "零售商"
+      ],
+      "relatedStocks": [
+        "000417"
+      ],
+      "url": "https://longbridge.com/news/286890723"
+    },
+    {
+      "id": "lb-news-286889947",
+      "time": "17:56",
+      "level": "B",
+      "source": "同壁财经",
+      "title": "沪指涨 0.92%，沪深两市 85 只个股登上龙虎榜，中国卫星、合百集团等在列",
+      "summary": "2026 年 5 月 19 日，沪指涨 0.92%，深证成指涨 0.26%，创业板指跌 0.16%。85 只个股登上龙虎榜，其中中国卫星跌 10.00%，收盘价 87.23 元；衢州发展跌 10.00%，收盘价 3.96 元；万通发展涨 10.04%，收盘价 13.92 元。龙虎榜买入额 4.65 亿元，卖出额 7.89 亿元，净买额-3.25 亿元。",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "零售商"
+      ],
+      "relatedStocks": [
+        "000417"
+      ],
+      "url": "https://longbridge.com/news/286889947"
+    },
+    {
+      "id": "lb-news-263579107",
+      "time": "00:42",
+      "level": "B",
+      "source": "智通财经",
+      "title": "大连友谊发布前三季度业绩，归母净亏损 5710.01 万元",
+      "summary": "智通财经 APP 讯，大连友谊发布 2025 年三季度报告，该公司前三季度营业收入为 2.59 亿元，同比增长 107.52%。归属于上市公司股东的净亏损为 5710.01 万元。归属于上市公司股东的扣除非经常性损益的净亏损为 4806.35 万元。基本每股亏损为 0.16 元。",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "零售商"
+      ],
+      "relatedStocks": [
+        "000679"
+      ],
+      "url": "https://longbridge.com/news/263579107"
+    },
+    {
+      "id": "lb-news-263010859",
+      "time": "14:18",
+      "level": "B",
+      "source": "智通财经",
+      "title": "",
+      "summary": "A 股零售板块短线拉升，国光连锁涨停创新高，东百集团、大连友谊、上海九百、万辰集团、广百股份跟涨。",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "零售商"
+      ],
+      "relatedStocks": [
+        "000679"
+      ],
+      "url": "https://longbridge.com/news/263010859"
+    },
+    {
+      "id": "lb-news-256471508",
+      "time": "09:41",
+      "level": "B",
+      "source": "智通财经",
+      "title": "零售板块拉升，汇嘉时代涨停",
+      "summary": "零售板块有所拉升，汇嘉时代涨停，友好集团、居然智家、大连友谊、深赛格、三江购物跟涨。",
+      "tags": [
+        "新闻"
+      ],
+      "relatedThemes": [
+        "零售商"
+      ],
+      "relatedStocks": [
+        "000679"
+      ],
+      "url": "https://longbridge.com/news/256471508"
+    },
+    {
+      "id": "lb-anomaly-0",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "华海药业：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "600521"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-1",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "浦发银行：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "600000"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-2",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "中国银行：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "601988"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-3",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "上纬新材：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "688585"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-4",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "马矿股份：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "601123"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-5",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "复星医药：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "600196"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-6",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "中贝通信：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "603220"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-7",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "欧圣电气：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "301187"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-8",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "容大感光：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300576"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-9",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "铜牛信息：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300895"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-10",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "捷佳伟创：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300724"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-11",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "同花顺：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300033"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-12",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "扬杰科技：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300373"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-13",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "机器人：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "300024"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-14",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "川恒股份：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002895"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-15",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "ST天际：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002759"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-16",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "四维图新：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002405"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-17",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "奥普光电：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002338"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-18",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "歌尔股份：大笔买入",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002241"
+      ],
+      "url": ""
+    },
+    {
+      "id": "lb-anomaly-19",
+      "time": "14:56",
+      "level": "B",
+      "source": "Longbridge行情异动",
+      "title": "奥特佳：大笔卖出",
+      "tags": [
+        "盘面",
+        "异动"
+      ],
+      "relatedThemes": [],
+      "relatedStocks": [
+        "002239"
+      ],
+      "url": ""
+    }
+  ],
+  "refresh": {
+    "tab": "evidence",
+    "snapshotId": "2026-11-05T154908+0800",
+    "updatedAt": "2026-11-05T15:49:08+08:00",
+    "sourceTimestamp": "2026-05-26T09:49:16Z",
+    "mode": "real",
+    "status": "refreshed"
+  }
+}

@@ -1,13 +1,13 @@
 {
   "meta": {
-    "snapshotId": "2026-10-08T185158+0800",
-    "asOf": "2026-10-08T18:51:58+08:00",
-    "tradeDate": "2026-10-08",
+    "snapshotId": "2026-11-05T154908+0800",
+    "asOf": "2026-11-05T15:49:08+08:00",
+    "tradeDate": "2026-11-05",
     "modelVersion": "risk-aware-trend-v0.8.0",
     "status": "complete",
     "mode": "real",
     "provider": "longbridge",
-    "capturedAt": "2026-10-08T07:39:01Z"
+    "capturedAt": "2026-11-05T15:41:46+08:00"
   },
   "rules": {
     "initialCapital": 1000000,
@@ -40,11 +40,21 @@
           "date": "2026-10-08",
           "totalAsset": 1000000,
           "benchmark": 0.997
+        },
+        {
+          "date": "2026-10-09",
+          "totalAsset": 1000000,
+          "benchmark": 0.997
+        },
+        {
+          "date": "2026-11-05",
+          "totalAsset": 1000000,
+          "benchmark": 1.001
         }
       ],
       "nextPlan": {
-        "generatedAt": "2026-10-08T18:51:58+08:00",
-        "executeOn": "2026-10-09",
+        "generatedAt": "2026-11-05T15:49:08+08:00",
+        "executeOn": "2026-11-06",
         "status": "READY",
         "orders": []
       },
@@ -113,13 +123,13 @@
   "comparison": {
     "modelReturn": 0,
     "assistedReturn": 0,
-    "benchmarkReturn": -0.30000000000000027
+    "benchmarkReturn": 0.09999999999998899
   },
   "refresh": {
     "tab": "portfolio",
-    "snapshotId": "2026-10-08T185158+0800",
-    "updatedAt": "2026-10-08T18:51:58+08:00",
-    "sourceTimestamp": "2026-10-08T18:51:58+08:00",
+    "snapshotId": "2026-11-05T154908+0800",
+    "updatedAt": "2026-11-05T15:49:08+08:00",
+    "sourceTimestamp": "2026-11-05T15:49:08+08:00",
     "mode": "real",
     "status": "refreshed"
   }

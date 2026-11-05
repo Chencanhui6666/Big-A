@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "snapshotId": "2026-11-05T154908+0800",
+    "asOf": "2026-11-05T15:49:08+08:00",
+    "tradeDate": "2026-11-05",
+    "modelVersion": "risk-aware-trend-v0.8.0",
+    "status": "complete",
+    "mode": "real",
+    "provider": "longbridge",
+    "capturedAt": "2026-11-05T15:41:46+08:00"
+  },
+  "marketState": {},
+  "summary": {
+    "highConfidenceThemes": 6,
+    "events30m": 100,
+    "confirmationRate": 0,
+    "credibleEvents": 9
+  },
+  "themes": [
+    {
+      "rank": 1,
+      "name": "多元化金属与采矿",
+      "score": 82,
+      "change": 4.7,
+      "stage": "加速",
+      "catalyst": "2只样本出现量价或异动信号",
+      "breadth": "2/60",
+      "turnover": 103
+    },
+    {
+      "rank": 2,
+      "name": "媒体",
+      "score": 95,
+      "change": 5.9,
+      "stage": "加速",
+      "catalyst": "5只样本出现量价或异动信号",
+      "breadth": "5/60",
+      "turnover": 67.5
+    },
+    {
+      "rank": 3,
+      "name": "零售商",
+      "score": 95,
+      "change": 4.4,
+      "stage": "加速",
+      "catalyst": "7只样本出现量价或异动信号",
+      "breadth": "7/60",
+      "turnover": 57.1
+    },
+    {
+      "rank": 4,
+      "name": "包装食品和肉类",
+      "score": 94,
+      "change": 7.2,
+      "stage": "加速",
+      "catalyst": "3只样本出现量价或异动信号",
+      "breadth": "3/60",
+      "turnover": 45.2
+    },
+    {
+      "rank": 5,
+      "name": "工业机械",
+      "score": 89,
+      "change": 4.4,
+      "stage": "加速",
+      "catalyst": "4只样本出现量价或异动信号",
+      "breadth": "4/60",
+      "turnover": 44.9
+    },
+    {
+      "rank": 6,
+      "name": "电影和娱乐",
+      "score": 93,
+      "change": 5.5,
+      "stage": "加速",
+      "catalyst": "4只样本出现量价或异动信号",
+      "breadth": "4/60",
+      "turnover": 44
+    }
+  ],
+  "leadingTheme": {
+    "name": "多元化金属与采矿",
+    "score": 82,
+    "novelty": 70,
+    "velocity": 87.6,
+    "confirmation": 167
+  },
+  "sourceHealth": {
+    "healthy": 3,
+    "total": 3,
+    "delayedSources": [],
+    "quoteTimestamp": "2026-11-05T15:00:00+08:00"
+  },
+  "refresh": {
+    "tab": "radar",
+    "snapshotId": "2026-11-05T154908+0800",
+    "updatedAt": "2026-11-05T15:49:08+08:00",
+    "sourceTimestamp": "2026-11-05T15:00:00+08:00",
+    "mode": "real",
+    "status": "refreshed"
+  }
+}

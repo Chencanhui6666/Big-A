@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-10-08T18:51:58+08:00",
+  "updatedAt": "2026-11-05T15:49:08+08:00",
   "snapshots": [
+    {
+      "snapshotId": "2026-11-05T154908+0800",
+      "asOf": "2026-11-05T15:49:08+08:00",
+      "tradeDate": "2026-11-05",
+      "modelVersion": "risk-aware-trend-v0.8.0",
+      "status": "complete",
+      "mode": "real",
+      "provider": "longbridge",
+      "capturedAt": "2026-11-05T15:41:46+08:00",
+      "path": "snapshots/2026-11-05/15-49-08",
+      "files": {
+        "radar": "radar.json",
+        "candidates": "candidates.json",
+        "evidence": "evidence.json",
+        "review": "review.json",
+        "portfolio": "portfolio.json"
+      }
+    },
     {
       "snapshotId": "2026-10-08T185158+0800",
       "asOf": "2026-10-08T18:51:58+08:00",
